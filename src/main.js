@@ -2,10 +2,17 @@ require('./bootstrap.js');
 
 import Vue from 'vue'
 
+
 import VueRouter from 'vue-router'
 import routes from './routes.js'
-
 Vue.use(VueRouter)
+const router = new VueRouter({
+    mode: 'history',
+    linkActiveClass: 'active',
+    base: __dirname,
+    routes: routes
+})
+
 
 // https://github.com/marcosmoura/vue-material
 import VueMaterial from 'vue-material'
@@ -17,18 +24,7 @@ Vue.material.theme.register('default', {
 })
 
 
-
-
-
 import App from './App'
-
-
-const router = new VueRouter({
-    mode: 'history',
-    linkActiveClass: 'active',
-    base: __dirname,
-    routes: routes
-})
 
 
 /* eslint-disable no-new */

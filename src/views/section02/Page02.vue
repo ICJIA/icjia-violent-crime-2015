@@ -9,7 +9,7 @@
 
   <div class="row">
   <div class="coluumn">
-  <h2>Section 01 - Page 2</h2>
+  <h2>Section 02 - Page 2</h2>
   </div>
   </div>
 
@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: 's01p02',
+  name: 's02p02',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

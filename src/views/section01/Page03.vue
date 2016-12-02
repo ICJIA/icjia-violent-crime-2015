@@ -8,7 +8,7 @@
   <div class="container">
   <div class="row">
   <div class="coluumn">
-  <h2>Section 1 - Page 3</h2>
+  <h2>Section 01 - Page 3</h2>
   </div>
   </div>
 
