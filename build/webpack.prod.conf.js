@@ -47,20 +47,18 @@ var webpackConfig = merge(baseWebpackConfig, {
             filename: 'timestamp.json'
         }),
 
-        new BundleAnalyzerPlugin({
+        // new BundleAnalyzerPlugin({
 
-            analyzerPort: 8001,
-            // Path to bundle report file that will be generated in `static` mode.
-            // If relative path is provided, it will be relative to bundles output directory
-            reportFilename: 'report.html',
-            // Automatically open report in default browser
-            openAnalyzer: true,
-            // If `true`, Webpack Stats JSON file will be generated in bundles output directory
-            generateStatsFile: false,
-            // Name of Webpack Stats JSON file that will be generated if `generateStatsFile` is `true`.
-            // Relative to bundles output directory.
-            statsFilename: '../stats.json',
-        }),
+        //     analyzerPort: 8001,
+
+        //     reportFilename: 'report.html',
+
+        //     openAnalyzer: true,
+
+        //     generateStatsFile: false,
+
+        //     statsFilename: '../stats.json',
+        // }),
 
         // copy data to /dist/ directory
         //  new CopyWebpackPlugin([
