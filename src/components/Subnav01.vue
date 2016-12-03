@@ -5,7 +5,7 @@
      
       <span style="clear:both"></span>
       <ul id="nav-mobile" class="hide-on-med-and-down">
-         <li><router-link to="/section01">Introduction</router-link></li>
+        <li><router-link to="/section01">Introduction</router-link></li>
         <li><router-link to="/section01/page01">Page 1</router-link></li>
         <li><router-link to="/section01/page02">Page 2</router-link></li>
         <li><router-link to="/section01/page03">Page 3</router-link></li>
@@ -43,7 +43,7 @@ export default {
 
 nav ul a {
     font-weight: 700;
-    font-size: 1.3rem !important;
+    font-size: .9rem !important;
     text-transform: uppercase;
     
 }

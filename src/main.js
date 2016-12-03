@@ -1,5 +1,7 @@
 require('./bootstrap.js');
 
+
+
 import Vue from 'vue'
 
 
@@ -12,6 +14,8 @@ const router = new VueRouter({
     base: __dirname,
     routes: routes
 })
+
+
 
 
 // https://github.com/marcosmoura/vue-material

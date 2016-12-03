@@ -33,14 +33,3 @@ window._ = window.lodash = lodash;
  * http://http://fontawesome.io/
  */
 require('font-awesome/less/font-awesome.less');
-
-/* ============
- * Milligram minimal layout
- * ============
- *
- *
- *
- * https://milligram.github.io/
- */
-
-require('milligram/dist/milligram.min.css');

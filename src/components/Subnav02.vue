@@ -43,7 +43,7 @@ export default {
 
 nav ul a {
     font-weight: 700;
-    font-size: 1.3rem !important;
+    font-size: .9rem !important;
     text-transform: uppercase;
     
 }
