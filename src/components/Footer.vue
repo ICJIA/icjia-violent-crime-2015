@@ -29,7 +29,8 @@
             displayLastBuild() {
                 $.getJSON("./static/timestamp.json", function(data, error) {
                     var lastBuild = document.querySelector("#lastBuild");
-                    let timestamp = data.MMM + '-' + data.dd + '-' + data.yyyy + '   ' + data.hh + ':' + data.mm + ':' + data.ss
+                    console.log(data)
+                    let timestamp = data.www + ' ' + data.MMM + '-' + data.dd + '-' + data.yyyy + '   ' + data.HH + ':' + data.mm + ':' + data.ss
                     lastBuild.innerText = "Last build: " + timestamp
                     console.info('Timestamp fetch: ', error)
                 })
