@@ -1,0 +1,69 @@
+<template>
+
+     <footer class="page-footer grey darken-3">
+          
+          <div class="footer-copyright">
+            <div class="container">
+            <span id="lastBuild"></span>
+            <a class="grey-text text-lighten-4 right" href="https://github.com/cschweda/icjia-violent-crime-2017" id="githubSource">
+            <i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;View on Github</a>
+            </div>
+          </div>
+        </footer>
+
+</template>
+
+<script>
+    export default {
+        name: 'myFooter',
+        data() {
+            return {
+
+            }
+        },
+        mounted: function() {
+            this.displayLastBuild()
+
+        },
+        methods: {
+            displayLastBuild() {
+                $.getJSON("./static/timestamp.json", function(data, error) {
+                    var lastBuild = document.querySelector("#lastBuild");
+                    let timestamp = data.MMM + '-' + data.dd + '-' + data.yyyy + '   ' + data.hh + ':' + data.mm + ':' + data.ss
+                    lastBuild.innerText = "Last build: " + timestamp
+                    console.info('Timestamp fetch: ', error)
+                })
+
+
+            }
+        }
+    }
+</script>
+
+<style>
+    #lastBuild,
+    #githubSource {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    
+    #lastBuild {
+        color: #aaa
+    }
+    
+    #githubSource {
+        font-weight: 700;
+        font-size: 14px;
+    }
+    
+    a#githubSource {
+        color: #aaa !important
+    }
+    
+    a:hover#githubSource {
+        color: #eee !important;
+        text-decoration: none;
+    }
+</style>

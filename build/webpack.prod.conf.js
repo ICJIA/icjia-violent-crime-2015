@@ -42,7 +42,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         }),
 
         new TimestampWebpackPlugin({
-            path: path.join(__dirname, '../src'),
+            path: path.join(__dirname, '../static'),
             // default output is timestamp.json
             filename: 'timestamp.json'
         }),
@@ -68,9 +68,7 @@ var webpackConfig = merge(baseWebpackConfig, {
             { from: '.htaccess', to: './' },
         ]),
 
-        new CopyWebpackPlugin([
-            { from: './src/timestamp.json', to: './' },
-        ]),
+
 
         // Required for Netlify deployment
         new CopyWebpackPlugin([

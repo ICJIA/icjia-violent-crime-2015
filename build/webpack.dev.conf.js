@@ -25,7 +25,7 @@ module.exports = merge(baseWebpackConfig, {
         }),
 
         new TimestampWebpackPlugin({
-            path: path.join(__dirname, '../src'),
+            path: path.join(__dirname, '../static'),
             // default output is timestamp.json
             filename: 'timestamp.json'
         }),
