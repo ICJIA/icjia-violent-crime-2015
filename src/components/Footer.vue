@@ -1,11 +1,12 @@
 <template>
 
-     <footer class="page-footer grey darken-3">
+     <footer class="page-footer white">
           
           <div class="footer-copyright">
             <div class="container">
+            <div style="text-align: center">
             <span id="lastBuild"></span>
-            <a class="grey-text text-lighten-4 right" href="https://github.com/cschweda/icjia-violent-crime-2017" id="githubSource">
+            <a class="grey-text text-darken-4" href="https://github.com/cschweda/icjia-violent-crime-2017" id="githubSource">
             <i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;View on Github</a>
             </div>
           </div>
@@ -27,13 +28,13 @@
         },
         methods: {
             displayLastBuild() {
-                $.getJSON("./static/timestamp.json", function(data, error) {
-                    var lastBuild = document.querySelector("#lastBuild");
-                    console.log('Timestamp: ', data)
-                    let timestamp = data.www + ' ' + data.MMM + '-' + data.dd + '-' + data.yyyy + '   ' + data.HH + ':' + data.mm + ':' + data.ss
-                    lastBuild.innerText = "Last build: " + timestamp
-                    console.info('Timestamp fetch: ', error)
-                })
+                // $.getJSON("static/timestamp.json", function(data, error) {
+                //     var lastBuild = document.querySelector("#lastBuild");
+                //     console.log('Timestamp: ', data)
+                //     let timestamp = data.www + ' ' + data.MMM + '-' + data.dd + '-' + data.yyyy + '   ' + data.HH + ':' + data.mm + ':' + data.ss
+                //     lastBuild.innerText = "Last build: " + timestamp
+                //     console.info('Timestamp fetch: ', error)
+                // })
 
 
             }
@@ -46,7 +47,7 @@
     #githubSource {
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 10px;
         padding-bottom: 5px;
     }
     
@@ -56,7 +57,7 @@
     
     #githubSource {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 10px;
     }
     
     a#githubSource {

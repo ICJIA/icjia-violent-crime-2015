@@ -2,6 +2,7 @@
   <div id="app">
     <header>
     <navbar></navbar>
+   
     </header>
     
 
@@ -30,10 +31,11 @@
     export default {
         name: 'app',
         components: {
-
+            
             Navbar,
             MyFooter
-        }
+        },
+
     }
 </script>
 

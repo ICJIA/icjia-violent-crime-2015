@@ -23,15 +23,23 @@
   </nav>
 </div>
 
-  <div v-if="subNav === 'section01'">
-    <subnav01></subnav01>
-  </div>
+<nav>
+    <div class="nav-wrapper grey darken-4">
+     
+      <span style="clear:both"></span>
+      <ul id="nav-mobile" class="hide-on-med-and-down right">
+        <li v-for="item in menuArray">
+        <router-link :to="item.path">{{item.name}}</router-link>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-  <div v-if="subNav === 'section02'">
-    <subnav02></subnav02>
-  </div>
 
-  
+
+
+
+
 
   <md-sidenav id="mySideNav" class="md-left" ref="leftSidenav" @open="open('Left')" @close="close('Left')">
   <md-toolbar>
@@ -61,8 +69,10 @@
 
 </div>
 
-  <md-button class="md-raised md-accent" @click="closeLeftSidenav">Close</md-button>
+<md-button class="md-raised md-accent" @click="closeLeftSidenav">Close</md-button>
 </md-sidenav>
+
+
 <div style="clear: both"></div>
 
 
@@ -75,58 +85,93 @@
 
 <script>
 
+import routes from '../routes.js'
 
 
-import Subnav01 from './Subnav01.vue'
-import Subnav02 from './Subnav02.vue'
 export default {
-  components: {
-    
-    Subnav01,
-    Subnav02
-  },
-  mounted: function () {
-     this.displayPageTitle()
-    
-  },
-  updated: function() {
-    this.displayPageTitle()
-  },
-  data: function () {
-    return {
-      title: null,
-      subNav: null
+    components: {
+
+
+    },
+    created: function() {
+        this.setSegment();
+        this.displayPageTitle()
+        this.initSubnav()
+
+    },
+    watch: {
+        '$route': 'updateSubnav'
+    },
+    updated: function() {
+
+    },
+    data: function() {
+        return {
+            title: null,
+            subNav: null,
+            segment: null,
+            menuArray: null
+        }
+    },
+    methods: {
+        toggleLeftSidenav() {
+            this.$refs.leftSidenav.toggle();
+        },
+
+        closeLeftSidenav() {
+            this.$refs.leftSidenav.close();
+        },
+        open(ref) {
+            console.log('Opened: ' + ref);
+        },
+        close(ref) {
+            console.log('Closed: ' + ref);
+        },
+
+        setSegment() {
+            var newURL = window.location.protocol + "://" + window.location.host + "/" + window.location.pathname;
+            var pathArray = window.location.pathname.split('/');
+            this.segment = '/' + pathArray[1];
+
+        },
+
+        initSubnav() {
+            // add quick 'left' method to String
+            String.prototype.left = function(n) {
+                return this.substring(0, n);
+            }
+            this.makeMenu()
+        },
+
+        makeMenu() {
+            let menu = [];
+            var seg = this.segment
+            _.forOwn(routes, function(value, key) {
+                if (value.path.left(seg.length) === seg) {
+                    let obj = {}
+                        // remove section identifiers
+                    obj.name = value.name.substring(2)
+                    obj.path = value.path
+                    menu.push(obj)
+                }
+            });
+            this.menuArray = menu
+        },
+
+        updateSubnav() {
+            this.setSegment();
+            this.displayPageTitle();
+            this.initSubnav()
+
+        },
+
+        displayPageTitle() {
+
+            this.title = 'ICJIA Violent Crime Data Project 2017 / ' + this.segment.slice(1)
+
+
+        }
     }
-  },
-  methods: {
-    toggleLeftSidenav() {
-      this.$refs.leftSidenav.toggle();
-    },
-  
-    closeLeftSidenav() {
-      this.$refs.leftSidenav.close();
-    },
-    open(ref) {
-      console.log('Opened: ' + ref);
-    },
-    close(ref) {
-      console.log('Closed: ' + ref);
-    },
-
-    displayPageTitle () {
-
-      console.log('Route: ',this.$route)
-      var newURL = window.location.protocol + "://" + window.location.host + "/" + window.location.pathname;
-      var pathArray = window.location.pathname.split( '/' );
-      
-      this.subNav = pathArray[1];
-      console.log('Subnav',this.subNav);
-      this.title = 'ICJIA Violent Crime 2017 / ' + pathArray[1];
-
-
-
-    }
-  }
 };
 </script>
 
@@ -137,11 +182,11 @@ export default {
 }
 
 ul.centered {
-   transform: translateX(-15%);
-  webkit-transform: translateX(15%);
+   transform: translateX(33%);
+  webkit-transform: translateX(-33%);
 }
 
-ul.centered li {}
+ul.centered li {text-transform: uppercase}
 
 
 </style>
