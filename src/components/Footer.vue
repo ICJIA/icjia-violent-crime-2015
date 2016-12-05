@@ -65,7 +65,7 @@
     }
     
     a:hover#githubSource {
-        color: #eee !important;
+        color: #444 !important;
         text-decoration: none;
     }
 </style>
