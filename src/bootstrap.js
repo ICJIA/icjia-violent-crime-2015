@@ -33,3 +33,6 @@ window._ = window.lodash = lodash;
  * http://http://fontawesome.io/
  */
 require('font-awesome/less/font-awesome.less');
+
+
+require('./directives/placeholders');

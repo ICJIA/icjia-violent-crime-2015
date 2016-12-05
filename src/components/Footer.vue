@@ -57,7 +57,7 @@
     
     #githubSource {
         font-weight: 700;
-        font-size: 10px;
+        font-size: 12px;
     }
     
     a#githubSource {

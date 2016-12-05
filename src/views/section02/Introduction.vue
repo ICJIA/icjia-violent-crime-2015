@@ -8,45 +8,26 @@
   <div class="container">
   <div class="row">
   <div class="coluumn">
-  <h2>Introduction - Section 02</h2>
+  <div class="center">
+  <h3 class="light">Introduction - Section 02</h3>
   </div>
   </div>
+  </div>
 
-    <div class="row">
-     
-      <div class="col s6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui leo. Quisque consequat dolor sem, vel sollicitudin risus venenatis id. Aliquam sit amet gravida urna. Suspendisse tempor dui eu libero fringilla, eget molestie arcu sodales. Vivamus porta eros a ipsum finibus, maximus auctor nisl ornare. Nunc pharetra volutpat dictum. In hac habitasse platea dictumst. Curabitur urna eros, elementum sit amet pretium nec, bibendum at neque. Duis est orci, commodo eget enim vitae, dictum condimentum elit. Mauris tempus venenatis nunc, vitae luctus tortor feugiat sollicitudin.
-      </div>
-      <div class="col s6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui leo. Quisque consequat dolor sem, vel sollicitudin risus venenatis id. Aliquam sit amet gravida urna. Suspendisse tempor dui eu libero fringilla, eget molestie arcu sodales. Vivamus porta eros a ipsum finibus, maximus auctor nisl ornare. Nunc pharetra volutpat dictum. In hac habitasse platea dictumst. Curabitur urna eros, elementum sit amet pretium nec, bibendum at neque. Duis est orci, commodo eget enim vitae, dictum condimentum elit. Mauris tempus venenatis nunc, vitae luctus tortor feugiat sollicitudin.
-      </div>
-
-      
-</div>
-
+   
  <div class="row">
      
-      <div class="col s6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui leo. Quisque consequat dolor sem, vel sollicitudin risus venenatis id. Aliquam sit amet gravida urna. Suspendisse tempor dui eu libero fringilla, eget molestie arcu sodales. Vivamus porta eros a ipsum finibus, maximus auctor nisl ornare. Nunc pharetra volutpat dictum. In hac habitasse platea dictumst. Curabitur urna eros, elementum sit amet pretium nec, bibendum at neque. Duis est orci, commodo eget enim vitae, dictum condimentum elit. Mauris tempus venenatis nunc, vitae luctus tortor feugiat sollicitudin.
-      </div>
-      <div class="col s6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui leo. Quisque consequat dolor sem, vel sollicitudin risus venenatis id. Aliquam sit amet gravida urna. Suspendisse tempor dui eu libero fringilla, eget molestie arcu sodales. Vivamus porta eros a ipsum finibus, maximus auctor nisl ornare. Nunc pharetra volutpat dictum. In hac habitasse platea dictumst. Curabitur urna eros, elementum sit amet pretium nec, bibendum at neque. Duis est orci, commodo eget enim vitae, dictum condimentum elit. Mauris tempus venenatis nunc, vitae luctus tortor feugiat sollicitudin.
-      </div>
-
-      
-</div>
-
- <div class="row">
-     
-      <div class="col s6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui leo. Quisque consequat dolor sem, vel sollicitudin risus venenatis id. Aliquam sit amet gravida urna. Suspendisse tempor dui eu libero fringilla, eget molestie arcu sodales. Vivamus porta eros a ipsum finibus, maximus auctor nisl ornare. Nunc pharetra volutpat dictum. In hac habitasse platea dictumst. Curabitur urna eros, elementum sit amet pretium nec, bibendum at neque. Duis est orci, commodo eget enim vitae, dictum condimentum elit. Mauris tempus venenatis nunc, vitae luctus tortor feugiat sollicitudin.
-      </div>
-      <div class="col s6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui leo. Quisque consequat dolor sem, vel sollicitudin risus venenatis id. Aliquam sit amet gravida urna. Suspendisse tempor dui eu libero fringilla, eget molestie arcu sodales. Vivamus porta eros a ipsum finibus, maximus auctor nisl ornare. Nunc pharetra volutpat dictum. In hac habitasse platea dictumst. Curabitur urna eros, elementum sit amet pretium nec, bibendum at neque. Duis est orci, commodo eget enim vitae, dictum condimentum elit. Mauris tempus venenatis nunc, vitae luctus tortor feugiat sollicitudin.
+      <div class="col s12">
+       <div v-phtext:1p7s></div>
+       <img src="http://placehold.it/450x350" class="image left">
+       <div v-phtext:4p7s></div>
+       
       </div>
 
       
 </div>
+
+ 
     </div>
 
 
@@ -63,7 +44,7 @@
         name: 's02p00',
         data() {
             return {
-                msg: 'Welcome to Your Vue.js App'
+               
             }
         }
     }
@@ -89,4 +70,6 @@
     a {
         color: #42b983;
     }
+
+
 </style>

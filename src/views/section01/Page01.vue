@@ -1,6 +1,6 @@
 <template>
 
-  <div class="s01p01" style="margin-top: 50px">
+  <div class="app" style="margin-top: 50px">
 
   
 
@@ -8,20 +8,16 @@
   <div class="container">
   <div class="row">
   <div class="col s12">
-  <h2>Section 01 - Page 1</h2>
+  <div class="center">
+  <h3 class="light">{{pageTitle}}</h3>
+  </div>
   </div>
   </div>
 
     <div class="row">
      
-      <div class="col s6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui leo. Quisque consequat dolor sem, vel sollicitudin risus venenatis id. Aliquam sit amet gravida urna. Suspendisse tempor dui eu libero fringilla, eget molestie arcu sodales. Vivamus porta eros a ipsum finibus, maximus auctor nisl ornare. Nunc pharetra volutpat dictum. In hac habitasse platea dictumst. Curabitur urna eros, elementum sit amet pretium nec, bibendum at neque. Duis est orci, commodo eget enim vitae, dictum condimentum elit. Mauris tempus venenatis nunc, vitae luctus tortor feugiat sollicitudin.
-      </div>
-      <div class="col s6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui leo. Quisque consequat dolor sem, vel sollicitudin risus venenatis id. Aliquam sit amet gravida urna. Suspendisse tempor dui eu libero fringilla, eget molestie arcu sodales. Vivamus porta eros a ipsum finibus, maximus auctor nisl ornare. Nunc pharetra volutpat dictum. In hac habitasse platea dictumst. Curabitur urna eros, elementum sit amet pretium nec, bibendum at neque. Duis est orci, commodo eget enim vitae, dictum condimentum elit. Mauris tempus venenatis nunc, vitae luctus tortor feugiat sollicitudin.
-      </div>
+       <div v-phtext:3p4s></div>
 
-      
 </div>
 
 
@@ -36,13 +32,8 @@
 
  <div class="row">
      
-      <div class="col s6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui leo. Quisque consequat dolor sem, vel sollicitudin risus venenatis id. Aliquam sit amet gravida urna. Suspendisse tempor dui eu libero fringilla, eget molestie arcu sodales. Vivamus porta eros a ipsum finibus, maximus auctor nisl ornare. Nunc pharetra volutpat dictum. In hac habitasse platea dictumst. Curabitur urna eros, elementum sit amet pretium nec, bibendum at neque. Duis est orci, commodo eget enim vitae, dictum condimentum elit. Mauris tempus venenatis nunc, vitae luctus tortor feugiat sollicitudin.
-      </div>
-      <div class="col s6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui leo. Quisque consequat dolor sem, vel sollicitudin risus venenatis id. Aliquam sit amet gravida urna. Suspendisse tempor dui eu libero fringilla, eget molestie arcu sodales. Vivamus porta eros a ipsum finibus, maximus auctor nisl ornare. Nunc pharetra volutpat dictum. In hac habitasse platea dictumst. Curabitur urna eros, elementum sit amet pretium nec, bibendum at neque. Duis est orci, commodo eget enim vitae, dictum condimentum elit. Mauris tempus venenatis nunc, vitae luctus tortor feugiat sollicitudin.
-      </div>
-
+      
+<div v-phtext:1p7s></div>
       
 </div>
 
@@ -57,12 +48,10 @@
 
  <div class="row">
      
-      <div class="col s6">
+      <div class="col s12">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui leo. Quisque consequat dolor sem, vel sollicitudin risus venenatis id. Aliquam sit amet gravida urna. Suspendisse tempor dui eu libero fringilla, eget molestie arcu sodales. Vivamus porta eros a ipsum finibus, maximus auctor nisl ornare. Nunc pharetra volutpat dictum. In hac habitasse platea dictumst. Curabitur urna eros, elementum sit amet pretium nec, bibendum at neque. Duis est orci, commodo eget enim vitae, dictum condimentum elit. Mauris tempus venenatis nunc, vitae luctus tortor feugiat sollicitudin.
       </div>
-      <div class="col s6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui leo. Quisque consequat dolor sem, vel sollicitudin risus venenatis id. Aliquam sit amet gravida urna. Suspendisse tempor dui eu libero fringilla, eget molestie arcu sodales. Vivamus porta eros a ipsum finibus, maximus auctor nisl ornare. Nunc pharetra volutpat dictum. In hac habitasse platea dictumst. Curabitur urna eros, elementum sit amet pretium nec, bibendum at neque. Duis est orci, commodo eget enim vitae, dictum condimentum elit. Mauris tempus venenatis nunc, vitae luctus tortor feugiat sollicitudin.
-      </div>
+      
 
       
 </div>
@@ -91,14 +80,14 @@
     } from '../../charts/section01.js'
 
     export default {
-        name: 's01p01',
+        name: 'S01P01',
         mounted: function() {
             Highcharts.chart('container1', hc1);
             Highcharts.chart('container2', hc2);
         },
         data() {
             return {
-                msg: 'Welcome to Your Vue.js App'
+                pageTitle: 'Section 01 - Page 01'
             }
         }
     }
@@ -125,12 +114,5 @@
         color: #42b983;
     }
     
-    .hc {
-        margin-top: 50px;
-        margin-bottom: 150px
-    }
-    
-    .hc.last {
-        margin-bottom: 50px
-    }
+   
 </style>

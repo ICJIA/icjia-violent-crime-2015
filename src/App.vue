@@ -75,6 +75,9 @@
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        color: #555;
     }
     
     #main {
@@ -85,4 +88,20 @@
         margin-top: 20px;
         padding-top: 0px;
     }
+
+     .hc {
+        margin-top: 50px;
+        margin-bottom: 50px
+    }
+    
+    .hc.last {
+        margin-bottom: 50px
+    }
+
+    .image {margin: 0; padding: 0}
+    .image.left {float: left; padding-right: 20px; margin-bottom: 10px;}
+
+    .image.right {float: right; padding-left: 20px;}
+
+h2.light, h3.light, h4.light {font-weight: 300; border-bottom: 1px solid #eee; padding-bottom: 12px}
 </style>

@@ -27,7 +27,7 @@
     <div class="nav-wrapper grey darken-4">
      
       <span style="clear:both"></span>
-      <ul id="nav-mobile" class="hide-on-med-and-down right">
+      <ul id="nav-mobile" class="hide-on-med-and-down right subnav">
         <li v-for="item in menuArray">
         <router-link :to="item.path">{{item.name}}</router-link>
         </li>
@@ -47,33 +47,37 @@
       <h3 class="md-title">ICJIA Violent Crime 2017</h3>
     </div>
   </md-toolbar>
-  <div style="padding: 20px">
-  <ul>
-  <div @click="closeLeftSidenav">
+  <div style="padding: 50px; text-align: center">
+  <ul id="sideNavLink">
+  <li @click="closeLeftSidenav" >
     <router-link to="/section01">Section 01</router-link>
-  <div>
+  </li>
 
-  <div @click="closeLeftSidenav">
+  <li @click="closeLeftSidenav" >
     <router-link to="/section02">Section 02</router-link>
-  <div>
+  </li>
 
-  <div @click="closeLeftSidenav">
-    <router-link to="/section03">Section 03</router-link>
-  <div>
+  <li @click="closeLeftSidenav" >
+    <router-link to="/section01">Section 03</router-link>
+  </li>
 
-  <div @click="closeLeftSidenav">
-    <router-link to="/section04">Section 04</router-link>
-  <div>
+  <li @click="closeLeftSidenav" >
+    <router-link to="/section01">Section 04</router-link>
+  </li>
   
   </ul>
 
+
 </div>
 
+
+<div style="text-align: center; margin-top: -20px;">
 <md-button class="md-raised md-accent" @click="closeLeftSidenav">Close</md-button>
 </md-sidenav>
+</div>
 
 
-<div style="clear: both"></div>
+
 
 
 
@@ -149,7 +153,7 @@ export default {
             _.forOwn(routes, function(value, key) {
                 if (value.path.left(seg.length) === seg) {
                     let obj = {}
-                        // remove section identifiers
+                    // remove section identifiers from route name
                     obj.name = value.name.substring(2)
                     obj.path = value.path
                     menu.push(obj)
@@ -186,7 +190,8 @@ ul.centered {
   webkit-transform: translateX(-33%);
 }
 
-ul.centered li {text-transform: uppercase}
+ul.subnav li {text-transform: uppercase; font-weight: 700;}
 
+ul#sideNavLink li {margin-bottom: 15px; font-weight: 700; text-transform: uppercase;}
 
 </style>
