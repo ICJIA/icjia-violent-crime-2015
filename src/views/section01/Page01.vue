@@ -99,10 +99,11 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-    h1,
-    h2 {
-        font-weight: normal;
-    }
+   h1, h2, h3, h4, h5 {
+    font-family: "Oswald",sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
     
     ul {
         list-style-type: none;

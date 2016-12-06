@@ -40,6 +40,8 @@
 </script>
 
 <style>
+
+
     .fade-enter-active,
     .fade-leave-active {
         transition: opacity .3s
@@ -104,5 +106,6 @@
 
     .image.right {float: right; padding-left: 20px;}
 
-h2.light, h3.light, h4.light {font-weight: 300; border-bottom: 1px solid #eee; padding-bottom: 12px}
+h2.light, h3.light, h4.light {font-weight: 700; 
+border-bottom: 1px solid #eee; padding-bottom: 12px; color: #444;}
 </style>
