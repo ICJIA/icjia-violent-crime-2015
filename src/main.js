@@ -27,6 +27,11 @@ Vue.material.theme.register('default', {
     accent: 'blue'
 })
 
+Vue.material.theme.register('white', {
+    primary: 'white',
+    accent: 'blue'
+})
+
 
 import App from './App'
 

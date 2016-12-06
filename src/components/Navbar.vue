@@ -42,33 +42,18 @@
 
 
   <md-sidenav id="mySideNav" class="md-left main-sidebar md-sidenav md-fixed" ref="leftSidenav" @open="open('Left')" @close="close('Left')">
-  <md-toolbar>
-    <div class="md-toolbar-container">
+  
+    <!--
+        <md-toolbar><div class="md-toolbar-container">
       <h3 class="md-title">ICJIA Violent Crime 2017</h3>
     </div>
-  </md-toolbar>
-  <!--<div style="padding: 50px; text-align: center">
-  <ul id="sideNavLink">
-  <li @click="closeLeftSidenav" >
-    <router-link to="/section01">Section 01</router-link>
-  </li>
-
-  <li @click="closeLeftSidenav" >
-    <router-link to="/section02">Section 02</router-link>
-  </li>
-
-  <li @click="closeLeftSidenav" >
-    <router-link to="/section01">Section 03</router-link>
-  </li>
-
-  <li @click="closeLeftSidenav" >
-    <router-link to="/section01">Section 04</router-link>
-  </li>
+     </md-toolbar>-->
+    <div class="md-toolbar vue-material-logo md-theme-white" style="align-items: center;
+  justify-content: center;">
+    <a href="#/" class="router-link-active">
+    <img src="../assets/icjia.png" width="150" alt="Vue"></a></div>
+ 
   
-  </ul>
-
-
-</div>-->
 <div v-md-theme="'default'">
 
 	<div class="phone-viewport">
@@ -251,6 +236,24 @@ ul#sideNavLink li {margin-bottom: 15px; font-weight: 700; text-transform: upperc
 .main-sidebar.md-sidenav .main-sidebar-links {
     overflow: auto;
 }
-
+.md-list-item-holder span {font-weight: 700; color: #333; font-size: 16px}
 .md-inset {margin-left: -30px}
+
+.main-sidebar.md-sidenav .vue-material-logo {
+    font-size: 24px;
+}
+.main-sidebar.md-sidenav .md-toolbar {
+    min-height: 172px;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.md-theme-white .md-toolbar, .md-theme-white.md-toolbar {
+    background-color: #fff;
+    color: rgba(0, 0, 0, .87);
+}
+
+.main-sidebar.md-sidenav .md-toolbar {
+    min-height: 150px;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+}
 </style>
