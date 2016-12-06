@@ -15,7 +15,7 @@
       </md-button></li>
       </ul>
       <ul class="left" style="margin-left: 5px;">
-        <li style="font-weight: 300; font-size: 22px; text-transform: uppercase" >
+        <li style="" class="siteTitle" >
         {{title}}
         </li>
       </ul>
@@ -27,8 +27,8 @@
     <div class="nav-wrapper grey darken-4">
      
       <span style="clear:both"></span>
-      <ul id="nav-mobile" class="hide-on-med-and-down right subnav">
-        <li v-for="item in menuArray">
+      <ul id="nav-mobile" class="hide-on-med-and-down centered subnav">
+        <li v-for="item in menuArray" style="">
         <router-link :to="item.path">{{item.name}}</router-link>
         </li>
       </ul>
@@ -272,17 +272,21 @@ export default {
 </script>
 
 <style>
+
+.siteTitle {
+    font-weight: 900; font-size: 1.1rem; text-transform: uppercase
+}
 .md-theme-default .md-sidenav .md-sidenav-content, .md-theme-default.md-sidenav .md-sidenav-content {
     z-index: 10000 !important;
     position: fixed !important;
 }
 
 ul.centered {
-   transform: translateX(33%);
-  webkit-transform: translateX(-33%);
+   transform: translateX(28%);
+  webkit-transform: translateX(-28%);
 }
 
-ul.subnav li {text-transform: uppercase; font-weight: 700;}
+ul.subnav li {text-transform: uppercase; font-weight: 400;}
 
 ul#sideNavLink li {margin-bottom: 15px; font-weight: 700; text-transform: uppercase;}
 
