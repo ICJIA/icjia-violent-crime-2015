@@ -14,7 +14,7 @@
           <md-icon>menu</md-icon>
       </md-button></li>
       </ul>
-      <ul class="left" style="margin-left: 5px;">
+      <ul class="center-align" style="margin-left: 5px;">
         <li style="" class="siteTitle" >
         {{title}}
         </li>
@@ -27,11 +27,13 @@
     <div class="nav-wrapper grey darken-4">
      
       <span style="clear:both"></span>
-      <ul id="nav-mobile" class="hide-on-med-and-down centered subnav">
+      
+      <ul id="nav-mobile" class="hide-on-med-and-down subnav right">
         <li v-for="item in menuArray" style="">
         <router-link :to="item.path">{{item.name}}</router-link>
         </li>
       </ul>
+     
     </div>
   </nav>
 

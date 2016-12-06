@@ -12,10 +12,9 @@
     <!-- .container is main centered wrapper -->
   <div class="container">
   <div class="row">
-  <div class="coluumn">
-  
-  <h1 style="color: #666">
-  Tortor dignissim convallis aenean et tortor faucibus ornare suspendisse sed nisi lacus
+    <div class="col s12">
+        <h1 style="color: #666">
+            Tortor dignissim convallis aenean et tortor faucibus ornare suspendisse sed nisi lacus
 </h1>
 
   
@@ -23,24 +22,21 @@
   </div>
 
    
- <div class="row">
-     
-      <div class="col s12">
-       <div v-phtext:1p7s></div>
-       <img src="http://placehold.it/450x350" class="image left">
-       <div v-phtext:4p7s></div>
-       
-      </div>
-
-      
+ <div class="row">  
+    <div class="col s12">
+        <div v-phtext:1p7s></div>
+        <img src="http://placehold.it/450x350" class="image left">
+        <div v-phtext:4p7s></div>   
+    </div>     
 </div>
+
+
+<div class="center-align">
+    
+  </div>
 
  
     </div>
-
-
-
-  </div>
 
 
 
