@@ -76,7 +76,7 @@
         -ms-flex-direction: column;
         flex-direction: column;
         font-family: 'Lato', sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         color: #555;
     }
     
@@ -91,7 +91,8 @@
 
      .hc {
         margin-top: 50px;
-        margin-bottom: 50px
+        margin-bottom: 50px;
+        padding: 30px 0px 30px 0px;
     }
     
     .hc.last {

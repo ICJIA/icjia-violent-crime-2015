@@ -2,15 +2,23 @@
 
   <div class="section1" style="margin-top: 50px">
 
+  <div class="hero" style="margin-top: -50px">
+   <div class="intro">
+   </div>
+ </div>
+
   
 
     <!-- .container is main centered wrapper -->
   <div class="container">
   <div class="row">
   <div class="coluumn">
-  <div class="center">
-  <h3 class="light">Introduction - Section 01</h3>
-  </div>
+  
+  <h1 style="color: #666">
+  Tortor dignissim convallis aenean et tortor faucibus ornare suspendisse sed nisi lacus
+</h1>
+
+  
   </div>
   </div>
 
@@ -51,11 +59,12 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-    h1,
-    h2 {
-        font-weight: normal;
-    }
+<style scoped>
+    h1, h2, h4 {
+    font-family: "Oswald",sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
     
     ul {
         list-style-type: none;
@@ -70,6 +79,14 @@
     a {
         color: #42b983;
     }
+
+    .hero {
+    height: 650px;
+    background: url(../../assets/hero2.jpg) no-repeat center center;
+    background-size: cover;
+    margin-top: -31px;
+    margin-bottom: 2px;
+}
 
 
 </style>

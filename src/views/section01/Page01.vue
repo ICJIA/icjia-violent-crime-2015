@@ -25,7 +25,9 @@
 
 <div class="row">
 <div class="col s12">
-    <div id="container1" class="hc"></div>
+    <md-whiteframe md-elevation="2">
+    <div id="container1" class="hc" style=""></div>
+    </md-whiteframe>
   
 </div>
 </div>
@@ -40,7 +42,9 @@
 
 <div class="row">
 <div class="col s12">
+<md-whiteframe md-elevation="2">
     <div id="container2" class="hc"></div>
+    </md-whiteframe>
     
 </div>
 </div>
