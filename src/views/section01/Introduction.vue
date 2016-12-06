@@ -31,9 +31,11 @@
 </div>
 
 
-<div class="center-align">
+<div class="center-align" style="margin-top: 30px">
     
-  </div>
+    <router-link class="white-text text-darken-2 waves-effect waves-light btn  light-blue darken-4" to="/section01/page01">Get Started&nbsp;&raquo;</router-link>
+    
+     </div>
 
  
     </div>

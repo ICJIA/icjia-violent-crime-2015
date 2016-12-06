@@ -84,6 +84,7 @@
     } from '../../charts/section01.js'
 
     export default {
+        
         name: 'S01P01',
         mounted: function() {
             Highcharts.chart('container1', hc1);
