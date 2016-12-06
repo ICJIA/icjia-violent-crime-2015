@@ -14,7 +14,7 @@
           <md-icon>menu</md-icon>
       </md-button></li>
       </ul>
-      <ul class="center-align" style="margin-left: 5px;">
+      <ul class="center-align hide-on-med-and-down" style="margin-left: 5px;">
         <li style="" class="siteTitle" >
         {{title}}
         </li>
@@ -23,8 +23,8 @@
   </nav>
 </div>
 
-<nav>
-    <div class="nav-wrapper grey darken-4">
+<nav class="hide-on-med-and-down">
+    <div class="nav-wrapper grey darken-4 ">
      
       <span style="clear:both"></span>
       

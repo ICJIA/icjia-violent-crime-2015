@@ -25,7 +25,7 @@
  <div class="row">  
     <div class="col s12">
         <div v-phtext:1p7s></div>
-        <img src="http://placehold.it/450x350" class="image left">
+        <img src="http://placehold.it/450x350" class="image left hide-on-med-and-down">
         <div v-phtext:4p7s></div>   
     </div>     
 </div>
