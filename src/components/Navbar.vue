@@ -41,13 +41,13 @@
 
 
 
-  <md-sidenav id="mySideNav" class="md-left" ref="leftSidenav" @open="open('Left')" @close="close('Left')">
+  <md-sidenav id="mySideNav" class="md-left main-sidebar md-sidenav md-fixed" ref="leftSidenav" @open="open('Left')" @close="close('Left')">
   <md-toolbar>
     <div class="md-toolbar-container">
       <h3 class="md-title">ICJIA Violent Crime 2017</h3>
     </div>
   </md-toolbar>
-  <div style="padding: 50px; text-align: center">
+  <!--<div style="padding: 50px; text-align: center">
   <ul id="sideNavLink">
   <li @click="closeLeftSidenav" >
     <router-link to="/section01">Section 01</router-link>
@@ -68,10 +68,63 @@
   </ul>
 
 
+</div>-->
+<div v-md-theme="'default'">
+
+	<div class="phone-viewport">
+  <md-list>
+    <md-list-item>
+     
+      <span>Section 01</span>
+
+      <md-list-expand>
+        <md-list>
+            <md-list-item class="md-inset" @click="closeLeftSidenav">
+                <router-link to="/section01">Introduction</router-link>
+            </md-list-item>
+            <md-list-item class="md-inset" @click="closeLeftSidenav">
+                <router-link to="/section01/page01">Page 01</router-link>
+            </md-list-item>
+            <md-list-item class="md-inset" @click="closeLeftSidenav">
+                <router-link to="/section01/page02">Page 02</router-link>
+            </md-list-item>
+            <md-list-item class="md-inset" @click="closeLeftSidenav">
+                <router-link to="/section01/page03">Page 03</router-link>
+            </md-list-item>
+
+        </md-list>
+      </md-list-expand>
+    </md-list-item>
+
+    <md-list-item>
+      
+      <span>Section 02</span>
+
+      <md-list-expand>
+        <md-list>
+          <md-list-item class="md-inset" @click="closeLeftSidenav">
+                <router-link to="/section02">Introduction</router-link>
+            </md-list-item>
+            <md-list-item class="md-inset" @click="closeLeftSidenav">
+                <router-link to="/section02/page01">Page 01</router-link>
+            </md-list-item>
+            <md-list-item class="md-inset" @click="closeLeftSidenav">
+                <router-link to="/section02/page02">Page 02</router-link>
+            </md-list-item>
+            <md-list-item class="md-inset" @click="closeLeftSidenav">
+                <router-link to="/section02/page03">Page 03</router-link>
+            </md-list-item>
+
+        </md-list>
+    </md-list-item>
+
+    
+
+    
 </div>
 
-
-<div style="text-align: center; margin-top: -20px;">
+</div>
+<div style="text-align: center; margin-top: 20px;">
 <md-button class="md-raised md-accent" @click="closeLeftSidenav">Close</md-button>
 </md-sidenav>
 </div>
@@ -194,4 +247,10 @@ ul.subnav li {text-transform: uppercase; font-weight: 700;}
 
 ul#sideNavLink li {margin-bottom: 15px; font-weight: 700; text-transform: uppercase;}
 
+
+.main-sidebar.md-sidenav .main-sidebar-links {
+    overflow: auto;
+}
+
+.md-inset {margin-left: -30px}
 </style>

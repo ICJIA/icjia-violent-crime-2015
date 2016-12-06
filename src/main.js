@@ -1,6 +1,5 @@
 require('./bootstrap.js');
 
-require('./directives/placeholders');
 
 import Vue from 'vue'
 
