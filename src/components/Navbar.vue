@@ -21,7 +21,7 @@
             <li class="bold"><a class="collapsible-header  waves-effect waves-light">Section 01</a>
               <div class="collapsible-body">
                 <ul>
-                  <li ><router-link to="/section01">Introduction</router-link></li>
+                  <li ><router-link to="/section01" >Introduction</router-link></li>
                   <li ><router-link to="/section01/page01">Page 01</router-link></li>
                   <li > <router-link to="/section01/page02">Page 02</router-link></li>
                   <li > <router-link to="/section01/page03">Page 03</router-link></li>
@@ -74,12 +74,13 @@
 <span style="clear: both"></span>
 <nav>
     <div class="nav-wrapper grey darken-4">
-     
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-       <li v-for="item in menuArray" style="">
-        <router-link :to="item.path">{{item.name}}</router-link>
+     <div style="margin-right: 30px;">
+      <ul id="nav-mobile" class="right subnav hide-on-med-and-down">
+       <li v-for="item in menuArray" @click="clickLink">
+        <router-link :to="item.path"  tag="a" class="test">{{item.name}}</router-link>
         </li>
       </ul>
+      </div>
     </div>
   </nav>
  
@@ -104,10 +105,14 @@ export default {
         '$route': 'updateSubnav'
     },
   methods: {
+    clickLink (e) {
+      console.log(e)
+    },
 setSegment() {
             var newURL = window.location.protocol + "://" + window.location.host + "/" + window.location.pathname;
             var pathArray = window.location.pathname.split('/');
             this.segment = '/' + pathArray[1];
+            this.page = pathArray[2];
 
         },
 
@@ -154,14 +159,15 @@ setSegment() {
             title: null,
             subNav: null,
             segment: null,
-            menuArray: null
+            menuArray: null,
+            page: null
         }
   }
 }
 </script>
 
 
-<style>
+<style scoped>
 .brand-logo {margin-left: 20px}
 ul.side-nav li.logo {
   height: 120px;
@@ -173,6 +179,16 @@ ul.side-nav li.logo {
     background: #ccc;
 }
 
-#pageTitle {margin-left: 70px; text-transform: uppercase;}
 
+#pageTitle {margin-left: 70px; text-transform: uppercase;}
+ul.subnav li {text-transform: uppercase; font-weight: 300}
+
+a.test {color: #29b6f6; font-weight: 400}
+a.test:hover {color: #aaa; font-weight: 400}
+
+.side-nav .collapsible-header, .side-nav.fixed .collapsible-header {
+    
+    font-weight: 900;
+    text-transform: uppercase;
+}
 </style>

@@ -47,6 +47,7 @@ module.exports = merge(baseWebpackConfig, {
             filename: config.build.index,
             template: 'index.ejs',
             inject: false,
+            date: new Date(),
             appMountId: 'app',
             minify: {
                 removeComments: false,
