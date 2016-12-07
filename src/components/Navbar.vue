@@ -16,6 +16,12 @@
 </div>
 </li>
 <li class="divider"></li>
+
+
+<li><div class="text-container"><p class="center-align" style="font-weight: 700;">Violent Crime in Illinois 2017</p><span v-phtext:1p3s></span></div></li>
+
+
+<li class="divider"></li>
             
     <ul class="collapsible collapsible-accordion">
             <li class="bold"><a class="collapsible-header  waves-effect waves-light">Section 01</a>
@@ -188,7 +194,9 @@ a.test:hover {color: #aaa; font-weight: 400}
 
 .side-nav .collapsible-header, .side-nav.fixed .collapsible-header {
     
-    font-weight: 900;
+    font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
 }
+.text-container {padding: 10px 20px 10px 20px; line-height: 20px}
 </style>

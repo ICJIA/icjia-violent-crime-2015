@@ -25,15 +25,17 @@
  <div class="row">  
     <div class="col s12">
         <div v-phtext:1p7s></div>
-        <img src="http://placehold.it/450x350" class="image left hide-on-med-and-down">
-        <div v-phtext:4p7s></div>   
+        <img src="http://placehold.it/350x250" class="image left hide-on-med-and-down ">
+        <div v-phtext:3p5s></div>   
     </div>     
 </div>
 
 
-<div class="center-align" style="margin-top: 30px">
+<div class="center-align" style="margin-top: 50px; margin-bottom: 50px;">
     
-    <router-link class="white-text text-darken-2 waves-effect waves-light btn  light-blue darken-4" to="/section01/page01">Get Started&nbsp;&raquo;</router-link>
+    <router-link class="white-text text-darken-3 waves-effect waves-light btn btn-large light-blue darken-4" to="/section01/page01" tag="a">
+    Get Started&nbsp;&raquo;
+    </router-link>
     
      </div>
 

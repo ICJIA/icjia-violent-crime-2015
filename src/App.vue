@@ -76,7 +76,7 @@ export default {
     
     
      .hc {
-        margin-top: 50px;
+        margin-top: 60px;
         margin-bottom: 50px;
         padding: 30px 0px 30px 0px;
     }
@@ -84,6 +84,8 @@ export default {
     .hc.last {
         margin-bottom: 50px
     }
+
+    .carousel {margin-top: 30px; margin-bottom: 50px}
 
     .image {margin: 0; padding: 0}
     .image.left {float: left; padding-right: 20px; margin-bottom: 10px;}

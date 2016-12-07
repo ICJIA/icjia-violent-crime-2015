@@ -26,7 +26,7 @@
 <div class="row">
 <div class="col s12">
    
-    <div id="container1" class="hc" style=""></div>
+    <div id="container1" class="hc z-depth-4" style=""></div>
     
   
 </div>
@@ -43,7 +43,27 @@
 <div class="row">
 <div class="col s12">
 
-    <div id="container2" class="hc"></div>
+<div class="carousel carousel-slider center z-depth-4" data-indicators="true">
+    
+    <div class="carousel-item red white-text" href="#one!">
+      <h2>First Panel</h2>
+      <p class="white-text">This is the first panel</p>
+    </div>
+    <div class="carousel-item amber white-text" href="#two!">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is the second panel</p>
+    </div>
+    <div class="carousel-item green white-text" href="#three!">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is the third panel</p>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is the fourth panel</p>
+    </div>
+  </div>
+
+   <!-- <div id="container2" class="hc"></div>-->
    
     
 </div>
@@ -88,7 +108,8 @@
         name: 'S01P01',
         mounted: function() {
             Highcharts.chart('container1', hc1);
-            Highcharts.chart('container2', hc2);
+            //Highcharts.chart('container2', hc2);
+            $('.carousel.carousel-slider').carousel({full_width: true});
         },
         data() {
             return {
