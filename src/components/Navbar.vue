@@ -43,7 +43,7 @@
                 
               </div>
             </li>
-            <li class="bold active"><a class="collapsible-header active waves-effect waves-light">Section 03</a>
+            <li class="bold active"><a class="collapsible-header waves-effect waves-light">Section 03</a>
               <div class="collapsible-body" style="display: block;">
                 <ul>
                   <li ><router-link to="/section02">Introduction</router-link></li>
