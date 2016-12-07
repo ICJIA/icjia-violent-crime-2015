@@ -10,6 +10,58 @@ var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlug
 let CopyWebpackPlugin = require('copy-webpack-plugin');
 var TimestampWebpackPlugin = require('timestamp-webpack-plugin');
 
+////////////// html-webpack vars ////////////////////////////////////////////////////
+let hwpTemplate = 'index.ejs';
+let hwpGoogleAnalytics = {
+    trackingId: 'UA-XXXX-XX',
+    pageViewOnLoad: true
+};
+let hwpMinify = {
+    removeComments: false,
+    collapseWhitespace: false,
+    removeAttributeQuotes: false
+        // more options:
+        // https://github.com/kangax/html-minifier#options-quick-reference
+};
+let hwpLinks = [
+    'https://fonts.googleapis.com/css?family=Roboto',
+    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css',
+    'https:////fonts.googleapis.com/icon?family=Material+Icons',
+    'https://fonts.googleapis.com/css?family=Oswald:300,400,700'
+];
+let hwpScripts = [
+    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js'
+];
+
+let hwpDevServer = 'http://localhost:8080';
+let hwpAppMountId = 'app';
+
+let PageGeneric = {
+    template: hwpTemplate,
+    title: '',
+    filename: '',
+    mobile: true,
+    chunks: [],
+    minify: hwpMinify,
+    googleAnalytics: hwpGoogleAnalytics,
+    appMountId: hwpAppMountId,
+    links: hwpLinks,
+    scripts: hwpScripts,
+    inject: false,
+}
+
+///// Individual page objects. Chunk names match entry names below.
+let hwpPageHome = Object.create(PageGeneric);
+hwpPageHome.title = 'Home';
+hwpPageHome.filename = 'index.html';
+hwpPageHome.chunks = ['app']
+hwpPageHome.chunksSortMode = 'dependency'
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
 var env = config.build.env
 
@@ -83,12 +135,13 @@ var webpackConfig = merge(baseWebpackConfig, {
         // see https://github.com/ampedandwired/html-webpack-plugin
         new HtmlWebpackPlugin({
             filename: config.build.index,
-            template: 'index.html',
-            inject: true,
+            template: 'index.ejs',
+            inject: false,
+            appMountId: 'app',
             minify: {
-                removeComments: true,
-                collapseWhitespace: true,
-                removeAttributeQuotes: true
+                removeComments: false,
+                collapseWhitespace: false,
+                removeAttributeQuotes: false
                     // more options:
                     // https://github.com/kangax/html-minifier#options-quick-reference
             },

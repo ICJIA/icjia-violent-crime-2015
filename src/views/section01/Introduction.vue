@@ -57,26 +57,9 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-    h1, h2, h4 {
-    font-family: "Oswald",sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+<style>
+  
     
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-    
-    a {
-        color: #42b983;
-    }
 
     .hero {
     height: 650px;

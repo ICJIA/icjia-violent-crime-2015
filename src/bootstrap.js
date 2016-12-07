@@ -34,5 +34,4 @@ window._ = window.lodash = lodash;
  */
 require('font-awesome/less/font-awesome.less');
 
-
 require('./directives/placeholders');

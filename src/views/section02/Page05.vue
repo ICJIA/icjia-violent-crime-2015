@@ -25,7 +25,9 @@
 
 <div class="row">
 <div class="col s12">
-    <div id="container1" class="hc"></div>
+   
+    <div id="container1" class="hc" style=""></div>
+    
   
 </div>
 </div>
@@ -40,7 +42,9 @@
 
 <div class="row">
 <div class="col s12">
+
     <div id="container2" class="hc"></div>
+   
     
 </div>
 </div>
@@ -80,6 +84,7 @@
     } from '../../charts/section01.js'
 
     export default {
+        
         name: 'S02P05',
         mounted: function() {
             Highcharts.chart('container1', hc1);
@@ -95,24 +100,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-    h1,
-    h2 {
-        font-weight: normal;
-    }
-    
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-    
-    a {
-        color: #42b983;
-    }
-    
+  
    
 </style>

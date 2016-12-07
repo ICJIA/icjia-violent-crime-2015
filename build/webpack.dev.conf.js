@@ -37,10 +37,26 @@ module.exports = merge(baseWebpackConfig, {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
         // https://github.com/ampedandwired/html-webpack-plugin
+        // new HtmlWebpackPlugin({
+        //     filename: 'index.html',
+        //     template: 'index.html',
+        //     inject: true
+        // })
+
         new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: 'index.html',
-            inject: true
-        })
+            filename: config.build.index,
+            template: 'index.ejs',
+            inject: false,
+            appMountId: 'app',
+            minify: {
+                removeComments: false,
+                collapseWhitespace: false,
+                removeAttributeQuotes: false
+                    // more options:
+                    // https://github.com/kangax/html-minifier#options-quick-reference
+            },
+            // necessary to consistently work with multiple chunks via CommonsChunkPlugin
+            chunksSortMode: 'dependency'
+        }),
     ]
 })

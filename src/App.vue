@@ -1,48 +1,34 @@
 <template>
   <div id="app">
-    <header>
-    <navbar></navbar>
-   
-    </header>
     
-
-<!--<center>
-      <img src="./assets/logo.png">
-  </center>-->
-  <main id="main">
+    <navbar></navbar>
+    
     <transition name="fade" mode="out-in">
       <router-view class="view"></router-view>
     </transition>
-    <div style="height: 100px"></div>
-</main>
 
-<my-footer></my-footer>
-
-            
-             
-            
+    <my-footer></my-footer>
+    
+  
+    
   </div>
 </template>
 
 <script>
-    import Navbar from './components/Navbar.vue'
-    import MyFooter from './components/Footer.vue'
+import Navbar from './components/Navbar'
+import MyFooter from './components/Footer'
 
-    export default {
-        name: 'app',
-        components: {
-            
-            Navbar,
-            MyFooter
-        },
-
-    }
+export default {
+  name: 'app',
+  components: {
+    MyFooter,
+    Navbar
+  }
+}
 </script>
 
 <style>
-
-
-    .fade-enter-active,
+ .fade-enter-active,
     .fade-leave-active {
         transition: opacity .3s
     }
@@ -81,16 +67,14 @@
         font-size: 16px;
         color: #555;
     }
-    
-    #main {
-        flex: 1 0 auto;
-    }
-    
-    footer.page-footer {
-        margin-top: 20px;
-        padding-top: 0px;
-    }
 
+     h1, h2, h3, h4, h5 {
+    font-family: "Oswald",sans-serif;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+}
+    
+    
      .hc {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -106,6 +90,4 @@
 
     .image.right {float: right; padding-left: 20px;}
 
-h2.light, h3.light, h4.light {font-weight: 700; 
-border-bottom: 1px solid #eee; padding-bottom: 12px; color: #444;}
 </style>

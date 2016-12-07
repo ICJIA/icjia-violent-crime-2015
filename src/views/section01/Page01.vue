@@ -25,9 +25,9 @@
 
 <div class="row">
 <div class="col s12">
-    <md-whiteframe md-elevation="2">
+   
     <div id="container1" class="hc" style=""></div>
-    </md-whiteframe>
+    
   
 </div>
 </div>
@@ -42,9 +42,9 @@
 
 <div class="row">
 <div class="col s12">
-<md-whiteframe md-elevation="2">
+
     <div id="container2" class="hc"></div>
-    </md-whiteframe>
+   
     
 </div>
 </div>
@@ -100,25 +100,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-   h1, h2, h3, h4, h5 {
-    font-family: "Oswald",sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-    
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-    
-    a {
-        color: #42b983;
-    }
-    
+  
    
 </style>
