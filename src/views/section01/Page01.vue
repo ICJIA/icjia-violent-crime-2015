@@ -106,6 +106,9 @@
     export default {
         
         name: 'S01P01',
+        created: function () {
+        //$('.carousel.carousel-slider').carousel({full_width: true});
+        },
         mounted: function() {
             Highcharts.chart('container1', hc1);
             //Highcharts.chart('container2', hc2);

@@ -2,12 +2,7 @@
   <div class="hello">
   <!-- root -->  
    <!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">three</a></li>
-</ul>
+
 
 <ul id="slide-out" class="side-nav" style="overflow: auto; transform: translateX(0%);">
 <li class="logo">
@@ -89,7 +84,16 @@
       </div>
     </div>
   </nav>
- 
+
+
+<div v-if="showBreadcrumb" style="float: right; margin-right: 40px; margin-top: 10px;" class="segmentDisplay">
+  <a class='dropdown-button' v-on:click.stop.prevent="openSideNav()" style="text-transform: uppercase">
+  {{currentSegment}}<i class="material-icons right">view_list</i>
+  </a>
+  </div>
+
+
+  
   <!-- root -->  
   </div>
 
@@ -114,11 +118,21 @@ export default {
     clickLink (e) {
       console.log(e)
     },
-setSegment() {
+
+    openSideNav() {
+        $(".side-nav-activate").sideNav('show');
+    },
+    setSegment() {
             var newURL = window.location.protocol + "://" + window.location.host + "/" + window.location.pathname;
             var pathArray = window.location.pathname.split('/');
             this.segment = '/' + pathArray[1];
+            this.currentSegment = pathArray[1];
             this.page = pathArray[2];
+            if (this.page) {
+              this.showBreadcrumb = true
+            } else {
+              this.showBreadcrumb = false
+            }
 
         },
 
@@ -166,7 +180,9 @@ setSegment() {
             subNav: null,
             segment: null,
             menuArray: null,
-            page: null
+            page: null,
+            currentSegment: null,
+            showBreadcrumb: false
         }
   }
 }
@@ -194,9 +210,11 @@ a.test:hover {color: #aaa; font-weight: 400}
 
 .side-nav .collapsible-header, .side-nav.fixed .collapsible-header {
     
-    font-weight: bold;
+    font-weight: 900;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
 }
 .text-container {padding: 10px 20px 10px 20px; line-height: 20px}
+.segmentDisplay {font-weight: 400; }
+.segmentDisplay:hover {cursor: pointer; cursor: hand;}
+.segmentDisplay:hover a {color: #aaa}
 </style>

@@ -88,6 +88,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         // see https://github.com/ampedandwired/html-webpack-plugin
         new HtmlWebpackPlugin({
             filename: config.build.index,
+            title: 'ICJIA | Violent Crime Data Project 2017',
             template: 'index.ejs',
             date: new Date(),
             inject: false,

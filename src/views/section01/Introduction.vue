@@ -2,7 +2,7 @@
 
   <div class="section1" style="margin-top: 50px">
 
-  <div class="hero" style="margin-top: -50px">
+  <div class="hero" style="margin-top: -50px; z-index: 5000">
    <div class="intro">
    </div>
  </div>

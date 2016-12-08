@@ -45,6 +45,7 @@ module.exports = merge(baseWebpackConfig, {
 
         new HtmlWebpackPlugin({
             filename: config.build.index,
+            title: 'ICJIA | Violent Crime Data Project 2017',
             template: 'index.ejs',
             inject: false,
             date: new Date(),
