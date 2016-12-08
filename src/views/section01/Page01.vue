@@ -99,6 +99,7 @@
     require('highcharts/modules/data')(Highcharts);
     require('highcharts/modules/exporting')(Highcharts);
     
+    
     import {
         
         hc1,
@@ -109,18 +110,23 @@
         
         name: 'S01P01',
         created: function () {
-        //$('.carousel.carousel-slider').carousel({full_width: true});
-        this.seriesData = hc1.series[0].data;
+            //$('.carousel.carousel-slider').carousel({full_width: true});
+            // this.seriesData = hc1.series[0].data;
         },
         mounted: function() {
             Highcharts.chart('container1', hc1);
             //Highcharts.chart('container2', hc2);
             $('.carousel.carousel-slider').carousel({full_width: true});
+            var numeral = require('numeral');
+            console.log('Unformatted: ',JSON.stringify(this.seriesData))
+            var plusone = this.seriesData.map((n) => numeral(n).format('0,0'));
+            console.log('Formatted: ',JSON.stringify(plusone))
+            
         },
         data() {
             return {
                 pageTitle: 'Section 01 - Page 01',
-                seriesData: []
+                seriesData: [2000,3000,4000,5000]
             }
         }
     }

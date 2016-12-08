@@ -116,7 +116,7 @@ export default {
     },
   methods: {
     clickLink (e) {
-      console.log(e)
+      
     },
 
     openSideNav() {
