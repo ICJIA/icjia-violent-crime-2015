@@ -27,7 +27,7 @@
 <div class="col s12">
    
     <div id="container1" class="hc z-depth-4" style=""></div>
-    
+   
   
 </div>
 </div>
@@ -98,16 +98,19 @@
     var Highcharts = require('highcharts');
     require('highcharts/modules/data')(Highcharts);
     require('highcharts/modules/exporting')(Highcharts);
+    
     import {
+        
         hc1,
         hc2
     } from '../../charts/section01.js'
-
+    
     export default {
         
         name: 'S01P01',
         created: function () {
         //$('.carousel.carousel-slider').carousel({full_width: true});
+        this.seriesData = hc1.series[0].data;
         },
         mounted: function() {
             Highcharts.chart('container1', hc1);
@@ -116,7 +119,8 @@
         },
         data() {
             return {
-                pageTitle: 'Section 01 - Page 01'
+                pageTitle: 'Section 01 - Page 01',
+                seriesData: []
             }
         }
     }
