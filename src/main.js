@@ -10,10 +10,13 @@ const router = new VueRouter({
     scrollBehavior(to, from, savedPosition) {
         return { x: 0, y: 0 }
     },
+
     linkActiveClass: 'active',
     base: __dirname,
     routes: routes
 })
+
+
 
 Vue.filter('formatNumber', (value, currency = '') => {
     var numberStr = parseFloat(value).toFixed(2).toString();

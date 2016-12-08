@@ -106,10 +106,28 @@ import routes from '../routes.js'
 
 export default {
   name: 'Navbar',
+  updated () {
+    
+     
+    $('.segmentDisplay').addClass('animated').addClass('fadeInRight')
+      $( ".segmentDisplay" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(".segmentDisplay").removeClass('animated fadeInRight')}); 
+      
+     
+  },
+ 
   created: function() {
+
        this.setSegment();
        this.displayPageTitle()
        this.initSubnav()
+       
+    },
+    mounted: function () {
+      $('.segmentDisplay').addClass('animated').addClass('fadeInRight')
+      $( ".segmentDisplay" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(".segmentDisplay").removeClass('animated fadeInRight')});   
+      
     },
     watch: {
         '$route': 'updateSubnav'
