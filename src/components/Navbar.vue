@@ -88,7 +88,7 @@
 
 <div v-if="showBreadcrumb" style="float: right; margin-right: 40px; margin-top: 10px;" class="segmentDisplay">
   <a class='dropdown-button' v-on:click.stop.prevent="openSideNav()" style="text-transform: uppercase">
-  {{currentSegment}}<i class="material-icons right">view_list</i>
+  {{currentSegment}} / {{page}}<i class="material-icons right">view_list</i>
   </a>
   </div>
 
