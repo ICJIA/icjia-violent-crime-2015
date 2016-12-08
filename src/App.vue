@@ -4,7 +4,9 @@
     <navbar></navbar>
     
     <transition name="fade" mode="out-in">
+    
       <router-view class="view"></router-view>
+      
     </transition>
 
     <my-footer></my-footer>

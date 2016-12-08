@@ -114,7 +114,7 @@
     export default {
         
         name: 'S01P01',
-        created: function () {
+        update: function () {
             //$('.carousel.carousel-slider').carousel({full_width: true});
             // this.seriesData = hc1.series[0].data;
         },
