@@ -62,6 +62,11 @@
       <p class="white-text">This is the fourth panel</p>
     </div>
   </div>
+  <!--
+  {{seriesData | formatNumber}}
+  -->
+  
+
 
    <!-- <div id="container2" class="hc"></div>-->
    
@@ -117,10 +122,10 @@
             Highcharts.chart('container1', hc1);
             //Highcharts.chart('container2', hc2);
             $('.carousel.carousel-slider').carousel({full_width: true});
-            var numeral = require('numeral');
-            console.log('Unformatted: ',JSON.stringify(this.seriesData))
-            var plusone = this.seriesData.map((n) => numeral(n).format('0,0'));
-            console.log('Formatted: ',JSON.stringify(plusone))
+            // var numeral = require('numeral');
+            // console.log('Unformatted: ',JSON.stringify(this.seriesData))
+            // var plusone = this.seriesData.map((n) => numeral(n).format('0,0'));
+            // console.log('Formatted: ',JSON.stringify(plusone))
             
         },
         data() {
