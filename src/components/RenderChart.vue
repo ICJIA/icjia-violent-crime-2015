@@ -1,8 +1,8 @@
 <template>
 <div>
 <div class="graphic-container z-depth-2">
-<div :id="target" style="padding-left: 20px; padding-right: 20px; margin: 0 auto;" ></div>
-<div v-html="tableData"></div>
+<div :id="chartId" style="padding-left: 20px; padding-right: 20px; margin: 0 auto;" ></div>
+<div v-html="table" style="margin-top: 30px;"></div>
 </div>
 
 </div>
@@ -13,12 +13,11 @@
  var Highcharts = require('highcharts');
     require('highcharts/modules/data')(Highcharts);
     require('highcharts/modules/exporting')(Highcharts);
-
     export default {
-        props: ['chart','target','tableData','tableId'],
+        props: ['chart','chartId','table','tableId'],
         mounted: function() {
             let tableId = this.tableId
-            Highcharts.chart(this.target, this.chart );
+            Highcharts.chart(this.chartId, this.chart );
             utils.cellFormat(this.tableId)
             $(document).ready(function() {
                 $('#' + tableId).DataTable( utils.dtConfig );

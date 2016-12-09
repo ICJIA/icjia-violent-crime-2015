@@ -1,6 +1,6 @@
 const hc004_chart = {
     data: {
-        table: 'hc004-table'
+        table: 'hc004_table'
     },
     chart: {
         type: 'column'
@@ -23,8 +23,8 @@ const hc004_chart = {
 }
 
 
-const hc004_data = `
-    <table id="hc004-table" class="ordered striped">
+const hc004_table = `
+    <table id="hc003_table" class="ordered striped">
     <thead>
         <tr>
             <th></th>
@@ -61,4 +61,4 @@ const hc004_data = `
     </tbody>
 </table>`
 
-export { hc004_data, hc004_chart };
+export { hc004_table, hc004_chart };

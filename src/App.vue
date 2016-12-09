@@ -78,7 +78,7 @@ export default {
 }
     
     
-     .hc {
+    .hc {
         margin-top: 60px;
         margin-bottom: 50px;
         padding: 30px 0px 30px 0px;
@@ -87,8 +87,9 @@ export default {
         padding: 0px; margin-top: -1px;
     }
    
+    .graphic-container {padding: 40px 0px 0; margin-bottom: 80px; margin-top: 80px}
 
-    .graphic-container {padding: 40px 0px 0; margin-bottom: 80px}
+    h3.pageTitle {margin-bottom: 50px; border-bottom: 1px solid #ddd; padding-bottom: 18px}
 
     .hc-table table tbody tr td {padding-left: 25px;}
     .carousel {margin-top: 30px; margin-bottom: 50px}

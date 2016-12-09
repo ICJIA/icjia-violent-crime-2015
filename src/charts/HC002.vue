@@ -1,7 +1,7 @@
 <template>
 <div class="rendered-graphic">
 <div>
-    <render-chart :chart="chart" :target="target" :tableData="tableData" test="hc004-table"></render-chart>
+    <render-chart :chart="chart" :target="target" :tableData="tableData" tableId="hc004-table"></render-chart>
 </div>
 
 </div>
