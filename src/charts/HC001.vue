@@ -50,10 +50,10 @@
 
 <script>
     var utils = require('./utils')
+
     var Highcharts = require('highcharts');
     require('highcharts/modules/data')(Highcharts);
     require('highcharts/modules/exporting')(Highcharts);
-    
     
       export default {
         
