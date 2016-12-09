@@ -9,17 +9,26 @@
 </template>
 
 <script>
- var utils = require('../charts/utils')
- var Highcharts = require('highcharts');
+    const utils = require('../charts/utils')
+    const Highcharts = require('highcharts');
     require('highcharts/modules/data')(Highcharts);
     require('highcharts/modules/exporting')(Highcharts);
+    require('highcharts/modules/map')(Highcharts);
     export default {
         props: ['chart','chartId','table','tableId'],
         mounted: function() {
+
+            // context switch (apparently) necessary for the document.ready function
             let tableId = this.tableId
+
+            // Render chart
             Highcharts.chart(this.chartId, this.chart );
+
+            // Add commas to numbers in table cells
             utils.cellFormat(this.tableId)
+
             $(document).ready(function() {
+                // call Datatables to render
                 $('#' + tableId).DataTable( utils.dtConfig );
             } );
         },
@@ -32,7 +41,7 @@
 
 </script>
 
-<style>
+<style scoped>
 table.dataTable tbody th, table.dataTable tbody td {
     padding: 13px 30px;
 }

@@ -124,6 +124,7 @@ export default {
        
     },
     mounted: function () {
+      // Fade in breadcrumb, wait for complete, then remove animate class
       $('.segmentDisplay').addClass('animated').addClass('fadeInRight')
       $( ".segmentDisplay" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $(".segmentDisplay").removeClass('animated fadeInRight')});   
@@ -165,10 +166,11 @@ export default {
         makeMenu() {
             let menu = [];
             var seg = this.segment
+            // use lodash to cycle through routes
             _.forOwn(routes, function(value, key) {
                 if (value.path.left(seg.length) === seg) {
                     let obj = {}
-                    // remove section identifiers from route name
+                    // remove 'X_' section identifiers from route name
                     obj.name = value.name.substring(2)
                     obj.path = value.path
                     menu.push(obj)
