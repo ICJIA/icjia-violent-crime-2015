@@ -82,7 +82,7 @@
         hc1,
         hc2
     } from '../../charts/section01.js'
-
+    
     export default {
         
         name: 'S02P01',
