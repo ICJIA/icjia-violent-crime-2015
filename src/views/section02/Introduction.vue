@@ -44,7 +44,7 @@
 
 <script>
     export default {
-        name: 's01p00',
+        name: 's02p00',
         data() {
             return {
                

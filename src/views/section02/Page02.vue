@@ -45,7 +45,7 @@ import {
     hc004_chart,
     hc004_table,
 }
-from '../../charts/HC003.js'
+from '../../charts/section02.js'
 
 const graphicElements = {
     hc004_chart,
@@ -54,7 +54,7 @@ const graphicElements = {
     hc003_table,
 }
 export default {
-    name: 'S01P02',
+    name: 'S02P02',
     methods: {
         getGraphicElements(key) {
                 return graphicElements[key]
