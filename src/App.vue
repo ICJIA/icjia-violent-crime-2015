@@ -83,11 +83,14 @@ export default {
         margin-bottom: 50px;
         padding: 30px 0px 30px 0px;
     }
-    
-    .hc.last {
-        margin-bottom: 50px
+    .dt {
+        padding: 0px; margin-top: -1px;
     }
+   
 
+    .graphic-container {padding: 40px 0px 0; margin-bottom: 80px}
+
+    .hc-table table tbody tr td {padding-left: 25px;}
     .carousel {margin-top: 30px; margin-bottom: 50px}
 
     .image {margin: 0; padding: 0}

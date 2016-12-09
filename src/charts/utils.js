@@ -6,3 +6,10 @@ exports.cellFormat = function(tid) {
         $tds.html($t)
     });
 }
+
+// Core configuration object for Datatables
+// See: https://legacy.datatables.net/ref#sDom
+
+exports.dtConfig = {
+    "sDom": '<"top">rt<"bottom"><"clear">'
+}
