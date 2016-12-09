@@ -45,7 +45,7 @@ import {
     hc004_chart,
     hc004_table,
 }
-from '../../charts/HC003.js'
+from '../../charts/section01.js'
 
 const graphicElements = {
     hc004_chart,

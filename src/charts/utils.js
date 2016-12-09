@@ -10,6 +10,8 @@ exports.cellFormat = function(tid) {
 // Core configuration object for Datatables
 // See: https://legacy.datatables.net/ref#sDom
 
+// Removes the search bar and pagination
 exports.dtConfig = {
+
     "sDom": '<"top">rt<"bottom"><"clear">'
 }
