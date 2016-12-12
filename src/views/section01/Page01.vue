@@ -8,20 +8,25 @@
        <h3 class="light pageTitle">{{pageTitle}}</h3> 
       </div>
       <div v-phtext:1p7s></div>
+      
       <render-chart 
-        :chart="getGraphicElements('hc003_chart')" 
-        chartId="hc003_chart" 
+        :chart="getGraphicElements('hc003_chart')"  
         :table="getGraphicElements('hc003_table')" 
-        tableId="hc003_table">
+       >
+    </render-chart>
+
+     <render-chart 
+        :chart="getGraphicElements('hc004_chart')"  
+        :table="getGraphicElements('hc004_table')" 
+       >
     </render-chart>
 
     <div v-phtext:1p7s></div>
 
-    <render-chart 
-        :chart="getGraphicElements('hc004_chart')" 
-        chartId="hc004_chart" 
-        :table="getGraphicElements('hc004_table')" 
-        tableId="hc004_table">
+   <render-chart 
+        :chart="getGraphicElements('hc005_chart')"  
+        
+       >
     </render-chart>
 
     <div v-phtext:2p3s></div>
@@ -44,6 +49,7 @@ import {
     hc003_table,
     hc004_chart,
     hc004_table,
+    hc005_chart,
 }
 from '../../charts/section01.js'
 
@@ -52,11 +58,15 @@ const graphicElements = {
     hc004_table,
     hc003_chart,
     hc003_table,
+    hc005_chart,
 }
+
+console.log(hc003_chart.data.table)
 export default {
     name: 'S01P02',
     methods: {
         getGraphicElements(key) {
+            // return the actual object
                 return graphicElements[key]
             },
 

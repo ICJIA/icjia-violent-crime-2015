@@ -128,4 +128,53 @@ const hc004_table = `
     </tbody>
 </table>`
 
-export { hc003_table, hc003_chart, hc004_table, hc004_chart };
+
+const hc005_chart = {
+    title: {
+        text: 'Monthly Average Temperature',
+        x: -20 //center
+    },
+    subtitle: {
+        text: 'Source: WorldClimate.com',
+        x: -20
+    },
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+        ]
+    },
+    yAxis: {
+        title: {
+            text: 'Temperature (°C)'
+        },
+        plotLines: [{
+            value: 0,
+            width: 1,
+            color: '#808080'
+        }]
+    },
+    tooltip: {
+        valueSuffix: '°C'
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle',
+        borderWidth: 0
+    },
+    series: [{
+        name: 'Tokyo',
+        data: [2000, 2323, 2323, 4000]
+    }, {
+        name: 'New York',
+        data: [7000, 8000, 9234, 2343]
+    }, {
+        name: 'Berlin',
+        data: [1000, 999, 1345, 1245]
+    }, {
+        name: 'London',
+        data: [3000, 4534, 2342, 2323, 3244]
+    }]
+}
+
+export { hc003_table, hc003_chart, hc004_table, hc004_chart, hc005_chart };
