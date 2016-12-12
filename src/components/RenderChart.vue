@@ -41,7 +41,7 @@
 
 </script>
 
-<style scoped>
+<style>
 table.dataTable tbody th, table.dataTable tbody td {
     padding: 13px 30px;
 }

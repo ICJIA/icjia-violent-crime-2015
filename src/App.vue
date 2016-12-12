@@ -22,6 +22,11 @@ import MyFooter from './components/Footer'
 
 export default {
   name: 'app',
+    mounted: function () {
+
+       
+      
+    },
   
   components: {
     MyFooter,

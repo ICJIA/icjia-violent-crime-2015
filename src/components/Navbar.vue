@@ -4,7 +4,7 @@
    <!-- Dropdown Structure -->
 
 
-<ul id="slide-out" class="side-nav" style="overflow: auto; transform: translateX(0%);">
+<ul id="slide-out" class="side-nav side-nav-hide" style="overflow: auto; transform: translateX(0%);">
 <li class="logo">
 <div id="logo-container">
 <img src="../assets/icjia.png" height="75">
@@ -125,9 +125,16 @@ export default {
     },
     mounted: function () {
       // Fade in breadcrumb, wait for complete, then remove animate class
-      $('.segmentDisplay').addClass('animated').addClass('fadeInRight')
-      $( ".segmentDisplay" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-        $(".segmentDisplay").removeClass('animated fadeInRight')});   
+  
+       $(function() { 
+
+          // activate sidenav -- prevent flash 
+          $('#slide-out').removeClass('side-nav-hide')
+          $(".side-nav-activate").sideNav({ closeOnClick: true});
+          $('.segmentDisplay').addClass('animated').addClass('fadeInRight')
+          $( ".segmentDisplay" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(".segmentDisplay").removeClass('animated fadeInRight')}); 
+        })  
       
     },
     watch: {
@@ -237,4 +244,5 @@ a.test:hover {color: #aaa; font-weight: 400}
 .segmentDisplay {font-weight: 400; }
 .segmentDisplay:hover {cursor: pointer; cursor: hand;}
 .segmentDisplay:hover a {color: #aaa}
+.side-nav-hide {display: none}
 </style>
