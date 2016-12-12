@@ -10,9 +10,9 @@
       <div v-phtext:1p7s></div>
       <render-chart 
         :chart="getGraphicElements('hc003_chart')" 
-        chartId="hc003_chart" 
+       
         :table="getGraphicElements('hc003_table')" 
-        tableId="hc003_table">
+       >
     </render-chart>
 
     <div v-phtext:1p7s></div>

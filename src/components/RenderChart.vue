@@ -50,16 +50,10 @@
             if (this.needToRenderTable) {
                 this.renderTable()
             }
-
-
-            // Add commas to numbers in table cells
-            
             
             // Set context for tableId (for document ready below)
             let tableId = this.tableId
-            if (!this.needToRenderTable) {
-                utils.cellFormat(tableId)
-            }
+        
             $(document).ready(function() {
                 // call Datatables to render
                 $('#' + tableId).DataTable(utils.dtConfig);
@@ -80,14 +74,15 @@
                     for (let i = 0; i < hc.series[0].data.length; i++) {
                         row = row + `<td class="strong">${hc.xAxis.categories[i]}</td>`
                         for (let j = 0; j < hc.series.length; j++) {
-                            let tmp = hc.series[j].data[i].toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
+                            // add comma to large numbers
+                            let tmp = hc.series[j].data[i]
                             row = row + `<td> ${tmp} </td>`
                         }
                         row = row + `</tr>`
                     }
 
                     this.hcTable = `
-                            <table id="${this.tableId}">
+                            <table id="${this.tableId}" class="ordered striped">
                                 <thead>
                                     <tr>
                                         ${series}
@@ -110,6 +105,7 @@
                     return s4() + s4() + s4() + s4() + s4() + s4();
                 }
         },
+        watch : {},
         data() {
             return {
                 uniqId: null,

@@ -25,8 +25,7 @@
 
    <render-chart 
         :chart="getGraphicElements('hc005_chart')"  
-        
-       >
+    >
     </render-chart>
 
     <div v-phtext:2p3s></div>
@@ -61,7 +60,6 @@ const graphicElements = {
     hc005_chart,
 }
 
-console.log(hc003_chart.data.table)
 export default {
     name: 'S01P02',
     methods: {
