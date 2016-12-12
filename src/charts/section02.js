@@ -1,4 +1,4 @@
-const hc003_chart = {
+const hc203_chart = {
     data: {
         table: 'hc003_table'
     },
@@ -23,7 +23,7 @@ const hc003_chart = {
 }
 
 
-const hc003_table = `
+const hc203_table = `
     <table id="hc003_table" class="ordered striped">
     <thead>
         <tr>
@@ -65,7 +65,7 @@ const hc003_table = `
 
 
 
-const hc004_chart = {
+const hc204_chart = {
     data: {
         table: 'hc004_table'
     },
@@ -90,7 +90,7 @@ const hc004_chart = {
 }
 
 
-const hc004_table = `
+const hc204_table = `
     <table id="hc004_table" class="ordered striped">
     <thead>
         <tr>
@@ -128,4 +128,4 @@ const hc004_table = `
     </tbody>
 </table>`
 
-export { hc003_table, hc003_chart, hc004_table, hc004_chart };
+export { hc203_table, hc203_chart, hc204_table, hc204_chart };

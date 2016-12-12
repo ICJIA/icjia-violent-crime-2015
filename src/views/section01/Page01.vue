@@ -9,24 +9,24 @@
       </div>
       <div v-phtext:1p7s></div>
       
-      <render-chart 
-        :chart="getGraphicElements('hc003_chart')"  
-        :table="getGraphicElements('hc003_table')" 
+     <render-chart2 
+        chart="hc003_chart"  
+        table="hc003_table" 
        >
-    </render-chart>
+    </render-chart2>
 
-     <render-chart 
-        :chart="getGraphicElements('hc004_chart')"  
-        :table="getGraphicElements('hc004_table')" 
+ <render-chart2
+        chart="hc004_chart"  
+        table="hc004_table" 
        >
-    </render-chart>
+    </render-chart2>
 
     <div v-phtext:1p7s></div>
 
-   <render-chart 
-        :chart="getGraphicElements('hc005_chart')"  
+  <render-chart2
+        chart="hc006_chart"  
     >
-    </render-chart>
+    </render-chart2>
 
     <div v-phtext:2p3s></div>
 
@@ -41,36 +41,17 @@
 
 <script>
 
-import RenderChart from '../../components/RenderChart.vue'
 
-import {
-    hc003_chart,
-    hc003_table,
-    hc004_chart,
-    hc004_table,
-    hc005_chart,
-}
-from '../../charts/section01.js'
-
-const graphicElements = {
-    hc004_chart,
-    hc004_table,
-    hc003_chart,
-    hc003_table,
-    hc005_chart,
-}
+import RenderChart2 from '../../components/RenderChart2.vue'
 
 export default {
-    name: 'S01P02',
+    name: 'S01P01',
     methods: {
-        getGraphicElements(key) {
-            // return the actual object
-                return graphicElements[key]
-            },
-
+        
     },
     components: {
-        RenderChart
+        
+        RenderChart2
     },
     data() {
         return {
