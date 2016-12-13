@@ -7,10 +7,13 @@
 //     });
 // }
 
-// Core configuration object for Datatables
-// See: https://legacy.datatables.net/ref#sDom
 
-// Removes the search bar and pagination
+
+
+
+
+// Removes the search bar and pagination in Datatables //////////////////////////////////////////
+// See: https://legacy.datatables.net/ref#sDom
 exports.dtConfig = {
     "columnDefs": [{
         "targets": '_all',
@@ -23,6 +26,12 @@ exports.dtConfig = {
 }
 
 
+
+
+
+
+
+// Construct HTML table from chart object //////////////////////////////////////////////////////
 exports.renderTable = function(hc, tableId) {
     let series = '<th></th>'
     let row = '<tr>';
@@ -57,6 +66,9 @@ exports.renderTable = function(hc, tableId) {
 
 }
 
+
+// Generate unique ID ////////////////////////////////////////////////////////////////////////
+
 exports.guid = function() {
     // generate unique id
     function s4() {
@@ -65,4 +77,56 @@ exports.guid = function() {
             .substring(1);
     }
     return s4() + s4() + s4() + s4() + s4() + s4();
+}
+
+
+
+
+
+// Determine size of object  /////////////////////////////////////////////////////////////////
+
+exports.objSize = function(obj) {
+    var size = 0,
+        key;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+    }
+    return size;
+}
+
+
+
+
+
+// Parse string as boolean //////////////////////////////////////////
+
+exports.parseBool = function(str) {
+    // console.log(typeof str);
+    // strict: JSON.parse(str)
+
+    if (str == null)
+        return false;
+
+    if (typeof str === 'boolean') {
+        return (str === true);
+    }
+
+    if (typeof str === 'string') {
+        if (str == "")
+            return false;
+
+        str = str.replace(/^\s+|\s+$/g, '');
+        if (str.toLowerCase() == 'true' || str.toLowerCase() == 'yes')
+            return true;
+
+        str = str.replace(/,/g, '.');
+        str = str.replace(/^\s*\-\s*/g, '-');
+    }
+
+    // var isNum = string.match(/^[0-9]+$/) != null;
+    // var isNum = /^\d+$/.test(str);
+    if (!isNaN(str))
+        return (parseFloat(str) != 0);
+
+    return false;
 }

@@ -9,24 +9,25 @@
       </div>
       <div v-phtext:1p7s></div>
       
-     <render-chart2 
+     <render-chart 
         chart="hc003_chart"  
-        table="hc003_table" 
+        table="hc003_table"
        >
-    </render-chart2>
+    </render-chart>
 
- <render-chart2
+ <render-chart
         chart="hc004_chart"  
         table="hc004_table" 
+        
        >
-    </render-chart2>
+    </render-chart>
 
     <div v-phtext:1p7s></div>
 
-  <render-chart2
-        chart="hc006_chart"  
+  <render-chart
+        chart="hc005_chart"  
     >
-    </render-chart2>
+    </render-chart>
 
     <div v-phtext:2p3s></div>
 
@@ -42,7 +43,7 @@
 <script>
 
 
-import RenderChart2 from '../../components/RenderChart2.vue'
+import RenderChart from '../../components/RenderChart.vue'
 
 export default {
     name: 'S01P01',
@@ -51,11 +52,12 @@ export default {
     },
     components: {
         
-        RenderChart2
+        RenderChart
     },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 01'
+            pageTitle: 'Section 01 - Page 01',
+            displayTable: true,
         }
     }
 }

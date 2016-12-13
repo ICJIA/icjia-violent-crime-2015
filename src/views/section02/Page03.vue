@@ -8,20 +8,25 @@
        <h3 class="light pageTitle">{{pageTitle}}</h3> 
       </div>
       <div v-phtext:1p7s></div>
-      <render-chart 
-        :chart="getGraphicElements('hc003_chart')" 
-        chartId="hc003_chart" 
-        :table="getGraphicElements('hc003_table')" 
-        tableId="hc003_table">
+      
+     <render-chart 
+        chart="hc003_chart"  
+        table="hc003_table"
+       >
+    </render-chart>
+
+ <render-chart
+        chart="hc004_chart"  
+        table="hc004_table" 
+        
+       >
     </render-chart>
 
     <div v-phtext:1p7s></div>
 
-    <render-chart 
-        :chart="getGraphicElements('hc004_chart')" 
-        chartId="hc004_chart" 
-        :table="getGraphicElements('hc004_table')" 
-        tableId="hc004_table">
+  <render-chart
+        chart="hc005_chart"  
+    >
     </render-chart>
 
     <div v-phtext:2p3s></div>
@@ -37,36 +42,22 @@
 
 <script>
 
+
 import RenderChart from '../../components/RenderChart.vue'
 
-import {
-    hc003_chart,
-    hc003_table,
-    hc004_chart,
-    hc004_table,
-}
-from '../../charts/section02.js'
-
-const graphicElements = {
-    hc004_chart,
-    hc004_table,
-    hc003_chart,
-    hc003_table,
-}
 export default {
     name: 'S02P03',
     methods: {
-        getGraphicElements(key) {
-                return graphicElements[key]
-            },
-
+        
     },
     components: {
+        
         RenderChart
     },
     data() {
         return {
-            pageTitle: 'Section 02 - Page 03'
+            pageTitle: 'Section 02 - Page 03',
+            displayTable: true,
         }
     }
 }
