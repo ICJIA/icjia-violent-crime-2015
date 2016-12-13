@@ -177,4 +177,11 @@ const hc005_chart = {
     }]
 }
 
-export { hc003_table, hc003_chart, hc004_table, hc004_chart, hc005_chart };
+const hc006_chart = {
+
+}
+
+
+
+
+export { hc003_table, hc003_chart, hc004_table, hc004_chart, hc005_chart, hc006_chart };

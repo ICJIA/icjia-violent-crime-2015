@@ -29,6 +29,8 @@
     >
     </render-chart>
 
+    <render-map map="hm001map" options="hm001options"></render-map>
+
     <div v-phtext:2p3s></div>
 
 
@@ -44,6 +46,7 @@
 
 
 import RenderChart from '../../components/RenderChart.vue'
+import RenderMap from '../../components/RenderMap.vue'
 
 export default {
     name: 'S01P01',
@@ -52,7 +55,8 @@ export default {
     },
     components: {
         
-        RenderChart
+        RenderChart,
+        RenderMap
     },
     data() {
         return {

@@ -7,7 +7,7 @@
       <div class="center"> 
        <h3 class="light pageTitle">{{pageTitle}}</h3> 
       </div>
-      <div v-phtext:1p7s></div>
+      
       
      <render-chart 
         chart="hc003_chart"  

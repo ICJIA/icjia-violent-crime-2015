@@ -1,7 +1,7 @@
 <template>
 <div>
 <div class="graphic-container z-depth-2">
-<div :id="chartId" style="padding-left: 20px; padding-right: 20px; margin: 0 auto;" ></div>
+<div :id="renderId" style="padding-left: 20px; padding-right: 20px; margin: 0 auto;" ></div>
 <div v-html="hcTable" style="margin-top: 30px;"></div>
 <div v-html="error" style="margin-top: 30px;"></div>
 </div>
@@ -14,12 +14,12 @@
     const Highcharts = require('highcharts');
     require('highcharts/modules/data')(Highcharts);
     require('highcharts/modules/exporting')(Highcharts);
-    require('highcharts/modules/map')(Highcharts);
-
+    
     // Import all the chart/table elements
     import * as section01Elements from '../charts/section01.js'
     import * as section02Elements from '../charts/section02.js'
     const graphicElements = Object.assign(section01Elements, section02Elements);
+
 
     export default {
         props: {
@@ -41,9 +41,11 @@
            
         },
         created() {
+
+           
            
            // generate unique ID for chart
-            this.chartId = 'hc' + utils.guid();
+            this.renderId = 'hc' + utils.guid();
 
             // put prop 'table' in new variable
             this.tableData = this.table
@@ -76,6 +78,12 @@
         },
         mounted: function() {
 
+            
+
+
+
+
+            
             // Was there a chart object that matched 'chart' in props?
             this.readyToRender = utils.parseBool(utils.objSize (this.hcChart))
 
@@ -83,7 +91,7 @@
             if (this.readyToRender) {
 
                 // Render chart
-                Highcharts.chart(this.chartId, this.hcChart);
+                Highcharts.chart(this.renderId, this.hcChart);
 
                 // Do we display a table?
                 if (!utils.parseBool(this.displayTable)) {
@@ -123,7 +131,7 @@
         data() {
             return {
                 uniqId: null,
-                chartId: '',
+                renderId: '',
                 tableData: '',
                 tableId: '',
                 needToRenderTable: true,
