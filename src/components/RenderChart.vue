@@ -16,8 +16,14 @@
 <script>
     const utils = require('../utils')
     const Highcharts = require('highcharts');
+
     require('highcharts/modules/data')(Highcharts);
     require('highcharts/modules/exporting')(Highcharts);
+
+    // Datatables install with webpack: https://gist.github.com/marcstober/c34bb4bdf7ef622cb24d6675723749bd
+    // https://datatables.net/forums/discussion/32542/datatables-and-webpack
+    import dt from 'datatables.net';
+    import 'datatables.net-dt/css/jquery.datatables.css';
     
     // Import all the chart/table elements
     import * as section01Elements from '../charts/section01.js'
@@ -99,6 +105,8 @@
 
                 // Do we display a table?
                 if (!utils.parseBool(this.displayTable)) {
+
+                   
 
                     // hide table if prop 'displayTable' === true
                     $('#' + this.tableId).addClass('hideTable')

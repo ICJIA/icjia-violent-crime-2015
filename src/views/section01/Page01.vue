@@ -18,7 +18,8 @@
 
     <render-chart
         chart="hc004_chart"  
-        table="hc004_table" 
+        table="hc004_table"
+        displayTable="false"
         
        >
     </render-chart>
