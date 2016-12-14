@@ -13,52 +13,71 @@
 </template>
 
 <script>
+
     const utils = require('../utils')
-    
     const Highcharts = require('highcharts');
     require('highcharts/modules/data')(Highcharts);
     require('highcharts/modules/exporting')(Highcharts);
     require('highcharts/modules/map')(Highcharts);
     
-    // require map data
-            function getRequireFile (file) {
-                return require ('../maps/' + file)
-            }
-            let map = '';
-            let mapOptions = '';
-            let error = false;
-            let errorMessage = '';
-
-            try {
-                map = getRequireFile('map.js')
-                mapOptions = getRequireFile('mapOptions.js')
-                error = false;
-            }
-            catch (e) {
-                error = true
-                errorMessage = e;
-            }
-    
-    
     export default {
-        props: {
-            map: {
-                type: String,
-                required: true,
-                default: ''
-            },
-            options: {
-                type: String,
-                required: false,
-                default: ''
-            }
+
+        ///////////////////////////////////////////////////////////////
+        //
+        // props specify the file modules for the maps.
+        // One file is for the mapdata, the other is for the options
+        //
+        // the mapdata module should export a 'map' object
+        // the options module must export a 'mapOptions' object
+        // 
+        ///////////////////////////////////////////////////////////////
+
+
+        // props: {
+        //     map: {
+        //         type: String,
+        //         required: true,
+        //         default: 'map'
+        //     },
+        //     options: {
+        //         type: String,
+        //         required: false,
+        //         default: 'mapOptions'
+        //     }
            
-        },
+        // },
+
+
+
         created() {
+
+        // hard coded props for testing
+        this.options = 'hm001options.js'
+        this.map = 'hm001.js'
+
         
-        if (!error) {
+        let map, mapOptions
+
+        function getRequireFile (filename) {
+                return require ('../maps/' + filename)
+            }
+        
+        try {
+            map = getRequireFile(this.map)
+            mapOptions = getRequireFile(this.options)
+            this.error = false
+        } 
+        catch (e) {
+            console.log(e)
+            this.errorMessage = e
+            this.error = true
+        }
+       
+        
+        if (!this.error) {
             this.mapOptions = mapOptions["mapOptions"]
             this.renderId = 'hc' + utils.guid();
+            this.mapOptions.series[0].mapData = map["map"]
         }
         
 
@@ -66,45 +85,48 @@
         mounted: function() {
 
            
-           if (!error) {
-                // context switches for document.ready
+           if (!this.error) {
+
+                // context switch for document.ready
                 let vm = this
-                console.log(vm)
-                // let mapOptions = this.mapOptions
-                // let renderId = this.renderId
-                vm.mapOptions.series[0].mapData = map["map"]
-                $(document).ready(function() {
+
+                let mapRenderHandler = function() {
                     try {
                         Highcharts.mapChart(vm.renderId, vm.mapOptions)
-                        
                     }
                     catch (e) {
-                        error = true
-                        console.log('Error: ', e)
-                        // Hacky. No way to get error message passed to Vue here.
+                        vm.error = true
+                        vm.errorMessage = e
+                        // Hacky, but works.
                         $('.error-message').html(e)
-                        vm.errorMessage = 'test'
-                    }
-                });
-           } else {
-               this.errorMessage = '<b>' + errorMessage + "</b>"
-           }
+                        
+                }}
 
+                //jquery doc ready
+                $(mapRenderHandler)
+                
+           } else {
+               this.errorMessage = '<b>' + this.errorMessage + "</b>"
+           }
+          
         },
 
         
 
         methods: {
-            displayError (e) {
-                console.log(e)
-            }
+           
         },
         watch : {},
         data() {
             return {
                 test: '',
                 errorMessage: null,
-                renderId: null
+                renderId: null,
+                testOptions: '',
+                testMap: '',
+                options: '',
+                map: '',
+                error: false
                 
             }
         }

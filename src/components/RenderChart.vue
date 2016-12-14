@@ -18,6 +18,8 @@
     // Import all the chart/table elements
     import * as section01Elements from '../charts/section01.js'
     import * as section02Elements from '../charts/section02.js'
+
+    // merge everything
     const graphicElements = Object.assign(section01Elements, section02Elements);
 
 
@@ -42,8 +44,6 @@
         },
         created() {
 
-           
-           
            // generate unique ID for chart
             this.renderId = 'hc' + utils.guid();
 
