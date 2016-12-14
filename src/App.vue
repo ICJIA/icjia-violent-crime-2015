@@ -7,9 +7,11 @@
     <keep-alive>
       <router-view class="view"></router-view>
       </keep-alive>
+       
     </transition>
-
     <my-footer></my-footer>
+
+   
     
   
     
@@ -22,10 +24,8 @@ import MyFooter from './components/Footer'
 
 export default {
   name: 'app',
-    mounted: function () {
+    created: function () {
 
-       
-      
     },
   
   components: {
@@ -38,7 +38,7 @@ export default {
 <style>
  .fade-enter-active,
     .fade-leave-active {
-        transition: opacity .3s
+        transition: opacity .1s
     }
     
     .fade-enter,

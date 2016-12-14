@@ -1,11 +1,15 @@
 <template>
 <div>
-<div class="graphic-container z-depth-2">
-<div :id="renderId" style="padding-left: 20px; padding-right: 20px; margin: 0 auto;" ></div>
-<div v-html="hcTable" style="margin-top: 30px;"></div>
-<div v-html="error" style="margin-top: 30px;"></div>
-</div>
+    <div class="graphic-container z-depth-2">
+        <div    :id="renderId" 
+                class="chart-container" ></div>
 
+        <div    v-html="hcTable" 
+                style="margin-top: 30px;"></div>
+                
+        <div    v-html="error" 
+                style="margin-top: 30px;"></div>
+    </div>
 </div>
 </template>
 
@@ -152,4 +156,5 @@ table.dataTable tbody th, table.dataTable tbody td {
 
 .strong {font-weight: 700}
 .hideTable {display: none}
+.chart-container {padding-left: 20px; padding-right: 20px; margin: 0 auto;}
 </style>

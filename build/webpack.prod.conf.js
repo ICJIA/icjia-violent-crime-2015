@@ -46,6 +46,8 @@ var webpackConfig = merge(baseWebpackConfig, {
             }
         }),
 
+        new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
+
         new TimestampWebpackPlugin({
             path: path.join(__dirname, '../static'),
             // default output is timestamp.json

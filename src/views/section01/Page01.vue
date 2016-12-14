@@ -9,13 +9,14 @@
       </div>
       <div v-phtext:1p7s></div>
       
+      <!-- render-map uses named exports found in ./charts/ -->
      <render-chart 
         chart="hc003_chart"  
         table="hc003_table"
        >
     </render-chart>
 
- <render-chart
+    <render-chart
         chart="hc004_chart"  
         table="hc004_table" 
         
@@ -29,7 +30,12 @@
     >
     </render-chart>
 
-    <render-map map="hm001map" options="hm001options"></render-map>
+
+
+    <!-- render-map uses module filenames located in ./maps/
+        the .js extension is optional -->
+
+    <render-map mapFile="hm001.js" optionsFile="hm001options.js"></render-map>
 
     <div v-phtext:2p3s></div>
 

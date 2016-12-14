@@ -1,13 +1,13 @@
 <template>
 <div>
-<div class="graphic-container z-depth-2">
-
-
-
-    <div v-html="errorMessage" class="center align error-message" style=""></div>
-
-<div :id="renderId" style="padding-left: 20px; padding-right: 20px; padding-bottom: 30px; margin: 0 auto;" ></div>
-
+    <div class="graphic-container z-depth-2">
+        <div    v-html="errorMessage" 
+                class="center align error-message" 
+                style="">
+        </div>
+        <div    :id="renderId" 
+                class="map-container" >
+        </div>
 </div>
 </div>
 </template>
@@ -22,49 +22,54 @@
     
     export default {
 
-        ///////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////
         //
-        // props specify the file modules for the maps.
+        // The props below specify the *file modules* for the maps.
         // One file is for the mapdata, the other is for the options
+        // Adding the '.js' extension is optional
+        //
+        // Ex: 
+        // mapFile: 'hm001.js' (data for the map object)
+        // optionsFile: 'hm001options.js' (data for the map's options')
+        //
+        // Tag example:
+        // <render-map mapFile="hm001.js" optionsFile="hm001options.js"></render-map>
         //
         // the mapdata module should export a 'map' object
         // the options module must export a 'mapOptions' object
         // 
-        ///////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////
 
 
-        // props: {
-        //     map: {
-        //         type: String,
-        //         required: true,
-        //         default: 'map'
-        //     },
-        //     options: {
-        //         type: String,
-        //         required: false,
-        //         default: 'mapOptions'
-        //     }
+        props: {
+            mapFile: {
+                type: String,
+                required: true,
+                default: ''
+            },
+            optionsFile: {
+                type: String,
+                required: true,
+                default: ''
+            }
            
-        // },
+        },
 
 
 
         created() {
 
-        // hard coded props for testing
-        this.options = 'hm001options.js'
-        this.map = 'hm001.js'
-
-        
+       
         let map, mapOptions
 
         function getRequireFile (filename) {
                 return require ('../maps/' + filename)
+                // .js extension is implied
             }
         
         try {
-            map = getRequireFile(this.map)
-            mapOptions = getRequireFile(this.options)
+            map = getRequireFile(this.mapFile)
+            mapOptions = getRequireFile(this.optionsFile)
             this.error = false
         } 
         catch (e) {
@@ -76,7 +81,11 @@
         
         if (!this.error) {
             this.mapOptions = mapOptions["mapOptions"]
+
+            // create a unique ID for the map container
             this.renderId = 'hc' + utils.guid();
+
+            // inject the map data into the map
             this.mapOptions.series[0].mapData = map["map"]
         }
         
@@ -90,6 +99,7 @@
                 // context switch for document.ready
                 let vm = this
 
+                // document ready handler
                 let mapRenderHandler = function() {
                     try {
                         Highcharts.mapChart(vm.renderId, vm.mapOptions)
@@ -126,7 +136,8 @@
                 testMap: '',
                 options: '',
                 map: '',
-                error: false
+                error: false,
+                mapOptions: ''
                 
             }
         }
@@ -136,4 +147,5 @@
 
 <style>
 .error-message {color: red; padding-top: 0px; padding-bottom: 0px; font-size: 20px; text-transform: uppercase;}
+.map-container {padding-left: 20px; padding-right: 20px; padding-bottom: 30px; margin: 0 auto;}
 </style>

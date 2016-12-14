@@ -31,6 +31,8 @@ module.exports = merge(baseWebpackConfig, {
             filename: 'timestamp.json'
         }),
 
+        new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
+
 
         // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
         new webpack.optimize.OccurenceOrderPlugin(),
