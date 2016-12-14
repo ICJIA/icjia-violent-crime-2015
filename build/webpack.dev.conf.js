@@ -31,6 +31,7 @@ module.exports = merge(baseWebpackConfig, {
             filename: 'timestamp.json'
         }),
 
+        // remove locale files from moment.js
         new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
 
 

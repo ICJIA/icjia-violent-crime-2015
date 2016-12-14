@@ -28,18 +28,12 @@
         },
         methods: {
             displayLastBuild() {
-                // $.getJSON("static/timestamp.json", function(data, error) {
-                //     var lastBuild = document.querySelector("#lastBuild");
-                //     console.log('Timestamp: ', data)
-                //     let timestamp = data.www + ' ' + data.MMM + '-' + data.dd + '-' + data.yyyy + '   ' + data.HH + ':' + data.mm + ':' + data.ss
-                //     lastBuild.innerText = "Last build: " + timestamp
-                //     console.info('Timestamp fetch: ', error)
-                // })
+                // Display last build from timestamp.json -- then use moment.js to format
                 let url = '/static/timestamp.json'
                 fetch(url).then(r => r.json())
                         .then(data => {
-                            console.log(data.date)
-                            console.log(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"))
+                            // console.log(data.date)
+                            // console.log(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"))
                             $('#lastBuild').html('Last updated: <span class="mDate">' + moment(data.date).format("ddd, MMM Do YYYY, h:mm:ss a") + '</span>')
                         })
                         .catch(e => console.log('Error fetching timestamp: ',e))

@@ -1,3 +1,4 @@
+///////////////////////////////////////////////
 // exports.cellFormat = function(tid) {
 //     let table = $('#' + tid + ' tbody');
 //     table.find('tr').each(function() {
@@ -40,16 +41,19 @@ exports.renderTable = function(hc, tableId) {
     for (let i = 0; i < hc.series.length; i++) {
         series = series + `<th> ${hc.series[i].name}</th>`
     }
+
     for (let i = 0; i < hc.series[0].data.length; i++) {
         row = row + `<td class="strong">${hc.xAxis.categories[i]}</td>`
         for (let j = 0; j < hc.series.length; j++) {
-            // add comma to large numbers
+
             let tmp = hc.series[j].data[i]
             row = row + `<td> ${tmp} </td>`
         }
         row = row + `</tr>`
     }
 
+
+    // ES6 template literal: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
     let hcTable = ''
     return hcTable = `
                             <table id="${tableId}" class="ordered striped">
