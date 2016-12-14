@@ -32,7 +32,7 @@ Vue.filter('formatNumber', (value, currency = '') => {
 });
 
 /* eslint-disable no-new */
-new Vue({
+var vue = new Vue({
     el: '#app',
     router: router,
     template: '<App/>',
