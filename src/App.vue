@@ -23,6 +23,7 @@ import Navbar from './components/Navbar'
 import MyFooter from './components/Footer'
 
 export default {
+
   name: 'app',
     created: function () {
 
