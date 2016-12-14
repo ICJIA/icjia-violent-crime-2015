@@ -15,7 +15,12 @@
 </template>
 
 <script>
+    // moment.js for dates
     import moment from 'moment'
+
+    // polyfill for fetch
+    import 'whatwg-fetch'
+    
     export default {
         name: 'myFooter',
         data() {
