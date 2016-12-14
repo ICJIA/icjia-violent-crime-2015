@@ -1,7 +1,8 @@
 require('./bootstrap.js');
 
 import 'materialize-css/bin/materialize.css'
-// import 'materialize-css/bin/materialize.js'
+//import 'materialize-css/bin/materialize.js'
+
 
 
 
