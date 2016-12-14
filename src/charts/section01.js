@@ -22,7 +22,6 @@ const hc003_chart = {
     }
 }
 
-
 const hc003_table = `
     <table id="hc003_table" class="ordered striped">
     <thead>
