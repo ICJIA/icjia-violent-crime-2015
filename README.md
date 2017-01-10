@@ -50,7 +50,9 @@ conc - Conclusion
 
 #### Types:
 
-map - Map
+map - HighMaps Map
+
+chart - HighChart Chart
 
 table - Table
 
