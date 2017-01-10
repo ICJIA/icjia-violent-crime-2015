@@ -5,7 +5,8 @@
   "author": "cschweda <cschweda@gmail.com>",
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "build-serve": "npm run serve ./dist"
   },
   "dependencies": {
     "animate.css": "^3.5.2",
@@ -59,6 +60,7 @@
     "opn": "^4.0.2",
     "ora": "^0.3.0",
     "semver": "^5.3.0",
+    "serve": "^2.1.2",
     "shelljs": "^0.7.4",
     "timestamp-webpack-plugin": "^0.2.3",
     "url-loader": "^0.5.7",
