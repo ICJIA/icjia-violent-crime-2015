@@ -19,4 +19,41 @@ npm run dev
 npm run build
 ```
 
+## Asset Key
+hc_Section_Page_type_number
+
+#### ID Example
+
+hc_M_def_map_100
+
+#### Sections:
+
+M - Murder
+
+Rape  - Rape
+
+Rob - Robbery
+
+Agg - Aggravated Assault
+
+#### Pages:
+
+def - Definitions/Rates
+
+arr - Arrestees
+
+conv - Convictions
+
+sen - Sentences
+
+conc - Conclusion
+
+#### Types:
+
+map - Map
+
+table - Table
+
+pic - Picture/Image
+
 Based on http://apps.urban.org/features/state-economic-monitor/index.html
