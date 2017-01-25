@@ -24,20 +24,7 @@ const router = new VueRouter({
 
 
 
-// Vue.filter('formatNumber', (value, currency = '') => {
-//     var numberStr = parseFloat(value).toFixed(2).toString();
-//     var decimals = numberStr.slice(-2);
-//     numberStr = numberStr.substring(0, numberStr.length - 3);
-//     var numFormat = [];
-//     while (numberStr.length > 3) {
-//         numFormat.unshift(numberStr.slice(-3));
-//         numberStr = numberStr.substring(0, numberStr.length - 3);
-//     }
-//     numFormat.unshift(numberStr);
-//     return `${currency} ${numFormat.join(',')}.${decimals}`;
-// });
 
-/* eslint-disable no-new */
 var vue = new Vue({
     el: '#app',
     router: router,
