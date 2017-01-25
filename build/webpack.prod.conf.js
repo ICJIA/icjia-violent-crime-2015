@@ -82,6 +82,11 @@ var webpackConfig = merge(baseWebpackConfig, {
         ]),
 
 
+        new CopyWebpackPlugin([
+            { from: 'web.config', to: './' },
+        ]),
+
+
 
         // Required for Netlify deployment
         new CopyWebpackPlugin([
