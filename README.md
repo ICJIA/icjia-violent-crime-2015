@@ -1,10 +1,6 @@
-# Violent Crime Data Project 2017
+# icjia-violent-crime-2017
 
-> Illinois Criminal Justice Information Authority Violent Crime data project 2017
-
-## Live demo
-
-http://project-manager-frog-88866.netlify.com
+> A Vue.js project
 
 ## Build Setup
 
@@ -17,45 +13,18 @@ npm run dev
 
 # build for production with minification
 npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
 ```
 
-## Asset Key
-hc_Section_Page_type_number
-
-#### ID Example
-
-hc_M_def_map_100
-
-#### Sections:
-
-M - Murder
-
-Rape  - Rape
-
-Rob - Robbery
-
-Agg - Aggravated Assault
-
-#### Pages:
-
-def - Definitions/Rates
-
-arr - Arrestees
-
-conv - Convictions
-
-sen - Sentences
-
-conc - Conclusion
-
-#### Types:
-
-map - HighMaps Map
-
-chart - HighChart Chart
-
-table - Table
-
-pic - Picture/Image
-
-Based on http://apps.urban.org/features/state-economic-monitor/index.html
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
