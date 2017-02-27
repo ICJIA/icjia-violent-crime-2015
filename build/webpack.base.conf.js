@@ -22,7 +22,13 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      // '@': resolve('src'),
+      'src': resolve('src'),
+  'assets': resolve('src/assets'),
+  'components': resolve('src/components'),
+  'views': resolve('src/views'),
+  'meta': resolve('src/meta'),
+  'scss': resolve('src/scss')
     }
   },
   module: {
@@ -45,6 +51,14 @@ module.exports = {
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
         }
       },
+      {
+  test: /jquery\.js$/,
+  loader: "expose-loader?$!expose-loader?jQuery"
+},
+{
+  test: /tether\.js$/,
+  loader: "expose-loader?Tether"
+  },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',

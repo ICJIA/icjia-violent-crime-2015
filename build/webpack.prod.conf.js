@@ -8,6 +8,12 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+var PrerenderSpaPlugin = require('prerender-spa-plugin')
+var moment = require('moment-timezone');
+
+var cwd = (file) => {
+  return path.join(process.cwd(), file || '')
+}
 
 var env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -52,9 +58,14 @@ var webpackConfig = merge(baseWebpackConfig, {
         ? 'index.html'
         : config.build.index,
       template: 'index.html',
+      bannerDate: moment().tz("America/Chicago").format("dddd, MMMM Do YYYY, h:mm:ss a"),
+    bannerGit: "https://github.com/ICJIA/icjia-violent-crime-2017",
+    bannerTitle: "Illinois Criminal Justice Information Authority Violent Crime 2017",
+    bannerContact: "cja.irc@illinois.gov",
+    googleAnalytics: true,
       inject: true,
       minify: {
-        removeComments: true,
+        removeComments: false,
         collapseWhitespace: true,
         removeAttributeQuotes: true
         // more options:
@@ -115,6 +126,16 @@ if (config.build.productionGzip) {
 if (config.build.bundleAnalyzerReport) {
   var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
   webpackConfig.plugins.push(new BundleAnalyzerPlugin())
+}
+
+if (config.build.prerender) {
+
+  webpackConfig.plugins.push(new PrerenderSpaPlugin(
+      // Absolute path to compiled SPA
+      path.join(__dirname, '../dist'),
+      // List of routes to prerender
+      [ '/' ]
+    ))
 }
 
 module.exports = webpackConfig
