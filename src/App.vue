@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Navbar from 'components/Navbar'
+import Navbar from 'components/Navbar3'
 import MyFooter from 'components/Footer'
 import metaInfo from 'meta'
 export default {
