@@ -1,6 +1,10 @@
-# icjia-violent-crime-2017
+# Violent Crime Data Project 2017 2.0
 
-> A Vue.js project
+> Illinois Criminal Justice Information Authority Violent Crime data project 2017
+
+## Live demo
+
+http://project-manager-frog-88866.netlify.com
 
 ## Build Setup
 
@@ -13,18 +17,6 @@ npm run dev
 
 # build for production with minification
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Based on http://apps.urban.org/features/state-economic-monitor/index.html

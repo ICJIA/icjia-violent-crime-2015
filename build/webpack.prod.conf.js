@@ -60,7 +60,7 @@ var webpackConfig = merge(baseWebpackConfig, {
       template: 'index.html',
       bannerDate: moment().tz("America/Chicago").format("dddd, MMMM Do YYYY, h:mm:ss a"),
     bannerGit: "https://github.com/ICJIA/icjia-violent-crime-2017",
-    bannerTitle: "Illinois Criminal Justice Information Authority Violent Crime 2017",
+    bannerTitle: "ICJIA Violent Crime Data Project 2017",
     bannerContact: "cja.irc@illinois.gov",
     googleAnalytics: true,
       inject: true,
