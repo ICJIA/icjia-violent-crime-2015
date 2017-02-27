@@ -33,6 +33,7 @@ export default {
 a {color: #ccc}
 footer {padding-top: 30px; padding-bottom: 30px; background-color: #333; color: #aaa;}
 .footer-text {text-align:center; width:100%; font-size:12px;}
+.navbar-brand {font-size: .9em}
 
 
 </style>

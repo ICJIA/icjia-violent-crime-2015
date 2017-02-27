@@ -1,6 +1,6 @@
 <template>
   <div>
-    This the Home page.
+    This the Definitions page.
   </div>
 
  </template>
@@ -20,8 +20,8 @@ export default {
 
   data() {
     return {
-      description: "Illinois Sex Offenders & Offender Registration Task Force.",
-      title: "Illinois Sex Offenders & Offender Registration Task Force",
+      description: "ICJIA Violent Crime Data Project 2017",
+      title: "ICJIA Violent Crime Data Project 2017",
       path: this.$route.fullPath
     }
   },
