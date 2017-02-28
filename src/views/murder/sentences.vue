@@ -12,8 +12,11 @@
 
 <h3 id="sentences-for-idoc-murder-admissions-2012-2014-n5371">Sentences for IDOC Murder Admissions, 2012-2014 (N=537)<a href="#fn:14" id="fnref:14" title="See footnote" class="footnote">1</a></h3>
 
-<p>hc_M_def_chart_1300 <a href="http://jsfiddle.net/liamhanninen/hztb078b/">http://jsfiddle.net/liamhanninen/hztb078b/</a></p>
-
+<!-- <p>hc_M_def_chart_1300 <a href="http://jsfiddle.net/liamhanninen/hztb078b/">http://jsfiddle.net/liamhanninen/hztb078b/</a></p> -->
+<render-chart
+       chart="hc_M_def_chart_1300"
+       displayTable = "false"
+      >  </render-chart>
 <p><em>Source: ICJIA Analysis of IDOC Data</em></p>
 
 
@@ -26,8 +29,11 @@
 
 <h3 id="time-served-in-idoc-for-murder-offenders-released-2012-2014-n6992">Time Served in IDOC for Murder Offenders Released 2012-2014 (N=699)<a href="#fn:15" id="fnref:15" title="See footnote" class="footnote">2</a></h3>
 
-<p>hc_M_def_chart_1400 <a href="http://jsfiddle.net/liamhanninen/y5nq8efs/">http://jsfiddle.net/liamhanninen/y5nq8efs/</a></p>
-
+<!-- <p>hc_M_def_chart_1400 <a href="http://jsfiddle.net/liamhanninen/y5nq8efs/">http://jsfiddle.net/liamhanninen/y5nq8efs/</a></p> -->
+<render-chart
+       chart="hc_M_def_chart_1400"
+       displayTable = "true"
+      >  </render-chart>
 <p><em>Source: ICJIA Analysis of IDOC Data</em></p>
 
 <div class="footnotes"><hr><ol><li id="fn:14">730 ILCS 5/3-6-3, known as the “Truth-In-Sentencing” Law, establishes sentencing rules in Illinois. It was originally enacted in 1998 and has been updated/added to several times since then. <br>
