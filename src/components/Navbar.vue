@@ -19,7 +19,7 @@
 <nav>
     <div class="nav-wrapper grey darken-4">
      <div style="margin-right: 30px;">
-       
+
       <ul id="nav-mobile" class="right subnav hide-on-med-and-down">
        <li v-for="item in menuArray" @click="clickLink">
         <router-link :to="item.path"  tag="a" class="test">{{item.name}}</router-link>
@@ -31,8 +31,8 @@
 
 
 <div v-if="showBreadcrumb" style="float: right; margin-right: 40px; margin-top: 10px;" class="segmentDisplay">
-  <a class='dropdown-button' v-on:click.stop.prevent="openSideNav()" style="text-transform: uppercase">
-  {{currentSegment}} / {{page}}<i class="material-icons right">view_list</i>
+  <a class='dropdown-button' style="text-transform: uppercase">
+  {{currentSegment}} / {{page}}<i class="material-icons right"></i>
   </a>
   </div>
 
@@ -74,9 +74,7 @@ export default {
 
        $(function() {
 
-          // activate sidenav -- prevent flash
-          $('#slide-out').removeClass('side-nav-hide')
-          $(".side-nav-activate").sideNav({ closeOnClick: true});
+
           $('.segmentDisplay').addClass('animated').addClass('fadeInRight')
           $( ".segmentDisplay" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
           $(".segmentDisplay").removeClass('animated fadeInRight')});
@@ -91,9 +89,7 @@ export default {
 
     },
 
-    openSideNav() {
-        $(".side-nav-activate").sideNav('show');
-    },
+  
     setSegment() {
             var newURL = window.location.protocol + "://" + window.location.host + "/" + window.location.pathname;
             var pathArray = window.location.pathname.split('/');

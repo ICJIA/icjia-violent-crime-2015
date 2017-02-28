@@ -6,9 +6,9 @@
  *
  * http://jquery.com/
  */
-// import jQuery from 'jquery';
-//
-// window.$ = window.jQuery = jQuery;
+import jQuery from 'jquery';
+
+window.$ = window.jQuery = jQuery;
 
 import lodash from 'lodash';
 
