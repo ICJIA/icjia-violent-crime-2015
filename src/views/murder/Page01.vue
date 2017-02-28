@@ -1,0 +1,77 @@
+<template>
+<div class="app">
+    <navbar/>
+   <!-- app root -->
+   <div class="container">
+    <div class="row">
+     <div class="col s12">
+      <div class="center">
+       <h3 class="light pageTitle">{{pageTitle}}</h3>
+      </div>
+      <div v-phtext:1p7s></div>
+
+      <!-- render-map uses named exports found in ./charts/ -->
+     <render-chart
+        chart="hc003_chart"
+        table="hc003_table"
+       >
+    </render-chart>
+
+    <render-chart
+        chart="hc004_chart"
+        table="hc004_table"
+        displayTable="false"
+
+       >
+    </render-chart>
+
+    <div v-phtext:1p7s></div>
+
+  <render-chart
+        chart="hc005_chart"
+    >
+    </render-chart>
+
+
+
+    <!-- render-map uses module filenames located in ./maps/
+        the .js extension is optional -->
+
+    <render-map mapFile="hm001.js" optionsFile="hm001options.js"></render-map>
+
+    <div v-phtext:2p3s></div>
+
+
+     </div>
+    </div>
+   </div>
+
+   <!-- //app root -->
+  </div>
+</template>
+
+<script>
+
+import Navbar from '../../components/Navbar'
+import RenderChart from '../../components/RenderChart.vue'
+import RenderMap from '../../components/RenderMap.vue'
+
+export default {
+    name: 'S01P01',
+    methods: {
+
+    },
+    components: {
+        Navbar,
+        RenderChart,
+        RenderMap
+    },
+    data() {
+        return {
+            pageTitle: 'Section 01 - Page 01',
+            displayTable: true,
+            
+        }
+    }
+}
+</script>

@@ -1,105 +1,196 @@
 <template>
-  <div id="myNav">
+  <div class="hello">
+  <!-- root -->
+   <!-- Dropdown Structure -->
 
 
-    <div class="collapse bg-about-icjia" id="navbarHeader">
-       <div class="container">
-         <div class="row">
-           <div class="col-sm-8 py-4">
-             <h4 class="text-white">About the ICJIA</h4>
-             <p class="text-muted">Created in 1983, the <a href="http://www.icjia.state.il.us" target="_blank">Illinois Criminal Justice Information Authority</a> is a state agency dedicated to improving the administration of criminal justice.</p>
-
-<p class="text-muted">The Authority brings together key leaders from the justice system and the public to identify critical issues facing the criminal justice system in Illinois, and to propose and evaluate policies, programs, and legislation that address those issues. The agency also works to ensure the criminal justice system in Illinois is efficient and effective. The Authority’s specific powers and duties are detailed in the <a href="http://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=397&ChapterID=5" target="_blank">Illinois Criminal Justice Information Act.</a></p>
-           </div>
-           <div class="col-sm-4 py-4">
-             <h4 class="text-white">Contact</h4>
-             <ul class="list-unstyled">
-               <li><a href="http://www.icjia.state.il.us" class="text-white">Visit website</a></li>
-               <li><a href="https://twitter.com/icjia_illinois?lang=en" class="text-white">Follow on Twitter</a></li>
-               <li><a href="https://www.facebook.com/ICJIA/" class="text-white">Like on Facebook</a></li>
-               <li><a href="https://www.youtube.com/channel/UCtZMzk8D3P4OixYTwsfPeKA" class="text-white">View on YouTube</a></li>
-               <li><a href="https://visitor.r20.constantcontact.com/manage/optin?v=001MqUcqqvjwLCJXlLMSWbTe3zHHmEQgFeBuHvBcJWTbwgrxFbDSGx4HSUPpI6DJWMUPgbljtLxffqIcGFTgCnr-auak88ybvRxpoJlTMGPtZs%3D" class="text-white">Join mailing list</a></li>
-               <li><a href="mailto: cja.irc@illinois.gov" class="text-white">Send email</a></li>
-             </ul>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="navbar navbar-light bg-faded" id="navbar">
-       <div class="">
-         <a href="/" class="navbar-brand"><span id="brand-illinois">ILLINOIS</span>
-           <span id="divider">|</span>
-           <span id="brand-soort">Violent Crime Data Project 2017</span>
-           </a>
+<nav>
+  <div class="nav-wrapper grey darken-3">
 
 
-           <!--<a class="btn btn-secondary navbar-toggler-right" id="mailingList" href="https://goo.gl/1RLj1h">
-             <i class="fa fa-envelope-open" aria-hidden="true"></i>
-             &nbsp;&nbsp;&nbsp;Join the Mailing List
-           </a>-->
-
-         <button  class="hamburger hamburger--spin navbar-toggler navbar-toggler-left"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarHeader"
-                  aria-controls="navbarHeader"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                  >
-           <span class="hamburger-box">
-             <span class="hamburger-inner"></span>
-           </span>
-         </button>
-
-
-       </div>
-     </div>
-
-
-
-
-
-
-
-    <!-- TEMPLATE END -->
-
+    <div id="pageTitle">{{title}}</div>
+    <!--
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>-->
   </div>
+</nav>
+<span style="clear: both"></span>
+<nav>
+    <div class="nav-wrapper grey darken-4">
+     <div style="margin-right: 30px;">
+       
+      <ul id="nav-mobile" class="right subnav hide-on-med-and-down">
+       <li v-for="item in menuArray" @click="clickLink">
+        <router-link :to="item.path"  tag="a" class="test">{{item.name}}</router-link>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div v-if="showBreadcrumb" style="float: right; margin-right: 40px; margin-top: 10px;" class="segmentDisplay">
+  <a class='dropdown-button' v-on:click.stop.prevent="openSideNav()" style="text-transform: uppercase">
+  {{currentSegment}} / {{page}}<i class="material-icons right">view_list</i>
+  </a>
+  </div>
+
+
+
+  <!-- root -->
+  </div>
+
+
 </template>
 
 <script>
 
+import routes from '../routes.js'
+
+
+
 export default {
-  mounted () {
-
-    // console.log(this.publicPath)
-    $(document).ready(function(){
-	     $('.hamburger').click(function(){
-		       $(this).toggleClass('is-active');
-	        });
-        });
-  },
-  components: {
-
-  },
   name: 'Navbar',
-  methods: {
+  updated () {
 
+
+    $('.segmentDisplay').addClass('animated').addClass('fadeInRight')
+      $( ".segmentDisplay" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(".segmentDisplay").removeClass('animated fadeInRight')});
+
+
+  },
+
+  created: function() {
+
+       this.setSegment();
+       this.displayPageTitle()
+       this.initSubnav()
+
+    },
+    mounted: function () {
+      // Fade in breadcrumb, wait for complete, then remove animate class
+
+       $(function() {
+
+          // activate sidenav -- prevent flash
+          $('#slide-out').removeClass('side-nav-hide')
+          $(".side-nav-activate").sideNav({ closeOnClick: true});
+          $('.segmentDisplay').addClass('animated').addClass('fadeInRight')
+          $( ".segmentDisplay" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(".segmentDisplay").removeClass('animated fadeInRight')});
+        })
+
+    },
+    watch: {
+        '$route': 'updateSubnav'
+    },
+  methods: {
+    clickLink (e) {
+
+    },
+
+    openSideNav() {
+        $(".side-nav-activate").sideNav('show');
+    },
+    setSegment() {
+            var newURL = window.location.protocol + "://" + window.location.host + "/" + window.location.pathname;
+            var pathArray = window.location.pathname.split('/');
+            this.segment = '/' + pathArray[1];
+            this.currentSegment = pathArray[1];
+            this.page = pathArray[2];
+            if (this.page) {
+              this.showBreadcrumb = true
+            } else {
+              this.showBreadcrumb = false
+            }
+
+        },
+
+        initSubnav() {
+            // add quick 'left' method to String
+            String.prototype.left = function(n) {
+                return this.substring(0, n);
+            }
+            this.makeMenu()
+        },
+
+        makeMenu() {
+            let menu = [];
+            var seg = this.segment
+            // use lodash to cycle through routes
+            _.forOwn(routes, function(value, key) {
+                if (value.path.left(seg.length) === seg) {
+                    let obj = {}
+                    // remove 'X_' section identifiers from route name
+                    obj.name = value.name.substring(2)
+                    obj.path = value.path
+                    if (obj.name != 'direct' && obj.name != 'rediect') {
+                      menu.push(obj)
+                    }
+                }
+            });
+            this.menuArray = menu
+        },
+
+        updateSubnav() {
+            this.setSegment();
+            this.displayPageTitle();
+            this.initSubnav()
+
+        },
+
+        displayPageTitle() {
+
+            this.title = 'ICJIA Violent Crime Data Project 2017 / ' + this.segment.slice(1)
+
+
+        }
 
   },
   data () {
-    return {
-
-    }
+     return {
+            title: null,
+            subNav: null,
+            segment: null,
+            menuArray: null,
+            page: null,
+            currentSegment: null,
+            showBreadcrumb: false
+        }
   }
 }
 </script>
 
 
 <style scoped>
-a {color: #fff;}
-a:hover {color: #aaa}
-a#mailingList {color: #444;}
-.hamburger {margin-top: -14px}
-#mailingList {text-transform: uppercase; font-weight: 700; font-family: 'Lato', sans-serif; font-size: 14px}
+.brand-logo {margin-left: 20px}
+ul.side-nav li.logo {
+  height: 120px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 20px;
 
+    margin-bottom: -10px;
+    background: #ccc;
+}
+
+
+#pageTitle {margin-left: 70px; text-transform: uppercase;}
+ul.subnav li {text-transform: uppercase; font-weight: 300}
+
+a.test {color: #29b6f6; font-weight: 400}
+a.test:hover {color: #aaa; font-weight: 400}
+
+.side-nav .collapsible-header, .side-nav.fixed .collapsible-header {
+
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.text-container {padding: 10px 20px 10px 20px; line-height: 20px}
+.segmentDisplay {font-weight: 400; }
+.segmentDisplay:hover {cursor: pointer; cursor: hand;}
+.segmentDisplay:hover a {color: #aaa}
+.side-nav-hide {display: none}
 </style>
