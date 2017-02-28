@@ -68,10 +68,7 @@ export default {
                if (value.path.left(seg.length) === seg) {
                    let obj = {}
                    // remove 'X_' section identifiers from route name
-                  //  obj.name = value.name.substring(2)
-                  //  obj.path = value.path
-                  //
-                  //  menu.push(obj)
+          
                   obj.name = value.name.substring(2)
                   obj.path = value.path
                   console.log(obj)
