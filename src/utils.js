@@ -23,7 +23,7 @@ exports.dtConfig = {
             $(td).html($(td).html().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,"))
         }
     }],
-    "sDom": '<"top">rt<"bottom"><"clear">'
+    // "sDom": '<"top">rt<"bottom"><"clear">'
 }
 
 

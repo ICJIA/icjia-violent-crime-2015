@@ -103,7 +103,7 @@
 
  <render-chart
         chart="hc_M_def_chart_900"
-        displayTable = "false"
+        displayTable = "true"
        >
     </render-chart>
  <p><em>Source: ICJIA Analysis of Illinois State Police CHRI Data </em></p>

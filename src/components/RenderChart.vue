@@ -26,13 +26,12 @@
     import 'datatables.net-dt/css/jquery.dataTables.css';
 
     // Import all the chart/table elements
-    import * as section01Elements from '../charts/section01.js'
-    import * as section02Elements from '../charts/section02.js'
+    //import * as section01Elements from '../charts/section01.js'
     import * as murderElements from '../charts/murder.js'
 
     // merge everything
-    const graphicElements = Object.assign(section01Elements, section02Elements, murderElements);
-
+    //const graphicElements = Object.assign(section01Elements, murderElements);
+    const graphicElements = murderElements;
 
     export default {
         props: {

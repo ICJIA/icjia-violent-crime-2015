@@ -12,8 +12,11 @@
 
 <h3 id="court-dispositions-on-murder-cases-2012-2014-n15381">Court Dispositions on Murder Cases, 2012-2014 (n=1,538)<a href="#fn:13" id="fnref:13" title="See footnote" class="footnote">1</a></h3>
 
-<p>hc_M_def_chart_1200 <a href="http://jsfiddle.net/liamhanninen/m4qdgqec/">http://jsfiddle.net/liamhanninen/m4qdgqec/</a></p>
-
+<!-- <p>hc_M_def_chart_1200 <a href="http://jsfiddle.net/liamhanninen/m4qdgqec/">http://jsfiddle.net/liamhanninen/m4qdgqec/</a></p> -->
+<render-chart
+       chart="hc_M_def_chart_1200"
+       displayTable = "false"
+      >  </render-chart>
 <p><em>Source: ICJIA Analysis of Illinois State Police CHRI Data, 2012-2014</em></p>
 
 <div class="footnotes"><hr><ol><li id="fn:13"><strong>Disposition</strong>: Outcome/Decision/Ruling;  <br>
