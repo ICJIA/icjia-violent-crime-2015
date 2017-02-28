@@ -34,7 +34,7 @@
 <div class="center-align" style="margin-top: 50px; margin-bottom: 50px;">
 
     <router-link class="white-text text-darken-3 waves-effect waves-light btn btn-large light-blue darken-4"
-     to="/murder/definitions" tag="a">
+     to="/murder/definition" tag="a">
     Get Started&nbsp;&raquo;
     </router-link>
 

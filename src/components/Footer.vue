@@ -2,7 +2,7 @@
 
      <footer class="page-footer white">
 
-        Footer here
+      
         </footer>
 
 </template>
