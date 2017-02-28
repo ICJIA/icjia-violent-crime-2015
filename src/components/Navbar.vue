@@ -8,7 +8,8 @@
   <div class="nav-wrapper grey darken-3">
 
 
-    <div id="pageTitle">{{title}}</div>
+    <div id="pageTitle">
+      <router-link to="/">{{title}}</router-link></div>
     <!--
     <ul class="right hide-on-med-and-down">
       <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -89,7 +90,7 @@ export default {
 
     },
 
-  
+
     setSegment() {
             var newURL = window.location.protocol + "://" + window.location.host + "/" + window.location.pathname;
             var pathArray = window.location.pathname.split('/');
@@ -139,8 +140,8 @@ export default {
 
         displayPageTitle() {
 
-            this.title = 'ICJIA Violent Crime Data Project 2017 / ' + this.segment.slice(1)
-
+            //this.title = 'ICJIA Violent Crime Data Project 2017 / ' + this.segment.slice(1)
+            this.title = 'ICJIA Violent Crime Data Project 2017 '
 
         }
 
