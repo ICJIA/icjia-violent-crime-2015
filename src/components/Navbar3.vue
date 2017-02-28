@@ -1,14 +1,26 @@
 <template>
   <div id="myNav">
 
-  <router-link to="/">Home</router-link> |
+  <!-- <router-link to="/">Home</router-link> |
   <router-link to="/murder">Murder/Definitions</router-link> |
   <router-link to="/murder/arrestees">Murder/Arrestees</router-link> |
   <router-link to="/murder/convictions">Murder/Convictions</router-link> |
   <router-link to="/murder/sentences">Murder/Sentences</router-link> |
   <router-link to="/murder/conclusion">Murder/Conclusion</router-link>
-<br>
-{{menuArray}}
+<br> -->
+
+<nav>
+    <div class="nav-wrapper grey darken-4">
+     <div style="margin-right: 30px;">
+      <ul id="nav-mobile" class="right subnav hide-on-med-and-down">
+       <li v-for="item in myMenu" @click="clickLink">
+        <router-link :to="item.path"  tag="a" class="test">{{item.name}}</router-link>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+<!-- {{myMenu}} -->
   </div>
 
 </template>
@@ -60,23 +72,28 @@ export default {
            this.makeMenu()
        },
        makeMenu() {
-           let menu = [];
+          let myMenu = [];
            var seg = this.segment
+           let targetSeg = '';
            // use lodash to cycle through routes
-           //console.log(routes.options.routes)
+           //console.log(this.$route)
            _.forOwn(routes.options.routes, function(value, key) {
+              targetSeg = value.path.left(seg.length)
+
                if (value.path.left(seg.length) === seg) {
-                   let obj = {}
+                   let myObj = {}
                    // remove 'X_' section identifiers from route name
-          
-                  obj.name = value.name.substring(2)
-                  obj.path = value.path
-                  console.log(obj)
-                  menu.push(obj)
+                  myObj.name = value.name.substring(2)
+                  myObj.path = value.path
+                  //console.log(myObj)
+                  myMenu.push(myObj)
+                  //console.log(myObj.name)
 
                }
+
            });
-           this.menuArray = menu
+           console.log(myMenu)
+           this.myMenu = myMenu;
 
        },
        updateSubnav() {
@@ -92,13 +109,14 @@ export default {
   },
   data () {
     return {
-      title: null,
-                 subNav: null,
-                 segment: null,
-                 menuArray: null,
-                 page: null,
-                 currentSegment: null,
-                 showBreadcrumb: false
+        title: null,
+        subNav: null,
+        segment: null,
+        menuArray: null,
+        page: null,
+        currentSegment: null,
+        showBreadcrumb: false,
+        myMenu: []
     }
   }
 }
