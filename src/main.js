@@ -1,4 +1,6 @@
 require('./bootstrap.js');
+import './scss/base.scss';
+
 
 // import 'materialize-css/bin/materialize.css'
 //import 'materialize-css/bin/materialize.js'

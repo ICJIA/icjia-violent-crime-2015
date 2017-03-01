@@ -117,4 +117,14 @@ if (config.build.bundleAnalyzerReport) {
   webpackConfig.plugins.push(new BundleAnalyzerPlugin())
 }
 
+// if (config.build.prerender) {
+//
+//   webpackConfig.plugins.push(new PrerenderSpaPlugin(
+//       // Absolute path to compiled SPA
+//       Path.join(__dirname, '../dist'),
+//       // List of routes to prerender
+//       [ '/' ]
+//     ))
+// }
+
 module.exports = webpackConfig

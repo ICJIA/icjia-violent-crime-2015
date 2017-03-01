@@ -2,7 +2,7 @@
 <div class="app">
     <navbar/>
 
-   Conclusion
+  
    <!-- //app root -->
    <h1 id="conclusion">Conclusion</h1>
 
