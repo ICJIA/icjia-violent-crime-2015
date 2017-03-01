@@ -100,7 +100,11 @@
     </render-chart>
 
  <p><em>Source: ICJIA Analysis of 2015 Illinois State Police UCR Data</em></p>
+</div>
+</div>
 
+<div class="card spacerTopBottom50">
+  <div class="card-block">
 
 
  <h3 id="murder-rates-per-100000-by-county-2015">Murder Rates per 100,000 by County, 2015</h3>
