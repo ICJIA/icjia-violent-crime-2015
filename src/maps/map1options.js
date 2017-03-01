@@ -18,7 +18,7 @@ const mapOptions = {
             text: ''},
 
     mapNavigation: {
-      enabled: true
+      enabled: false
     },
 
     tooltip: {

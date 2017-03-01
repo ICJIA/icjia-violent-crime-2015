@@ -7,7 +7,7 @@ const mapOptions = {
             text: ''},
 
       mapNavigation: {
-        enabled: true,
+        enabled: false,
         enableMouseWheelZoom: false,
         buttonOptions: {
           verticalAlign: 'bottom'

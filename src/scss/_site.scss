@@ -41,17 +41,17 @@ h6,
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {margin-top: 20px; margin-bottom: 25px}
 h4 {color: #666;}
 
-// .spacerTop20 {margin-top: 20px}
-// .spacerTop30 {margin-top: 30px}
-// .spacerTop50 {margin-top: 50px}
-//
-// .spacerBottom20 {margin-top: 20px}
-// .spacerBottom30 {margin-top: 30px}
-// .spacerBottom50 {margin-top: 50px}
-//
-// .spacerTopBottom20 {margin-top: 20px; margin-bottom: 20px}
-// .spacerTopBottom30 {margin-top: 30px; margin-bottom: 30px}
-// .spacerTopBottom50 {margin-top: 50px; margin-bottom: 50px}
+.spacerTop20 {margin-top: 20px}
+.spacerTop30 {margin-top: 30px}
+.spacerTop50 {margin-top: 50px}
+
+.spacerBottom20 {margin-top: 20px}
+.spacerBottom30 {margin-top: 30px}
+.spacerBottom50 {margin-top: 50px}
+
+.spacerTopBottom20 {margin-top: 20px; margin-bottom: 20px}
+.spacerTopBottom30 {margin-top: 30px; margin-bottom: 30px}
+.spacerTopBottom50 {margin-top: 50px; margin-bottom: 50px}
 
 
 
@@ -97,9 +97,19 @@ button:focus {
 }
 
 //// DataTables overrides
-table.dataTable {margin-top: 30px !important; margin-bottom: 30px !important;}
+table.dataTable {
+    /*margin-top: 30px !important;*/
+    margin-bottom: 30px !important;
+  }
+
 table.dataTable tbody tr.even {
     background-color: #eee !important;
 }
+
+.dataTables_wrapper {
+    margin-top: -40px !important;
+}
+/////////////////////////////////
+
 
 .footnote {margin-left: 5px; position: relative; top: -0.6em; font-size: 80%;}

@@ -1,5 +1,5 @@
 const mapOptions = {
-  
+
     title: {
       text: ''
     },
@@ -7,7 +7,7 @@ const mapOptions = {
             text: ''},
 
     mapNavigation: {
-      enabled: true
+      enabled: false
     },
 
     tooltip: {
