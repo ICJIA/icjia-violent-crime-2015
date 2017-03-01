@@ -37,6 +37,24 @@ h6,
     font-family: $heading-font-stack;
     font-weight: 700;
 }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {margin-top: 20px; margin-bottom: 25px}
+h4 {color: #666;}
+
+// .spacerTop20 {margin-top: 20px}
+// .spacerTop30 {margin-top: 30px}
+// .spacerTop50 {margin-top: 50px}
+//
+// .spacerBottom20 {margin-top: 20px}
+// .spacerBottom30 {margin-top: 30px}
+// .spacerBottom50 {margin-top: 50px}
+//
+// .spacerTopBottom20 {margin-top: 20px; margin-bottom: 20px}
+// .spacerTopBottom30 {margin-top: 30px; margin-bottom: 30px}
+// .spacerTopBottom50 {margin-top: 50px; margin-bottom: 50px}
+
+
+
 a {
     color: $accent-color;
     font-weight: $link-font-weight
@@ -53,6 +71,9 @@ a:hover {
 .upper {
     text-transform: uppercase
 }
+
+.top {margin-top: 90px}
+
 .hrule {
     border-bottom: 1px solid #999;
     padding-bottom: 10px
@@ -70,3 +91,15 @@ a:hover {
 button:focus {
     outline: 0;
 }
+
+.navbar {
+    box-shadow: 0 8px 6px -6px #eee!important;
+}
+
+//// DataTables overrides
+table.dataTable {margin-top: 30px !important; margin-bottom: 30px !important;}
+table.dataTable tbody tr.even {
+    background-color: #eee !important;
+}
+
+.footnote {margin-left: 5px; position: relative; top: -0.6em; font-size: 80%;}

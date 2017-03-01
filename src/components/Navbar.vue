@@ -3,39 +3,37 @@
   <!-- root -->
    <!-- Dropdown Structure -->
 
+   <nav class="navbar fixed-top navbar-toggleable-md  navbar-inverse bg-inverse">
+     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+       <router-link to="/" class="navbar-brand">ILLINOIS Violent Crime 2015 | MURDER</router-link>
+       <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
+         <li v-for="item in menuArray" @click="clickLink" class="nav-item" >
+          <router-link :to="item.path"  tag="a" class="test nav-link">{{item.name}}</router-link>
+          </li>
 
+       </ul>
+
+     </div>
+   </nav>
 <nav>
-  <div class="nav-wrapper grey darken-3">
 
 
-    <div id="pageTitle">
-      <router-link to="/">{{title}}</router-link></div>
-    <!--
-    <ul class="right hide-on-med-and-down">
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-    </ul>-->
-  </div>
+
+
+
+
 </nav>
-<span style="clear: both"></span>
-<nav>
-    <div class="nav-wrapper grey darken-4">
-     <div style="margin-right: 30px;">
-
-      <ul id="nav-mobile" class="right subnav hide-on-med-and-down">
-       <li v-for="item in menuArray" @click="clickLink">
-        <router-link :to="item.path"  tag="a" class="test">{{item.name}}</router-link>
-        </li>
-      </ul>
-      </div>
-    </div>
-  </nav>
 
 
-<div v-if="showBreadcrumb" style="float: right; margin-right: 40px; margin-top: 10px;" class="segmentDisplay">
+
+<!-- <div v-if="showBreadcrumb" style="float: right; margin-right: 40px; margin-top: 10px;" class="segmentDisplay">
   <a class='dropdown-button' style="text-transform: uppercase">
   {{currentSegment}} / {{page}}<i class="material-icons right"></i>
   </a>
-  </div>
+  </div> -->
 
 
 
@@ -190,4 +188,9 @@ a.test:hover {color: #aaa; font-weight: 400}
 .segmentDisplay:hover {cursor: pointer; cursor: hand;}
 .segmentDisplay:hover a {color: #aaa}
 .side-nav-hide {display: none}
+</style>
+
+<style>
+.navbar-brand {text-transform: uppercase; margin-right: 30px}
+li.nav-item a {text-transform: uppercase; font-size: 16px}
 </style>

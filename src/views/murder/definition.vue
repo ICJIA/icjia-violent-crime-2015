@@ -1,6 +1,8 @@
 <template>
 <div class="app">
     <navbar/>
+
+    <div class="container top">
     <h1 id="definition">Definition</h1>
 
  <p>In Illinois, criminal homicide is charged as first degree murder, second degree murder, involuntary manslaughter or reckless homicide. First degree murder is defined as killing another person through an act which is intended to kill them, is likely to kill them, or while committing a forcible felony, such as a robbery or rape. <br>
@@ -19,15 +21,15 @@
 
 
 
- <h2 id="rates">Rates</h2>
+ <h2 id="rates" class="spacerTopBottom20">Rates</h2>
 
 
 
- <h3 id="murder-rates-per-100000-in-americas-10-largest-cities-january-june-2016">Murder Rates per 100,000 in America’s 10 Largest Cities, January-June 2016</h3>
+ <h3 id="murder-rates-per-100000-in-americas-10-largest-cities-january-june-2016" class="spacerBottom30">Murder Rates per 100,000 in America’s 10 Largest Cities, January-June 2016</h3>
  <render-map mapFile="map1data.js" optionsFile="map1options.js"></render-map>
  <!-- <p>hc_M_def_map_100 <a href="http://jsfiddle.net/liamhanninen/dfexajwx/">http://jsfiddle.net/liamhanninen/dfexajwx/</a> <br> -->
 
-   <table class="datatable table table-hover table-striped" id="hc_M_def_table_100">
+   <table id="hc_M_def_table_100">
 
    <thead><tr><th>City</th><th>Criminal Homicide Rate</th></tr></thead><tbody>
     <tr><td>Chicago</td><td>11.62</td></tr>
@@ -51,7 +53,7 @@
  <!-- <p>hc_M_def_map_200 <a href="http://jsfiddle.net/liamhanninen/h1Lyme1p/">http://jsfiddle.net/liamhanninen/h1Lyme1p/</a></p> -->
 
  <render-map mapFile="map2data.js" optionsFile="map2options.js"></render-map>
- <table>
+ <table id="hc_M_def_table_200">
  <thead><tr><th>Rank</th><th>City</th><th>Rate</th></tr></thead><tbody>
   <tr><td>1</td><td>Chicago</td><td>11.62</td></tr>
   <tr><td>2</td><td>Philadelphia</td><td>7.78</td></tr>
@@ -106,7 +108,7 @@
 
  <h4 id="five-illinois-counties-with-highest-murder-rates-2015">Five Illinois Counties with Highest Murder Rates, 2015</h4>
 
- <table id="hc_M_def_table_200">
+ <table id="hc_M_def_table_300">
  <thead><tr><th>                       County</th><th>Population</th><th>Murder Rate Per 100,000</th></tr></thead><tbody>
   <tr><td>St. Clair</td><td>         265,729 </td><td>12.04</td></tr>
   <tr><td>Marion</td><td>            38,571 </td><td>10.37</td></tr>
@@ -120,7 +122,7 @@
 
  <h4 id="murder-rates-for-the-five-largest-illinois-counties-by-population-2015">Murder Rates for the Five Largest Illinois Counties by Population, 2015</h4>
 
- <table id="hc_M_def_table_300">
+ <table id="hc_M_def_table_350">
 
  <thead><tr><th>County</th><th>Population</th><th>Murder Rate Per 100,000</th></tr></thead><tbody>
   <tr><td>Cook</td><td>      5,246,456 </td><td>10.18</td></tr>
@@ -159,22 +161,228 @@
 
  <h3 id="cities-in-illinois-with-highest-murder-rates-per-100000-2015">Cities in Illinois with Highest Murder Rates per 100,000, 2015</h3>
 
- <p>hc_M_def_map_400 <a href="http://jsfiddle.net/liamhanninen/ewpuhj7s/">http://jsfiddle.net/liamhanninen/ewpuhj7s/</a></p>
+ <!-- <p>hc_M_def_map_400 <a href="http://jsfiddle.net/liamhanninen/ewpuhj7s/">http://jsfiddle.net/liamhanninen/ewpuhj7s/</a></p> -->
+
+<render-map mapFile="map4data.js" optionsFile="map4options.js"></render-map>
+<table id="hc_M_def_table_450" style="">
+
+  <thead>
+    <tr>
+      <th>City</th>
+      <th>County</th>
+      <th>Average Homicides 2013-2015</th>
+      <th>Average Population 2013-2015</th>
+      <th>Rate 2013-2015 Per 100,000</th>
+      <th>SDs from the Mean</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>Sauget</td>
+      <td>St. Clair</td>
+      <td>0.33</td>
+      <td>153.67</td>
+      <td>219.30</td>
+      <td>21.12</td>
+    </tr>
+    <tr>
+      <td>East St. Louis</td>
+      <td>St. Clair</td>
+      <td>23.67</td>
+      <td>26585.00</td>
+      <td>89.04</td>
+      <td>8.46</td>
+    </tr>
+    <tr>
+      <td>Breese</td>
+      <td>Clinton</td>
+      <td>3.33</td>
+      <td>4525.67</td>
+      <td>73.45</td>
+      <td>6.94</td>
+    </tr>
+    <tr>
+      <td>Cairo</td>
+      <td>Alexander</td>
+      <td>1.67</td>
+      <td>2569.00</td>
+      <td>64.32</td>
+      <td>6.06</td>
+    </tr>
+    <tr>
+      <td>Washington Park</td>
+      <td>St. Clair</td>
+      <td>2.33</td>
+      <td>4048.00</td>
+      <td>57.56</td>
+      <td>5.40</td>
+    </tr>
+    <tr>
+      <td>Maywood</td>
+      <td>Cook</td>
+      <td>9.00</td>
+      <td>24166.33</td>
+      <td>37.25</td>
+      <td>3.43</td>
+    </tr>
+    <tr>
+      <td>Harvey</td>
+      <td>Cook</td>
+      <td>7.33</td>
+      <td>25382.00</td>
+      <td>28.89</td>
+      <td>2.61</td>
+    </tr>
+    <tr>
+      <td>Caseyville</td>
+      <td>St. Clair</td>
+      <td>1.00</td>
+      <td>4108.00</td>
+      <td>24.63</td>
+      <td>2.20</td>
+    </tr>
+    <tr>
+      <td>Warsaw</td>
+      <td>Hancock</td>
+      <td>0.33</td>
+      <td>1556.67</td>
+      <td>21.51</td>
+      <td>1.90</td>
+    </tr>
+    <tr>
+      <td>Sauk Village (MCA)</td>
+      <td>Cook</td>
+      <td>2.00</td>
+      <td>10562.00</td>
+      <td>18.93</td>
+      <td>1.65</td>
+    </tr>
+    <tr>
+      <td>Oglesby</td>
+      <td>LaSalle</td>
+      <td>0.67</td>
+      <td>3694.67</td>
+      <td>18.06</td>
+      <td>1.56</td>
+    </tr>
+    <tr>
+      <td>Rochester</td>
+      <td>Sangamon</td>
+      <td>0.67</td>
+      <td>3786.67</td>
+      <td>17.61</td>
+      <td>1.52</td>
+    </tr>
+    <tr>
+      <td>Posen</td>
+      <td>Cook</td>
+      <td>1.00</td>
+      <td>6031.33</td>
+      <td>16.58</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <td>Kankakee</td>
+      <td>Kankakee</td>
+      <td>4.33</td>
+      <td>27002.33</td>
+      <td>16.03</td>
+      <td>1.36</td>
+    </tr>
+    <tr>
+      <td>Chicago</td>
+      <td>Cook</td>
+      <td>435.00</td>
+      <td>2724456.67</td>
+      <td>15.97</td>
+      <td>1.36</td>
+    </tr>
+    <tr>
+      <td>Riverdale</td>
+      <td>Cook</td>
+      <td>2.00</td>
+      <td>13626.67</td>
+      <td>14.67</td>
+      <td>1.23</td>
+    </tr>
+    <tr>
+      <td>Henry</td>
+      <td>Marshall</td>
+      <td>0.33</td>
+      <td>2341.00</td>
+      <td>14.01</td>
+      <td>1.17</td>
+    </tr>
+    <tr>
+      <td>Carrollton</td>
+      <td>Greene</td>
+      <td>0.33</td>
+      <td>2408.67</td>
+      <td>13.84</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <td>Zion</td>
+      <td>Lake</td>
+      <td>3.00</td>
+      <td>24297.67</td>
+      <td>12.34</td>
+      <td>1.01</td>
+    </tr>
+    <tr>
+      <td>Rockford</td>
+      <td>Winnebago</td>
+      <td>18.33</td>
+      <td>149322.33</td>
+      <td>12.28</td>
+      <td>1.00</td>
+    </tr>
+    <!-- <tr>
+      <td>Illinois Mean Criminal Homicide Rate = 2.00</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td></td>
+    </tr> -->
+  </tbody>
+
+</table>
+<div>
+  <em>"MCA" = multiple county agency </em>
+</div>
 
  <p><em>Source: ICJIA Analysis of Illinois State Police Uniform Report Data</em></p>
+ </div>
    <!-- //app root -->
   </div>
 </template>
 
 <script>
-
+const utils = require('../../utils')
 import Navbar from '../../components/Navbar'
 import RenderChart from '../../components/RenderChart.vue'
 import RenderMap from '../../components/RenderMap.vue'
+// Datatables install with webpack: https://gist.github.com/marcstober/c34bb4bdf7ef622cb24d6675723749bd
+// https://datatables.net/forums/discussion/32542/datatables-and-webpack
+import dt from 'datatables.net';
+import 'datatables.net-dt/css/jquery.dataTables.css';
+
 
 export default {
-    name: 'S01P01',
-    methods: {
+    name: 'Murder_Definitions',
+
+    mounted () {
+      $(document).ready(function() {
+          // call Datatables to render
+          $('#hc_M_def_table_100').DataTable(utils.dtConfig);
+          $('#hc_M_def_table_200').DataTable(utils.dtConfig);
+          $('#hc_M_def_table_300').DataTable(utils.dtConfig);
+          $('#hc_M_def_table_350').DataTable(utils.dtConfig);
+          $('#hc_M_def_table_400').DataTable(utils.dtConfig);
+          $('#hc_M_def_table_450').DataTable(utils.dtConfig);
+      });
 
     },
     components: {
@@ -191,3 +399,6 @@ export default {
     }
 }
 </script>
+<style>
+
+</style>
