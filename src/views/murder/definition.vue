@@ -17,21 +17,40 @@
 
 
 
+
+
  <h2 id="rates">Rates</h2>
 
 
 
  <h3 id="murder-rates-per-100000-in-americas-10-largest-cities-january-june-2016">Murder Rates per 100,000 in America’s 10 Largest Cities, January-June 2016</h3>
+ <render-map mapFile="map1data.js" optionsFile="map1options.js"></render-map>
+ <!-- <p>hc_M_def_map_100 <a href="http://jsfiddle.net/liamhanninen/dfexajwx/">http://jsfiddle.net/liamhanninen/dfexajwx/</a> <br> -->
 
- <p>hc_M_def_map_100 <a href="http://jsfiddle.net/liamhanninen/dfexajwx/">http://jsfiddle.net/liamhanninen/dfexajwx/</a> <br>
+   <table class="datatable table table-hover table-striped" id="hc_M_def_table_100">
+
+   <thead><tr><th>City</th><th>Criminal Homicide Rate</th></tr></thead><tbody>
+    <tr><td>Chicago</td><td>11.62</td></tr>
+    <tr><td>Philadelphia</td><td>7.78</td></tr>
+    <tr><td>Dallas</td><td>6.38</td></tr>
+    <tr><td>Phoenix</td><td>4.99</td></tr>
+    <tr><td>Houston</td><td>6.88</td></tr>
+    <tr><td>San Antonio</td><td>4.76</td></tr>
+    <tr><td>Los Angeles</td><td>3.37</td></tr>
+    <tr><td>San Jose</td><td>2.43</td></tr>
+    <tr><td>New York</td><td>1.88</td></tr>
+    <tr><td>San Diego</td><td>1.72</td></tr>
+   </tbody></table>
+
  <em>Sources: Major Cities Chiefs Association Violent Crime-Survey; Houston Police Department Data; U.S. Census Bureau population estimates, 2015</em></p>
 
 
 
  <h3 id="murder-rates-per-100000-by-state-2015">Murder Rates per 100,000 by State, 2015</h3>
 
- <p>hc_M_def_map_200 <a href="http://jsfiddle.net/liamhanninen/h1Lyme1p/">http://jsfiddle.net/liamhanninen/h1Lyme1p/</a></p>
+ <!-- <p>hc_M_def_map_200 <a href="http://jsfiddle.net/liamhanninen/h1Lyme1p/">http://jsfiddle.net/liamhanninen/h1Lyme1p/</a></p> -->
 
+ <render-map mapFile="map2data.js" optionsFile="map2options.js"></render-map>
  <table>
  <thead><tr><th>Rank</th><th>City</th><th>Rate</th></tr></thead><tbody>
   <tr><td>1</td><td>Chicago</td><td>11.62</td></tr>
@@ -75,7 +94,9 @@
 
  <h3 id="murder-rates-per-100000-by-county-2015">Murder Rates per 100,000 by County, 2015</h3>
 
- <p>hc_M_def_map_300 <a href="http://jsfiddle.net/liamhanninen/3fvdqtou/">http://jsfiddle.net/liamhanninen/3fvdqtou/</a></p>
+ <!-- <p>hc_M_def_map_300 <a href="http://jsfiddle.net/liamhanninen/3fvdqtou/">http://jsfiddle.net/liamhanninen/3fvdqtou/</a></p> -->
+
+ <render-map mapFile="map3data.js" optionsFile="map3options.js"></render-map>
 
  <p><em>Source: ICJIA Analysis of Illinois State Police Uniform Crime Report Data</em></p>
 

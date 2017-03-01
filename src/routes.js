@@ -32,6 +32,7 @@ export default [{
         component: require('./views/murder/conclusion.vue'),
 
     },
+  
     {
         path: '/murder',
         name: 'Redirect',

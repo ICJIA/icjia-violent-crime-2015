@@ -1,12 +1,13 @@
 <template>
 <div>
-    <div class="graphic-container z-depth-2">
+    <div class="">
         <div    v-html="errorMessage"
                 class="center align error-message"
                 style="">
         </div>
         <div    :id="renderId"
-                class="map-container" >
+                class="map-container"
+                style="">
         </div>
 </div>
 </div>
@@ -19,6 +20,7 @@
     require('highcharts/modules/data')(Highcharts);
     require('highcharts/modules/exporting')(Highcharts);
     require('highcharts/modules/map')(Highcharts);
+
 
     export default {
 
@@ -147,5 +149,10 @@
 
 <style>
 .error-message {color: red; padding-top: 0px; padding-bottom: 0px; font-size: 20px; text-transform: uppercase;}
-.map-container {padding-left: 20px; padding-right: 20px; padding-bottom: 30px; margin: 0 auto;}
+.map-container {
+
+   margin: 0 auto;
+   height: 500px;
+   min-width: 410px;
+ }
 </style>
