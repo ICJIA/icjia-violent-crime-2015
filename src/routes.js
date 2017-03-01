@@ -1,6 +1,6 @@
 export default [{
         path: '/',
-        name: 'Home',
+        name: '0_Home',
         component: require('./views/Home.vue'),
 
     }, {
@@ -32,7 +32,7 @@ export default [{
         component: require('./views/murder/conclusion.vue'),
 
     },
-  
+
     {
         path: '/murder',
         name: 'Redirect',
@@ -43,6 +43,7 @@ export default [{
 
     {
         path: '/*',
+        name: '0_Redirect',
         redirect: '/'
     },
 
