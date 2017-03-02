@@ -1,103 +1,46 @@
 <template>
   <div class="hello">
-  <!-- root -->  
+  <!-- root -->
    <!-- Dropdown Structure -->
 
+   <nav class="navbar fixed-top navbar-toggleable-md  navbar-inverse bg-inverse">
+     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+       <router-link to="/" class="navbar-brand">ILLINOIS Violent Crime 2015 | MURDER</router-link>
+       <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
+         <li v-for="item in menuArray" @click="clickLink" class="nav-item" >
+          <router-link :to="item.path"  tag="a" class="test nav-link">{{item.name}}</router-link>
+          </li>
 
-<ul id="slide-out" class="side-nav side-nav-hide" style="overflow: auto; transform: translateX(0%);">
-<li class="logo">
-<div id="logo-container">
-<img src="../assets/icjia.png" height="75">
-</div>
-</li>
-<li class="divider"></li>
+       </ul>
 
-
-<li><div class="text-container"><p class="center-align" style="font-weight: 700;">Violent Crime in Illinois 2017</p><span v-phtext:1p3s></span></div></li>
-
-
-<li class="divider"></li>
-            
-    <ul class="collapsible collapsible-accordion">
-            <li class="bold"><a class="collapsible-header  waves-effect waves-light">Section 01</a>
-              <div class="collapsible-body">
-                <ul>
-                  <li ><router-link to="/section01" >Introduction</router-link></li>
-                  <li ><router-link to="/section01/page01">Page 01</router-link></li>
-                  <li > <router-link to="/section01/page02">Page 02</router-link></li>
-                  <li > <router-link to="/section01/page03">Page 03</router-link></li>
-                  <li > <router-link to="/section01/page04">Page 04</router-link></li>
-                  <li > <router-link to="/section01/page05">Page 05</router-link></li>
-                </ul>
-              </div>
-            </li>
-            <li class="bold"><a class="collapsible-header  waves-effect waves-light">Section 02</a>
-              <div class="collapsible-body">
-              <ul>
-                  <li ><router-link to="/section02">Introduction</router-link></li>
-                  <li ><router-link to="/section02/page01">Page 01</router-link></li>
-                  <li > <router-link to="/section02/page02">Page 02</router-link></li>
-                  <li > <router-link to="/section02/page03">Page 03</router-link></li>
-                  <li > <router-link to="/section02/page04">Page 04</router-link></li>
-                  <li > <router-link to="/section02/page05">Page 05</router-link></li>
-                </ul>
-                
-              </div>
-            </li>
-            <li class="bold active"><a class="collapsible-header waves-effect waves-light">Section 03</a>
-              <div class="collapsible-body" style="display: block;">
-                <ul>
-                  <li ><router-link to="/section02">Introduction</router-link></li>
-                  <li ><router-link to="/section02/page01">Page 01</router-link></li>
-                  <li > <router-link to="/section02/page02">Page 02</router-link></li>
-                  <li > <router-link to="/section02/page03">Page 03</router-link></li>
-                  <li > <router-link to="/section02/page04">Page 04</router-link></li>
-                  <li > <router-link to="/section02/page05">Page 05</router-link></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-  </ul>
-
-
-
+     </div>
+   </nav>
 <nav>
-  <div class="nav-wrapper grey darken-3">
-    <a href="#!" class="brand-logo side-nav-activate" data-activates="slide-out"><i class="material-icons">menu</i></a>
-    
-    <div id="pageTitle">{{title}}</div>
-    <!--
-    <ul class="right hide-on-med-and-down">
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-    </ul>-->
-  </div>
+
+
+
+
+
+
 </nav>
-<span style="clear: both"></span>
-<nav>
-    <div class="nav-wrapper grey darken-4">
-     <div style="margin-right: 30px;">
-      <ul id="nav-mobile" class="right subnav hide-on-med-and-down">
-       <li v-for="item in menuArray" @click="clickLink">
-        <router-link :to="item.path"  tag="a" class="test">{{item.name}}</router-link>
-        </li>
-      </ul>
-      </div>
-    </div>
-  </nav>
 
 
-<div v-if="showBreadcrumb" style="float: right; margin-right: 40px; margin-top: 10px;" class="segmentDisplay">
-  <a class='dropdown-button' v-on:click.stop.prevent="openSideNav()" style="text-transform: uppercase">
-  {{currentSegment}} / {{page}}<i class="material-icons right">view_list</i>
+
+<!-- <div v-if="showBreadcrumb" style="float: right; margin-right: 40px; margin-top: 10px;" class="segmentDisplay">
+  <a class='dropdown-button' style="text-transform: uppercase">
+  {{currentSegment}} / {{page}}<i class="material-icons right"></i>
   </a>
+  </div> -->
+
+
+
+  <!-- root -->
   </div>
 
 
-  
-  <!-- root -->  
-  </div>
-
-  
 </template>
 
 <script>
@@ -109,47 +52,43 @@ import routes from '../routes.js'
 export default {
   name: 'Navbar',
   updated () {
-    
-     
+
+
     $('.segmentDisplay').addClass('animated').addClass('fadeInRight')
       $( ".segmentDisplay" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-        $(".segmentDisplay").removeClass('animated fadeInRight')}); 
-      
-     
+        $(".segmentDisplay").removeClass('animated fadeInRight')});
+
+
   },
- 
+
   created: function() {
 
        this.setSegment();
        this.displayPageTitle()
        this.initSubnav()
-       
+
     },
     mounted: function () {
       // Fade in breadcrumb, wait for complete, then remove animate class
-  
-       $(function() { 
 
-          // activate sidenav -- prevent flash 
-          $('#slide-out').removeClass('side-nav-hide')
-          $(".side-nav-activate").sideNav({ closeOnClick: true});
+       $(function() {
+
+
           $('.segmentDisplay').addClass('animated').addClass('fadeInRight')
           $( ".segmentDisplay" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-          $(".segmentDisplay").removeClass('animated fadeInRight')}); 
-        })  
-      
+          $(".segmentDisplay").removeClass('animated fadeInRight')});
+        })
+
     },
     watch: {
         '$route': 'updateSubnav'
     },
   methods: {
     clickLink (e) {
-      
+
     },
 
-    openSideNav() {
-        $(".side-nav-activate").sideNav('show');
-    },
+
     setSegment() {
             var newURL = window.location.protocol + "://" + window.location.host + "/" + window.location.pathname;
             var pathArray = window.location.pathname.split('/');
@@ -182,7 +121,9 @@ export default {
                     // remove 'X_' section identifiers from route name
                     obj.name = value.name.substring(2)
                     obj.path = value.path
-                    menu.push(obj)
+                    if (obj.name != 'direct' && obj.name != 'rediect') {
+                      menu.push(obj)
+                    }
                 }
             });
             this.menuArray = menu
@@ -197,11 +138,11 @@ export default {
 
         displayPageTitle() {
 
-            this.title = 'ICJIA Violent Crime Data Project 2017 / ' + this.segment.slice(1)
-
+            //this.title = 'ICJIA Violent Crime Data Project 2017 / ' + this.segment.slice(1)
+            this.title = 'ICJIA Violent Crime Data Project 2017 '
 
         }
-       
+
   },
   data () {
      return {
@@ -225,7 +166,7 @@ ul.side-nav li.logo {
     text-align: center;
     margin-top: 0px;
     padding-top: 20px;
-    
+
     margin-bottom: -10px;
     background: #ccc;
 }
@@ -238,7 +179,7 @@ a.test {color: #29b6f6; font-weight: 400}
 a.test:hover {color: #aaa; font-weight: 400}
 
 .side-nav .collapsible-header, .side-nav.fixed .collapsible-header {
-    
+
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -247,4 +188,9 @@ a.test:hover {color: #aaa; font-weight: 400}
 .segmentDisplay:hover {cursor: pointer; cursor: hand;}
 .segmentDisplay:hover a {color: #aaa}
 .side-nav-hide {display: none}
+</style>
+
+<style>
+.navbar-brand {text-transform: uppercase; margin-right: 30px}
+li.nav-item a {text-transform: uppercase; font-size: 16px}
 </style>

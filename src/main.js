@@ -1,6 +1,18 @@
-require('./bootstrap.js');
+import jQuery from 'jquery';
+// window.$ = window.jQuery = jQuery;
+import lodash from 'lodash';
+// window._ = window.lodash = lodash;
+require('./directives/placeholders');
+require('animate.css')
 
-import 'materialize-css/bin/materialize.css'
+import Meta from 'vue-meta'
+Vue.use(Meta)
+
+import tether from 'tether'
+import bootstrap from 'bootstrap'
+// import './scss/base.scss';
+
+// import 'materialize-css/bin/materialize.css'
 //import 'materialize-css/bin/materialize.js'
 
 
@@ -27,7 +39,7 @@ const router = new VueRouter({
 
 var vue = new Vue({
     el: '#app',
-    router: router,
+    router,
     template: '<App/>',
     components: { App }
 }).$mount('#app')

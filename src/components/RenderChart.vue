@@ -1,13 +1,13 @@
 <template>
 <div>
     <div class="graphic-container z-depth-2">
-        <div    :id="renderId" 
+        <div    :id="renderId"
                 class="chart-container" ></div>
 
-        <div    v-html="hcTable" 
+        <div    v-html="hcTable"
                 style="margin-top: 30px;"></div>
-                
-        <div    v-html="error" 
+
+        <div    v-html="error"
                 style="margin-top: 30px;"></div>
     </div>
 </div>
@@ -24,14 +24,14 @@
     // https://datatables.net/forums/discussion/32542/datatables-and-webpack
     import dt from 'datatables.net';
     import 'datatables.net-dt/css/jquery.dataTables.css';
-    
+
     // Import all the chart/table elements
-    import * as section01Elements from '../charts/section01.js'
-    import * as section02Elements from '../charts/section02.js'
+    //import * as section01Elements from '../charts/section01.js'
+    import * as murderElements from '../charts/murder.js'
 
     // merge everything
-    const graphicElements = Object.assign(section01Elements, section02Elements);
-
+    //const graphicElements = Object.assign(section01Elements, murderElements);
+    const graphicElements = murderElements;
 
     export default {
         props: {
@@ -50,7 +50,7 @@
                 required: false,
                 default: 'true'
             },
-           
+
         },
         created() {
 
@@ -59,13 +59,13 @@
 
             // put prop 'table' in new variable
             this.tableData = this.table
-            
+
             // Check graphicElements object for a table based on prop 'tableData'
             this.hcTable = graphicElements[this.tableData]
 
             // Check graphicElements object for a chart based on prop 'chart'
             this.hcChart = graphicElements[this.chart]
-            
+
             // Is a table already part of the chart?
              if (this.tableData === '') {
                     // if not, generate unique ID for the generated table
@@ -84,16 +84,16 @@
                 }
 
 
-            
+
         },
         mounted: function() {
 
-            
 
 
 
 
-            
+
+
             // Was there a chart object that matched 'chart' in props?
             this.readyToRender = utils.parseBool(utils.objSize (this.hcChart))
 
@@ -106,7 +106,7 @@
                 // Do we display a table?
                 if (!utils.parseBool(this.displayTable)) {
 
-                   
+
 
                     // hide table if prop 'displayTable' === true
                     $('#' + this.tableId).addClass('hideTable')
@@ -114,12 +114,12 @@
                     // Will also prevent a table from being generated if the chart doesn't have one
 
                 } else {
-                    // Otherwise, display table (or render it if doesn't exist), 
-                    // then format it with Datatables 
+                    // Otherwise, display table (or render it if doesn't exist),
+                    // then format it with Datatables
 
                     // Set context for tableId (for document.ready below)
                     let tableId = this.tableId
-        
+
                     $(document).ready(function() {
                         // call Datatables to render
                         $('#' + tableId).DataTable(utils.dtConfig);
@@ -129,7 +129,7 @@
                     if (this.needToRenderTable) {
                         this.hcTable = utils.renderTable(this.hcChart, this.tableId)
                     }
-                }  
+                }
             } else {
                 // If, however, we're not readyToRender -- display error message
                 // Chart object not found in /charts/xxxx.js files

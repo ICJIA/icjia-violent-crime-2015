@@ -1,10 +1,10 @@
-# Violent Crime Data Project 2017
+# Violent Crime Data Project 2017 2.0
 
 > Illinois Criminal Justice Information Authority Violent Crime data project 2017
 
 ## Live demo
 
-http://project-manager-frog-88866.netlify.com
+http://violentcrime.icjia.cloud
 
 ## Build Setup
 
@@ -20,14 +20,19 @@ npm run build
 ```
 
 ## Asset Key
+```
 hc_Section_Page_type_number
+```
 
-#### ID Example
+### ID Example
 
+```
 hc_M_def_map_100
+```
 
-#### Sections:
+### Sections:
 
+```
 M - Murder
 
 Rape  - Rape
@@ -35,9 +40,11 @@ Rape  - Rape
 Rob - Robbery
 
 Agg - Aggravated Assault
+```
 
-#### Pages:
+### Pages:
 
+```
 def - Definitions/Rates
 
 arr - Arrestees
@@ -47,9 +54,11 @@ conv - Convictions
 sen - Sentences
 
 conc - Conclusion
+```
 
-#### Types:
+### Types:
 
+```
 map - HighMaps Map
 
 chart - HighChart Chart
@@ -58,4 +67,6 @@ table - Table
 
 pic - Picture/Image
 
-Based on http://apps.urban.org/features/state-economic-monitor/index.html
+```
+## Special thanks to:
+- http://apps.urban.org/features/state-economic-monitor/index.html
