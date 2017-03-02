@@ -1,7 +1,7 @@
 import jQuery from 'jquery';
 // window.$ = window.jQuery = jQuery;
 import lodash from 'lodash';
-// window._ = window.lodash = lodash;
+window._ = window.lodash = lodash;
 require('./directives/placeholders');
 require('animate.css')
 
@@ -11,12 +11,6 @@ Vue.use(Meta)
 import tether from 'tether'
 import bootstrap from 'bootstrap'
 // import './scss/base.scss';
-
-// import 'materialize-css/bin/materialize.css'
-//import 'materialize-css/bin/materialize.js'
-
-
-
 
 import Vue from 'vue'
 import App from './App'
