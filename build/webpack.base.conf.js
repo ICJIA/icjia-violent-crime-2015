@@ -48,6 +48,14 @@ module.exports = {
         }
       },
       {
+        test: /jquery\.js$/,
+        loader: "expose-loader?$!expose-loader?jQuery"
+      },
+      {
+        test: /tether\.js$/,
+        loader: "expose-loader?Tether"
+      },
+      {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
         query: {
