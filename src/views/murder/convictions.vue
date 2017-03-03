@@ -10,8 +10,8 @@
          <div id="page-context">
              <div class="row">
                  <div class="col-lg-12">
-                     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-   <h1 id="convictions" class="upper">Convictions</h1>
+                  
+   <h1 id="convictions" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Convictions</h1>
 
 <p>Outcome information on arrest incidents that resulted in a court case is also entered into CHRI by circuit court clerks. Since murder cases can take years to resolve, court disposition information for 2012, 2013, and 2014 were examined to provide a more complete picture of murder case outcomes. </p>
 

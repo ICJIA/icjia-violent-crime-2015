@@ -10,10 +10,9 @@
       <div id="page-context">
           <div class="row">
               <div class="col-lg-12">
-                  <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
 
 
-    <h1 id="rates" class="upper">Rates</h1>
+    <h1 id="rates" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Rates</h1>
 
 
 

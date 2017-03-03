@@ -8,8 +8,9 @@
         <div id="page-context">
             <div class="row">
                 <div class="col-lg-12">
-                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-   <h1 id="characteristics-of-murder-victims-and-reported-offenders" class="upper">Characteristics of Murder Victims and Reported Offenders</h1>
+
+   <h1 id="characteristics-of-murder-victims-and-reported-offenders" class="upper">
+     <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Characteristics of Murder Victims and Reported Offenders</h1>
 
  <p>Characteristics of murder victims and the characteristics of those thought to be responsible for the murder are accessible through the national FBI Supplemental Homicide Reporting program. In Illinois, only Chicago and Rockford participated in this data collection program in 2015. Beginning in 2016, all Illinois law enforcement agencies were mandated to report this detailed information on murders. Not all reported alleged offenders are actually arrested for the murder, as the alleged offender must be apprehended with enough evidence to make an arrest.</p>
 

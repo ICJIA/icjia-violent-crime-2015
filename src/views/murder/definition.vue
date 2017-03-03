@@ -16,9 +16,9 @@
                         <!-- Rounded switch -->
 
 
-                          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                          <!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
 
-                          <h1 id="definition" class="upper">Definition</h1>
+                          <h1 id="definition" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Definition</h1>
 
 
 
