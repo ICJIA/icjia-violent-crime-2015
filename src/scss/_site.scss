@@ -206,6 +206,13 @@ ul.sidenav li {margin-top: 10px; margin-left: 20px;}
     background: rgba(255,255,255,0.2);
 }
 
+a.sidenav-link.active {
+
+  text-decoration: none;
+  color: #fff;
+  background: #1e168a
+}
+
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
     text-decoration: none;
