@@ -3,12 +3,20 @@ export default [{
         name: '0_Home',
         component: require('./views/Home.vue'),
 
-    }, {
+    },
+    {
         path: '/murder/definition',
         name: '1_Definition',
         component: require('./views/murder/definition.vue'),
 
-    }, {
+    },
+    {
+        path: '/murder/rates',
+        name: '1_Rates',
+        component: require('./views/murder/rates.vue'),
+
+    },
+    {
         path: '/murder/arrestees',
         name: '1_Arrestees',
         component: require('./views/murder/arrestees.vue'),

@@ -58,6 +58,7 @@
        >
     </render-chart>
  <p><em>Source: FBI Supplemental Homicide Reports, 2014 </em></p>
+ <p>Note: Hispanic is not an option when reporting race into the FBI Supplemental Homicide Report program.</p>
 </div>
 </div>
 
@@ -125,7 +126,7 @@
 
  <render-chart
         chart="hc_M_def_chart_900"
-        displayTable = "true"
+        displayTable = "false"
        >
     </render-chart>
  <p><em>Source: ICJIA Analysis of Illinois State Police CHRI Data </em></p>
@@ -145,8 +146,8 @@
  <h3 id="most-of-the-541-persons-arrested-for-murder-in-illinois-in-2015-had-at-least-one-prior-arrest">Most of the 541 persons arrested for murder in Illinois in 2015 had at least one prior arrest:</h3>
 
  <p>
-   <strong>&nbsp;91 percent</strong> had been arrested for any type of offense <br>
-  <strong>&nbsp;76 percent</strong> had been previously arrested for violent/person offenses, including murder<a href="#fn:1" id="fnref:1" title="See footnote" class="footnote">1</a> <br>
+   <strong>&nbsp;91 percent</strong> for any type of offense <br>
+  <strong>&nbsp;76 percent</strong> for violent/person offenses, including murder<a href="#fn:1" id="fnref:1" title="See footnote" class="footnote">1</a> <br>
   <strong>&nbsp;69 percent</strong> for property offenses<a href="#fn:2" id="fnref:2" title="See footnote" class="footnote">2</a> <br>
   <strong>&nbsp;56 percent</strong> for drug offenses<a href="#fn:3" id="fnref:3" title="See footnote" class="footnote">3</a> <br>
   <strong>&nbsp;54 percent</strong> for other offenses<a href="#fn:4" id="fnref:4" title="See footnote" class="footnote">4</a> <br>
@@ -170,14 +171,56 @@
 
 
  <h3 id="prior-arrests-for-2015-murder-arrestees-n541">Prior Arrests for 2015 Murder Arrestees (N=541)</h3>
-
+Add to sentences -- time served
  <!-- <p>hc_M_def_chart_1100 <a href="http://jsfiddle.net/liamhanninen/nwpnbrjn/">http://jsfiddle.net/liamhanninen/nwpnbrjn/</a></p> -->
 
  <render-chart
         chart="hc_M_def_chart_1100"
-        displayTable = "true"
+        displayTable = "false"
        >
     </render-chart>
+
+    <table class="table table-striped">
+    <thead>
+        <tr role="row">
+            <th class="sorting_asc" tabindex="0" aria-controls="hc0d75748925f54263f736ff00" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending" style="width: 447px;"></th>
+            <th class="sorting" tabindex="0" aria-controls="hc0d75748925f54263f736ff00" rowspan="1" colspan="1" aria-label=" Prior Arrests: activate to sort column ascending" style="width: 549px;"> Prior Arrests</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr role="row" class="odd">
+            <td class="strong sorting_1">0 priors</td>
+            <td> 9.1% </td>
+        </tr>
+        <tr role="row" class="even">
+            <td class="strong sorting_1">1 prior</td>
+            <td> 9.4% </td>
+        </tr>
+        <tr role="row" class="odd">
+            <td class="strong sorting_1">2-5 priors</td>
+            <td> 25.5% </td>
+        </tr>
+        <tr role="row" class="odd">
+            <td class="strong sorting_1">6-10 priors</td>
+            <td> 21.6% </td>
+        </tr>
+        <tr role="row" class="odd">
+            <td class="strong sorting_1">11-15 priors</td>
+            <td> 12.6%</td>
+        </tr>
+        <tr role="row" class="even">
+            <td class="strong sorting_1">16-20 priors</td>
+            <td> 7.6% </td>
+        </tr>
+
+        <tr role="row" class="even">
+            <td class="strong sorting_1">21+ priors</td>
+            <td> 14.2% </td>
+        </tr>
+
+    </tbody>
+</table>
  <p><em>Source: ICJIA Analysis of Illinois State Police CHRI Data</em></p>
 
 </div>

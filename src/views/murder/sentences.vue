@@ -1,8 +1,10 @@
 <template>
-<div class="app">
+  <section>
     <navbar/>
+<div class="app">
+
    <!-- app root -->
-   <div class="container top">
+   <div class="container-fluid top">
    <h1 id="sentences" class="upper">Sentences</h1>
 
 <p>The penalty for first degree murder in Illinois is a minimum of 20 years in prison and a maximum of a life sentence. The penalty for second degree murder is between 4 and 20 years in prison. The death penalty was abolished in Illinois in 2011.</p>
@@ -20,6 +22,7 @@
        displayTable = "false"
       >  </render-chart>
 <p><em>Source: ICJIA Analysis of IDOC Data</em></p>
+<p>* Average sentence length = <strong>35.89 years</strong></p>
 </div>
 </div>
 
@@ -36,7 +39,7 @@
 <!-- <p>hc_M_def_chart_1400 <a href="http://jsfiddle.net/liamhanninen/y5nq8efs/">http://jsfiddle.net/liamhanninen/y5nq8efs/</a></p> -->
 <render-chart
        chart="hc_M_def_chart_1400"
-       displayTable = "true"
+       displayTable = "false"
       >  </render-chart>
 <p><em>Source: ICJIA Analysis of IDOC Data</em></p>
 
@@ -49,6 +52,7 @@ It says that those persons convicted of first degree murder must serve all of th
   </div>
    <!-- //app root -->
   </div>
+</section>
 </template>
 
 <script>

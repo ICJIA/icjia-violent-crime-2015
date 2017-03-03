@@ -5,6 +5,9 @@ const hc_M_def_chart_150 = {
   title: {
     text: ''
   },
+  legend: {
+    enabled: true
+  },
   subtitle: {
     text: ''
   },
@@ -55,7 +58,7 @@ const hc_M_def_chart_150 = {
     }
   },
   legend: {
-    enabled: false
+    enabled: true
   },
   credits: {
     enabled: false
@@ -486,7 +489,7 @@ const hc_M_def_chart_900 = {
         width: 2,
         value: 15.74,
         label: {
-          text: 'Average<br> Age = 29.4',
+          text: 'Average<br> Age = 29.74',
           verticalAlign: 'top',
           textAlign: 'left',
           rotation: 0,
@@ -669,7 +672,7 @@ const hc_M_def_chart_1200 = {
       cursor: 'pointer',
       dataLabels: {
         enabled: true,
-        format: '<b>{point.name}</b>: {point.y:.1f} %',
+        format: '<b>{point.name}</b>: {point.y:.2f} %',
         style: {
           color: 'black'
         }
@@ -765,12 +768,12 @@ const hc_M_def_chart_1400 = {
   xAxis: {
 
     categories: [
-      "0-4",
-      "5-9",
-      "10-14",
-      "15-19",
-      "20-24",
-      "25-29",
+      "0-4.9",
+      "5-9.9",
+      "10-14.9",
+      "15-19.9",
+      "20-24.9",
+      "25-29.9",
       "30+"
     ],
     title: {

@@ -16,7 +16,9 @@
 // Removes the search bar and pagination in Datatables //////////////////////////////////////////
 // See: https://legacy.datatables.net/ref#sDom
 exports.dtConfig = {
+  "pageLength": 100,
     "columnDefs": [{
+
         "targets": '_all',
         "createdCell": function(td, cellData, rowData, row, col) {
             // Add commas to large numbers

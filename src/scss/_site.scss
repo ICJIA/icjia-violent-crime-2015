@@ -92,9 +92,6 @@ button:focus {
     outline: 0;
 }
 
-.navbar {
-    box-shadow: 0 8px 6px -6px #eee!important;
-}
 
 //// DataTables overrides
 table.dataTable {
@@ -107,9 +104,25 @@ table.dataTable tbody tr.even {
 }
 
 .dataTables_wrapper {
-    margin-top: -40px !important;
+    margin-top: -10px !important;
 }
 /////////////////////////////////
 
 
 .footnote {margin-left: 5px; position: relative; top: -0.6em; font-size: 80%;}
+
+#left {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    //outline: 0px solid;
+    background: #333;
+}
+#right {
+    width: 80%;
+    height: auto;
+    //outline: 0px solid;
+    position: absolute;
+    right: 0;
+
+}
