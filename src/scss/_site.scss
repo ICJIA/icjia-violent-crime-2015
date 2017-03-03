@@ -153,7 +153,7 @@ body {
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #222;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -168,6 +168,7 @@ body {
     width: 100%;
     position: absolute;
     //padding: 15px;
+    margin-top: -20px;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -230,8 +231,14 @@ a.sidenav-link.active {
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
+    // color: #fff;
     background: none;
+    cursor: pointer;
+}
+
+.navbar-brand {font-weight: 900; color: #fff !important}
+.navbar-brand:hover {
+    cursor: pointer;
 }
 
 @media(min-width:768px) {

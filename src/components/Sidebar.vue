@@ -33,12 +33,12 @@
   </div>
   <!-- /#sidebar-wrapper -->
 
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-inverse navbar-static-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
 
-      <a class="navbar-brand" href="#"><span id="menu-toggle"><i class="fa fa-1x fa-bars " style="color: #000"></i></span>&nbsp;&nbsp;ILLINOIS VIOLENT CRIME 2015</a>
+      <div class="navbar-brand" id="menu-toggle"><span ><i class="fa fa-1x fa-bars " style="color: #fff"></i></span>&nbsp;&nbsp;ILLINOIS VIOLENT CRIME 2015</div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,12 +66,7 @@ export default {
           $("#wrapper").toggleClass("toggled");
       });
         // call Datatables to render
-        $('#hc_M_def_table_100').DataTable(utils.dtConfig);
-        $('#hc_M_def_table_200').DataTable(utils.dtConfig);
-        $('#hc_M_def_table_300').DataTable(utils.dtConfig);
-        $('#hc_M_def_table_350').DataTable(utils.dtConfig);
-        $('#hc_M_def_table_400').DataTable(utils.dtConfig);
-        $('#hc_M_def_table_450').DataTable(utils.dtConfig);
+        
     });
 
   }
