@@ -13,7 +13,7 @@
 
 
     <!-- <h1 id="rates" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Rates</h1> -->
-
+    
     <h1 id="rates" class="upper">Rates</h1>
 
 
