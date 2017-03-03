@@ -73,7 +73,7 @@ a:hover {
     text-transform: uppercase
 }
 
-.top {margin-top: 90px}
+.top {margin-top: 40px}
 
 .hrule {
     border-bottom: 1px solid #999;
@@ -219,13 +219,14 @@ a.sidenav-link.active {
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
+    height: 56px;
+    font-size: 16px;
     line-height: 60px;
 }
 
 .sidebar-nav > .sidebar-brand a {
     color: #999999;
+    margin-top: -5px;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {

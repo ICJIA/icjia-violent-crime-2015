@@ -12,8 +12,9 @@
               <div class="col-lg-12">
 
 
-    <h1 id="rates" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Rates</h1>
+    <!-- <h1 id="rates" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Rates</h1> -->
 
+    <h1 id="rates" class="upper">Rates</h1>
 
 
 
@@ -419,10 +420,10 @@ export default {
 
           //$('table').addClass('hide')
 
-          $("#menu-toggle").click(function(e) {
-              e.preventDefault();
-              $("#wrapper").toggleClass("toggled");
-          });
+          // $("#menu-toggle").click(function(e) {
+          //     e.preventDefault();
+          //     $("#wrapper").toggleClass("toggled");
+          // });
 
       });
 
