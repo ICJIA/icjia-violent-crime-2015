@@ -1,9 +1,18 @@
 <template>
 
-<div class="app">
+<section>
+<div id="wrapper">
+  <!-- Sidebar -->
+  <sidebar segment="murder" />
 
-<navbar />
-    <div class="container-fluid top">
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+      <div id="page-context">
+          <div class="row">
+              <div class="col-lg-12">
+                  <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+
+
     <h1 id="rates" class="upper">Rates</h1>
 
 
@@ -20,20 +29,7 @@
  <render-map mapFile="map1data.js" optionsFile="map1options.js"></render-map>
  <!-- <p>hc_M_def_map_100 <a href="http://jsfiddle.net/liamhanninen/dfexajwx/">http://jsfiddle.net/liamhanninen/dfexajwx/</a> <br> -->
 
-   <!-- <table id="hc_M_def_table_100">
 
-   <thead><tr><th>City</th><th>Criminal Homicide Rate</th></tr></thead><tbody>
-    <tr><td>Chicago</td><td>11.62</td></tr>
-    <tr><td>Philadelphia</td><td>7.78</td></tr>
-    <tr><td>Dallas</td><td>6.38</td></tr>
-    <tr><td>Phoenix</td><td>4.99</td></tr>
-    <tr><td>Houston</td><td>6.88</td></tr>
-    <tr><td>San Antonio</td><td>4.76</td></tr>
-    <tr><td>Los Angeles</td><td>3.37</td></tr>
-    <tr><td>San Jose</td><td>2.43</td></tr>
-    <tr><td>New York</td><td>1.88</td></tr>
-    <tr><td>San Diego</td><td>1.72</td></tr>
-   </tbody></table> -->
 
    <table id="hc_M_def_table_200">
    <thead><tr><th>Rank</th><th>City</th><th>Rate</th></tr></thead><tbody>
@@ -381,15 +377,24 @@
 
  </div>
  </div>
- </div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
    <!-- //app root -->
-  </div>
+ </section>
 </template>
 
 <script>
 const utils = require('../../utils')
 import Navbar from '../../components/Navbar'
-
+import Sidebar from '../../components/Sidebar'
 import RenderChart from '../../components/RenderChart.vue'
 import RenderMap from '../../components/RenderMap.vue'
 // Datatables install with webpack: https://gist.github.com/marcstober/c34bb4bdf7ef622cb24d6675723749bd
@@ -403,6 +408,8 @@ export default {
 
     mounted () {
       $(document).ready(function() {
+
+
           // call Datatables to render
           $('#hc_M_def_table_100').DataTable(utils.dtConfig);
           $('#hc_M_def_table_200').DataTable(utils.dtConfig);
@@ -410,11 +417,20 @@ export default {
           $('#hc_M_def_table_350').DataTable(utils.dtConfig);
           $('#hc_M_def_table_400').DataTable(utils.dtConfig);
           $('#hc_M_def_table_450').DataTable(utils.dtConfig);
+
+          //$('table').addClass('hide')
+
+          $("#menu-toggle").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("toggled");
+          });
+
       });
 
     },
     components: {
         Navbar,
+        Sidebar,
 
         RenderChart,
         RenderMap
