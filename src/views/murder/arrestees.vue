@@ -6,12 +6,24 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div id="page-context">
+          <div class="row">
+            <div class="col-md-9">
+              <h1 id="characteristics-of-murder-victims-and-reported-offenders"
+              class="upper" style="margin: 0; padding: 0">Characteristics of Murder Victims and Reported Offenders</h1>
+            </div>
+            <div class="col-md-3">
+
+            <table-toggle />
+
+            </div>
+
+          </div>
             <div class="row">
                 <div class="col-lg-12">
 
 
      <!-- <h1 id="characteristics-of-murder-victims-and-reported-offenders" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Characteristics of Murder Victims and Reported Offenders</h1> -->
-     <h1 id="characteristics-of-murder-victims-and-reported-offenders" class="upper">Characteristics of Murder Victims and Reported Offenders</h1>
+
 
  <p>Characteristics of murder victims and the characteristics of those thought to be responsible for the murder are accessible through the national FBI Supplemental Homicide Reporting program. In Illinois, only Chicago and Rockford participated in this data collection program in 2015. Beginning in 2016, all Illinois law enforcement agencies were mandated to report this detailed information on murders. Not all reported alleged offenders are actually arrested for the murder, as the alleged offender must be apprehended with enough evidence to make an arrest.</p>
 
@@ -188,7 +200,7 @@ Add to sentences -- time served
        >
     </render-chart>
 
-    <table class="table table-striped">
+    <table class="table table-striped hc-table">
     <thead>
         <tr role="row">
             <th class="sorting_asc" tabindex="0" aria-controls="hc0d75748925f54263f736ff00" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending" style="width: 447px;"></th>
@@ -249,6 +261,7 @@ import Navbar from '../../components/Navbar'
 import Sidebar from '../../components/Sidebar'
 import RenderChart from '../../components/RenderChart.vue'
 import RenderMap from '../../components/RenderMap.vue'
+import TableToggle from '../../components/TableToggle.vue'
 
 export default {
     name: 'S01P02',
@@ -258,18 +271,14 @@ export default {
     mounted () {
       $(document).ready(function() {
 
-        // $("#menu-toggle").click(function(e) {
-        //     e.preventDefault();
-        //     $("#wrapper").toggleClass("toggled");
-        // });
-
       });
 
     },
     components: {
         Navbar,
         Sidebar,
-        RenderChart
+        RenderChart,
+        TableToggle
     },
     data() {
         return {

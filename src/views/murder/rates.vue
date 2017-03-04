@@ -10,26 +10,19 @@
   <div id="page-content-wrapper">
       <div id="page-context">
           <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-9">
               <h1 id="rates" class="upper" style="margin: 0; padding: 0">Rates</h1>
             </div>
-            <div class="col-md-2">
-              
+            <div class="col-md-3">
+
+            <table-toggle />
+
             </div>
 
           </div>
 
           <div class="row">
               <div class="col-lg-12">
-
-
-    <!-- <h1 id="rates" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Rates</h1> -->
-
-
-
-
-
-
 
 
 
@@ -409,6 +402,7 @@ import Navbar from '../../components/Navbar'
 import Sidebar from '../../components/Sidebar'
 import RenderChart from '../../components/RenderChart.vue'
 import RenderMap from '../../components/RenderMap.vue'
+import TableToggle from '../../components/TableToggle.vue'
 // Datatables install with webpack: https://gist.github.com/marcstober/c34bb4bdf7ef622cb24d6675723749bd
 // https://datatables.net/forums/discussion/32542/datatables-and-webpack
 import dt from 'datatables.net';
@@ -437,18 +431,6 @@ export default {
               $("#wrapper").toggleClass("toggled");
           });
 
-          $('input[name=onoffswitch]').change(function(){
-
-              if($(this).is(':checked'))
-                {
-                    $('.hc-table').removeClass('hide')
-                }
-                else
-                {
-                    $('.hc-table').addClass('hide')
-                }
-
-});
 
 
 
@@ -458,7 +440,7 @@ export default {
     components: {
         Navbar,
         Sidebar,
-
+        TableToggle,
         RenderChart,
         RenderMap
     },
