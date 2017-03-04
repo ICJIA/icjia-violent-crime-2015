@@ -1,6 +1,7 @@
 <template>
 
 <section>
+
 <div id="wrapper">
   <!-- Sidebar -->
   <sidebar segment="murder" />
@@ -9,12 +10,23 @@
   <div id="page-content-wrapper">
       <div id="page-context">
           <div class="row">
+            <div class="col-md-10">
+              <h1 id="rates" class="upper" style="margin: 0; padding: 0">Rates</h1>
+            </div>
+            <div class="col-md-2">
+              
+            </div>
+
+          </div>
+
+          <div class="row">
               <div class="col-lg-12">
 
 
     <!-- <h1 id="rates" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Rates</h1> -->
-    
-    <h1 id="rates" class="upper">Rates</h1>
+
+
+
 
 
 
@@ -31,7 +43,7 @@
 
 
 
-   <table id="hc_M_def_table_200">
+   <table id="hc_M_def_table_200" class="hc-table">
    <thead><tr><th>Rank</th><th>City</th><th>Rate</th></tr></thead><tbody>
     <tr><td>1</td><td>Chicago</td><td>11.62</td></tr>
     <tr><td>2</td><td>Philadelphia</td><td>7.78</td></tr>
@@ -184,7 +196,7 @@
  <!-- <p>hc_M_def_map_400 <a href="http://jsfiddle.net/liamhanninen/ewpuhj7s/">http://jsfiddle.net/liamhanninen/ewpuhj7s/</a></p> -->
 
 <render-map mapFile="map4data.js" optionsFile="map4options.js"></render-map>
-<table id="hc_M_def_table_450" style="">
+<table id="hc_M_def_table_450" class="hc-table">
 
   <thead>
     <tr>
@@ -420,10 +432,25 @@ export default {
 
           //$('table').addClass('hide')
 
-          // $("#menu-toggle").click(function(e) {
-          //     e.preventDefault();
-          //     $("#wrapper").toggleClass("toggled");
-          // });
+          $("#menu-toggle").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("toggled");
+          });
+
+          $('input[name=onoffswitch]').change(function(){
+
+              if($(this).is(':checked'))
+                {
+                    $('.hc-table').removeClass('hide')
+                }
+                else
+                {
+                    $('.hc-table').addClass('hide')
+                }
+
+});
+
+
 
       });
 
@@ -444,6 +471,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
+
 
 </style>
