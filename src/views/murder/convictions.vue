@@ -14,7 +14,6 @@
              </div>
              <div class="col-md-3">
 
-             <!-- <table-toggle /> -->
 
              </div>
 
@@ -81,7 +80,7 @@ export default {
         Navbar,
         RenderChart,
         Sidebar,
-      
+
     },
     data() {
         return {

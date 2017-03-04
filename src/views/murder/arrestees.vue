@@ -13,7 +13,19 @@
             </div>
             <div class="col-md-3">
 
-            <table-toggle />
+              <label class="switch-light" onclick="">
+            <input type="checkbox" name="tableToggle" checked>
+            <strong>
+            <span style="text-transform: uppercase">Display Tables</span>
+            </strong>
+            <div style="height: 15px"></div>
+
+            <span class="well">
+            <span>Hide</span>
+            <span>Show</span>
+            <a class="btn btn-primary"></a>
+            </span>
+            </label>
 
             </div>
 
@@ -261,7 +273,7 @@ import Navbar from '../../components/Navbar'
 import Sidebar from '../../components/Sidebar'
 import RenderChart from '../../components/RenderChart.vue'
 import RenderMap from '../../components/RenderMap.vue'
-import TableToggle from '../../components/TableToggle.vue'
+
 
 export default {
     name: 'S01P02',
@@ -270,6 +282,20 @@ export default {
     },
     mounted () {
       $(document).ready(function() {
+        $('input[name=tableToggle').change(function(){
+
+            if($(this).is(':checked'))
+              {
+                  $('.hc-table').removeClass('hide')
+                  //console.log('on')
+              }
+              else
+              {
+                  $('.hc-table').addClass('hide')
+                  //console.log('off')
+              }
+
+    });
 
       });
 
@@ -278,7 +304,7 @@ export default {
         Navbar,
         Sidebar,
         RenderChart,
-        TableToggle
+      
     },
     data() {
         return {

@@ -15,7 +15,19 @@
             </div>
             <div class="col-md-3">
 
-            <table-toggle />
+              <label class="switch-light" onclick="">
+            <input type="checkbox" name="tableToggle" checked>
+            <strong>
+            <span style="text-transform: uppercase">Display Tables</span>
+            </strong>
+            <div style="height: 15px"></div>
+
+            <span class="well">
+            <span>Hide</span>
+            <span>Show</span>
+            <a class="btn btn-primary"></a>
+            </span>
+            </label>
 
             </div>
 
@@ -402,7 +414,7 @@ import Navbar from '../../components/Navbar'
 import Sidebar from '../../components/Sidebar'
 import RenderChart from '../../components/RenderChart.vue'
 import RenderMap from '../../components/RenderMap.vue'
-import TableToggle from '../../components/TableToggle.vue'
+
 // Datatables install with webpack: https://gist.github.com/marcstober/c34bb4bdf7ef622cb24d6675723749bd
 // https://datatables.net/forums/discussion/32542/datatables-and-webpack
 import dt from 'datatables.net';
@@ -431,6 +443,21 @@ export default {
               $("#wrapper").toggleClass("toggled");
           });
 
+          $('input[name=tableToggle').change(function(){
+
+              if($(this).is(':checked'))
+                {
+                    $('.hc-table').removeClass('hide')
+                    //console.log('on')
+                }
+                else
+                {
+                    $('.hc-table').addClass('hide')
+                    //console.log('off')
+                }
+
+      });
+
 
 
 
@@ -440,7 +467,7 @@ export default {
     components: {
         Navbar,
         Sidebar,
-        TableToggle,
+      
         RenderChart,
         RenderMap
     },
