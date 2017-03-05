@@ -7,11 +7,11 @@
     <div id="page-content-wrapper">
         <div id="page-context">
           <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-10">
               <h1 id="characteristics-of-murder-victims-and-reported-offenders"
               class="upper" style="margin: 0; padding: 0">Characteristics of Murder Victims and Reported Offenders</h1>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2 ">
 
               <label class="switch-light" onclick="">
             <input type="checkbox" name="tableToggle" checked>
@@ -21,8 +21,8 @@
             <div style="height: 15px"></div>
 
             <span class="well">
-            <span>Hide</span>
-            <span>Show</span>
+            <span class="buttonHide">Hide</span>
+            <span class="buttonShow">Show</span>
             <a class="btn btn-primary"></a>
             </span>
             </label>
@@ -269,7 +269,7 @@ Add to sentences -- time served
 
 <script>
 
-import Navbar from '../../components/Navbar'
+
 import Sidebar from '../../components/Sidebar'
 import RenderChart from '../../components/RenderChart.vue'
 import RenderMap from '../../components/RenderMap.vue'
@@ -301,10 +301,10 @@ export default {
 
     },
     components: {
-        Navbar,
+
         Sidebar,
         RenderChart,
-      
+
     },
     data() {
         return {

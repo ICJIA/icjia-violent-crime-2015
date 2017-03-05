@@ -10,10 +10,10 @@
   <div id="page-content-wrapper">
       <div id="page-context">
           <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-10">
               <h1 id="rates" class="upper" style="margin: 0; padding: 0">Rates</h1>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
 
               <label class="switch-light" onclick="">
             <input type="checkbox" name="tableToggle" checked>
@@ -410,7 +410,7 @@
 
 <script>
 const utils = require('../../utils')
-import Navbar from '../../components/Navbar'
+
 import Sidebar from '../../components/Sidebar'
 import RenderChart from '../../components/RenderChart.vue'
 import RenderMap from '../../components/RenderMap.vue'
@@ -438,10 +438,11 @@ export default {
 
           //$('table').addClass('hide')
 
-          $("#menu-toggle").click(function(e) {
-              e.preventDefault();
-              $("#wrapper").toggleClass("toggled");
-          });
+          // $("#menu-toggle").click(function(e) {
+              // e.preventDefault();
+              //$("#wrapper").toggleClass("toggled");
+              //console.log('click')
+          // });
 
           $('input[name=tableToggle').change(function(){
 
@@ -465,9 +466,8 @@ export default {
 
     },
     components: {
-        Navbar,
+
         Sidebar,
-      
         RenderChart,
         RenderMap
     },

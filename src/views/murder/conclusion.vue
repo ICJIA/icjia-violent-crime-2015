@@ -29,7 +29,7 @@
 
 <script>
 
-import Navbar from '../../components/Navbar'
+
 import Sidebar from '../../components/Sidebar'
 import RenderChart from '../../components/RenderChart.vue'
 import RenderMap from '../../components/RenderMap.vue'
@@ -48,7 +48,7 @@ export default {
 
     },
     components: {
-        Navbar,
+
         Sidebar,
         RenderChart,
         RenderMap

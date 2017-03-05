@@ -17,7 +17,7 @@
                   <div class="row">
                       <div class="col-lg-12">
 
-                      
+
 
                         <!-- Rounded switch -->
 
@@ -60,7 +60,7 @@
 
 <script>
 const utils = require('../../utils')
-import Navbar from '../../components/Navbar'
+
 import Sidebar from '../../components/Sidebar'
 
 import RenderChart from '../../components/RenderChart.vue'
@@ -92,7 +92,7 @@ export default {
 
     },
     components: {
-        Navbar,
+
         Sidebar,
         RenderChart,
         RenderMap

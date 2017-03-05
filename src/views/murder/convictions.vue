@@ -61,7 +61,7 @@
 
 <script>
 
-import Navbar from '../../components/Navbar'
+
 import Sidebar from '../../components/Sidebar'
 import RenderChart from '../../components/RenderChart.vue'
 // import TableToggle from '../../components/TableToggle.vue'
@@ -77,7 +77,7 @@ export default {
 
     },
     components: {
-        Navbar,
+
         RenderChart,
         Sidebar,
 

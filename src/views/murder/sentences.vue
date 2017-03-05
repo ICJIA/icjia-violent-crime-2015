@@ -69,7 +69,7 @@ It says that those persons convicted of first degree murder must serve all of th
 
 <script>
 
-import Navbar from '../../components/Navbar'
+
 import Sidebar from '../../components/Sidebar'
 import RenderChart from '../../components/RenderChart.vue'
 
@@ -81,16 +81,13 @@ export default {
     mounted () {
       $(document).ready(function() {
 
-        // $("#menu-toggle").click(function(e) {
-        //     e.preventDefault();
-        //     $("#wrapper").toggleClass("toggled");
-        // });
+
 
       });
 
     },
     components: {
-        Navbar,
+
         Sidebar,
         RenderChart
     },
