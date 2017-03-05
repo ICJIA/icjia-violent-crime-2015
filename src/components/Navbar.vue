@@ -3,7 +3,7 @@
   <!-- root -->
    <!-- Dropdown Structure -->
 
-   <nav class="navbar fixed-top navbar-toggleable-md  navbar-inverse bg-inverse">
+   <!-- <nav class="navbar fixed-top navbar-toggleable-md  navbar-inverse bg-inverse">
      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
@@ -17,16 +17,31 @@
        </ul>
 
      </div>
-   </nav>
-<nav>
+   </nav> -->
 
+   <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        
 
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li v-for="item in menuArray" @click="clickLink" >
+             <router-link :to="item.path"  tag="a" class="test nav-link">{{item.name}}</router-link>
+             </li>
+          </ul>
 
-
-
-
-</nav>
-
+        </div>
+      </div>
+    </nav>
 
 
 <!-- <div v-if="showBreadcrumb" style="float: right; margin-right: 40px; margin-top: 10px;" class="segmentDisplay">

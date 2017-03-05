@@ -1,9 +1,28 @@
 <template>
 <div class="app">
-    <navbar/>
    <!-- app root -->
-   <div class="container top">
-   <h1 id="convictions" class="upper">Convictions</h1>
+   <div id="wrapper">
+     <!-- Sidebar -->
+    <sidebar segment="murder" />
+
+     <!-- Page Content -->
+     <div id="page-content-wrapper">
+         <div id="page-context">
+           <div class="row">
+             <div class="col-md-9">
+               <h1 id="rates" class="upper" style="margin: 0; padding: 0">Convictions</h1>
+             </div>
+             <div class="col-md-3">
+
+
+             </div>
+
+           </div>
+             <div class="row">
+                 <div class="col-lg-12">
+
+   <!-- <h1 id="convictions" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Convictions</h1> -->
+
 
 <p>Outcome information on arrest incidents that resulted in a court case is also entered into CHRI by circuit court clerks. Since murder cases can take years to resolve, court disposition information for 2012, 2013, and 2014 were examined to provide a more complete picture of murder case outcomes. </p>
 
@@ -30,6 +49,12 @@
 <strong>Other</strong>: No Bill, Death Suggested/Cause Abated, Charge Amended/Reduced, Merged with Another Offense, Forfeit Pending, Unfit to Stand Trial, Mistrial, Warrant Issued, Warrant Quashed/Withdrawn, Modified/Trial Court, Vacated/Trial Court, Probation Terminated, Reversed/Reviewing Court, Remanded/Reviewing Court, Modified/Reviewing Court, Vacated/Reviewing Court <a href="#fnref:13" title="Return to article" class="reversefootnote">↩</a></li></ol></div>
 
 </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
    <!-- //app root -->
   </div>
 </template>
@@ -37,16 +62,25 @@
 <script>
 
 import Navbar from '../../components/Navbar'
+import Sidebar from '../../components/Sidebar'
 import RenderChart from '../../components/RenderChart.vue'
-
+// import TableToggle from '../../components/TableToggle.vue'
 export default {
     name: 'S01P03',
     methods: {
 
     },
+    mounted () {
+      $(document).ready(function() {
+
+      });
+
+    },
     components: {
         Navbar,
-        RenderChart
+        RenderChart,
+        Sidebar,
+
     },
     data() {
         return {

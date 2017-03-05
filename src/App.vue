@@ -1,16 +1,12 @@
 <template>
   <div id="app">
-
-
-
-    <!-- <transition name="fade" mode="out-in"> -->
-    <keep-alive>
+    <!-- <keep-alive>
       <router-view class="view"></router-view>
       </keep-alive>
+    <my-footer></my-footer> -->
 
-    <!-- </transition> -->
-    <my-footer></my-footer>
-
+<keep-alive>
+                      <router-view class="view"></router-view></keep-alive>
 
 
 
@@ -27,6 +23,21 @@ export default {
   name: 'app',
     created: function () {
 
+      console.log(this.$route.path)
+
+
+
+    },
+
+    mounted: function () {
+
+
+
+
+
+
+
+
     },
 
   components: {
@@ -38,6 +49,8 @@ export default {
 
 <style lang="scss">
 
+
 @import "./scss/base";
+
 
 </style>

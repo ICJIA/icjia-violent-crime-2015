@@ -9,7 +9,7 @@ import Meta from 'vue-meta'
 Vue.use(Meta)
 
 import tether from 'tether'
-import bootstrap from 'bootstrap'
+import bootstrap from 'bootstrap-sass'
 // import './scss/base.scss';
 
 import Vue from 'vue'

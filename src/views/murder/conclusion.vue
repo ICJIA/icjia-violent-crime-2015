@@ -1,10 +1,17 @@
 <template>
-<div class="app">
-    <navbar/>
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <sidebar segment="murder" />
 
-    <div class="container top">
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div id="page-context">
+            <div class="row">
+                <div class="col-lg-12">
+
 
    <!-- //app root -->
+   <!-- <h1 id="conclusion" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Conclusion</h1> -->
    <h1 id="conclusion" class="upper">Conclusion</h1>
 
 <p>In 2015, the City of Chicago accounted for 89 percent of all murders in Cook County and 64 percent of all murders in Illinois. Murder rates were also high in St. Clair, Marion, Marshall, Peoria, and Winnebago counties.</p>
@@ -14,21 +21,35 @@
 <p>These data also indicate that because the majority of these offenders have previous criminal histories, earlier intervention is needed. Offender risk and needs assessment with resources to address the identified risks and needs could help reduce recidivism among this population and improve public safety.</p>
 </div>
   </div>
+</div>
+</div>
+</div>
+
 </template>
 
 <script>
 
 import Navbar from '../../components/Navbar'
+import Sidebar from '../../components/Sidebar'
 import RenderChart from '../../components/RenderChart.vue'
 import RenderMap from '../../components/RenderMap.vue'
 
 export default {
     name: 'S01P01',
-    methods: {
+    mounted () {
+      $(document).ready(function() {
+
+        // $("#menu-toggle").click(function(e) {
+        //     e.preventDefault();
+        //     $("#wrapper").toggleClass("toggled");
+        // });
+
+      });
 
     },
     components: {
         Navbar,
+        Sidebar,
         RenderChart,
         RenderMap
     },

@@ -1,14 +1,40 @@
 <template>
 
-<div class="app">
+<section>
 
-<navbar />
-    <div class="container-fluid top">
-    <h1 id="rates" class="upper">Rates</h1>
+<div id="wrapper">
+  <!-- Sidebar -->
+  <sidebar segment="murder" />
 
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+      <div id="page-context">
+          <div class="row">
+            <div class="col-md-9">
+              <h1 id="rates" class="upper" style="margin: 0; padding: 0">Rates</h1>
+            </div>
+            <div class="col-md-3">
 
+              <label class="switch-light" onclick="">
+            <input type="checkbox" name="tableToggle" checked>
+            <strong>
+            <span style="text-transform: uppercase">Display Tables</span>
+            </strong>
+            <div style="height: 15px"></div>
 
+            <span class="well">
+            <span>Hide</span>
+            <span>Show</span>
+            <a class="btn btn-primary"></a>
+            </span>
+            </label>
 
+            </div>
+
+          </div>
+
+          <div class="row">
+              <div class="col-lg-12">
 
 
 
@@ -20,22 +46,9 @@
  <render-map mapFile="map1data.js" optionsFile="map1options.js"></render-map>
  <!-- <p>hc_M_def_map_100 <a href="http://jsfiddle.net/liamhanninen/dfexajwx/">http://jsfiddle.net/liamhanninen/dfexajwx/</a> <br> -->
 
-   <!-- <table id="hc_M_def_table_100">
 
-   <thead><tr><th>City</th><th>Criminal Homicide Rate</th></tr></thead><tbody>
-    <tr><td>Chicago</td><td>11.62</td></tr>
-    <tr><td>Philadelphia</td><td>7.78</td></tr>
-    <tr><td>Dallas</td><td>6.38</td></tr>
-    <tr><td>Phoenix</td><td>4.99</td></tr>
-    <tr><td>Houston</td><td>6.88</td></tr>
-    <tr><td>San Antonio</td><td>4.76</td></tr>
-    <tr><td>Los Angeles</td><td>3.37</td></tr>
-    <tr><td>San Jose</td><td>2.43</td></tr>
-    <tr><td>New York</td><td>1.88</td></tr>
-    <tr><td>San Diego</td><td>1.72</td></tr>
-   </tbody></table> -->
 
-   <table id="hc_M_def_table_200">
+   <table id="hc_M_def_table_200" class="hc-table">
    <thead><tr><th>Rank</th><th>City</th><th>Rate</th></tr></thead><tbody>
     <tr><td>1</td><td>Chicago</td><td>11.62</td></tr>
     <tr><td>2</td><td>Philadelphia</td><td>7.78</td></tr>
@@ -188,7 +201,7 @@
  <!-- <p>hc_M_def_map_400 <a href="http://jsfiddle.net/liamhanninen/ewpuhj7s/">http://jsfiddle.net/liamhanninen/ewpuhj7s/</a></p> -->
 
 <render-map mapFile="map4data.js" optionsFile="map4options.js"></render-map>
-<table id="hc_M_def_table_450" style="">
+<table id="hc_M_def_table_450" class="hc-table">
 
   <thead>
     <tr>
@@ -381,17 +394,27 @@
 
  </div>
  </div>
- </div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
    <!-- //app root -->
-  </div>
+ </section>
 </template>
 
 <script>
 const utils = require('../../utils')
 import Navbar from '../../components/Navbar'
-
+import Sidebar from '../../components/Sidebar'
 import RenderChart from '../../components/RenderChart.vue'
 import RenderMap from '../../components/RenderMap.vue'
+
 // Datatables install with webpack: https://gist.github.com/marcstober/c34bb4bdf7ef622cb24d6675723749bd
 // https://datatables.net/forums/discussion/32542/datatables-and-webpack
 import dt from 'datatables.net';
@@ -403,6 +426,8 @@ export default {
 
     mounted () {
       $(document).ready(function() {
+
+
           // call Datatables to render
           $('#hc_M_def_table_100').DataTable(utils.dtConfig);
           $('#hc_M_def_table_200').DataTable(utils.dtConfig);
@@ -410,12 +435,39 @@ export default {
           $('#hc_M_def_table_350').DataTable(utils.dtConfig);
           $('#hc_M_def_table_400').DataTable(utils.dtConfig);
           $('#hc_M_def_table_450').DataTable(utils.dtConfig);
+
+          //$('table').addClass('hide')
+
+          $("#menu-toggle").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("toggled");
+          });
+
+          $('input[name=tableToggle').change(function(){
+
+              if($(this).is(':checked'))
+                {
+                    $('.hc-table').removeClass('hide')
+                    //console.log('on')
+                }
+                else
+                {
+                    $('.hc-table').addClass('hide')
+                    //console.log('off')
+                }
+
+      });
+
+
+
+
       });
 
     },
     components: {
         Navbar,
-
+        Sidebar,
+      
         RenderChart,
         RenderMap
     },
@@ -428,6 +480,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
+
 
 </style>

@@ -35,12 +35,12 @@
 <div class="row">
 <div class="col-md-6">
 <div class="text-center">
-         <img src="/static/chart1.png" class="img-fluid"  />
+         <img src="/static/chart1.png" class="img-responsive"  />
 </div>
 </div>
 <div class="col-md-6">
 <div class="text-center">
-         <img src="/static/chart2.png"  class="img-fluid" />
+         <img src="/static/chart2.png"  class="img-responsive" />
 </div>
 </div>
 </div>

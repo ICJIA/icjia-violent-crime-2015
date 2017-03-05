@@ -5,7 +5,8 @@
                 class="chart-container" ></div>
 
         <div    v-html="hcTable"
-                style="margin-top: 30px;"></div>
+                style="margin-top: 30px;"
+                class="hc-table"></div>
 
         <div    v-html="error"
                 style="margin-top: 30px;"></div>
