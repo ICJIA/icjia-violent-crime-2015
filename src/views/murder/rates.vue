@@ -438,10 +438,10 @@ export default {
 
           //$('table').addClass('hide')
 
-          $("#menu-toggle").click(function(e) {
-              e.preventDefault();
-              $("#wrapper").toggleClass("toggled");
-          });
+          // $("#menu-toggle").click(function(e) {
+          //     e.preventDefault();
+          //     $("#wrapper").toggleClass("toggled");
+          // });
 
           $('input[name=tableToggle').change(function(){
 
@@ -467,7 +467,7 @@ export default {
     components: {
         Navbar,
         Sidebar,
-      
+
         RenderChart,
         RenderMap
     },
