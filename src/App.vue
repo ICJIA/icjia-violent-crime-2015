@@ -7,7 +7,7 @@
 
 <keep-alive>
                       <router-view class="view"></router-view></keep-alive>
-
+                      <my-footer />
 
 
 
@@ -17,40 +17,26 @@
 <script>
 
 import MyFooter from './components/Footer'
+import metaInfo from 'meta'
 
 export default {
 
   name: 'app',
-    created: function () {
-
+  metaInfo,
+  created: function () {
       console.log(this.$route.path)
-
-
-
     },
 
-    mounted: function () {
-
-
-
-
-
-
-
-
+  mounted: function () {
     },
-
   components: {
     MyFooter,
-
   }
 }
 </script>
 
 <style lang="scss">
 
-
 @import "./scss/base";
-
 
 </style>

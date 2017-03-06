@@ -8,6 +8,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+var moment = require('moment-timezone');
 
 var env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -52,9 +53,14 @@ var webpackConfig = merge(baseWebpackConfig, {
         ? 'index.html'
         : config.build.index,
       template: 'index.html',
+      bannerDate: moment().tz("America/Chicago").format("dddd, MMMM Do YYYY, h:mm:ss a"),
+      bannerGit: "https://github.com/ICJIA/icjia-violent-crime-2017",
+      bannerTitle: "Illinois Violent Crime 2015",
+      bannerContact: "cja.irc@illinois.gov",
+      googleAnalytics: true,
       inject: true,
       minify: {
-        removeComments: true,
+        removeComments: false,
         collapseWhitespace: true,
         removeAttributeQuotes: true
         // more options:
