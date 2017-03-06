@@ -61,7 +61,7 @@
             <li><router-link to="/murder" class="crime-category">Murder</router-link></li>
             <li><router-link to="/rape" class="crime-category">Rape</router-link></li>
             <li><router-link to="/robbery" class="crime-category">Robbery</router-link></li>
-            <li><router-link to="/assault" class="crime-category">Assault</router-link></li>
+            <li><router-link to="/assault" class="crime-category">Aggravated Assault/Battery</router-link></li>
 
           </ul>
         </li>
@@ -111,7 +111,7 @@ export default {
 
 <style scoped>
 .navbar-inverse .navbar-nav>li>a {
-    color: #3e58f1 !important;
+    color: #415cfc !important;
 }
 
 .crime-category {font-weight: 700; font-size: 18px;}

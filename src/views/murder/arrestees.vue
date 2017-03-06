@@ -9,7 +9,7 @@
           <div class="row">
             <div class="col-md-10">
               <h1 id="characteristics-of-murder-victims-and-reported-offenders"
-              class="upper" style="margin: 0; padding: 0">Characteristics of Murder Victims and Reported Offenders</h1>
+              class="upper page-head">Characteristics of Murder Victims and Reported Offenders</h1>
             </div>
             <div class="col-md-2 ">
 

@@ -27,7 +27,7 @@
                           <!-- <h1 id="definition" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Definition</h1>
  -->
 
-                          <h1 id="definition" class="upper">Definition</h1>
+                          <h1 id="definition" class="upper page-head">Definition</h1>
 
                           <p>In Illinois, criminal homicide is charged as first degree murder, second degree murder, involuntary manslaughter or reckless homicide. First degree murder is defined as killing another person through an act which is intended to kill them, is likely to kill them, or while committing a forcible felony, such as a robbery or rape.
                               <br> Source: 720 ILCS 5/9-1</p>

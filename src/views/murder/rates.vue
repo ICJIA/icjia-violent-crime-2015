@@ -11,7 +11,7 @@
       <div id="page-context">
           <div class="row">
             <div class="col-md-10">
-              <h1 id="rates" class="upper" style="margin: 0; padding: 0">Rates</h1>
+              <h1 id="rates" class="upper page-head">Rates</h1>
             </div>
             <div class="col-md-2">
 

@@ -12,7 +12,7 @@
 
    <!-- //app root -->
    <!-- <h1 id="conclusion" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Conclusion</h1> -->
-   <h1 id="conclusion" class="upper">Conclusion</h1>
+   <h1 id="conclusion" class="upper page-head">Conclusion</h1>
 
 <p>In 2015, the City of Chicago accounted for 89 percent of all murders in Cook County and 64 percent of all murders in Illinois. Murder rates were also high in St. Clair, Marion, Marshall, Peoria, and Winnebago counties.</p>
 

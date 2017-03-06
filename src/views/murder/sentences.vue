@@ -14,7 +14,7 @@
 
 
    <!-- <h1 id="sentences" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Sentences</h1> -->
-   <h1 id="sentences" class="upper">Sentences</h1>
+   <h1 id="sentences" class="upper page-head">Sentences</h1>
 
 <p>The penalty for first degree murder in Illinois is a minimum of 20 years in prison and a maximum of a life sentence. The penalty for second degree murder is between 4 and 20 years in prison. The death penalty was abolished in Illinois in 2011.</p>
 
@@ -81,7 +81,7 @@ export default {
 
     },
     mounted () {
-    
+
     },
     components: {
 

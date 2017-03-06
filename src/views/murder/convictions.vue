@@ -10,7 +10,7 @@
          <div id="page-context">
            <div class="row">
              <div class="col-md-9">
-               <h1 id="rates" class="upper" style="margin: 0; padding: 0">Convictions</h1>
+               <h1 id="rates" class="upper page-head">Convictions</h1>
              </div>
              <div class="col-md-3">
 
