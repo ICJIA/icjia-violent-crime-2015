@@ -15,7 +15,7 @@
 </template>
 
 <script>
-    const utils = require('../utils')
+    const utils = require('@/utils')
     const Highcharts = require('highcharts');
 
     require('highcharts/modules/data')(Highcharts);
@@ -28,7 +28,7 @@
 
     // Import all the chart/table elements
     //import * as section01Elements from '../charts/section01.js'
-    import * as murderElements from '../charts/murder.js'
+    import * as murderElements from '@/charts/murder.js'
 
     // merge everything
     //const graphicElements = Object.assign(section01Elements, murderElements);

@@ -46,8 +46,8 @@
 </div>
 </div>
 
-
-<div class="container">
+<div style="background: #fff">
+<div class="container" style="padding-bottom: 25px">
   <div class="row">
     <div class="col-md-6">
 <div class="card">
@@ -84,7 +84,7 @@
 </div>
 
 
-<div class="row">
+<div class="row" >
   <div class="col-md-6">
 
 
@@ -119,6 +119,7 @@
     <span class="underConstruction">UNDER CONSTRUCTION</span>
   </div>
   </div>
+</div>
 </div>
 </div>
 </div>
@@ -159,6 +160,9 @@
     background-size: cover;
     margin-top: -31px;
     margin-bottom: 2px;
+}
+.card {
+    box-shadow: inset 2px 2px 1px rgba(0,0,0,.05);
 }
 
 

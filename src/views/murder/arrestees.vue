@@ -261,8 +261,15 @@ Add to sentences -- time served
  <div class="footnotes"><hr><ol><li id="fn:1">Homicide/Murder, Robbery, Battery, Assault, Home Invasion, Stalking, Kidnapping, etc. <a href="#fnref:1" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:2">Burglary, Theft, Arson, Forgery, Fraud, Criminal Trespass, etc. <a href="#fnref:2" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:3">Possession or Delivery of Cannabis, Possession or Delivery of a Controlled Substance, Sale or Possession of Hypodermic Syringes or Needles, etc. <a href="#fnref:3" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:4">All other criminal offenses not included in a specific category; other offense includes Suicide and Other Public Complaints. <a href="#fnref:4" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:5">Gambling, False Police Report, Looting, Perjury, Bribery, etc. <a href="#fnref:5" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:6">Unlawful Use of Weapon, Unlawful Possession of a Weapon, Reckless Discharge of a Firearm, Armed Violence, etc. <a href="#fnref:6" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:7">Reckless Driving, No Driver’s License, No Registration, Speeding, etc. <a href="#fnref:7" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:8">Driving Under the Influence of Alcohol &amp; Driving Under the Influence of Drugs <a href="#fnref:8" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:9">Criminal Sexual Assault, Criminal Sexual Abuse, Sexual Exploitation of a Child, etc. <a href="#fnref:9" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:10">Prostitution, Pimping, Obscenity, Public Indecency, Bigamy, Child Pornography, etc. <a href="#fnref:10" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:11">Curfew, Truancy, Runaway, Illegal Possession or Consumption of Alcohol by a Minor, etc. <a href="#fnref:11" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:12">Endangering the Life or Health of a Child, Child Abandonment, Fail to Pay Child Support, Neglect of Child, etc. <a href="#fnref:12" title="Return to article" class="reversefootnote">↩</a></li></ol></div>
 </div>
 </div>
+
+<my-footer />
 </div>
+
 </div>
+
+
+
+
 </div>
 
 </template>
@@ -270,10 +277,10 @@ Add to sentences -- time served
 <script>
 
 
-import Sidebar from '../../components/Sidebar'
-import RenderChart from '../../components/RenderChart.vue'
-import RenderMap from '../../components/RenderMap.vue'
-
+import Sidebar from 'components/Sidebar'
+import RenderChart from 'components/RenderChart.vue'
+import RenderMap from 'components/RenderMap.vue'
+import MyFooter from 'components/Footer'
 
 export default {
     name: 'S01P02',
@@ -304,6 +311,7 @@ export default {
 
         Sidebar,
         RenderChart,
+        MyFooter
 
     },
     data() {

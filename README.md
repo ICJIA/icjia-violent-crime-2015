@@ -4,7 +4,7 @@
 
 ## Live demo
 
-http://violentcrime2015.icjia.cloud
+https://violentcrime2015.icjia.cloud
 
 ## Build Setup
 

@@ -7,7 +7,7 @@
 
 <keep-alive>
                       <router-view class="view"></router-view></keep-alive>
-                      <my-footer />
+                      
 
 
 

@@ -65,7 +65,6 @@ export default {
           e.preventDefault();
           $("#wrapper").toggleClass("toggled");
       });
-        // call Datatables to render
 
     });
 

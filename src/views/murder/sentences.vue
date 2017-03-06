@@ -60,6 +60,7 @@ It says that those persons convicted of first degree murder must serve all of th
 
   </div>
 </div>
+<my-footer />
 </div>
 </div>
 </div>
@@ -70,8 +71,9 @@ It says that those persons convicted of first degree murder must serve all of th
 <script>
 
 
-import Sidebar from '../../components/Sidebar'
-import RenderChart from '../../components/RenderChart.vue'
+import Sidebar from 'components/Sidebar'
+import MyFooter from 'components/Footer'
+import RenderChart from 'components/RenderChart.vue'
 
 export default {
     name: 'S01P04',
@@ -79,16 +81,12 @@ export default {
 
     },
     mounted () {
-      $(document).ready(function() {
-
-
-
-      });
-
+    
     },
     components: {
 
         Sidebar,
+        MyFooter,
         RenderChart
     },
     data() {

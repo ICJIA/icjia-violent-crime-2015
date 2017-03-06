@@ -15,7 +15,7 @@
 
 <script>
 
-    const utils = require('../utils')
+    const utils = require('@/utils')
     const Highcharts = require('highcharts');
     require('highcharts/modules/data')(Highcharts);
     require('highcharts/modules/exporting')(Highcharts);
@@ -65,7 +65,7 @@
         let map, mapOptions
 
         function getRequireFile (filename) {
-                return require ('../maps/' + filename)
+                return require ('@/maps/' + filename)
                 // .js extension is implied
             }
 

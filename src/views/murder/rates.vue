@@ -397,6 +397,7 @@
 
 </div>
 </div>
+<my-footer />
 </div>
 </div>
 <!-- /#page-content-wrapper -->
@@ -411,9 +412,10 @@
 <script>
 const utils = require('../../utils')
 
-import Sidebar from '../../components/Sidebar'
-import RenderChart from '../../components/RenderChart.vue'
-import RenderMap from '../../components/RenderMap.vue'
+import Sidebar from 'components/Sidebar'
+import MyFooter from 'components/Footer'
+import RenderChart from 'components/RenderChart'
+import RenderMap from 'components/RenderMap'
 
 // Datatables install with webpack: https://gist.github.com/marcstober/c34bb4bdf7ef622cb24d6675723749bd
 // https://datatables.net/forums/discussion/32542/datatables-and-webpack
@@ -436,13 +438,6 @@ export default {
           $('#hc_M_def_table_400').DataTable(utils.dtConfig);
           $('#hc_M_def_table_450').DataTable(utils.dtConfig);
 
-          //$('table').addClass('hide')
-
-          // $("#menu-toggle").click(function(e) {
-              // e.preventDefault();
-              //$("#wrapper").toggleClass("toggled");
-              //console.log('click')
-          // });
 
           $('input[name=tableToggle').change(function(){
 
@@ -469,7 +464,8 @@ export default {
 
         Sidebar,
         RenderChart,
-        RenderMap
+        RenderMap,
+        MyFooter
     },
     data() {
         return {

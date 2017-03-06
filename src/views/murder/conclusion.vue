@@ -21,6 +21,7 @@
 <p>These data also indicate that because the majority of these offenders have previous criminal histories, earlier intervention is needed. Offender risk and needs assessment with resources to address the identified risks and needs could help reduce recidivism among this population and improve public safety.</p>
 </div>
   </div>
+  <my-footer />
 </div>
 </div>
 </div>
@@ -30,9 +31,8 @@
 <script>
 
 
-import Sidebar from '../../components/Sidebar'
-import RenderChart from '../../components/RenderChart.vue'
-import RenderMap from '../../components/RenderMap.vue'
+import Sidebar from 'components/Sidebar'
+import MyFooter from 'components/Footer'
 
 export default {
     name: 'S01P01',
@@ -50,8 +50,7 @@ export default {
     components: {
 
         Sidebar,
-        RenderChart,
-        RenderMap
+      MyFooter
     },
     data() {
         return {

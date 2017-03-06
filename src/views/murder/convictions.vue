@@ -53,6 +53,7 @@
 </div>
 </div>
 </div>
+<my-footer />
 </div>
 </div>
    <!-- //app root -->
@@ -62,9 +63,10 @@
 <script>
 
 
-import Sidebar from '../../components/Sidebar'
-import RenderChart from '../../components/RenderChart.vue'
+import Sidebar from 'components/Sidebar'
+import RenderChart from 'components/RenderChart'
 // import TableToggle from '../../components/TableToggle.vue'
+import MyFooter from 'components/Footer'
 export default {
     name: 'S01P03',
     methods: {
@@ -80,6 +82,7 @@ export default {
 
         RenderChart,
         Sidebar,
+        MyFooter
 
     },
     data() {

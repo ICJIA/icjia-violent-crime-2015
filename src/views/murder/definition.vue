@@ -45,6 +45,7 @@
 
                       </div>
                   </div>
+                  <my-footer />
               </div>
           </div>
           <!-- /#page-content-wrapper -->
@@ -61,10 +62,11 @@
 <script>
 const utils = require('../../utils')
 
-import Sidebar from '../../components/Sidebar'
+import Sidebar from 'components/Sidebar'
 
-import RenderChart from '../../components/RenderChart.vue'
-import RenderMap from '../../components/RenderMap.vue'
+import RenderChart from 'components/RenderChart'
+import RenderMap from 'components/RenderMap'
+import MyFooter from 'components/Footer.vue'
 // Datatables install with webpack: https://gist.github.com/marcstober/c34bb4bdf7ef622cb24d6675723749bd
 // https://datatables.net/forums/discussion/32542/datatables-and-webpack
 import dt from 'datatables.net';
@@ -95,7 +97,9 @@ export default {
 
         Sidebar,
         RenderChart,
-        RenderMap
+        RenderMap,
+        MyFooter
+
     },
     data() {
         return {
