@@ -42,8 +42,8 @@ export default {
 <style scoped>
 a {color: #666}
 footer {border-top: 1px solid #bbb;
-  margin-top: 50px; padding-top: 30px; padding-bottom: 20px; background-color: #fff; color: #333;}
-.footer-text {font-size:12px;}
+  padding-top: 30px; padding-bottom: 40px; background-color: #fff; color: #333;}
+.footer-text {font-size:14px;}
 
 
 </style>

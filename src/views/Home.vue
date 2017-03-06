@@ -1,6 +1,6 @@
 <template>
 
-<section style="margin-bottom: 100px">
+<section>
   <div class="hero" style="margin-top: -50px; z-index: 5000">
    <div class="intro">
    </div>
@@ -31,7 +31,7 @@
 
 </div>
 
-<div class="container" style="margin-top: 50px; margin-bottom: 50px">
+<div class="container" style="margin-top: 100px; margin-bottom: 50px">
 <div class="row">
 <div class="col-md-6">
 <div class="text-center">
@@ -46,12 +46,13 @@
 </div>
 </div>
 
-<div style="background: #fff">
-<div class="container" style="padding-bottom: 25px">
+<div class="block-section">
+<div class="container">
   <div class="row">
     <div class="col-md-6">
-<div class="card">
-  <div class="card-block">
+
+    <div class="well section first">
+      <router-link to="/murder">
     <h4 class="card-title">MURDER</h4>
     <p class="card-text">
       In Illinois, criminal homicide is charged as
@@ -60,16 +61,15 @@
         defined as killing another person through an act which is intended
          to kill them, is likely to kill them, or while committing a forcible felony, such as a robbery or rape.
     </p>
-    <router-link to="/murder" class="btn btn-primary uppercase heavy">Read More&nbsp;&nbsp;&raquo;</router-link>
+    <div class="btn btn-primary hover-button">Read More&nbsp;&nbsp;&raquo;</div>
+  </router-link>
   </div>
-</div>
 </div>
 
 
 
 <div class="col-md-6">
-  <div class="card">
-  <div class="card-block">
+  <div class="well section first">
     <h4 class="card-title">RAPE</h4>
     <p class="card-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -79,7 +79,6 @@
     </p>
     <span class="underConstruction">UNDER CONSTRUCTION</span>
   </div>
-  </div>
 </div>
 </div>
 
@@ -88,8 +87,7 @@
   <div class="col-md-6">
 
 
-<div class="card">
-<div class="card-block">
+<div class="well section">
   <h4 class="card-title">ROBBERY</h4>
   <p class="card-text">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -98,17 +96,15 @@
   semper.
   </p>
   <span class="underConstruction">UNDER CONSTRUCTION</span>
-</div>
-</div>
 
 
+</div>
 </div>
 
 
 
 <div class="col-md-6">
-  <div class="card">
-  <div class="card-block">
+  <div class="well section">
     <h4 class="card-title">AGGRAVATED ASSAULT/BATTERY</h4>
     <p class="card-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -117,12 +113,13 @@
     semper.
     </p>
     <span class="underConstruction">UNDER CONSTRUCTION</span>
-  </div>
-  </div>
 </div>
 </div>
 </div>
 </div>
+
+</div>
+<my-footer />
 </section>
 
 
@@ -136,8 +133,14 @@
 </template>
 
 <script>
+    import MyFooter from '@/components/Footer'
     export default {
         name: 's01p00',
+        components: {
+
+
+            MyFooter
+        },
         data() {
             return {
 
@@ -150,7 +153,7 @@
 <style scoped>
 .chart {margin-top: 50px; margin-bottom: 50px}
 .underConstruction {font-weight: 900; color: #aaa; text-transform: uppercase}
-.card {margin-top: 30px}
+
 .heavy {font-weight: 700}
 .uppercase {text-transform: uppercase}
 .bigHead {color: #666; text-transform: uppercase; font-size: 60px}
@@ -161,9 +164,21 @@
     margin-top: -31px;
     margin-bottom: 2px;
 }
-.card {
-    box-shadow: inset 2px 2px 1px rgba(0,0,0,.05);
-}
+
+a {font-size: 16px; font-weight: 400; color: #111}
+a:hover {text-decoration: none}
+.block-section {
+  margin-top: 120px;
+  background: #aaa;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888}
+.section {margin-top: 50px; padding-bottom: 40px}
+.section.first {margin-top: 20px;}
+.section:hover {background-color: #ddd; cursor: pointer}
+.hover-button {font-weight: 700; text-transform: uppercase}
+
 
 
 </style>
