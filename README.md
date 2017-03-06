@@ -1,6 +1,6 @@
 # Violent Crime Data Project 2015
 
-> Illinois Criminal Justice Information Authority Violent Crime data project 2017
+> Illinois Criminal Justice Information Authority Violent Crime Data Project 2015
 
 ## Live demo
 

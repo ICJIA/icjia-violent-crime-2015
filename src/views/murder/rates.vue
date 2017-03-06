@@ -194,7 +194,7 @@
 
 
 
- <div class="card spacerTopBottom50">
+ <div class="card spacerTop50">
    <div class="card-block">
  <h3 id="cities-in-illinois-with-highest-murder-rates-per-100000-2015">Cities in Illinois with Highest Murder Rates per 100,000, 2015</h3>
 

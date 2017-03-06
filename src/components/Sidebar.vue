@@ -25,6 +25,15 @@
          </ul>
          <!-- <div style="margin-bottom: 30px; margin-top: 15px; font-size: 20px; color: #ccc; text-transform: uppercase; font-weight: 900">HOME</div>
          -->
+<!-- <div style="margin-top: 30px; padding-left: 10px; padding-right: 10px; width: 100%">
+<select class="form-control">
+   <option>MURDER</option>
+   <option>RAPE</option>
+   <option>ROBBERY</option>
+   <option>AGGRAVATED ASSAULT/BATTERY</option>
+
+ </select>
+ </div> -->
        </li>
 
      </ul>
@@ -38,8 +47,25 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
 
-      <div class="navbar-brand" id="menu-toggle"><span ><i class="fa fa-1x fa-bars " style="color: #fff"></i></span>&nbsp;&nbsp;ILLINOIS VIOLENT CRIME 2015</div>
+      <div class="navbar-brand" id="menu-toggle">
+        <span ><i class="fa fa-1x fa-bars " style="color: #fff"></i></span>&nbsp;&nbsp;ILLINOIS VIOLENT CRIME 2015</div>
     </div>
+
+    <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle"
+          data-toggle="dropdown" role="button"
+          aria-haspopup="true" aria-expanded="false">CRIME CATEGORY<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><router-link to="/murder" class="crime-category">Murder</router-link></li>
+            <li><router-link to="/rape" class="crime-category">Rape</router-link></li>
+            <li><router-link to="/robbery" class="crime-category">Robbery</router-link></li>
+            <li><router-link to="/assault" class="crime-category">Assault</router-link></li>
+
+          </ul>
+        </li>
+      </ul>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
 
@@ -49,7 +75,7 @@
 </template>
 
 <script>
-
+import vSelect from "vue-select"
 export default {
   props: {
       segment: {
@@ -58,6 +84,15 @@ export default {
       }
 
   },
+  components: {
+    vSelect
+  },
+  data() {
+      return {
+        selected: null,
+        options: ['foo','bar','baz']
+      }
+    },
   mounted () {
     $(document).ready(function() {
 
@@ -73,3 +108,11 @@ export default {
 
 
 </script>
+
+<style scoped>
+.navbar-inverse .navbar-nav>li>a {
+    color: #3e58f1 !important;
+}
+
+.crime-category {font-weight: 700; font-size: 18px;}
+</style>
