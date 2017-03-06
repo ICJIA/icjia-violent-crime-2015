@@ -104,6 +104,11 @@ var webpackConfig = merge(baseWebpackConfig, {
               from: path.resolve(__dirname, '../_redirects'),
               to: './' },
         ]),
+    new CopyWebpackPlugin([
+                {
+                  from: path.resolve(__dirname, '../.htaccess'),
+                  to: './' },
+            ]),
   ]
 })
 
