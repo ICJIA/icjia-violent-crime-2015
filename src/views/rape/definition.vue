@@ -18,20 +18,11 @@
                       <div class="col-lg-12">
 
 
+                        <h1 id="definition" class="upper page-head">Definition</h1>
 
-                          <h1 id="definition" class="upper page-head">Definition</h1>
+<p>In Illinois, criminal sexual assault [720 ILCS 5/11-0.1], or rape, is defined as the forcible commission of any sex act against another person or the commission of any sex act against a person who is unable to consent. Physical resistance is not required on the part of the victim to demonstrate lack of consent.</p>
 
-                          <p>In Illinois, criminal homicide is charged as first degree murder, second degree murder, involuntary manslaughter or reckless homicide. First degree murder is defined as killing another person through an act which is intended to kill them, is likely to kill them, or while committing a forcible felony, such as a robbery or rape.
-                              <br> Source: 720 ILCS 5/9-1</p>
-
-                          <p>Second degree murder is defined as killing another person while acting under sudden intense passion resulting from the serious provocation by the person killed, or where the offender believes his or her actions to be justified and the belief is determined later by the criminal justice system not to be reasonable.
-                              <br> Source: 720 ILCS 5/9-2</p>
-
-                          <p>Involuntary manslaughter is defined as the unintentional killing of another person without justification, usually through an accident or reckless act; reckless homicide is the term applied to circumstances where the cause of death involved the driving of a motor vehicle.
-                              <br> Source: 720 ILCS 7/9-3 </p>
-
-                          <p>First and second degree murder data are available via the Illinois Uniform Crime Reporting (I-UCR) program. Here, murder is defined as the willful killing of one human being by another (first degree murder) or the killing of another person through gross negligence (second degree murder). Any death caused by injuries received in a fight, argument, quarrel, battery, or commission of a crime must be reported as a criminal homicide.
-                              <br> Source: Illinois State Police Uniform Crime Report</p>
+<p>Data for this analysis was collected from FBI and Illinois Uniform Crime Reports, Illinois State Police Criminal History Records Information (CHRI) System, and the Illinois Department of Corrections (IDOC). Rape offenses include criminal sexual assault, aggravated criminal sexual assault, predatory criminal sexual assault of a child, and criminal sexual assault with an object.</p>
 
 
 
@@ -97,7 +88,7 @@ export default {
         return {
             pageTitle: 'Section 01 - Page 01',
             displayTable: true,
-            segment: 'murder'
+            segment: 'rape'
 
         }
     }

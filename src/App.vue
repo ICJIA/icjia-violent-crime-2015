@@ -7,7 +7,7 @@
 
 <keep-alive>
                       <router-view class="view"></router-view></keep-alive>
-                      
+
 
 
 
@@ -24,7 +24,7 @@ export default {
   name: 'app',
   metaInfo,
   created: function () {
-      console.log(this.$route.path)
+      //console.log(this.$route.path)
     },
 
   mounted: function () {

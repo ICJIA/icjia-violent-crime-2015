@@ -3,7 +3,7 @@
    <!-- app root -->
    <div id="wrapper">
      <!-- Sidebar -->
-    <sidebar :segment="segment" />
+    <sidebar segment="rape" />
 
      <!-- Page Content -->
      <div id="page-content-wrapper">
@@ -89,7 +89,6 @@ export default {
         return {
             pageTitle: 'Section 01 - Page 03',
             displayTable: true,
-            segment: 'murder'
         }
     }
 }

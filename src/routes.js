@@ -43,8 +43,52 @@ export default [{
 
     {
         path: '/murder',
-        name: 'Redirect',
+        name: '1_Redirect',
         redirect: '/murder/definition'
+    },
+
+
+    {
+        path: '/rape/definition',
+        name: '2_Definition',
+        component: require('./views/rape/definition.vue'),
+
+    },
+    {
+        path: '/rape/rates',
+        name: '2_Rates',
+        component: require('./views/rape/rates.vue'),
+
+    },
+    {
+        path: '/rape/arrestees',
+        name: '2_Arrestees',
+        component: require('./views/rape/arrestees.vue'),
+
+    },
+    {
+        path: '/rape/convictions',
+        name: '2_Convictions',
+        component: require('./views/rape/convictions.vue'),
+
+    },
+    {
+        path: '/rape/sentences',
+        name: '2_Sentences',
+        component: require('./views/rape/sentences.vue'),
+
+    },
+    {
+        path: '/rape/conclusion',
+        name: '2_Conclusion',
+        component: require('./views/rape/conclusion.vue'),
+
+    },
+
+    {
+        path: '/rape',
+        name: '2_Redirect',
+        redirect: '/rape/definition'
     },
 
 

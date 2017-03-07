@@ -70,14 +70,14 @@
 
 <div class="col-md-6">
   <div class="well section first">
+    <router-link to="/rape">
     <h4 class="card-title">RAPE</h4>
     <p class="card-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Fusce tincidunt aliquam ligula, nec tincidunt turpis efficitur
-    semper. Sed orci arcu, ultricies nec congue et, ultrices vel erat. Nam eleifend.Fusce tincidunt aliquam ligula, nec tincidunt turpis efficitur
-    semper.
+    In Illinois, criminal sexual assault [720 ILCS 5/11-0.1], or rape, is defined as the forcible commission of any sex act against another person or the commission of any sex act against a person who is unable to consent.
+    Physical resistance is not required on the part of the victim to demonstrate lack of consent.
     </p>
-    <span class="underConstruction">UNDER CONSTRUCTION</span>
+    <div class="btn btn-primary hover-button">Read More&nbsp;&nbsp;&raquo;</div>
+  </router-link>
   </div>
 </div>
 </div>

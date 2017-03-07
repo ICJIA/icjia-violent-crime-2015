@@ -4,16 +4,16 @@
 
 <div id="wrapper">
   <!-- Sidebar -->
-  <sidebar segment="murder" />
+  <sidebar :segment="segment" />
 
   <!-- Page Content -->
   <div id="page-content-wrapper">
       <div id="page-context">
           <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-12">
               <h1 id="rates" class="upper page-head">Rates</h1>
             </div>
-            <div class="col-md-2">
+            <!-- <div class="col-md-2">
 
               <label class="switch-light" onclick="">
             <input type="checkbox" name="tableToggle" checked>
@@ -29,7 +29,7 @@
             </span>
             </label>
 
-            </div>
+            </div> -->
 
           </div>
 
@@ -43,7 +43,7 @@
  <h3 id="murder-rates-per-100000-in-americas-10-largest-cities-january-june-2016" class="spacerBottom30">Murder Rates per 100,000 in America’s 10 Largest Cities, January-June 2016</h3>
 
 
- <render-map mapFile="map1data.js" optionsFile="map1options.js"></render-map>
+ <render-map mapFile="map1data.js" optionsFile="map1options.js" :segment="segment"></render-map>
  <!-- <p>hc_M_def_map_100 <a href="http://jsfiddle.net/liamhanninen/dfexajwx/">http://jsfiddle.net/liamhanninen/dfexajwx/</a> <br> -->
 
 
@@ -74,7 +74,7 @@
 
  <!-- <p>hc_M_def_map_200 <a href="http://jsfiddle.net/liamhanninen/h1Lyme1p/">http://jsfiddle.net/liamhanninen/h1Lyme1p/</a></p> -->
 
- <render-map mapFile="map2data.js" optionsFile="map2options.js"></render-map>
+ <render-map mapFile="map2data.js" optionsFile="map2options.js" :segment="segment"></render-map>
 
 
  <p><em>Sources: Major Cities Chiefs Association Violent Crime-Survey; Houston Police Department Data; U.S. Census Bureau population estimates, 2015</em></p>
@@ -114,7 +114,7 @@
 
  <!-- <p>hc_M_def_map_300 <a href="http://jsfiddle.net/liamhanninen/3fvdqtou/">http://jsfiddle.net/liamhanninen/3fvdqtou/</a></p> -->
 
- <render-map mapFile="map3data.js" optionsFile="map3options.js"></render-map>
+ <render-map mapFile="map3data.js" optionsFile="map3options.js" :segment="segment"></render-map>
 
  <p><em>Source: ICJIA Analysis of Illinois State Police Uniform Crime Report Data</em></p>
 
@@ -200,7 +200,7 @@
 
  <!-- <p>hc_M_def_map_400 <a href="http://jsfiddle.net/liamhanninen/ewpuhj7s/">http://jsfiddle.net/liamhanninen/ewpuhj7s/</a></p> -->
 
-<render-map mapFile="map4data.js" optionsFile="map4options.js"></render-map>
+<render-map mapFile="map4data.js" optionsFile="map4options.js" :segment="segment"></render-map>
 <table id="hc_M_def_table_450" class="hc-table">
 
   <thead>
@@ -471,6 +471,7 @@ export default {
         return {
             pageTitle: 'Section 01 - Page 01',
             displayTable: true,
+            segment: 'murder'
 
         }
     }

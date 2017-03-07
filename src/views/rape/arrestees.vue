@@ -1,17 +1,17 @@
 <template>
   <div id="wrapper">
     <!-- Sidebar -->
-    <sidebar :segment="segment" />
+    <sidebar segment="rape" />
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div id="page-context">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-10">
               <h1 id="characteristics-of-murder-victims-and-reported-offenders"
               class="upper page-head">Characteristics of Murder Victims and Reported Offenders</h1>
             </div>
-            <!-- <div class="col-md-2 ">
+            <div class="col-md-2 ">
 
               <label class="switch-light" onclick="">
             <input type="checkbox" name="tableToggle" checked>
@@ -27,7 +27,7 @@
             </span>
             </label>
 
-            </div> -->
+            </div>
 
           </div>
             <div class="row">
@@ -318,7 +318,6 @@ export default {
         return {
             pageTitle: 'Section 01 - Page 02',
             displayTable: true,
-            segment: 'murder'
         }
     }
 }

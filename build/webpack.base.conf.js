@@ -54,6 +54,10 @@ module.exports = {
         loader: "expose-loader?$!expose-loader?jQuery"
       },
       {
+        test: /lodash\.js$/,
+        loader: "expose-loader?_!expose-loader?lodash"
+      },
+      {
         test: /tether\.js$/,
         loader: "expose-loader?Tether"
       },

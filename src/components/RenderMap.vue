@@ -49,6 +49,11 @@
                 required: true,
                 default: ''
             },
+            segment: {
+                type: String,
+                required: true,
+                default: ''
+            },
             optionsFile: {
                 type: String,
                 required: true,
@@ -64,15 +69,18 @@
 
         let map, mapOptions
 
-        function getRequireFile (filename) {
-                return require ('@/maps/' + filename)
-                // .js extension is implied
-            }
+        // function getRequireFile (filename) {
+        //         return require ('@/maps/' + this.segment + '/' + filename)
+        //         // .js extension is implied
+        //     }
 
         try {
-            map = getRequireFile(this.mapFile)
-            mapOptions = getRequireFile(this.optionsFile)
+            console.log(this.segment)
+            map = require ('@/maps/' + this.segment + '/' + this.mapFile)
+            //map = getRequireFile(this.mapFile)
+            mapOptions = require ('@/maps/' + this.segment + '/' + this.optionsFile)
             this.error = false
+
         }
         catch (e) {
             console.log(e)

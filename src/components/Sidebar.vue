@@ -16,23 +16,23 @@
           <div style="margin-bottom: 10px; margin-top: 15px; font-size: 20px; color: #ccc; text-transform: uppercase; font-weight: 900">
            {{this.segment}}</div>
          <ul class="nav nav-stacked collapse in left-submenu sidenav" id="item1">
-           <li><router-link to="/murder/definition" class="sidenav-link">Definition</router-link></li>
-           <li><router-link to="/murder/rates" class="sidenav-link">Rates</router-link></li>
-           <li><router-link to="/murder/arrestees" class="sidenav-link">Arestees</router-link></li>
-           <li><router-link to="/murder/convictions" class="sidenav-link">Convictions</router-link></li>
-           <li><router-link to="/murder/sentences" class="sidenav-link">Sentences</router-link></li>
-           <li><router-link to="/murder/conclusion" class="sidenav-link">Conclusion</router-link></li>
+
+           <li v-for="item in menuArray" @click="clickLink" >
+            <router-link :to="item.path"  tag="a" class="test nav-link">{{item.name}}</router-link>
+            </li>
          </ul>
-         <!-- <div style="margin-bottom: 30px; margin-top: 15px; font-size: 20px; color: #ccc; text-transform: uppercase; font-weight: 900">HOME</div>
-         -->
-<!-- <div style="margin-top: 30px; padding-left: 10px; padding-right: 10px; width: 100%">
-<select class="form-control">
-   <option>MURDER</option>
-   <option>RAPE</option>
-   <option>ROBBERY</option>
-   <option>AGGRAVATED ASSAULT/BATTERY</option>
+
+
+ <!-- <div style="border-top: 1px solid #ccc; margin-top: 30px; padding-left: 25px; padding-right: 25px; width: 100%">
+   <div style="margin-top: 30px; margin-left: -20px; color: #fff; font-weight: 700">Crime Category</div>
+<select class="form-control" style="margin-top: 30px; font-size: 12px; font-weight: 900">
+   <option class="med-heavy">MURDER</option>
+   <option class="med-heavy">RAPE</option>
+   <option class="med-heavy">ROBBERY</option>
+   <option class="med-heavy">AGGRAVATED ASSAULT/BATTERY</option>
 
  </select>
+
  </div> -->
        </li>
 
@@ -65,6 +65,7 @@
 
           </ul>
         </li>
+
       </ul>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,6 +76,7 @@
 </template>
 
 <script>
+import routes from '@/routes.js'
 import vSelect from "vue-select"
 export default {
   props: {
@@ -87,10 +89,88 @@ export default {
   components: {
     vSelect
   },
+  created: function() {
+
+       //this.setSegment();
+       this.displayPageTitle()
+       this.initSubnav()
+
+    },
+    methods: {
+      clickLink (e) {
+
+      },
+
+
+      // setSegment() {
+      //         var newURL = window.location.protocol + "://" + window.location.host + "/" + window.location.pathname;
+      //         var pathArray = window.location.pathname.split('/');
+      //         this.segment = '/' + pathArray[1];
+      //         this.currentSegment = pathArray[1];
+      //         this.page = pathArray[2];
+      //         if (this.page) {
+      //           this.showBreadcrumb = true
+      //         } else {
+      //           this.showBreadcrumb = false
+      //         }
+      //
+      //     },
+
+          initSubnav() {
+              // add quick 'left' method to String
+              String.prototype.left = function(n) {
+                  return this.substring(0, n);
+              }
+              this.makeMenu()
+          },
+
+          makeMenu() {
+              let menu = [];
+              var seg = '/' + this.segment
+              //console.log(seg)
+              // use lodash to cycle through routes
+              _.forOwn(routes, function(value, key) {
+                  //console.log(value.path,seg)
+                  if (value.path.left(seg.length) === seg) {
+
+                      let obj = {}
+                      // remove 'X_' section identifiers from route name
+                      obj.name = value.name.substring(2)
+                      obj.path = value.path
+
+                      if (obj.name != 'direct' && obj.name != 'Redirect') {
+                        menu.push(obj)
+                      }
+                  }
+              });
+              this.menuArray = menu
+
+          },
+
+          updateSubnav() {
+              this.setSegment();
+              this.displayPageTitle();
+              this.initSubnav()
+
+          },
+
+          displayPageTitle() {
+
+              //this.title = 'ICJIA Violent Crime Data Project 2017 / ' + this.segment.slice(1)
+              this.title = 'ICJIA Violent Crime Data Project 2017 '
+
+          }
+
+    },
   data() {
       return {
-        selected: null,
-        options: ['foo','bar','baz']
+        title: null,
+        subNav: null,
+        // segment: null,
+        menuArray: null,
+        page: null,
+        currentSegment: null,
+        showBreadcrumb: false
       }
     },
   mounted () {
@@ -114,5 +194,6 @@ export default {
     color: #415cfc !important;
 }
 
+.med-heavy {font-weight: 900; color: #666; font-size: 12px;}
 .crime-category {font-weight: 700; font-size: 18px;}
 </style>
