@@ -76,8 +76,9 @@
 
         try {
             console.log(this.segment)
-            map = require ('@/maps/' + this.segment + '/' + this.mapFile)
-            //map = getRequireFile(this.mapFile)
+            // Map data: /maps/data/mapXdata.js
+            map = require ('@/maps/data/' + this.mapFile)
+            // Map options: /maps/<segment>/mapXoptions.js
             mapOptions = require ('@/maps/' + this.segment + '/' + this.optionsFile)
             this.error = false
 

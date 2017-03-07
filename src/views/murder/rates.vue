@@ -115,7 +115,7 @@
  <!-- <p>hc_M_def_map_300 <a href="http://jsfiddle.net/liamhanninen/3fvdqtou/">http://jsfiddle.net/liamhanninen/3fvdqtou/</a></p> -->
 
  <render-map mapFile="map3data.js" optionsFile="map3options.js" :segment="segment"></render-map>
-
+<p><strong>* Pope and Calhoun did not report.</strong></p>
  <p><em>Source: ICJIA Analysis of Illinois State Police Uniform Crime Report Data</em></p>
 
  <p>The overall murder rate in Illinois in 2015 was 5.8 murders per 100,000 residents.</p>

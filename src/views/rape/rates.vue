@@ -103,8 +103,10 @@
 
 <h3 id="rates-of-rape-per-100000-by-county-2015">Rates of Rape per 100,000 by County, 2015</h3>
 
-<p>hc_Rape_def_map_300 <a href="https://fiddle.jshell.net/esheridan/ny9qgejr/">https://fiddle.jshell.net/esheridan/ny9qgejr/</a></p>
+<!-- <p>hc_Rape_def_map_300 <a href="https://fiddle.jshell.net/esheridan/ny9qgejr/">https://fiddle.jshell.net/esheridan/ny9qgejr/</a></p> -->
+<render-map mapFile="map3data.js" optionsFile="map3options.js" :segment="segment"></render-map>
 
+<p><strong>* Pope and Calhoun did not report.</strong></p>
 <p><em>Source: ICJIA Analysis of 2015 Illinois State Police Uniform Crime Report Data</em></p>
 
 <p>Thirteen counties had rates of rape below 10 per 100,000 population, compared to the state rate of 37.5 per 100,000 population. </p>
@@ -173,7 +175,10 @@
 
 <h3 id="cities-in-illinois-with-highest-rates-of-rape-per-100000-2015">Cities in Illinois with Highest Rates of Rape per 100,000, 2015</h3>
 
-<p>hc_Rape_def_map_400 <a href="https://fiddle.jshell.net/esheridan/0wga6dzc/">https://fiddle.jshell.net/esheridan/0wga6dzc/</a></p>
+<!-- <p>hc_Rape_def_map_400 <a href="https://fiddle.jshell.net/esheridan/0wga6dzc/">https://fiddle.jshell.net/esheridan/0wga6dzc/</a></p> -->
+
+<render-map mapFile="map4data.js" optionsFile="map4options.js" :segment="segment"></render-map>
+
 
 <p><em>“MCA” = multiple county agency</em> <br>
 <em>“SD” = standard deviation</em> <br>
