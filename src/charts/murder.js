@@ -397,7 +397,7 @@ const hc_M_def_chart_900 = {
     text: ''
   },
   tooltip: {
-    pointFormat: '{series.name}: <b>{point.y:.1f}</b>'
+    pointFormat: ''
   },
   plotOptions: {
     pie: {
@@ -502,10 +502,13 @@ const hc_M_def_chart_900 = {
     }
   },
   yAxis: {
-    title: {
-      text: "Number of Arrests"
-    }
-  },
+        labels:{enabled: false},
+        gridLineWidth: 0,
+        minorGridLineWidth: 0,
+        title: {
+         text: ''
+        }
+      },
   legend: {
     enabled: false
   },

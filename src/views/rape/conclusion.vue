@@ -14,11 +14,16 @@
    <!-- <h1 id="conclusion" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Conclusion</h1> -->
    <h1 id="conclusion" class="upper page-head">Conclusion</h1>
 
-<p>In 2015, the City of Chicago accounted for 89 percent of all murders in Cook County and 64 percent of all murders in Illinois. Murder rates were also high in St. Clair, Marion, Marshall, Peoria, and Winnebago counties.</p>
 
-<p>Data on individual characteristics of victims and offenders are limited, but the cities of Chicago and Rockford, data indicated black males were most often 1) perpetrators of murder and 2) victims of murder. More than 73 percent of all murder arrestees in Illinois were black, more than 94 percent were males, and their median age was 25 years old.</p>
+<p>
+While Cook County has experienced the majority of rapes, rape rates are highest in other counties, such as Vermilion, Jersey, Marion, and Richland.
+</p>
 
-<p>These data also indicate that because the majority of these offenders have previous criminal histories, earlier intervention is needed. Offender risk and needs assessment with resources to address the identified risks and needs could help reduce recidivism among this population and improve public safety.</p>
+<p>
+Data indicates that because the majority of rape offenders have previous criminal histories, earlier intervention is needed. Offender risk and needs assessments with resources to address the identified risks and needs could help reduce recidivism among this population and improve public safety.
+</p>
+
+
 </div>
   </div>
   <my-footer />
