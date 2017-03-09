@@ -91,10 +91,12 @@
   <router-link to="/robbery">
   <h4 class="card-title">ROBBERY</h4>
   <p class="card-text">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Fusce tincidunt aliquam ligula, nec tincidunt turpis efficitur
-  semper. Sed orci arcu, ultricies nec congue et, ultrices vel erat. Nam eleifend. Fusce tincidunt aliquam ligula, nec tincidunt turpis efficitur
-  semper.
+    In Illinois, robbery is defined as the taking or attempting
+       to take anything of value from the care,
+
+       custody, or control of a person or persons by force,
+        threat of force, violence, and/or putting the victim in fear
+         [720 ILCS 5/18].
   </p>
   <div class="btn btn-primary hover-button">Read More&nbsp;&nbsp;&raquo;</div>
 </router-link>

@@ -26,7 +26,8 @@ module.exports = {
       'node_modules': resolve('node_modules'),
       'meta': resolve('src/meta'),
       'components': resolve('src/components'),
-      'utils': resolve('src/utils')
+      'utils': resolve('src/utils'),
+      'maps': resolve('src/maps')
     }
   },
   module: {
