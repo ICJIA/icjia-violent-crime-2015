@@ -50,6 +50,47 @@
        chart="hc_M_def_chart_1400"
        displayTable = "false"
       >  </render-chart>
+
+      <table class="table table-striped">
+    <thead>
+        <tr role="row">
+            <th class="sorting_asc" tabindex="0" aria-controls="hc7578c1c2604e56477b42bc3f" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending" style="width: 146px;"></th>
+            <th class="sorting" tabindex="0" aria-controls="hc7578c1c2604e56477b42bc3f" rowspan="1" colspan="1" aria-label=" Murder offenders released: activate to sort column ascending" style="width: 565.6px;"> Murder offenders released</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr role="row" class="odd">
+            <td class="strong sorting_1">0-4.9</td>
+            <td> 12 %</td>
+        </tr>
+        <tr role="row" class="odd">
+            <td class="strong sorting_1">5-9.9</td>
+            <td> 13 %</td>
+        </tr>
+        <tr role="row" class="even">
+            <td class="strong sorting_1">10-14.9</td>
+            <td> 17 %</td>
+        </tr>
+        <tr role="row" class="odd">
+            <td class="strong sorting_1">15-19.9</td>
+            <td> 36 %</td>
+        </tr>
+        <tr role="row" class="even">
+            <td class="strong sorting_1">20-24.9</td>
+            <td> 13 %</td>
+        </tr>
+        <tr role="row" class="odd">
+            <td class="strong sorting_1">25-29.9</td>
+            <td> 4 %</td>
+        </tr>
+        <tr role="row" class="even">
+            <td class="strong sorting_1">30+</td>
+            <td> 5 %</td>
+        </tr>
+
+    </tbody>
+</table>
 <p><em>Source: ICJIA Analysis of IDOC Data</em></p>
 
 </div>

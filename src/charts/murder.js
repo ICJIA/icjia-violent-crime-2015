@@ -632,7 +632,7 @@ const hc_M_def_chart_1400 = {
   plotOptions: {
     series: {
       dataLabels: {
-        enabled: false,
+        enabled: true,
         format: '{y} %'
       }
     }

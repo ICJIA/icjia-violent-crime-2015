@@ -64,36 +64,36 @@
     <tbody>
        <tr role="row" class="odd">
           <td class="strong sorting_1">0-1.9</td>
-          <td> 4 </td>
+          <td> 4 % </td>
        </tr>
 
        <tr role="row" class="odd">
           <td class="strong sorting_1">2-3.9</td>
-          <td> 21 </td>
+          <td> 21 % </td>
        </tr>
        <tr role="row" class="even">
           <td class="strong sorting_1">4-5.9</td>
-          <td> 24 </td>
+          <td> 24 % </td>
        </tr>
        <tr role="row" class="odd">
           <td class="strong sorting_1">6-7.9</td>
-          <td> 19 </td>
+          <td> 19 % </td>
        </tr>
        <tr role="row" class="even">
           <td class="strong sorting_1">8-9.9</td>
-          <td> 13 </td>
+          <td> 13 % </td>
        </tr>
        <tr role="row" class="even">
           <td class="strong sorting_1">10-11.9</td>
-          <td> 8 </td>
+          <td> 8 % </td>
        </tr>
        <tr role="row" class="odd">
           <td class="strong sorting_1">12-13.9</td>
-          <td> 5 </td>
+          <td> 5 % </td>
        </tr>
        <tr role="row" class="even">
           <td class="strong sorting_1">14+</td>
-          <td> 7 </td>
+          <td> 7 % </td>
        </tr>
     </tbody>
  </table>

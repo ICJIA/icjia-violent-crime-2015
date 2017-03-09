@@ -43,39 +43,39 @@
    <tbody>
       <tr role="row" class="odd">
          <td class="strong sorting_1">0-2.9</td>
-         <td> 1.4 </td>
+         <td> 1.4 %</td>
       </tr>
       <tr role="row" class="odd">
          <td class="strong sorting_1">3-5.9</td>
-         <td> 43.3 </td>
+         <td> 43.3 %</td>
       </tr>
       <tr role="row" class="even">
          <td class="strong sorting_1">6-8.9</td>
-         <td> 26.6 </td>
+         <td> 26.6 %</td>
       </tr>
       <tr role="row" class="odd">
          <td class="strong sorting_1">9-11.9</td>
-         <td> 9.5 </td>
+         <td> 9.5 %</td>
       </tr>
       <tr role="row" class="even">
          <td class="strong sorting_1">12-14.9</td>
-         <td> 6.4 </td>
+         <td> 6.4 %</td>
       </tr>
       <tr role="row" class="odd">
          <td class="strong sorting_1">15-17.9</td>
-         <td> 4.6 </td>
+         <td> 4.6 %</td>
       </tr>
       <tr role="row" class="even">
          <td class="strong sorting_1">18-20.9</td>
-         <td> 1.9 </td>
+         <td> 1.9 %</td>
       </tr>
       <tr role="row" class="odd">
          <td class="strong sorting_1">21-23.9</td>
-         <td> 4.3 </td>
+         <td> 4.3 %</td>
       </tr>
       <tr role="row" class="even">
          <td class="strong sorting_1">24+</td>
-         <td> 2 </td>
+         <td> 2 %</td>
       </tr>
 
    </tbody>
@@ -110,35 +110,35 @@
    <tbody>
       <tr role="row" class="odd">
          <td class="strong sorting_1">0-0.9</td>
-         <td> 33 </td>
+         <td> 33 %</td>
       </tr>
       <tr role="row" class="even">
          <td class="strong sorting_1">1-1.9</td>
-         <td> 27 </td>
+         <td> 27 %</td>
       </tr>
       <tr role="row" class="odd">
          <td class="strong sorting_1">2-2.9</td>
-         <td> 20 </td>
+         <td> 20 %</td>
       </tr>
       <tr role="row" class="even">
          <td class="strong sorting_1">3-3.9</td>
-         <td> 9 </td>
+         <td> 9 %</td>
       </tr>
       <tr role="row" class="odd">
          <td class="strong sorting_1">4-4.9</td>
-         <td> 5 </td>
+         <td> 5 %</td>
       </tr>
       <tr role="row" class="even">
          <td class="strong sorting_1">5-5.9</td>
-         <td> 2 </td>
+         <td> 2 %</td>
       </tr>
       <tr role="row" class="odd">
          <td class="strong sorting_1">6-6.9</td>
-         <td> 2 </td>
+         <td> 2 %</td>
       </tr>
       <tr role="row" class="even">
          <td class="strong sorting_1">7+</td>
-         <td> 3 </td>
+         <td> 3 %</td>
       </tr>
    </tbody>
 </table>

@@ -205,7 +205,7 @@
 
 
  <h3 id="prior-arrests-for-2015-murder-arrestees-n541">Prior Arrests for 2015 Murder Arrestees (N=541)</h3>
-Add to sentences -- time served
+
  <!-- <p>hc_M_def_chart_1100 <a href="http://jsfiddle.net/liamhanninen/nwpnbrjn/">http://jsfiddle.net/liamhanninen/nwpnbrjn/</a></p> -->
 
  <render-chart

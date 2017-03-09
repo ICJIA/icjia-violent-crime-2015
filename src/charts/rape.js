@@ -336,7 +336,7 @@ xAxis: {
         plotOptions: {
             series: {
                 dataLabels: {
-                    enabled: false,
+                    enabled: true,
                     format: '{y} %',
 }}},
     }
