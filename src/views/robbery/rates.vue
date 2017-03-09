@@ -172,10 +172,64 @@
 
 <h3 id="cities-in-illinois-with-highest-robbery-rates-per-100000-2015">Cities in Illinois with Highest Robbery Rates per 100,000, 2015</h3>
 
-<p>hc_Robb_def_map_400 <a href="https://fiddle.jshell.net/esheridan/qf3488ou/">https://fiddle.jshell.net/esheridan/qf3488ou/</a></p>
+<!-- <p>hc_Robb_def_map_400 <a href="https://fiddle.jshell.net/esheridan/qf3488ou/">https://fiddle.jshell.net/esheridan/qf3488ou/</a></p> -->
+
 <render-map mapFile="map4data.js" optionsFile="map4options.js" :segment="segment"></render-map>
 
+<table id="hc_Robb_def_table_500" style="">
 
+<thead><tr><th>City</th><th>County</th><th>Average Robberies 2013-2015</th><th>Average Population 2013-2015</th><th>Robbery 2013-2015 Per 100,000</th><th>SDs from the Mean</th></tr></thead><tbody>
+ <tr><td>Sauget</td><td>St. Clair</td><td>1.7</td><td>153.7</td><td>1083.7</td><td>12.6</td></tr>
+ <tr><td>Harvey</td><td>Cook</td><td>209.3</td><td>25382.0</td><td>824.6</td><td>9.5</td></tr>
+ <tr><td>East St. Louis</td><td>St. Clair</td><td>193.7</td><td>26585.0</td><td>728.4</td><td>8.4</td></tr>
+ <tr><td>Washington Park</td><td>St. Clair</td><td>24.0</td><td>4048.0</td><td>592.1</td><td>6.7</td></tr>
+ <tr><td>Deerfield (MCA)</td><td>Cook</td><td>1.0</td><td>174.7</td><td>571.5</td><td>6.5</td></tr>
+ <tr><td>Riverdale</td><td>Cook</td><td>75.3</td><td>13626.7</td><td>552.7</td><td>6.2</td></tr>
+ <tr><td>Chicago Heights</td><td>Cook</td><td>118.7</td><td>30447.0</td><td>389.8</td><td>4.3</td></tr>
+ <tr><td>Calumet City</td><td>Cook</td><td>143.7</td><td>37270.7</td><td>385.4</td><td>4.2</td></tr>
+ <tr><td>Chicago</td><td>Cook</td><td>10425.0</td><td>2724456.7</td><td>382.7</td><td>4.2</td></tr>
+ <tr><td>Maywood</td><td>Cook</td><td>85.7</td><td>24166.3</td><td>354.5</td><td>3.9</td></tr>
+ <tr><td>Rockford</td><td>Winnebago</td><td>436.7</td><td>149322.3</td><td>292.6</td><td>3.1</td></tr>
+ <tr><td>Hazel Crest</td><td>Cook</td><td>39.0</td><td>14210.3</td><td>274.4</td><td>2.9</td></tr>
+ <tr><td>Kankakee</td><td>Kankakee</td><td>74.0</td><td>27002.3</td><td>274.0</td><td>2.9</td></tr>
+ <tr><td>Danville</td><td>Vermilion</td><td>81.7</td><td>32330.7</td><td>252.7</td><td>2.7</td></tr>
+ <tr><td>Peoria</td><td>Peoria</td><td>271.7</td><td>116314.0</td><td>233.7</td><td>2.4</td></tr>
+ <tr><td>Springfield</td><td>Sangamon</td><td>267.3</td><td>117120.0</td><td>228.2</td><td>2.4</td></tr>
+ <tr><td>Steger (MCA)</td><td>Will</td><td>12.0</td><td>5441.0</td><td>220.4</td><td>2.3</td></tr>
+ <tr><td>Phoenix</td><td>Cook</td><td>4.3</td><td>1974.7</td><td>219.5</td><td>2.3</td></tr>
+ <tr><td>Broadview</td><td>Cook</td><td>15.7</td><td>7972.0</td><td>196.5</td><td>2.0</td></tr>
+ <tr><td>Mt Vernon</td><td>Jefferson</td><td>29.7</td><td>15196.3</td><td>195.3</td><td>2.0</td></tr>
+ <tr><td>Murphysboro</td><td>Jackson</td><td>15.0</td><td>7816.3</td><td>191.8</td><td>1.9</td></tr>
+ <tr><td>Lansing</td><td>Cook</td><td>54.0</td><td>28540.7</td><td>189.2</td><td>1.9</td></tr>
+ <tr><td>Waukegan</td><td>Lake</td><td>161.0</td><td>88788.3</td><td>181.3</td><td>1.8</td></tr>
+ <tr><td>Orland Park (MCA)</td><td>Will</td><td>0.3</td><td>186.0</td><td>177.3</td><td>1.7</td></tr>
+ <tr><td>South Holland</td><td>Cook</td><td>38.7</td><td>22182.7</td><td>174.3</td><td>1.7</td></tr>
+ <tr><td>Carbondale</td><td>Jackson</td><td>45.7</td><td>26293.0</td><td>173.6</td><td>1.7</td></tr>
+ <tr><td>Bellwood</td><td>Cook</td><td>33.0</td><td>19168.7</td><td>172.2</td><td>1.7</td></tr>
+ <tr><td>Sauk Village (MCA)</td><td>Cook</td><td>18.0</td><td>10562.0</td><td>170.4</td><td>1.7</td></tr>
+ <tr><td>Matteson</td><td>Cook</td><td>32.7</td><td>19186.7</td><td>170.3</td><td>1.7</td></tr>
+ <tr><td>Richton Park</td><td>Cook</td><td>23.3</td><td>13778.3</td><td>169.3</td><td>1.7</td></tr>
+ <tr><td>Park Forest (MCA)</td><td>Cook</td><td>31.7</td><td>18771.7</td><td>168.7</td><td>1.6</td></tr>
+ <tr><td>Cairo</td><td>Alexander</td><td>4.3</td><td>2569.0</td><td>168.3</td><td>1.6</td></tr>
+ <tr><td>Cicero</td><td>Cook</td><td>130.7</td><td>84242.0</td><td>155.1</td><td>1.5</td></tr>
+ <tr><td>Champaign</td><td>Champaign</td><td>130.3</td><td>84107.7</td><td>154.9</td><td>1.5</td></tr>
+ <tr><td>South Chicago Heights</td><td>Cook</td><td>6.3</td><td>4161.7</td><td>152.2</td><td>1.4</td></tr>
+ <tr><td>Cherry Valley (MCA)</td><td>Winnebago</td><td>4.0</td><td>2770.3</td><td>144.6</td><td>1.4</td></tr>
+ <tr><td>Zion</td><td>Lake</td><td>34.7</td><td>24297.7</td><td>142.7</td><td>1.3</td></tr>
+ <tr><td>Urbana</td><td>Champaign</td><td>59.7</td><td>41857.3</td><td>142.6</td><td>1.3</td></tr>
+ <tr><td>Forest Park</td><td>Cook</td><td>19.7</td><td>14219.3</td><td>138.3</td><td>1.3</td></tr>
+ <tr><td>Glenwood</td><td>Cook</td><td>12.3</td><td>9057.3</td><td>136.1</td><td>1.3</td></tr>
+ <tr><td>Country Club Hills</td><td>Cook</td><td>22.7</td><td>16955.7</td><td>133.7</td><td>1.2</td></tr>
+ <tr><td>Decatur</td><td>Macon</td><td>99.0</td><td>74354.0</td><td>133.3</td><td>1.2</td></tr>
+ <tr><td>Summit</td><td>Cook</td><td>15.0</td><td>11562.3</td><td>129.7</td><td>1.2</td></tr>
+ <tr><td>North Chicago</td><td>Lake</td><td>37.7</td><td>29378.7</td><td>129.0</td><td>1.2</td></tr>
+ <tr><td>Homewood</td><td>Cook</td><td>25.0</td><td>19470.3</td><td>128.4</td><td>1.2</td></tr>
+ <tr><td>Midlothian</td><td>Cook</td><td>18.7</td><td>14932.7</td><td>125.0</td><td>1.1</td></tr>
+ <tr><td>Belleville</td><td>St. Clair</td><td>52.3</td><td>42760.7</td><td>122.2</td><td>1.1</td></tr>
+ <tr><td>North Riverside</td><td>Cook</td><td>8.0</td><td>6704.3</td><td>119.3</td><td>1.1</td></tr>
+ <tr><td>Hillside</td><td>Cook</td><td>9.7</td><td>8206.0</td><td>117.8</td><td>1.0</td></tr>
+ <tr><td>Alton</td><td>Madison</td><td>31.7</td><td>27145.7</td><td>116.6</td><td>1.0</td></tr>
+</tbody></table>
 
 <p><em>“MCA” = multiple county agency</em> <br>
 <em>“SD” = standard deviation</em> <br>
@@ -221,6 +275,7 @@ export default {
           $('#hc_Robb_def_table_200').DataTable(utils.dtConfig);
           $('#hc_Robb_def_table_300').DataTable(utils.dtConfig);
           $('#hc_Robb_def_table_400').DataTable(utils.dtConfig);
+          $('#hc_Robb_def_table_500').DataTable(utils.dtConfig);
 
 
           $('input[name=tableToggle').change(function(){

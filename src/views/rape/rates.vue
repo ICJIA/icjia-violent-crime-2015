@@ -179,6 +179,41 @@
 
 <render-map mapFile="map4data.js" optionsFile="map4options.js" :segment="segment"></render-map>
 
+<table id="hc_Rape_def_table_500" style="">
+
+<thead><tr><th>City</th><th>County</th><th>Average Rapes 2013-2015</th><th>Average Population 2013-2015</th><th>Rate 2013-2015 Per 100,000</th><th>SDs from the Mean</th></tr></thead><tbody>
+ <tr><td>Sauget</td><td>St. Clair</td><td>2.3</td><td>153.7</td><td>1508.17</td><td>21.92</td></tr>
+ <tr><td>Godley (MCA)</td><td>Grundy</td><td>0.3</td><td>55.0</td><td>606.06</td><td>8.58</td></tr>
+ <tr><td>Mccook</td><td>Cook</td><td>0.7</td><td>231.7</td><td>287.98</td><td>3.88</td></tr>
+ <tr><td>East St. Louis</td><td>St. Clair</td><td>58.3</td><td>26585.0</td><td>219.44</td><td>2.87</td></tr>
+ <tr><td>South Roxana</td><td>Madison</td><td>4.0</td><td>2005.0</td><td>199.82</td><td>2.58</td></tr>
+ <tr><td>London Mills (MCA)</td><td>Fulton</td><td>0.7</td><td>374.7</td><td>177.31</td><td>2.24</td></tr>
+ <tr><td>Thomasboro</td><td>Champaign</td><td>2.0</td><td>1137.0</td><td>175.70</td><td>2.22</td></tr>
+ <tr><td>Roxana</td><td>Madison</td><td>2.3</td><td>1497.3</td><td>155.56</td><td>1.92</td></tr>
+ <tr><td>Danville</td><td>Vermilion</td><td>46.3</td><td>32330.7</td><td>143.39</td><td>1.74</td></tr>
+ <tr><td>Hoopeston</td><td>Vermilion</td><td>7.3</td><td>5247.7</td><td>139.74</td><td>1.69</td></tr>
+ <tr><td>Centralia (MCA)</td><td>Clinton</td><td>3.3</td><td>2575.0</td><td>129.64</td><td>1.54</td></tr>
+ <tr><td>Mt Vernon</td><td>Jefferson</td><td>19.7</td><td>15196.3</td><td>129.41</td><td>1.54</td></tr>
+ <tr><td>Tilton</td><td>Vermilion</td><td>3.3</td><td>2652.3</td><td>125.67</td><td>1.48</td></tr>
+ <tr><td>East Alton</td><td>Madison</td><td>7.3</td><td>6172.3</td><td>118.72</td><td>1.38</td></tr>
+ <tr><td>Rantoul</td><td>Champaign</td><td>15.0</td><td>13043.7</td><td>115.07</td><td>1.32</td></tr>
+ <tr><td>Streator (MCA)</td><td>Lasalle</td><td>15.0</td><td>13254.0</td><td>113.98</td><td>1.31</td></tr>
+ <tr><td>Clinton</td><td>De Witt</td><td>8.0</td><td>7108.7</td><td>112.58</td><td>1.29</td></tr>
+ <tr><td>Bethalto</td><td>Madison</td><td>10.3</td><td>9399.3</td><td>109.87</td><td>1.25</td></tr>
+ <tr><td>Kewanee</td><td>Henry</td><td>13.7</td><td>12627.3</td><td>108.37</td><td>1.22</td></tr>
+ <tr><td>Godley (MCA)</td><td>Will</td><td>0.7</td><td>616.7</td><td>108.21</td><td>1.22</td></tr>
+ <tr><td>Winthrop Harbor</td><td>Lake</td><td>7.0</td><td>6725.3</td><td>104.09</td><td>1.16</td></tr>
+ <tr><td>Cairo</td><td>Alexander</td><td>2.7</td><td>2569.0</td><td>104.02</td><td>1.16</td></tr>
+ <tr><td>Jerseyville</td><td>Jersey</td><td>8.7</td><td>8543.0</td><td>101.46</td><td>1.12</td></tr>
+ <tr><td>Palestine</td><td>Crawford</td><td>1.3</td><td>1329.7</td><td>100.55</td><td>1.11</td></tr>
+ <tr><td>Metropolis</td><td>Massac</td><td>6.3</td><td>6415.3</td><td>98.75</td><td>1.08</td></tr>
+ <tr><td>Dekalb</td><td>DeKalb</td><td>42.7</td><td>43867.3</td><td>97.26</td><td>1.06</td></tr>
+ <tr><td>Fayetteville</td><td>St. Clair</td><td>0.3</td><td>347.3</td><td>96.34</td><td>1.05</td></tr>
+ <tr><td>Centralia (MCA)</td><td>Marion</td><td>9.7</td><td>10154.7</td><td>95.28</td><td>1.03</td></tr>
+ <tr><td>Rockford</td><td>Winnebago</td><td>141.3</td><td>149322.3</td><td>94.66</td><td>1.02</td></tr>
+ <tr><td>Peoria Heights</td><td>Peoria</td><td>5.7</td><td>6042.7</td><td>93.99</td><td>1.01</td></tr>
+ <tr><td>Collinsville (MCA)</td><td>St. Clair</td><td>2.7</td><td>2892.0</td><td>93.25</td><td>1.00</td></tr>
+</tbody></table>
 
 <p><em>“MCA” = multiple county agency</em> <br>
 <em>“SD” = standard deviation</em> <br>
@@ -230,6 +265,8 @@ export default {
           $('#hc_Rape_def_table_200').DataTable(utils.dtConfig);
           $('#hc_Rape_def_table_300').DataTable(utils.dtConfig);
           $('#hc_Rape_def_table_400').DataTable(utils.dtConfig);
+          $('#hc_Rape_def_table_500').DataTable(utils.dtConfig);
+
 
 
           $('input[name=tableToggle').change(function(){
