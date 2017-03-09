@@ -92,6 +92,50 @@ export default [{
     },
 
 
+    {
+        path: '/robbery/definition',
+        name: '3_Definition',
+        component: require('./views/robbery/definition.vue'),
+
+    },
+    {
+        path: '/robbery/rates',
+        name: '3_Rates',
+        component: require('./views/robbery/rates.vue'),
+
+    },
+    {
+        path: '/robbery/arrestees',
+        name: '3_Arrestees',
+        component: require('./views/robbery/arrestees.vue'),
+
+    },
+    {
+        path: '/robbery/convictions',
+        name: '3_Convictions',
+        component: require('./views/robbery/convictions.vue'),
+
+    },
+    {
+        path: '/robbery/sentences',
+        name: '3_Sentences',
+        component: require('./views/robbery/sentences.vue'),
+
+    },
+    {
+        path: '/robbery/conclusion',
+        name: '3_Conclusion',
+        component: require('./views/robbery/conclusion.vue'),
+
+    },
+
+    {
+        path: '/robbery',
+        name: '3_Redirect',
+        redirect: '/robbery/definition'
+    },
+
+
 
     {
         path: '/*',

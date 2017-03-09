@@ -1,0 +1,69 @@
+<template>
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <sidebar :segment="segment" />
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div id="page-context">
+            <div class="row">
+                <div class="col-lg-12">
+
+
+   <!-- //app root -->
+   <!-- <h1 id="conclusion" class="upper"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars "></i></a>&nbsp;&nbsp;Conclusion</h1> -->
+   <h1 id="conclusion" class="upper page-head">Conclusion</h1>
+
+
+<p>
+While Cook County has experienced the majority of rapes, rape rates are highest in other counties, such as Vermilion, Jersey, Marion, and Richland.
+</p>
+
+<p>
+Data indicates that because the majority of rape offenders have previous criminal histories, earlier intervention is needed. Offender risk and needs assessments with resources to address the identified risks and needs could help reduce recidivism among this population and improve public safety.
+</p>
+
+
+</div>
+  </div>
+  <my-footer />
+</div>
+</div>
+</div>
+
+</template>
+
+<script>
+
+
+import Sidebar from 'components/Sidebar'
+import MyFooter from 'components/Footer'
+
+export default {
+    name: 'S01P01',
+    mounted () {
+      $(document).ready(function() {
+
+        // $("#menu-toggle").click(function(e) {
+        //     e.preventDefault();
+        //     $("#wrapper").toggleClass("toggled");
+        // });
+
+      });
+
+    },
+    components: {
+
+        Sidebar,
+      MyFooter
+    },
+    data() {
+        return {
+            pageTitle: 'Section 01 - Page 01',
+            displayTable: true,
+            segment: 'robbery'
+
+        }
+    }
+}
+</script>
