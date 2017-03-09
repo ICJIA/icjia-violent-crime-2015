@@ -13,18 +13,12 @@
           <div id="page-content-wrapper">
 
               <div id="page-context">
-
+                <div class="col-md-12">
+                  <h1 id="definition" class="upper page-head">Definition</h1>
+                </div>
                   <div class="row">
                       <div class="col-lg-12">
-
-
-                        <h1 id="definition" class="upper page-head">Definition</h1>
-
-<p>In Illinois, criminal sexual assault [720 ILCS 5/11-0.1], or rape, is defined as the forcible commission of any sex act against another person or the commission of any sex act against a person who is unable to consent. Physical resistance is not required on the part of the victim to demonstrate lack of consent.</p>
-
-<p>Data for this analysis was collected from FBI and Illinois Uniform Crime Reports, Illinois State Police Criminal History Records Information (CHRI) System, and the Illinois Department of Corrections (IDOC). Rape offenses include criminal sexual assault, aggravated criminal sexual assault, predatory criminal sexual assault of a child, and criminal sexual assault with an object.</p>
-
-
+                        <!-- Main content here -->
 
                       </div>
                   </div>
