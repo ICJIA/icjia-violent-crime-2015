@@ -49,11 +49,14 @@
 
 <!-- <p>hc_Rape_def_chart_900 <a href="http://jsfiddle.net/esheridan/xonwu5q7/">http://jsfiddle.net/esheridan/xonwu5q7/</a></p> -->
 
-<render-chart
+<!-- <render-chart
        chart="hc_Rape_def_chart_900"
        displayTable = "false"
       >
-   </render-chart>
+   </render-chart> -->
+
+
+   <img src="/static/rape.png" class="img-responsive center" >
 
 
 <p><em>Source: ICJIA Analysis of Illinois State Police CHRI Data</em></p>

@@ -39,7 +39,10 @@
 
               <h3 id="robbery-rates-per-100000-in-americas-10-largest-cities-january-to-june-2016">Robbery Rates per 100,000 in America’s 10 Largest Cities, January to June 2016</h3>
 
-<p>hc_Robb_def_map_100 <a href="https://fiddle.jshell.net/esheridan/nou6ys2n/">https://fiddle.jshell.net/esheridan/nou6ys2n/</a></p>
+<!-- <p>hc_Robb_def_map_100 <a href="https://fiddle.jshell.net/esheridan/nou6ys2n/">https://fiddle.jshell.net/esheridan/nou6ys2n/</a></p> -->
+
+<render-map mapFile="map1data.js" optionsFile="map1options.js" :segment="segment"></render-map>
+
 
 <table id="hc_Robb_def_table_100">
 <thead><tr><th>Rank</th><th>City</th><th>Rate</th></tr></thead><tbody>
@@ -61,7 +64,11 @@
 
 <h3 id="robbery-rates-per-100000-by-state-2015">Robbery Rates per 100,000 by State, 2015</h3>
 
-<p>hc_Robb_def_map_200 <a href="https://fiddle.jshell.net/esheridan/2gxLvLxs/">https://fiddle.jshell.net/esheridan/2gxLvLxs/</a></p>
+<!-- <p>hc_Robb_def_map_200 <a href="https://fiddle.jshell.net/esheridan/2gxLvLxs/">https://fiddle.jshell.net/esheridan/2gxLvLxs/</a></p> -->
+
+<render-map mapFile="map2data.js" optionsFile="map2options.js" :segment="segment"></render-map>
+
+
 
 <p><em>Sources ICJIA Analysis of 2015 FBI Uniform Crime Report Data</em></p>
 
@@ -79,7 +86,13 @@
 
 <h3 id="number-and-rate-of-robberies-per-100000-2015">Number and Rate of Robberies per 100,000, 2015</h3>
 
-<p>hc_Robb_def_chart_150 <a href="http://jsfiddle.net/esheridan/pL9x2719/">http://jsfiddle.net/esheridan/pL9x2719/</a></p>
+<!-- <p>hc_Robb_def_chart_150 <a href="http://jsfiddle.net/esheridan/pL9x2719/">http://jsfiddle.net/esheridan/pL9x2719/</a></p> -->
+
+<render-chart
+       chart="hc_Robb_def_chart_150"
+      >
+   </render-chart>
+
 
 <p><em>Source: ICJIA Analysis of 2015 Illinois State Police Uniform Crime Report Data</em></p>
 
@@ -87,8 +100,10 @@
 
 <h3 id="robbery-rates-per-100000-by-county-2015">Robbery Rates per 100,000 by County, 2015</h3>
 
-<p>hc_Robb_def_map_300 <a href="https://fiddle.jshell.net/esheridan/0z7p1bpa/">https://fiddle.jshell.net/esheridan/0z7p1bpa/</a></p>
+<!-- <p>hc_Robb_def_map_300 <a href="https://fiddle.jshell.net/esheridan/0z7p1bpa/">https://fiddle.jshell.net/esheridan/0z7p1bpa/</a></p> -->
+<render-map mapFile="map3data.js" optionsFile="map3options.js" :segment="segment"></render-map>
 
+<p><strong>*Calhoun and Pope did not report</strong></p>
 <p><em>Source: ICJIA Analysis of 2015 Illinois State Police Uniform Crime Report Data</em></p>
 
 
@@ -158,6 +173,9 @@
 <h3 id="cities-in-illinois-with-highest-robbery-rates-per-100000-2015">Cities in Illinois with Highest Robbery Rates per 100,000, 2015</h3>
 
 <p>hc_Robb_def_map_400 <a href="https://fiddle.jshell.net/esheridan/qf3488ou/">https://fiddle.jshell.net/esheridan/qf3488ou/</a></p>
+<render-map mapFile="map4data.js" optionsFile="map4options.js" :segment="segment"></render-map>
+
+
 
 <p><em>“MCA” = multiple county agency</em> <br>
 <em>“SD” = standard deviation</em> <br>

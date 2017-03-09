@@ -4,7 +4,7 @@
     <footer class="text-center">
 
           <div class="footer-text">© {{getFullYear()}}
-            <a href="">Illinois Criminal Justice Information Authority</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.icjia.state.il.us">Illinois Criminal Justice Information Authority</a>&nbsp;&nbsp;|&nbsp;&nbsp;
             <i class="fa fa-github" aria-hidden="true"></i>
                 &nbsp;&nbsp;<a href="https://github.com/ICJIA/icjia-violent-crime-2017">View project on GitHub</a>
               </div>

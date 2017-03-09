@@ -26,8 +26,12 @@
 
 <h3 id="court-dispositions-on-robbery-cases-2012-2014-n95881">Court Dispositions on Robbery Cases, 2012-2014 (n=9,588)<a href="#fn:1" id="fnref:1" title="See footnote" class="footnote">1</a></h3>
 
-<p>hc_Robb_def_chart_1200 <a href="http://jsfiddle.net/esheridan/dcu4oj30/">http://jsfiddle.net/esheridan/dcu4oj30/</a></p>
-
+<!-- <p>hc_Robb_def_chart_1200 <a href="http://jsfiddle.net/esheridan/dcu4oj30/">http://jsfiddle.net/esheridan/dcu4oj30/</a></p> -->
+<render-chart
+       chart="hc_Robb_def_chart_1200"
+       displayTable = "false"
+      >
+   </render-chart>
 <p><em>Source: ICJIA Analysis of Illinois State Police CHRI Data, 2012-2014</em></p>
 
 <div class="footnotes"><hr><ol><li id="fn:1"><strong>Disposition</strong>: Outcome/Decision/Ruling;  <br>

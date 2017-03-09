@@ -93,6 +93,14 @@ button:focus {
     outline: 0;
 }
 
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 
 //// DataTables overrides
 table.dataTable {
@@ -106,6 +114,12 @@ table.dataTable tbody tr.even {
 
 .dataTables_wrapper {
     margin-top: -10px !important;
+}
+
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled {
+
+    background-position: center left !important;
+    
 }
 /////////////////////////////////
 

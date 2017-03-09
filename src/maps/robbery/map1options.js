@@ -1,5 +1,7 @@
 const mapOptions = {
-
+    chart: {
+      renderTo: 'container'
+    },
     xAxis: {
       //maxZoom: 10
       minRange: 1
@@ -12,7 +14,7 @@ const mapOptions = {
     },
 
     title: {
-      text: 'Rape 2015'
+      text: 'Robbery 2015'
     },
     subtitle: {
             text: 'Rate per 100,000'},
@@ -23,7 +25,7 @@ const mapOptions = {
 
     tooltip: {
       headerFormat: '',
-      pointFormat: '<b>{point.name}</b><br>Rate per 100,000: {point.RapeRate}'
+      pointFormat: '<b>{point.name}</b><br>Rate per 100,000: {point.RobberyRate}'
     },
 
     series: [{
@@ -53,10 +55,10 @@ const mapOptions = {
         },
         marker: {
           symbol: "circle",
-          fillColor: "#800080",
-          radius: 4,
+          fillColor: "#008000",
+          radius: 3,
         },
-        data: [{"name":"San Diego","lat":32.715738,"lon":-117.161084,"RapeRate":24.88},
+        data: [{"name":"San Diego","lat":32.715738,"lon":-117.161084,"RobberyRate":51.83},
 ]
 },
 {
@@ -68,10 +70,10 @@ const mapOptions = {
         },
         marker: {
           symbol: "circle",
-          fillColor: "#800080",
-          radius: 3,
+          fillColor: "#008000",
+          radius: 6,
         },
-        data: [{"name":"New York","lat":40.712784,"lon":-74.005941,"RapeRate":8.14},
+        data: [{"name":"New York","lat":40.712784,"lon":-74.005941,"RobberyRate":85.81},
 
 ]
 },
@@ -84,10 +86,10 @@ const mapOptions = {
         },
         marker: {
           symbol: "circle",
-          fillColor: "#800080",
-          radius: 5,
+          fillColor: "#008000",
+          radius: 4,
         },
-        data: [{"name":"San Jose","lat":37.338208,"lon":-121.886329,"RapeRate":21.42},
+        data: [{"name":"San Jose","lat":37.338208,"lon":-121.886329,"RobberyRate":56.77},
 
 
 ]
@@ -100,10 +102,10 @@ const mapOptions = {
         },
         marker: {
           symbol: "circle",
-          fillColor: "#800080",
-          radius: 10,
+          fillColor: "#008000",
+          radius: 8,
         },
-        data: [{"name":"Los Angeles","lat":34.052234,"lon":-118.243685,"RapeRate":30.87},
+        data: [{"name":"Los Angeles","lat":34.052234,"lon":-118.243685,"RobberyRate":125.63},
 
 
 ]
@@ -117,10 +119,10 @@ const mapOptions = {
         },
         marker: {
           symbol: "circle",
-          fillColor: "#800080",
-          radius: 11,
+          fillColor: "#008000",
+          radius: 5,
         },
-        data: [{"name":"San Antonio","lat":29.424122,"lon":-98.493628,"RapeRate":38.92},
+        data: [{"name":"San Antonio","lat":29.424122,"lon":-98.493628,"RobberyRate":71.50},
 
 
 ]
@@ -133,10 +135,10 @@ const mapOptions = {
         },
         marker: {
           symbol: "circle",
-          fillColor: "#800080",
-          radius: 8,
+          fillColor: "#008000",
+          radius: 14,
         },
-        data: [{"name":"Houston","lat":29.760427,"lon":-95.369803,"RapeRate":26.78},
+        data: [{"name":"Houston","lat":29.760427,"lon":-95.369803,"RobberyRate":207.38},
 
 
 ]
@@ -149,10 +151,10 @@ const mapOptions = {
         },
         marker: {
           symbol: "circle",
-          fillColor: "#800080",
+          fillColor: "#008000",
           radius: 7,
         },
-        data: [{"name":"Phoenix","lat":33.448377,"lon":-112.074037,"RapeRate":25.53},
+        data: [{"name":"Phoenix","lat":33.448377,"lon":-112.074037,"RobberyRate":92.77},
 
 
 ]
@@ -165,10 +167,10 @@ const mapOptions = {
         },
         marker: {
           symbol: "circle",
-          fillColor: "#800080",
+          fillColor: "#008000",
           radius: 9,
         },
-        data: [{"name":"Dallas","lat":32.776664,"lon":-96.796988,"RapeRate":29.31},
+        data: [{"name":"Dallas","lat":32.776664,"lon":-96.796988,"RobberyRate":165.37},
 
 
 ]
@@ -183,10 +185,10 @@ const mapOptions = {
         },
         marker: {
           symbol: "circle",
-          fillColor: "#800080",
-          radius: 14,
+          fillColor: "#008000",
+          radius: 10,
         },
-        data: [{"name":"Philadelphia","lat":39.952584,"lon":-75.165222,"RapeRate":40.45},
+        data: [{"name":"Philadelphia","lat":39.952584,"lon":-75.165222,"RobberyRate":184.76},
 
 
 ]
@@ -199,10 +201,10 @@ const mapOptions = {
         },
         marker: {
           symbol: "circle",
-          fillColor: "#800080",
-          radius: 6,
+          fillColor: "#008000",
+          radius: 11,
         },
-        data: [{"name":"Chicago","lat":41.878114,"lon":-87.629798,"RapeRate":24.88}
+        data: [{"name":"Chicago","lat":41.878114,"lon":-87.629798,"RobberyRate":190.26}
 
 
 ]

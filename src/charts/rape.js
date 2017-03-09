@@ -143,81 +143,6 @@ const hc_Rape_def_chart_800 = {
         }]
     }
 
-const hc_Rape_def_chart_900 = {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'line'
-        },
-        title: {
-            text: ''
-        },
-   			subtitle: {
-            text: ''},
-            tooltip: {
-            pointFormat: ''
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: false,
-                    format: '',
-                    style: {
-                        color: 'black'
-                    }
-                }
-            }
-        },
-        xAxis: {
-        categories:
- [11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,66,69,75,79,81],
-            plotLines: [{
-                color: '#7A4695',
-                width: 2,
-                value: 11,
-                label: {
-                text: 'Median<br> Age = 28',
-                textAlign: 'right',
-                x: -5,
-                y: 240,
-                rotation: 0
-                },
-            }, {
-                color: '#7A4695',
-                width: 2,
-                value: 15.74,
-                label: {
-                text: 'Average<br> Age = 31.2',
-                verticalAlign: 'top',
-                textAlign: 'left',
-                rotation: 0,
-                y: 100
-                }
-            }],
-            title: {
-                text: 'Age of Arrestee'
-            }
-   },
-   yAxis:{
-         labels:{enabled: false},
-         gridLineWidth: 0,
-         minorGridLineWidth: 0,
-         title: {
-          text: ''
-         }
-       },
-				legend:{
-        enabled: false
-        },
-        series: [{
-            name: '',
-            data: [1,6,13,15,15,15,9,23,12,17,14,8,14,6,15,13,12,9,5,7,12,10,16,9,10,6,5,8,14,8,3,9,8,5,5,5,6,4,7,4,7,4,6,3,1,8,3,1,1,3,2,2,1,1,3,1,1,1]
-
-        }]
-    }
 
 const hc_Rape_def_chart_1100 = {
         chart: {
@@ -420,7 +345,7 @@ export {
   hc_Rape_def_chart_150,
   hc_Rape_def_chart_700,
   hc_Rape_def_chart_800,
-  hc_Rape_def_chart_900,
+  
   hc_Rape_def_chart_1100,
   hc_Rape_def_chart_1200,
   hc_Rape_def_chart_1300,

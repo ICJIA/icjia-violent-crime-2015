@@ -1,14 +1,16 @@
 const mapOptions = {
-
+    chart: {
+      renderTo: 'container'
+    },
 
     title: {
-      text: 'Rape 2013-2015'
+      text: 'Robbery 2013-2015'
     },
-    subtitle: {
+subtitle: {
             text: 'Rate per 100,000'},
 
     mapNavigation: {
-      enabled: false
+      enabled: true
     },
 
     tooltip: {
@@ -18,7 +20,7 @@ const mapOptions = {
 
     series: [{
         // Use the gb-all map with no data as a basemap
-
+      
         name: 'Basemap',
         borderColor: '#A0A0A0',
         nullColor: 'rgba(200, 200, 200, 0.3)',
@@ -44,28 +46,53 @@ const mapOptions = {
     //    $('.toggle1').toggleClass('highlight1');
   //  }
 //},
-data: [{"City":"Godley (MCA)","lat":41.241336,"lon":-88.240551,"County":"Grundy","Region":"Northern","value":606.06},
-{"City":"Mccook ","lat":41.798265,"lon":-87.841592,"County":"Cook","Region":"Northern","value":287.98},
-{"City":"Streator (MCA)","lat":41.125178,"lon":-88.830745,"County":"Lasalle","Region":"Northern","value":113.98},
-{"City":"Godley (MCA)","lat":41.241336,"lon":-88.240551,"County":"Grundy","Region":"Northern","value":606.06},
-{"City":"Winthrop Harbor ","lat":42.480614,"lon":-87.829557,"County":"Lake","Region":"Northern","value":104.09},
-{"City":"Dekalb ","lat":41.929793,"lon":-88.748525,"County":"DeKalb","Region":"Northern","value":97.26},
-{"City":"Rockford ","lat":42.258836,"lon":-89.064553,"County":"Winnebago","Region":"Northern","value":94.66}]},
+data: [{"City":"Harvey ","lat":41.607583,"lon":-87.65199,"County":"Cook","Region":"Northern","value":824.58},
+{"City":"Deerfield  (MCA)","lat":42.166069,"lon":-87.852467,"County":"Cook","Region":"Northern","value":571.47},
+{"City":"Riverdale ","lat":41.642695,"lon":-87.63564,"County":"Cook","Region":"Northern","value":552.68},
+{"City":"Chicago Heights ","lat":41.510685,"lon":-87.634672,"County":"Cook","Region":"Northern","value":389.77},
+{"City":"Calumet City ","lat":41.596493,"lon":-87.538572,"County":"Cook","Region":"Northern","value":385.44},
+{"City":"Chicago ","lat":41.837551,"lon":-87.681844,"County":"Cook","Region":"Northern","value":382.68},
+{"City":"Maywood ","lat":41.879781,"lon":-87.844181,"County":"Cook","Region":"Northern","value":354.48},
+{"City":"Rockford ","lat":42.258836,"lon":-89.064553,"County":"Winnebago","Region":"Northern","value":292.62},
+{"City":"Hazel Crest ","lat":41.574164,"lon":-87.689295,"County":"Cook","Region":"Northern","value":274.40},
+{"City":"Steger  (MCA)","lat":41.472248,"lon":-87.617706,"County":"Will","Region":"Northern","value":220.44},
+{"City":"Phoenix ","lat":41.611781,"lon":-87.630852,"County":"Cook","Region":"Northern","value":219.47},
+{"City":"Broadview ","lat":41.85837,"lon":-87.856191,"County":"Cook","Region":"Northern","value":196.52},
+{"City":"Lansing ","lat":41.565004,"lon":-87.546004,"County":"Cook","Region":"Northern","value":189.21},
+{"City":"Waukegan ","lat":42.369447,"lon":-87.870898,"County":"Lake","Region":"Northern","value":181.33},
+{"City":"Orland Park  (MCA)","lat":41.608145,"lon":-87.85929,"County":"Will","Region":"Northern","value":177.30},
+{"City":"Southern Holland ","lat":41.598163,"lon":-87.602659,"County":"Cook","Region":"Northern","value":174.32},
+{"City":"Bellwood ","lat":41.882901,"lon":-87.876172,"County":"Cook","Region":"Northern","value":172.18},
+{"City":"Sauk Village  (MCA)","lat":41.490094,"lon":-87.570624,"County":"Cook","Region":"Northern","value":170.40},
+{"City":"Matteson ","lat":41.508871,"lon":-87.746044,"County":"Cook","Region":"Northern","value":170.25},
+{"City":"Richton Park ","lat":41.480679,"lon":-87.735603,"County":"Cook","Region":"Northern","value":169.33},
+{"City":"Park Forest  (MCA)","lat":41.481748,"lon":-87.686797,"County":"Cook","Region":"Northern","value":168.72},
+{"City":"Cicero ","lat":41.844537,"lon":-87.759289,"County":"Cook","Region":"Northern","value":155.15},
+{"City":"Southern Chicago Heights ","lat":41.483406,"lon":-87.637201,"County":"Cook","Region":"Northern","value":152.18},
+{"City":"Cherry Valley  (MCA)","lat":42.235178,"lon":-88.975113,"County":"Winnebago","Region":"Northern","value":144.64},
+{"City":"Zion ","lat":42.459909,"lon":-87.851121,"County":"Lake","Region":"Northern","value":142.66},
+{"City":"Forest Park ","lat":41.868369,"lon":-87.815663,"County":"Cook","Region":"Northern","value":138.32},
+{"City":"Glenwood ","lat":41.540499,"lon":-87.610973,"County":"Cook","Region":"Northern","value":136.14},
+{"City":"Country Club Hills ","lat":41.563453,"lon":-87.725409,"County":"Cook","Region":"Northern","value":133.67},
+{"City":"Summit ","lat":41.788452,"lon":-87.813921,"County":"Cook","Region":"Northern","value":129.70},
+{"City":"North Chicago ","lat":42.316696,"lon":-87.859201,"County":"Lake","Region":"Northern","value":129.00},
+{"City":"Homewood ","lat":41.559422,"lon":-87.662025,"County":"Cook","Region":"Northern","value":128.44},
+{"City":"Midlothian ","lat":41.625428,"lon":-87.724233,"County":"Cook","Region":"Northern","value":125.00},
+{"City":"North Riverside ","lat":41.846142,"lon":-87.826283,"County":"Cook","Region":"Northern","value":119.32},
+{"City":"Hillside ","lat":41.867484,"lon":-87.901902,"County":"Cook","Region":"Northern","value":117.79}]},
 //CENTRAL
 {
         // Specify points using lat/lon
         type: 'mappoint',
         name: 'Central',
 
-data: [{"City":"London Mills (MCA)","lat":40.710609,"lon":-90.266118,"County":"Fulton","Region":"Central","value":177.31},
-{"City":"Thomasboro ","lat":40.243791,"lon":-88.187629,"County":"Champaign","Region":"Central","value":175.70},
-{"City":"Danville ","lat":40.142628,"lon":-87.610707,"County":"Vermilion","Region":"Central","value":143.39},
-{"City":"Hoopeston ","lat":40.460824,"lon":-87.663572,"County":"Vermilion","Region":"Central","value":139.74},
-{"City":"Tilton ","lat":40.094736,"lon":-87.639042,"County":"Vermilion","Region":"Central","value":125.67},
-{"City":"Rantoul ","lat":40.30256,"lon":-88.15488,"County":"Champaign","Region":"Central","value":115.07},
-{"City":"Clinton ","lat":40.146702,"lon":-88.96251,"County":"De Witt","Region":"Central","value":112.58},
-{"City":"Kewanee ","lat":41.239087,"lon":-89.92566,"County":"Henry","Region":"Central","value":108.37},
-{"City":"Peoria Heights ","lat":40.746696,"lon":-89.570031,"County":"Peoria","Region":"Central","value":93.99}]
+data: [{"City":"Kankakee ","lat":41.101654,"lon":-87.86369,"County":"Kankakee","Region":"Central","value":274.00},
+{"City":"Danville ","lat":40.142628,"lon":-87.610707,"County":"Vermilion","Region":"Central","value":252.67},
+{"City":"Peoria ","lat":40.751516,"lon":-89.61736,"County":"Peoria","Region":"Central","value":233.66},
+{"City":"Springfield ","lat":39.791063,"lon":-89.644572,"County":"Sangamon","Region":"Central","value":228.24},
+{"City":"Champaign ","lat":40.115057,"lon":-88.273652,"County":"Champaign","Region":"Central","value":154.87},
+{"City":"Urbana ","lat":40.110126,"lon":-88.197323,"County":"Champaign","Region":"Central","value":142.64},
+{"City":"Decatur ","lat":39.855983,"lon":-88.933746,"County":"Macon","Region":"Central","value":133.34}]
         },
 //SOUTHERN
 {
@@ -73,21 +100,15 @@ data: [{"City":"London Mills (MCA)","lat":40.710609,"lon":-90.266118,"County":"F
         type: 'mappoint',
         name: 'Southern',
 
-data: [{"City":"Sauget ","lat":38.591998,"lon":-90.163094,"County":"St. Clair","Region":"Southern","value":1508.17},
-{"City":"East St. Louis ","lat":38.616361,"lon":-90.130528,"County":"St. Clair","Region":"Southern","value":219.44},
-{"City":"Southern Roxana ","lat":38.820837,"lon":-90.065079,"County":"Madison","Region":"Southern","value":199.82},
-{"City":"Roxana ","lat":38.821582,"lon":-90.045848,"County":"Madison","Region":"Southern","value":155.56},
-{"City":"Centralia (MCA)","lat":38.522073,"lon":-89.123541,"County":"Clinton","Region":"Southern","value":129.64},
-{"City":"Mt Vernon ","lat":38.314202,"lon":-88.917529,"County":"Jefferson","Region":"Southern","value":129.41},
-{"City":"East Alton ","lat":38.88412,"lon":-90.107943,"County":"Madison","Region":"Southern","value":118.72},
-{"City":"Bethalto ","lat":38.902967,"lon":-90.053468,"County":"Madison","Region":"Southern","value":109.87},
-{"City":"Cairo ","lat":37.006288,"lon":-89.18288,"County":"Alexander","Region":"Southern","value":104.02},
-{"City":"Jerseyville ","lat":39.117994,"lon":-90.327455,"County":"Jersey","Region":"Southern","value":101.46},
-{"City":"Palestine ","lat":39.001641,"lon":-87.612629,"County":"Crawford","Region":"Southern","value":100.55},
-{"City":"Metropolis ","lat":37.149574,"lon":-88.687277,"County":"Massac","Region":"Southern","value":98.75},
-{"City":"Fayetteville ","lat":38.377813,"lon":-89.797089,"County":"St. Clair","Region":"Southern","value":96.34},
-{"City":"Centralia (MCA)","lat":38.522073,"lon":-89.123541,"County":"Clinton","Region":"Southern","value":129.64},
-{"City":"Collinsville (MCA)","lat":38.676825,"lon":-90.005749,"County":"St. Clair","Region":"Southern","value":93.25}]},
+data: [{"City":"Sauget ","lat":38.591998,"lon":-90.163094,"County":"St. Clair","Region":"Southern","value":1083.70},
+{"City":"East St. Louis ","lat":38.616361,"lon":-90.130528,"County":"St. Clair","Region":"Southern","value":728.45},
+{"City":"Washington Park ","lat":38.628433,"lon":-90.092751,"County":"St. Clair","Region":"Southern","value":592.10},
+{"City":"Mt Vernon ","lat":38.314202,"lon":-88.917529,"County":"Jefferson","Region":"Southern","value":195.27},
+{"City":"Murphysboro ","lat":37.768386,"lon":-89.332407,"County":"Jackson","Region":"Southern","value":191.75},
+{"City":"Carbondale ","lat":37.722062,"lon":-89.223664,"County":"Jackson","Region":"Southern","value":173.62},
+{"City":"Cairo ","lat":37.006288,"lon":-89.18288,"County":"Alexander","Region":"Southern","value":168.34},
+{"City":"Belleville ","lat":38.515973,"lon":-89.989779,"County":"St. Clair","Region":"Southern","value":122.24},
+{"City":"Alton ","lat":38.902125,"lon":-90.154083,"County":"Madison","Region":"Southern","value":116.64}]},
 
       {
         type: "mappoint", //switch to mappoint

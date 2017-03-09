@@ -14,7 +14,7 @@
             <li>
          <!-- <a href="#" data-target="#item1" data-toggle="collapse" data-parent="#stacked-menu" style="font-size: 24px">MURDER<span class="caret arrow"></span></a> -->
           <div style="margin-bottom: 10px; margin-top: 15px; font-size: 20px; color: #ccc; text-transform: uppercase; font-weight: 900">
-           {{this.segment}}</div>
+           <span style="color: #415cfc">{{this.segment}}</span></div>
          <ul class="nav nav-stacked collapse in left-submenu sidenav" id="item1">
 
            <li v-for="item in menuArray" @click="clickLink" >

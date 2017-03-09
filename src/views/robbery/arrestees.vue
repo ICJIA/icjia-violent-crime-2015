@@ -24,7 +24,13 @@
 
 <h3 id="gender-of-persons-arrested-for-robbery-2015-n3327">Gender of Persons Arrested for Robbery, 2015 (N=3,327)</h3>
 
-<p>hc_Robb_def_chart_700 <a href="http://jsfiddle.net/esheridan/qLzqheff/">http://jsfiddle.net/esheridan/qLzqheff/</a></p>
+<!-- <p>hc_Robb_def_chart_700 <a href="http://jsfiddle.net/esheridan/qLzqheff/">http://jsfiddle.net/esheridan/qLzqheff/</a></p> -->
+
+<render-chart
+       chart="hc_Robb_def_chart_700"
+       displayTable = "false"
+      >
+   </render-chart>
 
 <p><em>Source: ICJIA Analysis of 2015 Illinois State Police CHRI Data</em></p>
 
@@ -32,7 +38,14 @@
 
 <h3 id="race-of-persons-arrested-for-robbery-2015-n3327">Race of Persons Arrested for Robbery, 2015 (N=3,327)</h3>
 
-<p>hc_Robb_def_chart_800 <a href="http://jsfiddle.net/esheridan/mo8wfxz9/">http://jsfiddle.net/esheridan/mo8wfxz9/</a></p>
+<!-- <p>hc_Robb_def_chart_800 <a href="http://jsfiddle.net/esheridan/mo8wfxz9/">http://jsfiddle.net/esheridan/mo8wfxz9/</a></p> -->
+
+<render-chart
+       chart="hc_Robb_def_chart_800"
+       displayTable = "false"
+      >
+   </render-chart>
+
 
 <p><em>Source: ICJIA Analysis of 2015 Illinois State Police CHRI Data</em></p>
 
@@ -40,7 +53,10 @@
 
 <h3 id="age-of-persons-arrested-for-robbery-2015-n3327">Age of Persons Arrested for Robbery, 2015 (N=3,327)</h3>
 
-<p>hc_Robb_def_chart_900 <a href="http://jsfiddle.net/esheridan/rpeyypo2/">http://jsfiddle.net/esheridan/rpeyypo2/</a></p>
+<!-- <p>hc_Robb_def_chart_900 <a href="http://jsfiddle.net/esheridan/rpeyypo2/">http://jsfiddle.net/esheridan/rpeyypo2/</a></p> -->
+
+<img src="/static/robbery.png" class="img-responsive center">
+
 
 <p><em>Source: ICJIA Analysis of Illinois State Police CHRI Data</em></p>
 
@@ -76,7 +92,54 @@
 
 <h3 id="prior-arrests-for-2015-robbery-arrestees-n3327">Prior Arrests for 2015 Robbery Arrestees (N=3,327)</h3>
 
-<p>hc_Robb_def_chart_1100 <a href="http://jsfiddle.net/esheridan/e4s282s3/">http://jsfiddle.net/esheridan/e4s282s3/</a></p>
+<!-- <p>hc_Robb_def_chart_1100 <a href="http://jsfiddle.net/esheridan/e4s282s3/">http://jsfiddle.net/esheridan/e4s282s3/</a></p> -->
+
+<render-chart
+       chart="hc_Robb_def_chart_1100"
+       displayTable = "false"
+      >
+   </render-chart>
+
+   <table class="table table-striped" role="grid">
+   <thead>
+      <tr role="row">
+         <th class="sorting_asc" tabindex="0" aria-controls="hcfea16c716e5964c702f1fe5c" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending" style="width: 361px;"></th>
+         <th class="sorting" tabindex="0" aria-controls="hcfea16c716e5964c702f1fe5c" rowspan="1" colspan="1" aria-label=" Prior Arrests: activate to sort column ascending" style="width: 446px;"> Prior Arrests</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">0 priors</td>
+         <td> 15.5 </td>
+      </tr>
+      <tr role="row" class="even">
+         <td class="strong sorting_1">1 prior</td>
+         <td> 10.6 </td>
+      </tr>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">2-5 priors</td>
+         <td> 27.8 </td>
+      </tr>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">6-10 priors</td>
+         <td> 19.1 </td>
+      </tr>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">11-15 priors</td>
+         <td> 10.4 </td>
+      </tr>
+      <tr role="row" class="even">
+         <td class="strong sorting_1">16-20 priors</td>
+         <td> 6.6 </td>
+      </tr>
+
+      <tr role="row" class="even">
+         <td class="strong sorting_1">21+ priors</td>
+         <td> 10 </td>
+      </tr>
+
+   </tbody>
+</table>
 
 <p><em>Source: ICJIA Analysis of Illinois State Police CHRI Data</em></p>
 

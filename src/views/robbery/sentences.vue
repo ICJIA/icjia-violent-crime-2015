@@ -26,8 +26,60 @@
 
   <h3 id="sentences-for-idoc-robbery-admissions-2012-2014-n26101">Sentences for IDOC Robbery Admissions, 2012-2014 (N=2,610)<a href="#fn:1" id="fnref:1" title="See footnote" class="footnote">1</a></h3>
 
-  <p>hc_Robb_def_chart_1300 <a href="http://jsfiddle.net/esheridan/b86Lc6dm/">http://jsfiddle.net/esheridan/b86Lc6dm/</a></p>
+  <!-- <p>hc_Robb_def_chart_1300 <a href="http://jsfiddle.net/esheridan/b86Lc6dm/">http://jsfiddle.net/esheridan/b86Lc6dm/</a></p> -->
+  <render-chart
+         chart="hc_Robb_def_chart_1300"
+         displayTable = "false"
+        >
+     </render-chart>
 
+     <table class="table table=striped" role="grid">
+   <thead>
+      <tr role="row">
+         <th class="sorting_asc" tabindex="0" aria-controls="hc913cc2f6d4354c09235d1992" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending" style="width: 146px;"></th>
+         <th class="sorting" tabindex="0" aria-controls="hc913cc2f6d4354c09235d1992" rowspan="1" colspan="1" aria-label=" Robbery offenders admitted: activate to sort column ascending" style="width: 595px;"> Robbery offenders admitted</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">0-2.9</td>
+         <td> 1.4 </td>
+      </tr>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">3-5.9</td>
+         <td> 43.3 </td>
+      </tr>
+      <tr role="row" class="even">
+         <td class="strong sorting_1">6-8.9</td>
+         <td> 26.6 </td>
+      </tr>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">9-11.9</td>
+         <td> 9.5 </td>
+      </tr>
+      <tr role="row" class="even">
+         <td class="strong sorting_1">12-14.9</td>
+         <td> 6.4 </td>
+      </tr>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">15-17.9</td>
+         <td> 4.6 </td>
+      </tr>
+      <tr role="row" class="even">
+         <td class="strong sorting_1">18-20.9</td>
+         <td> 1.9 </td>
+      </tr>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">21-23.9</td>
+         <td> 4.3 </td>
+      </tr>
+      <tr role="row" class="even">
+         <td class="strong sorting_1">24+</td>
+         <td> 2 </td>
+      </tr>
+
+   </tbody>
+</table>
   <p><em>Source: ICJIA Analysis of IDOC Data</em></p>
 
 
@@ -40,7 +92,56 @@
 
   <h3 id="time-served-in-idoc-for-robbery-offenders-released-from-2012-to-2014-n23672">Time Served in IDOC for Robbery Offenders Released from 2012 to 2014 (N=2,367)<a href="#fn:2" id="fnref:2" title="See footnote" class="footnote">2</a></h3>
 
-  <p>hc_Robb_def_chart_1400 <a href="http://jsfiddle.net/esheridan/s5awc5g1/">http://jsfiddle.net/esheridan/s5awc5g1/</a></p>
+  <!-- <p>hc_Robb_def_chart_1400 <a href="http://jsfiddle.net/esheridan/s5awc5g1/">http://jsfiddle.net/esheridan/s5awc5g1/</a></p> -->
+
+  <render-chart
+         chart="hc_Robb_def_chart_1400"
+         displayTable = "false"
+        >
+     </render-chart>
+
+     <table class="table table-striped" role="grid">
+   <thead>
+      <tr role="row">
+         <th class="sorting_asc" tabindex="0" aria-controls="hcbfc67f236226676fc1fcfda6" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending" style="width: 113px;"></th>
+         <th class="sorting" tabindex="0" aria-controls="hcbfc67f236226676fc1fcfda6" rowspan="1" colspan="1" aria-label=" Robbery offenders released: activate to sort column ascending" style="width: 628px;"> Robbery offenders released</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">0-0.9</td>
+         <td> 33 </td>
+      </tr>
+      <tr role="row" class="even">
+         <td class="strong sorting_1">1-1.9</td>
+         <td> 27 </td>
+      </tr>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">2-2.9</td>
+         <td> 20 </td>
+      </tr>
+      <tr role="row" class="even">
+         <td class="strong sorting_1">3-3.9</td>
+         <td> 9 </td>
+      </tr>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">4-4.9</td>
+         <td> 5 </td>
+      </tr>
+      <tr role="row" class="even">
+         <td class="strong sorting_1">5-5.9</td>
+         <td> 2 </td>
+      </tr>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">6-6.9</td>
+         <td> 2 </td>
+      </tr>
+      <tr role="row" class="even">
+         <td class="strong sorting_1">7+</td>
+         <td> 3 </td>
+      </tr>
+   </tbody>
+</table>
 
   <p><em>Source: ICJIA Analysis of IDOC Data</em></p>
 

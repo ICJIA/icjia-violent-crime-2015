@@ -156,11 +156,13 @@
 
  <!-- <p>hc_M_def_chart_900 <a href="http://jsfiddle.net/liamhanninen/d1ce8h31/">http://jsfiddle.net/liamhanninen/d1ce8h31/</a></p> -->
 
- <render-chart
+ <!-- <render-chart
         chart="hc_M_def_chart_900"
         displayTable = "false"
        >
-    </render-chart>
+    </render-chart> -->
+
+    <img src="/static/murder.png" class="img-responsive center">
  <p><em>Source: ICJIA Analysis of Illinois State Police CHRI Data </em></p>
 
  <p>The median age of a person arrested for murder in Illinois in 2015 was 25.</p>
