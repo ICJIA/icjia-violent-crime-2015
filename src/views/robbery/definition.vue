@@ -13,13 +13,20 @@
           <div id="page-content-wrapper">
 
               <div id="page-context">
+                <div class="row">
                 <div class="col-md-12">
                   <h1 id="definition" class="upper page-head">Definition</h1>
                 </div>
+              </div>
                   <div class="row">
                       <div class="col-lg-12">
                         <!-- Main content here -->
-                        <p>In Illinois, robbery is defined as the taking or attempting to take anything of value from the care, custody, or control of a person or persons by force, threat of force, violence, and/or putting the victim in fear [720 ILCS 5/18].  Aggravated robbery occurs when the perpetrator either falsely indicates that they have a dangerous weapon while committing the crime, or when it cannot be determined whether the perpetrator had a weapon at the time of the incident. Armed robbery occurs if, during the commission of the robbery, the perpetrator has a dangerous weapon on or about his person. Vehicular hijacking involves the taking of a motor vehicle from another through the use or threat of force.</p>
+                        <p>In Illinois, robbery is defined as the taking or attempting
+                           to take anything of value from the care,
+
+                           custody, or control of a person or persons by force,
+                            threat of force, violence, and/or putting the victim in fear
+                             [720 ILCS 5/18].  Aggravated robbery occurs when the perpetrator either falsely indicates that they have a dangerous weapon while committing the crime, or when it cannot be determined whether the perpetrator had a weapon at the time of the incident. Armed robbery occurs if, during the commission of the robbery, the perpetrator has a dangerous weapon on or about his person. Vehicular hijacking involves the taking of a motor vehicle from another through the use or threat of force.</p>
 
 <p>Law enforcement agencies are to report to the Illinois Uniform Crime Reporting (I-UCR) program occurrences of robbery, armed robbery, vehicular hijacking, aggravated vehicular hijacking, and aggravated robbery. <br>
 <em>Source: Illinois State Police Uniform Crime Report</em></p>
