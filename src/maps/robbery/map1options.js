@@ -14,10 +14,10 @@ const mapOptions = {
     },
 
     title: {
-      text: 'Robbery 2015'
+      text: ''
     },
     subtitle: {
-            text: 'Rate per 100,000'},
+            text: ''},
 
     mapNavigation: {
       enabled: false

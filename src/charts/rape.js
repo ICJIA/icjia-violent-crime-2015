@@ -50,7 +50,7 @@ const hc_Rape_def_chart_150 = {
             }
         },
 				legend:{
-        enabled: false
+        enabled: true
         },
         credits: {
             enabled: false
@@ -345,7 +345,7 @@ export {
   hc_Rape_def_chart_150,
   hc_Rape_def_chart_700,
   hc_Rape_def_chart_800,
-  
+
   hc_Rape_def_chart_1100,
   hc_Rape_def_chart_1200,
   hc_Rape_def_chart_1300,

@@ -4,13 +4,13 @@ const mapOptions = {
     },
 
     title: {
-      text: 'Robbery 2013-2015'
+      text: ''
     },
 subtitle: {
-            text: 'Rate per 100,000'},
+            text: ''},
 
     mapNavigation: {
-      enabled: true
+      enabled: false
     },
 
     tooltip: {
@@ -20,7 +20,7 @@ subtitle: {
 
     series: [{
         // Use the gb-all map with no data as a basemap
-      
+
         name: 'Basemap',
         borderColor: '#A0A0A0',
         nullColor: 'rgba(200, 200, 200, 0.3)',
