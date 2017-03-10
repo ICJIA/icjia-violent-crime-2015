@@ -138,6 +138,51 @@ export default [{
 
 
     {
+        path: '/assault/definition',
+        name: '4_Definition',
+        component: require('./views/assault/definition.vue'),
+
+    },
+    {
+        path: '/assault/rates',
+        name: '4_Rates',
+        component: require('./views/assault/rates.vue'),
+
+    },
+    {
+        path: '/assault/arrestees',
+        name: '4_Arrestees',
+        component: require('./views/assault/arrestees.vue'),
+
+    },
+    {
+        path: '/assault/convictions',
+        name: '4_Convictions',
+        component: require('./views/assault/convictions.vue'),
+
+    },
+    {
+        path: '/assault/sentences',
+        name: '4_Sentences',
+        component: require('./views/assault/sentences.vue'),
+
+    },
+    {
+        path: '/assault/conclusion',
+        name: '4_Conclusion',
+        component: require('./views/assault/conclusion.vue'),
+
+    },
+
+    {
+        path: '/assault',
+        name: '4_Redirect',
+        redirect: '/assault/definition'
+    },
+
+
+
+    {
         path: '/*',
         name: '0_Redirect',
         redirect: '/'

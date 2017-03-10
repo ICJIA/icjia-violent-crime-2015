@@ -31,11 +31,11 @@ import 'datatables.net-dt/css/jquery.dataTables.css';
 import * as murderElements from '@/charts/murder.js'
 import * as rapeElements from '@/charts/rape.js'
 import * as robberyElements from '@/charts/robbery.js'
-
+import * as assaultElements from '@/charts/assault.js'
 // merge everything
 //
 
-const graphicElements = _.assign(murderElements, rapeElements, robberyElements);
+const graphicElements = _.assign(murderElements, rapeElements, robberyElements, assaultElements);
 
 // const graphicElements = Object.assign(murderElements, rapeElements);
 

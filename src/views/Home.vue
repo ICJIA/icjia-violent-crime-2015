@@ -109,6 +109,7 @@
 
 <div class="col-md-6">
   <div class="well section">
+    <router-link to="/assault/definition">
     <h4 class="card-title">AGGRAVATED ASSAULT/BATTERY</h4>
     <p class="card-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -116,7 +117,8 @@
     semper. Sed orci arcu, ultricies nec congue et, ultrices vel erat. Nam eleifend. Fusce tincidunt aliquam ligula, nec tincidunt turpis efficitur
     semper.
     </p>
-    <span class="underConstruction">UNDER CONSTRUCTION</span>
+    <div class="btn btn-primary hover-button">Read More&nbsp;&nbsp;&raquo;</div>
+  </router-link>
 </div>
 </div>
 </div>
