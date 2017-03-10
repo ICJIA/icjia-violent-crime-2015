@@ -26,7 +26,13 @@
 
 <h3 id="court-dispositions-on-aggravated-assault-cases-2012-2014-n365901">Court Dispositions on Aggravated Assault Cases, 2012-2014 (n=36,590)<a href="#fn:1" id="fnref:1" title="See footnote" class="footnote">1</a></h3>
 
-<p>hc_Aslt_def_chart_1200 <a href="http://jsfiddle.net/esheridan/mtL53tnr/">http://jsfiddle.net/esheridan/mtL53tnr/</a></p>
+<!-- <p>hc_Aslt_def_chart_1200 <a href="http://jsfiddle.net/esheridan/mtL53tnr/">http://jsfiddle.net/esheridan/mtL53tnr/</a></p> -->
+
+<render-chart
+       chart="hc_M_def_chart_1200"
+       displayTable = "false"
+      >
+   </render-chart>
 
 <p><em>Source: ICJIA Analysis of Illinois State Police CHRI Data, 2012-2014</em></p>
 

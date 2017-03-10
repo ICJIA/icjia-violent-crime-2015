@@ -196,12 +196,179 @@ const hc_Aslt_def_chart_1100 = {
         }]
     }
 
+
+const hc_Aslt_def_chart_1200 = {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: ''
+        },
+   			subtitle: {
+            text: ''},
+            tooltip: {
+            pointFormat: '{series.name}: <b>{point.y:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.y:.1f} %',
+                    style: {
+                        color: 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Arrestees',
+            colorByPoint: true,
+            data: [{name:"Guilty",y:33.62},
+{name:"Disposition Not Available",y:9.37},
+{name:"Nolle Prosqui",y:18.80},
+{name:"Dismissed",y:18.81},
+{name:"Not Guilty",y:3.08},
+{name:"Other",y:16.3}
+]
+        }]
+    }
+
+
+const hc_Aslt_def_chart_1300 = {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+
+xAxis: {
+
+  categories:["0-2.9","3-5.9","6-8.9","9-11.9","12-14.9","15-17.9","18-20.9","21-23.9","24+"]
+
+,
+            title: {
+                text: 'Years'
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Percent of people admitted',
+            },
+            labels: {
+                overflow: 'justify',
+                 formatter: function() {
+                     return this.value + ' %';
+                 },            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            column: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+				legend:{
+        enabled: false
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Agg Assault offenders admitted',
+            data: [20.3,40.2,14.5,6.1,5.6,3.8,3.1,1.0,5.4]
+
+
+        }],
+        plotOptions: {
+            series: {
+                dataLabels: {
+                    enabled: false,
+                    format: '{y} %',
+}}},
+    }
+
+
+const hc_Aslt_def_chart_1400 = {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+
+xAxis: {
+
+  categories:["0-1.9","2-3.9","4-5.9","6-7.9","8-9.9","10-11.9","12-13.9","14+"]
+
+,
+            title: {
+                text: 'Years'
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Percent of people released',
+            },
+            labels: {
+                overflow: 'justify',
+                 formatter: function() {
+                     return this.value + ' %';
+                 },            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            column: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+				legend:{
+        enabled: false
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Agg Assault offenders released',
+            data: [57,13,10,7,5,4,2,2]
+
+
+        }],
+        plotOptions: {
+            series: {
+                dataLabels: {
+                    enabled: false,
+                    format: '{y} %',
+}}},
+    }
+
 export {
 
 hc_Aslt_def_chart_150,
 hc_Aslt_def_chart_700,
 hc_Aslt_def_chart_800,
-hc_Aslt_def_chart_1100
+hc_Aslt_def_chart_1100,
+hc_Aslt_def_chart_1200,
+hc_Aslt_def_chart_1300,
+hc_Aslt_def_chart_1400
 
 
 };

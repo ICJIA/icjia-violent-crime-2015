@@ -14,7 +14,9 @@
             <div class="row">
               <div class="col-md-12">
 
+                <p>While Chicago has experienced the majority of aggravated assaults and batteries, aggravated assault rates are also high in smaller counties, such as Alexander, Washington, and Sangamon.</p>
 
+<p>Data also show that because the majority of those arrested for violence have previous criminal histories, earlier intervention is needed. Offender risk and needs assessments with resources to address the identified risks and needs could help reduce recidivism among this population and improve public safety.</p>
 
               </div>
 

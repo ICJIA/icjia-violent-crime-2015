@@ -23,7 +23,14 @@
 
 <h3 id="gender-of-persons-arrested-for-aggravated-assault-2015-n15826">Gender of Persons Arrested for Aggravated Assault, 2015 (N=15,826)</h3>
 
-<p>hc_Aslt_def_chart_700 <a href="http://jsfiddle.net/esheridan/psnomqch/">http://jsfiddle.net/esheridan/psnomqch/</a></p>
+<!-- <p>hc_Aslt_def_chart_700 <a href="http://jsfiddle.net/esheridan/psnomqch/">http://jsfiddle.net/esheridan/psnomqch/</a></p> -->
+
+<render-chart
+       chart="hc_Aslt_def_chart_700"
+       displayTable = "false"
+      >
+   </render-chart>
+
 
 <p><em>Source: ICJIA Analysis of 2015 Illinois State Police CHRI Data</em></p>
 
@@ -31,7 +38,14 @@
 
 <h3 id="race-of-persons-arrested-for-aggravated-assault-2015-n15826">Race of Persons Arrested for Aggravated Assault, 2015 (N=15,826)</h3>
 
-<p>hc_Aslt_def_chart_800 <a href="http://jsfiddle.net/esheridan/u8zqjxun/">http://jsfiddle.net/esheridan/u8zqjxun/</a></p>
+<!-- <p>hc_Aslt_def_chart_800 <a href="http://jsfiddle.net/esheridan/u8zqjxun/">http://jsfiddle.net/esheridan/u8zqjxun/</a></p> -->
+
+<render-chart
+       chart="hc_Aslt_def_chart_800"
+       displayTable = "false"
+      >
+   </render-chart>
+
 
 <p><em>Source: ICJIA Analysis of 2015 Illinois State Police CHRI Data</em></p>
 
@@ -39,7 +53,9 @@
 
 <h3 id="age-of-persons-arrested-for-aggravated-assault-2015-n15826">Age of Persons Arrested for Aggravated Assault, 2015 (N=15,826)</h3>
 
-<p>hc_Aslt_def_chart_900 <a href="http://jsfiddle.net/esheridan/ajg9rtn3/">http://jsfiddle.net/esheridan/ajg9rtn3/</a></p>
+<!-- <p>hc_Aslt_def_chart_900 <a href="http://jsfiddle.net/esheridan/ajg9rtn3/">http://jsfiddle.net/esheridan/ajg9rtn3/</a></p> -->
+
+  <img src="/static/assault.png" class="img-responsive center">
 
 <p><em>Source: ICJIA Analysis of 2015 Illinois State Police CHRI Data</em></p>
 
@@ -75,7 +91,54 @@
 
 <h3 id="prior-arrests-for-2015-aggravated-assault-arrestees-n15826">Prior Arrests for 2015 Aggravated Assault Arrestees (N=15,826)</h3>
 
-<p>hc_Aslt_def_chart_1100 <a href="http://jsfiddle.net/esheridan/grr2e0z2/">http://jsfiddle.net/esheridan/grr2e0z2/</a></p>
+<!-- <p>hc_Aslt_def_chart_1100 <a href="http://jsfiddle.net/esheridan/grr2e0z2/">http://jsfiddle.net/esheridan/grr2e0z2/</a></p> -->
+
+<render-chart
+       chart="hc_Aslt_def_chart_1100"
+       displayTable = "false"
+      >
+   </render-chart>
+
+   <table class="table table-striped">
+   <thead>
+      <tr role="row">
+         <th class="sorting_asc" tabindex="0" aria-controls="hc1435ccb103f5f06f6b399862" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending" style="width: 347px;"></th>
+         <th class="sorting" tabindex="0" aria-controls="hc1435ccb103f5f06f6b399862" rowspan="1" colspan="1" aria-label=" Prior Arrests: activate to sort column ascending" style="width: 428px;"> Prior Arrests</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">0 priors</td>
+         <td> 15.7 </td>
+      </tr>
+      <tr role="row" class="even">
+         <td class="strong sorting_1">1 prior</td>
+         <td> 10.5 </td>
+      </tr>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">2-5 priors</td>
+         <td> 25.9 </td>
+      </tr>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">6-10 priors</td>
+         <td> 18.4 </td>
+      </tr>
+      <tr role="row" class="odd">
+         <td class="strong sorting_1">11-15 priors</td>
+         <td> 10.7 </td>
+      </tr>
+      <tr role="row" class="even">
+         <td class="strong sorting_1">16-20 priors</td>
+         <td> 6.8 </td>
+      </tr>
+
+      <tr role="row" class="even">
+         <td class="strong sorting_1">21+ priors</td>
+         <td> 12 </td>
+      </tr>
+
+   </tbody>
+</table>
 
 <p><em>Source: ICJIA Analysis of Illinois State Police CHRI Data</em></p>
 
