@@ -18,22 +18,47 @@
          <ul class="nav nav-stacked collapse in left-submenu sidenav" id="item1">
 
            <li v-for="item in menuArray" @click="clickLink" >
-            <router-link :to="item.path"  tag="a" class="test nav-link">{{item.name}}</router-link>
+            <router-link :to="item.path"  :keep-alive="false" tag="a" class="test nav-link">{{item.name}}</router-link>
             </li>
          </ul>
 
 
- <!-- <div style="border-top: 1px solid #ccc; margin-top: 30px; padding-left: 25px; padding-right: 25px; width: 100%">
-   <div style="margin-top: 30px; margin-left: -20px; color: #fff; font-weight: 700">Crime Category</div>
-<select class="form-control" style="margin-top: 30px; font-size: 12px; font-weight: 900">
-   <option class="med-heavy">MURDER</option>
-   <option class="med-heavy">RAPE</option>
-   <option class="med-heavy">ROBBERY</option>
-   <option class="med-heavy">AGGRAVATED ASSAULT/BATTERY</option>
+ <div style="border-top: 1px solid #ccc; padding-left: 20px; margin-top: 30px; width: 100%">
+   <div style="margin-top: 30px; margin-left: -20px; font-size: 18px; color: #415cfc; font-weight: 900; text-transform: uppercase">Crime Category</div>
+<!-- <select
+  class="form-control"
+  id="route-select"
+  style="margin-top: 30px; font-size: 12px; font-weight: 900"
+  v-model="selected"
+  v-on:change="routeOnChange">
+   <option class="med-heavy" value="murder">MURDER</option>
+   <option class="med-heavy" value="rape">RAPE</option>
+   <option class="med-heavy" value="robbery">ROBBERY</option>
+   <option class="med-heavy" value="assault">AGGRAVATED ASSAULT/BATTERY</option>
 
- </select>
+ </select> -->
 
- </div> -->
+ <!-- <div class="well">{{this.segment}}</div> -->
+
+ <!-- <ul class="nav nav-stacked collapse in left-submenu sidenav" id="item1">
+
+   <li v-for="item in menuArray" @click="clickLink" >
+    <router-link :to="item.path"  tag="a" class="test nav-link">{{item.name}}</router-link>
+    </li>
+ </ul> -->
+
+ <ul class="nav nav-stacked left-submenu sidenav" id="item1" style="margin-left: -20px">
+
+   <li style="margin-top: 20px">
+    <router-link to="/murder/definition" style="color: #fff">Murder</router-link></li>
+    <li><router-link to="/rape/definition" style="color: #fff">Rape</router-link></li>
+    <li><router-link to="/robbery/definition" style="color: #fff">Robbery</router-link></li>
+    <li><router-link to="/assault/definition" style="color: #fff">Aggravated Assault</router-link></li>
+
+ </ul>
+
+
+ </div>
        </li>
 
      </ul>
@@ -51,7 +76,7 @@
         <span ><i class="fa fa-1x fa-bars " style="color: #fff"></i></span>&nbsp;&nbsp;ILLINOIS VIOLENT CRIME 2015</div>
     </div>
 
-    <ul class="nav navbar-nav navbar-right">
+    <!-- <ul class="nav navbar-nav navbar-right">
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle"
@@ -66,7 +91,7 @@
           </ul>
         </li>
 
-      </ul>
+      </ul> -->
 
     <!-- Collect the nav links, forms, and other content for toggling -->
 
@@ -94,6 +119,7 @@ export default {
        //this.setSegment();
        this.displayPageTitle()
        this.initSubnav()
+       console.log('segment: ',this.segment)
 
     },
     methods: {
@@ -101,6 +127,12 @@ export default {
 
       },
 
+      routeOnChange (e) {
+        let selectedRoute = document.getElementById("route-select").value;
+        document.getElementById("route-select").value=''
+        this.$router.push('/' + selectedRoute)
+
+      },
 
       // setSegment() {
       //         var newURL = window.location.protocol + "://" + window.location.host + "/" + window.location.pathname;
@@ -169,13 +201,18 @@ export default {
         // segment: null,
         menuArray: null,
         page: null,
+        selected: '',
         currentSegment: null,
         showBreadcrumb: false
       }
     },
   mounted () {
+    //document.getElementById("route-select").value=this.segment
+    console.log('set')
+    //this.selected = this.segment
+    var self=this
     $(document).ready(function() {
-
+      console.log(self.segment)
       $("#menu-toggle").click(function(e) {
           e.preventDefault();
           $("#wrapper").toggleClass("toggled");
