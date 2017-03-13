@@ -112,11 +112,11 @@
     <router-link to="/assault/definition">
     <h4 class="card-title">AGGRAVATED ASSAULT/BATTERY</h4>
     <p class="card-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Fusce tincidunt aliquam ligula, nec tincidunt turpis efficitur
-    semper. Sed orci arcu, ultricies nec congue et, ultrices vel erat. Nam eleifend. Fusce tincidunt aliquam ligula, nec tincidunt turpis efficitur
-    semper.
-    </p>
+    Illinois law defines aggravated assault [720 ILCS 5.0/12-2] as when a
+    person puts another person in reasonable apprehension of receiving a battery,
+    with the intention of causing serious injury, or while using a weapon or
+    an object used as a weapon.
+  </p>
     <div class="btn btn-primary hover-button">Read More&nbsp;&nbsp;&raquo;</div>
   </router-link>
 </div>
