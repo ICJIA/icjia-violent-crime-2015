@@ -60,37 +60,37 @@
    <thead>
       <tr role="row">
          <th class="sorting_asc" tabindex="0" aria-controls="hcb44ec140434d0f52853b6fbd" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending" style="width: 161px;"></th>
-         <th class="sorting" tabindex="0" aria-controls="hcb44ec140434d0f52853b6fbd" rowspan="1" colspan="1" aria-label=" Murder offenders released: activate to sort column ascending" style="width: 614px;"> Murder offenders released</th>
+         <th class="sorting" tabindex="0" aria-controls="hcb44ec140434d0f52853b6fbd" rowspan="1" colspan="1" aria-label=" Murder offenders released: activate to sort column ascending" style="width: 614px;"> Aggravated Assault offenders released</th>
       </tr>
    </thead>
    <tbody>
       <tr role="row" class="odd">
          <td class="strong sorting_1">0-4.9</td>
-         <td> 12 </td>
+         <td> 12 %</td>
       </tr>
       <tr role="row" class="odd">
          <td class="strong sorting_1">5-9.9</td>
-         <td> 13 </td>
+         <td> 13 %</td>
       </tr>
       <tr role="row" class="even">
          <td class="strong sorting_1">10-14.9</td>
-         <td> 17 </td>
+         <td> 17 %</td>
       </tr>
       <tr role="row" class="odd">
          <td class="strong sorting_1">15-19.9</td>
-         <td> 36 </td>
+         <td> 36 %</td>
       </tr>
       <tr role="row" class="even">
          <td class="strong sorting_1">20-24.9</td>
-         <td> 13 </td>
+         <td> 13 %</td>
       </tr>
       <tr role="row" class="odd">
          <td class="strong sorting_1">25-29.9</td>
-         <td> 4 </td>
+         <td> 4 %</td>
       </tr>
       <tr role="row" class="even">
          <td class="strong sorting_1">30+</td>
-         <td> 5 </td>
+         <td> 5 %</td>
       </tr>
 
    </tbody>

@@ -111,32 +111,32 @@
    <tbody>
       <tr role="row" class="odd">
          <td class="strong sorting_1">0 priors</td>
-         <td> 15.5 </td>
+         <td> 15.5 %</td>
       </tr>
       <tr role="row" class="even">
          <td class="strong sorting_1">1 prior</td>
-         <td> 10.6 </td>
+         <td> 10.6 %</td>
       </tr>
       <tr role="row" class="odd">
          <td class="strong sorting_1">2-5 priors</td>
-         <td> 27.8 </td>
+         <td> 27.8 %</td>
       </tr>
       <tr role="row" class="odd">
          <td class="strong sorting_1">6-10 priors</td>
-         <td> 19.1 </td>
+         <td> 19.1 %</td>
       </tr>
       <tr role="row" class="odd">
          <td class="strong sorting_1">11-15 priors</td>
-         <td> 10.4 </td>
+         <td> 10.4 %</td>
       </tr>
       <tr role="row" class="even">
          <td class="strong sorting_1">16-20 priors</td>
-         <td> 6.6 </td>
+         <td> 6.6 %</td>
       </tr>
 
       <tr role="row" class="even">
          <td class="strong sorting_1">21+ priors</td>
-         <td> 10 </td>
+         <td> 10 %</td>
       </tr>
 
    </tbody>

@@ -2,10 +2,10 @@ const mapOptions = {
 
 
     title: {
-      text: 'Aggravated Assault 2013-2015'
+      text: ''
     },
 subtitle: {
-            text: 'Rate per 100,000'},
+            text: ''},
 
     mapNavigation: {
       enabled: false
