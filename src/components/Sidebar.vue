@@ -74,7 +74,6 @@
 
 <script>
 import routes from '@/routes.js'
-import vSelect from "vue-select"
 export default {
   props: {
       segment: {
@@ -84,7 +83,7 @@ export default {
 
   },
   components: {
-    vSelect
+    
   },
   created: function() {
 

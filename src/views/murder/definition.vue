@@ -14,6 +14,8 @@
 
               <div id="page-context">
 
+                <segment-header :segment="segment" />
+
                   <div class="row">
                       <div class="col-lg-12">
 
@@ -55,6 +57,7 @@
 const utils = require('../../utils')
 
 import Sidebar from 'components/Sidebar'
+import SegmentHeader from 'components/SegmentHeader'
 
 import RenderChart from 'components/RenderChart'
 import RenderMap from 'components/RenderMap'
@@ -90,7 +93,8 @@ export default {
         Sidebar,
         RenderChart,
         RenderMap,
-        MyFooter
+        MyFooter,
+        SegmentHeader
 
     },
     data() {

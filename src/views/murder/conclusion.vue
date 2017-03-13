@@ -6,6 +6,7 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div id="page-context">
+          <segment-header :segment="segment" />
             <div class="row">
                 <div class="col-lg-12">
 
@@ -33,6 +34,7 @@
 
 import Sidebar from 'components/Sidebar'
 import MyFooter from 'components/Footer'
+import SegmentHeader from 'components/SegmentHeader'
 
 export default {
     name: 'S01P01',
@@ -50,6 +52,7 @@ export default {
     components: {
 
         Sidebar,
+        SegmentHeader,
       MyFooter
     },
     data() {

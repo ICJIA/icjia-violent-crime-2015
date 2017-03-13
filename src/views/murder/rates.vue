@@ -9,6 +9,7 @@
   <!-- Page Content -->
   <div id="page-content-wrapper">
       <div id="page-context">
+        <segment-header :segment="segment" />
           <div class="row">
             <div class="col-md-12">
               <h1 id="rates" class="upper page-head">Rates</h1>
@@ -416,6 +417,7 @@ import Sidebar from 'components/Sidebar'
 import MyFooter from 'components/Footer'
 import RenderChart from 'components/RenderChart'
 import RenderMap from 'components/RenderMap'
+import SegmentHeader from 'components/SegmentHeader'
 
 // Datatables install with webpack: https://gist.github.com/marcstober/c34bb4bdf7ef622cb24d6675723749bd
 // https://datatables.net/forums/discussion/32542/datatables-and-webpack
@@ -465,7 +467,8 @@ export default {
         Sidebar,
         RenderChart,
         RenderMap,
-        MyFooter
+        MyFooter,
+        SegmentHeader
     },
     data() {
         return {

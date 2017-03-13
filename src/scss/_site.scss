@@ -119,7 +119,7 @@ table.dataTable tbody tr.even {
 table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled {
 
     background-position: center left !important;
-    
+
 }
 /////////////////////////////////
 
@@ -264,6 +264,8 @@ a.test.nav-link.active {
   color: #fff;
   background: #415cfc;
 }
+
+.segment-header {text-transform: uppercase; color: #415cfc; font-weight: 900;}
 
 @media(min-width:768px) {
     #wrapper {

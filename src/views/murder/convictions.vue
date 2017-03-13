@@ -8,14 +8,12 @@
      <!-- Page Content -->
      <div id="page-content-wrapper">
          <div id="page-context">
+           <segment-header :segment="segment" />
            <div class="row">
-             <div class="col-md-9">
+             <div class="col-md-12">
                <h1 id="rates" class="upper page-head">Convictions</h1>
              </div>
-             <div class="col-md-3">
 
-
-             </div>
 
            </div>
              <div class="row">
@@ -65,6 +63,7 @@
 
 import Sidebar from 'components/Sidebar'
 import RenderChart from 'components/RenderChart'
+import SegmentHeader from 'components/SegmentHeader'
 // import TableToggle from '../../components/TableToggle.vue'
 import MyFooter from 'components/Footer'
 export default {
@@ -82,7 +81,8 @@ export default {
 
         RenderChart,
         Sidebar,
-        MyFooter
+        MyFooter,
+        SegmentHeader
 
     },
     data() {
