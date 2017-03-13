@@ -3,11 +3,12 @@
    <!-- app root -->
    <div id="wrapper">
      <!-- Sidebar -->
-    <sidebar segment="rape" />
+    <sidebar :segment="segment" />
 
      <!-- Page Content -->
      <div id="page-content-wrapper">
          <div id="page-context">
+           <segment-header :segment="segment" />
            <div class="row">
              <div class="col-md-12">
                <h1 id="rates" class="upper page-head">Convictions</h1>
@@ -57,6 +58,7 @@ import Sidebar from 'components/Sidebar'
 import RenderChart from 'components/RenderChart'
 // import TableToggle from '../../components/TableToggle.vue'
 import MyFooter from 'components/Footer'
+import SegmentHeader from 'components/SegmentHeader'
 export default {
     name: 'S01P03',
     methods: {
@@ -72,13 +74,15 @@ export default {
 
         RenderChart,
         Sidebar,
-        MyFooter
+        MyFooter,
+        SegmentHeader
 
     },
     data() {
         return {
             pageTitle: 'Section 01 - Page 03',
             displayTable: true,
+            segment: 'rape'
         }
     }
 }

@@ -13,6 +13,7 @@
           <div id="page-content-wrapper">
 
               <div id="page-context">
+                  <segment-header :segment="segment" />
                 <div class="row">
                 <div class="col-md-12">
                   <h1 id="definition" class="upper page-head">Definition</h1>
@@ -20,7 +21,7 @@
               </div>
                   <div class="row">
                       <div class="col-md-12">
-                        
+
 
 <p>Illinois law defines aggravated assault [720 ILCS 5.0/12-2] as when a person puts another person in reasonable apprehension of receiving a battery, with the intention of causing serious injury, or while using a weapon or an object used as a weapon. Aggravated battery [720 ILCS 5.0/12-3.05] is defined as when a person causes serious bodily harm to another person, makes physical contact while intending to cause serious harm, or makes physical contact while using a weapon or an object used as a weapon. </p>
 
@@ -55,6 +56,7 @@ import MyFooter from 'components/Footer.vue'
 // https://datatables.net/forums/discussion/32542/datatables-and-webpack
 import dt from 'datatables.net';
 import 'datatables.net-dt/css/jquery.dataTables.css';
+import SegmentHeader from 'components/SegmentHeader'
 
 
 export default {
@@ -77,7 +79,8 @@ export default {
         Sidebar,
         RenderChart,
         RenderMap,
-        MyFooter
+        MyFooter,
+        SegmentHeader
 
     },
     data() {

@@ -9,6 +9,7 @@
   <!-- Page Content -->
   <div id="page-content-wrapper">
       <div id="page-context">
+        <segment-header :segment="segment" />
           <div class="row">
             <div class="col-md-12">
               <h1 id="rates" class="upper page-head">Rates<a href="#fn:1" id="fnref:1" title="See footnote" class="footnote">1</a></h1>
@@ -251,6 +252,7 @@ import RenderMap from 'components/RenderMap'
 // https://datatables.net/forums/discussion/32542/datatables-and-webpack
 import dt from 'datatables.net';
 import 'datatables.net-dt/css/jquery.dataTables.css';
+import SegmentHeader from 'components/SegmentHeader'
 
 
 export default {
@@ -295,7 +297,8 @@ export default {
         Sidebar,
         RenderChart,
         RenderMap,
-        MyFooter
+        MyFooter,
+        SegmentHeader
     },
     data() {
         return {

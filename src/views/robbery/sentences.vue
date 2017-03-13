@@ -8,6 +8,7 @@
       <!-- Page Content -->
       <div id="page-content-wrapper">
           <div id="page-context">
+            <segment-header :segment="segment" />
             <div class="row">
               <div class="col-md-12">
                 <h1 id="sentences"
@@ -165,6 +166,7 @@
 import Sidebar from 'components/Sidebar'
 import MyFooter from 'components/Footer'
 import RenderChart from 'components/RenderChart.vue'
+import SegmentHeader from 'components/SegmentHeader'
 
 export default {
     name: 'S01P04',
@@ -178,7 +180,8 @@ export default {
 
         Sidebar,
         MyFooter,
-        RenderChart
+        RenderChart,
+        SegmentHeader
     },
     data() {
         return {

@@ -6,6 +6,7 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div id="page-context">
+          <segment-header :segment="segment" />
           <div class="row">
             <div class="col-md-12">
               <h1 id="characteristics-of-murder-victims-and-reported-offenders"
@@ -129,6 +130,7 @@ import Sidebar from 'components/Sidebar'
 import RenderChart from 'components/RenderChart.vue'
 import RenderMap from 'components/RenderMap.vue'
 import MyFooter from 'components/Footer'
+import SegmentHeader from 'components/SegmentHeader'
 
 export default {
     name: 'S01P02',
@@ -159,7 +161,8 @@ export default {
 
         Sidebar,
         RenderChart,
-        MyFooter
+        MyFooter,
+        SegmentHeader
 
     },
     data() {

@@ -49,7 +49,7 @@ const hc_Aslt_def_chart_150 = {
             }
         },
 				legend:{
-        enabled: false
+        enabled: true
         },
         credits: {
             enabled: false

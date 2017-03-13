@@ -9,6 +9,7 @@
   <!-- Page Content -->
   <div id="page-content-wrapper">
       <div id="page-context">
+          <segment-header :segment="segment" />
           <div class="row">
             <div class="col-md-12">
               <h1 id="rates" class="upper page-head">Rates</h1>
@@ -70,7 +71,7 @@
 
 <h3 id="number-and-rate-of-aggravated-assaults-per-100000-2015">Number and Rate of Aggravated Assaults per 100,000, 2015</h3>
 
-<p>hc_Aslt_def_chart_150 <a href="http://jsfiddle.net/esheridan/8zbpqt1u/">http://jsfiddle.net/esheridan/8zbpqt1u/</a></p>
+<!-- <p>hc_Aslt_def_chart_150 <a href="http://jsfiddle.net/esheridan/8zbpqt1u/">http://jsfiddle.net/esheridan/8zbpqt1u/</a></p> -->
 
 
 <render-chart
@@ -161,6 +162,57 @@
 <!-- <p>hc_Aslt_def_map_400 <a href="https://fiddle.jshell.net/esheridan/7s827qw0/">https://fiddle.jshell.net/esheridan/7s827qw0/</a></p> -->
 <render-map mapFile="map4data.js" optionsFile="map4options.js" :segment="segment"></render-map>
 
+
+<table id="hc_Aslt_def_table_450" style="">
+
+<thead><tr><th>City</th><th>County</th><th>Average Agg Assaults 2013-2015</th><th>Average Population 2013-2015</th><th>Agg Assaults 2013-2015 Per 100,000</th><th>SDs from the Mean</th></tr></thead><tbody>
+ <tr><td>Cairo PD</td><td>Alexander</td><td>93.7</td><td>2569.0</td><td>3643.1</td><td>13.6</td></tr>
+ <tr><td>East St. Louis PD</td><td>St. Clair</td><td>779.3</td><td>26585.0</td><td>2931.1</td><td>10.8</td></tr>
+ <tr><td>London Mills PD (MCA)</td><td>Fulton</td><td>8.7</td><td>374.7</td><td>2302.2</td><td>8.4</td></tr>
+ <tr><td>Sauget PD</td><td>St. Clair</td><td>3.3</td><td>153.7</td><td>2161.8</td><td>7.8</td></tr>
+ <tr><td>Washington Park PD</td><td>St. Clair</td><td>63.7</td><td>4048.0</td><td>1569.8</td><td>5.6</td></tr>
+ <tr><td>Mt Vernon PD</td><td>Jefferson</td><td>154.0</td><td>15196.3</td><td>1013.4</td><td>3.4</td></tr>
+ <tr><td>Mccook PD</td><td>Cook</td><td>2.3</td><td>231.7</td><td>1007.0</td><td>3.4</td></tr>
+ <tr><td>Rockford PD</td><td>Winnebago</td><td>1490.7</td><td>149322.3</td><td>998.7</td><td>3.3</td></tr>
+ <tr><td>Deerfield PD (MCA)</td><td>Cook</td><td>1.7</td><td>174.7</td><td>951.3</td><td>3.2</td></tr>
+ <tr><td>Caseyville PD</td><td>St. Clair</td><td>35.7</td><td>4108.0</td><td>863.2</td><td>2.8</td></tr>
+ <tr><td>Danville PD</td><td>Vermilion</td><td>269.3</td><td>32330.7</td><td>833.6</td><td>2.7</td></tr>
+ <tr><td>Greenup PD</td><td>Cumberland</td><td>12.0</td><td>1494.3</td><td>801.7</td><td>2.6</td></tr>
+ <tr><td>Seneca PD (MCA)</td><td>Lasalle</td><td>17.3</td><td>2305.3</td><td>751.3</td><td>2.4</td></tr>
+ <tr><td>Springfield PD</td><td>Sangamon</td><td>867.0</td><td>117120.0</td><td>740.3</td><td>2.3</td></tr>
+ <tr><td>Dupo PD</td><td>St. Clair</td><td>26.7</td><td>3980.3</td><td>669.0</td><td>2.1</td></tr>
+ <tr><td>West City PD</td><td>Franklin</td><td>4.3</td><td>654.7</td><td>662.5</td><td>2.0</td></tr>
+ <tr><td>Palestine PD</td><td>Crawford</td><td>8.7</td><td>1329.7</td><td>652.6</td><td>2.0</td></tr>
+ <tr><td>Oblong PD</td><td>Crawford</td><td>9.3</td><td>1426.7</td><td>652.5</td><td>2.0</td></tr>
+ <tr><td>Beardstown PD</td><td>Cass</td><td>38.0</td><td>5888.7</td><td>647.4</td><td>2.0</td></tr>
+ <tr><td>Southern View PD</td><td>Sangamon</td><td>10.7</td><td>1651.0</td><td>644.2</td><td>2.0</td></tr>
+ <tr><td>Grayville PD (MCA)</td><td>White</td><td>5.7</td><td>917.3</td><td>616.5</td><td>1.9</td></tr>
+ <tr><td>Tuscola PD</td><td>Douglas</td><td>27.0</td><td>4454.0</td><td>606.2</td><td>1.8</td></tr>
+ <tr><td>Centralia PD (MCA)</td><td>Marion</td><td>61.0</td><td>10154.7</td><td>601.0</td><td>1.8</td></tr>
+ <tr><td>Godley PD (MCA)</td><td>Grundy</td><td>0.3</td><td>55.0</td><td>584.8</td><td>1.7</td></tr>
+ <tr><td>Thomasboro PD</td><td>Champaign</td><td>6.3</td><td>1137.0</td><td>558.6</td><td>1.6</td></tr>
+ <tr><td>East Dubuque PD</td><td>Jo Daviess</td><td>9.3</td><td>1677.3</td><td>553.9</td><td>1.6</td></tr>
+ <tr><td>Champaign PD</td><td>Champaign</td><td>454.3</td><td>84107.7</td><td>540.7</td><td>1.6</td></tr>
+ <tr><td>South Pekin PD</td><td>Tazewell</td><td>5.7</td><td>1145.0</td><td>494.4</td><td>1.4</td></tr>
+ <tr><td>Washington Co So</td><td>Washington</td><td>44.3</td><td>9048.0</td><td>489.7</td><td>1.4</td></tr>
+ <tr><td>Cobden PD</td><td>Union</td><td>5.3</td><td>1136.0</td><td>468.9</td><td>1.3</td></tr>
+ <tr><td>Nashville PD</td><td>Washington</td><td>14.7</td><td>3162.3</td><td>467.7</td><td>1.3</td></tr>
+ <tr><td>Metropolis PD</td><td>Massac</td><td>29.7</td><td>6415.3</td><td>462.4</td><td>1.3</td></tr>
+ <tr><td>Chicago PD</td><td>Cook</td><td>12580.7</td><td>2724456.7</td><td>461.8</td><td>1.3</td></tr>
+ <tr><td>Hoopeston PD</td><td>Vermilion</td><td>24.0</td><td>5247.7</td><td>457.4</td><td>1.2</td></tr>
+ <tr><td>Harvey PD</td><td>Cook</td><td>112.3</td><td>25382.0</td><td>442.6</td><td>1.2</td></tr>
+ <tr><td>Riverside PD</td><td>Cook</td><td>39.3</td><td>8896.3</td><td>442.4</td><td>1.2</td></tr>
+ <tr><td>Havana PD</td><td>Mason</td><td>13.7</td><td>3150.7</td><td>433.4</td><td>1.2</td></tr>
+ <tr><td>Maywood PD</td><td>Cook</td><td>104.7</td><td>24166.3</td><td>433.1</td><td>1.2</td></tr>
+ <tr><td>Riverton PD</td><td>Sangamon</td><td>15.0</td><td>3475.0</td><td>431.7</td><td>1.1</td></tr>
+ <tr><td>Jerome PD</td><td>Sangamon</td><td>7.0</td><td>1652.7</td><td>423.9</td><td>1.1</td></tr>
+ <tr><td>Harrisburg PD</td><td>Saline</td><td>38.0</td><td>8983.3</td><td>423.1</td><td>1.1</td></tr>
+ <tr><td>Grayville PD (MCA)</td><td>Edwards</td><td>3.0</td><td>726.7</td><td>413.2</td><td>1.1</td></tr>
+ <tr><td>Royalton PD</td><td>Franklin</td><td>4.7</td><td>1139.0</td><td>409.0</td><td>1.1</td></tr>
+ <tr><td>Cherry Valley PD (MCA)</td><td>Winnebago</td><td>11.0</td><td>2770.3</td><td>396.9</td><td>1.0</td></tr>
+ <tr><td>Hillsboro PD</td><td>Montgomery</td><td>24.0</td><td>6096.7</td><td>393.8</td><td>1.0</td></tr>
+</tbody></table>
+
 <p><em>“MCA” = multiple county agency</em> <br>
 <em>“SD” = standard deviation</em> <br>
 <em>Source: ICJIA Analysis of Illinois State Police Uniform Crime Report Data</em></p>
@@ -192,6 +244,7 @@ import RenderMap from 'components/RenderMap'
 // https://datatables.net/forums/discussion/32542/datatables-and-webpack
 import dt from 'datatables.net';
 import 'datatables.net-dt/css/jquery.dataTables.css';
+import SegmentHeader from 'components/SegmentHeader'
 
 
 export default {
@@ -207,6 +260,7 @@ export default {
           $('#hc_Aslt_def_table_200').DataTable(utils.dtConfig);
           $('#hc_Aslt_def_table_300').DataTable(utils.dtConfig);
           $('#hc_Aslt_def_table_400').DataTable(utils.dtConfig);
+            $('#hc_Aslt_def_table_450').DataTable(utils.dtConfig);
           $('#hc_Aslt_def_table_500').DataTable(utils.dtConfig);
 
 
@@ -236,7 +290,8 @@ export default {
         Sidebar,
         RenderChart,
         RenderMap,
-        MyFooter
+        MyFooter,
+        SegmentHeader
     },
     data() {
         return {
