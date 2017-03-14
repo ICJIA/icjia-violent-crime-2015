@@ -72,19 +72,19 @@
 
 <h4 id="most-of-the-15826-persons-arrested-for-aggravated-assaultbattery-in-illinois-in-2015-had-at-least-one-prior-arrest">Most of the 15,826 persons arrested for aggravated assault/battery in Illinois in 2015 had at least one prior arrest:</h4>
 
-<p>83 percent for any type of offense <br>
-20 percent for violent/person offenses<a href="#fn:1" id="fnref:1" title="See footnote" class="footnote">1</a> <br>
-15 percent for property offenses<a href="#fn:2" id="fnref:2" title="See footnote" class="footnote">2</a> <br>
-13 percent for other offenses<a href="#fn:3" id="fnref:3" title="See footnote" class="footnote">3</a> <br>
-12 percent for motor vehicle/traffic offenses<a href="#fn:4" id="fnref:4" title="See footnote" class="footnote">4</a> <br>
-11 percent for public order offenses<a href="#fn:5" id="fnref:5" title="See footnote" class="footnote">5</a> <br>
-8 percent for drug offenses<a href="#fn:6" id="fnref:6" title="See footnote" class="footnote">6</a> <br>
-2 percent for DUI offenses<a href="#fn:7" id="fnref:7" title="See footnote" class="footnote">7</a> <br>
-1 percent for deadly weapons offenses<a href="#fn:8" id="fnref:8" title="See footnote" class="footnote">8</a> <br>
-&lt;1 percent for non-violent sex offenses<a href="#fn:9" id="fnref:9" title="See footnote" class="footnote">9</a> <br>
-&lt;1 percent for criminal sexual assault/abuse offenses<a href="#fn:10" id="fnref:10" title="See footnote" class="footnote">10</a> <br>
-&lt;1 percent for endangering children offenses<a href="#fn:11" id="fnref:11" title="See footnote" class="footnote">11</a> <br>
-&lt;1 percent for status offenses<a href="#fn:12" id="fnref:12" title="See footnote" class="footnote">12</a>
+<p><strong>&nbsp;&nbsp;&nbsp;83 percent</strong> for any type of offense <br>
+<strong>&nbsp;&nbsp;&nbsp;20 percent</strong> for violent/person offenses<a href="#fn:1" id="fnref:1" title="See footnote" class="footnote">1</a> <br>
+<strong>&nbsp;&nbsp;&nbsp;15 percent</strong> for property offenses<a href="#fn:2" id="fnref:2" title="See footnote" class="footnote">2</a> <br>
+<strong>&nbsp;&nbsp;&nbsp;13 percent</strong> for other offenses<a href="#fn:3" id="fnref:3" title="See footnote" class="footnote">3</a> <br>
+<strong>&nbsp;&nbsp;&nbsp;12 percent</strong> for motor vehicle/traffic offenses<a href="#fn:4" id="fnref:4" title="See footnote" class="footnote">4</a> <br>
+<strong>&nbsp;&nbsp;&nbsp;11 percent</strong> for public order offenses<a href="#fn:5" id="fnref:5" title="See footnote" class="footnote">5</a> <br>
+<strong>&nbsp;&nbsp;&nbsp;8 percent</strong> for drug offenses<a href="#fn:6" id="fnref:6" title="See footnote" class="footnote">6</a> <br>
+<strong>&nbsp;&nbsp;&nbsp;2 percent</strong> for DUI offenses<a href="#fn:7" id="fnref:7" title="See footnote" class="footnote">7</a> <br>
+<strong>&nbsp;&nbsp;&nbsp;1 percent</strong> for deadly weapons offenses<a href="#fn:8" id="fnref:8" title="See footnote" class="footnote">8</a> <br>
+<strong>&nbsp;&lt;1 percent</strong> for non-violent sex offenses<a href="#fn:9" id="fnref:9" title="See footnote" class="footnote">9</a> <br>
+<strong>&nbsp;&lt;1 percent</strong> for criminal sexual assault/abuse offenses<a href="#fn:10" id="fnref:10" title="See footnote" class="footnote">10</a> <br>
+<strong>&nbsp;&lt;1 percent</strong> for endangering children offenses<a href="#fn:11" id="fnref:11" title="See footnote" class="footnote">11</a> <br>
+<strong>&nbsp;&lt;1 percent</strong> for status offenses<a href="#fn:12" id="fnref:12" title="See footnote" class="footnote">12</a>
 
 </p><p><em>Source: ICJIA Analysis of Illinois State Police CHRI Data</em></p>
 
