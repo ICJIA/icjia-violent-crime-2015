@@ -10,7 +10,7 @@ module.exports = {
     { property: "og:type", content: "article" },
     { property: "og:locale", content: "en_US" },
     { property: "article:author", content: "https://www.facebook.com/ICJIA" },
-    { property: "og:image", content: "https://violentcrime2015.icjia.cloud/static/facebook/soortf-small.jpg" },
+    { property: "og:image", content: "https://violentcrime2015.icjia.cloud/static/facebook/violentCrime2015-small.jpg" },
   ],
   script: [
     {src: "/static/google/ga.js"}
