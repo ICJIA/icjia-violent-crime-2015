@@ -37,7 +37,13 @@ import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'S01P01',
+    name: 'Robbery -- Conclusion',
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     mounted () {
       $(document).ready(function() {
 
@@ -57,7 +63,7 @@ export default {
     },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 01',
+            title: 'Robbery -- Conclusion',
             displayTable: true,
             segment: 'robbery'
 

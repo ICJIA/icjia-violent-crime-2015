@@ -121,13 +121,19 @@ import RenderChart from 'components/RenderChart.vue'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'S01P04',
+    name: 'Assault -- Sentences',
     methods: {
 
     },
     mounted () {
 
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     components: {
 
         Sidebar,
@@ -137,7 +143,7 @@ export default {
     },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 04',
+            title: 'Assault -- Sentences',
             displayTable: true,
             segment: 'assault'
         }

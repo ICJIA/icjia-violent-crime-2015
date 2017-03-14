@@ -24,5 +24,5 @@ module.exports = {
     // if no subcomponents specify a metaInfo.title, this title will be used
     title: 'Illinois Violent Crime 2015',
     // all titles will be injected into this template
-    titleTemplate: 'ICJIA | %s'
+    titleTemplate: 'ICJIA Violent Crime | %s'
   }

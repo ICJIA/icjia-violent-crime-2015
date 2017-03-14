@@ -256,7 +256,7 @@ import SegmentHeader from 'components/SegmentHeader'
 
 
 export default {
-    name: 'Rape_Definitions',
+    name: 'Rape -- Rates',
 
     mounted () {
       $(document).ready(function() {
@@ -300,9 +300,15 @@ export default {
         MyFooter,
         SegmentHeader
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 01',
+            title: 'Rape -- Rates',
             displayTable: true,
             segment: 'rape'
 

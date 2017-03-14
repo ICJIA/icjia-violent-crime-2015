@@ -287,7 +287,7 @@ import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'S01P02',
+    name: 'Murder -- Arrestees',
     methods: {
 
     },
@@ -319,9 +319,15 @@ export default {
         SegmentHeader
 
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 02',
+            title: 'Murder -- Arrestees',
             displayTable: true,
             segment: 'murder'
         }

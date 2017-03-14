@@ -426,7 +426,7 @@ import 'datatables.net-dt/css/jquery.dataTables.css';
 
 
 export default {
-    name: 'Murder_Definitions',
+    name: 'Murder -- Rates',
 
     mounted () {
       $(document).ready(function() {
@@ -470,9 +470,15 @@ export default {
         MyFooter,
         SegmentHeader
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 01',
+            title: 'Murder -- Rates',
             displayTable: true,
             segment: 'murder'
 

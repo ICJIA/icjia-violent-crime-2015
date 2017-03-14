@@ -67,7 +67,7 @@ import SegmentHeader from 'components/SegmentHeader'
 // import TableToggle from '../../components/TableToggle.vue'
 import MyFooter from 'components/Footer'
 export default {
-    name: 'S01P03',
+    name: 'Murder -- Convictions',
     methods: {
 
     },
@@ -77,6 +77,12 @@ export default {
       });
 
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     components: {
 
         RenderChart,
@@ -87,7 +93,7 @@ export default {
     },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 03',
+            title: 'Murder -- Convictions',
             displayTable: true,
             segment: 'murder'
         }

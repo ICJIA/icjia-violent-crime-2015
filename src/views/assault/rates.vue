@@ -248,7 +248,7 @@ import SegmentHeader from 'components/SegmentHeader'
 
 
 export default {
-    name: 'Rape_Definitions',
+    name: 'Assault -- Rates',
 
     mounted () {
       $(document).ready(function() {
@@ -285,6 +285,12 @@ export default {
       });
 
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     components: {
 
         Sidebar,
@@ -295,7 +301,7 @@ export default {
     },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 01',
+            title: 'Assault -- Rates',
             displayTable: true,
             segment: 'assault'
 

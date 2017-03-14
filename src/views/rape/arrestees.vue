@@ -133,10 +133,16 @@ import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'S01P02',
+    name: 'Rape -- Arrestees',
     methods: {
 
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     mounted () {
       $(document).ready(function() {
         $('input[name=tableToggle').change(function(){
@@ -167,7 +173,7 @@ export default {
     },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 02',
+            title: 'Rape -- Arrestees',
             displayTable: true,
             segment: 'rape'
         }

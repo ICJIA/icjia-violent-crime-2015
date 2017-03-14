@@ -169,10 +169,16 @@ import RenderChart from 'components/RenderChart.vue'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'S01P04',
+    name: 'Robbery -- Sentences',
     methods: {
 
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     mounted () {
 
     },
@@ -185,7 +191,7 @@ export default {
     },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 04',
+            title: 'Robbery -- Sentences',
             displayTable: true,
             segment: 'robbery'
         }

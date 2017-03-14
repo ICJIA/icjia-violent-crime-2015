@@ -69,7 +69,7 @@ import 'datatables.net-dt/css/jquery.dataTables.css';
 
 
 export default {
-    name: 'Murder_Definitions',
+    name: 'Murder -- Definition',
 
     mounted () {
       $(document).ready(function() {
@@ -97,9 +97,15 @@ export default {
         SegmentHeader
 
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 01',
+            title: 'Murder -- Definition',
             displayTable: true,
             segment: 'murder'
 

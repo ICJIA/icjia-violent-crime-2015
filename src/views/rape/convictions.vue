@@ -60,10 +60,16 @@ import RenderChart from 'components/RenderChart'
 import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
 export default {
-    name: 'S01P03',
+    name: 'Rape -- Convictions',
     methods: {
 
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     mounted () {
       $(document).ready(function() {
 
@@ -80,7 +86,7 @@ export default {
     },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 03',
+            title: 'Rape -- Convictions',
             displayTable: true,
             segment: 'rape'
         }

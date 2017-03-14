@@ -39,7 +39,7 @@ import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'S01P01',
+    name: 'Assault -- Conclusion',
     mounted () {
       $(document).ready(function() {
 
@@ -52,9 +52,15 @@ export default {
       MyFooter,
       SegmentHeader
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 01',
+            title: 'Assault -- Conclusion',
             displayTable: true,
             segment: 'assault'
 

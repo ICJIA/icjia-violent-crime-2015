@@ -58,7 +58,7 @@ import SegmentHeader from 'components/SegmentHeader'
 
 
 export default {
-    name: 'Murder_Definitions',
+    name: 'Rape -- Definitions',
 
     mounted () {
       $(document).ready(function() {
@@ -86,9 +86,15 @@ export default {
         SegmentHeader
 
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 01',
+            title: 'Rape -- Definition',
             displayTable: true,
             segment: 'rape'
 

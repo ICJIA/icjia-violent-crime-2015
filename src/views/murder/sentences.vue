@@ -119,7 +119,7 @@ import RenderChart from 'components/RenderChart.vue'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'S01P04',
+    name: 'Murder -- Sentences',
     methods: {
 
     },
@@ -133,9 +133,15 @@ export default {
         RenderChart,
         SegmentHeader
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 04',
+            title: 'Murder -- Sentences',
             displayTable: true,
             segment: 'murder'
         }

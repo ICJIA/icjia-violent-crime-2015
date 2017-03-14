@@ -60,7 +60,7 @@ import RenderChart from 'components/RenderChart'
 import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
 export default {
-    name: 'S01P03',
+    name: 'Robbery -- Convictions',
     methods: {
 
     },
@@ -78,9 +78,15 @@ export default {
         SegmentHeader
 
     },
+    metaInfo() {
+    return {
+      title: this.title
+
+    }
+  },
     data() {
         return {
-            pageTitle: 'Section 01 - Page 03',
+            title: 'Robbery -- Convictions',
             displayTable: true,
             segment: 'robbery'
         }
