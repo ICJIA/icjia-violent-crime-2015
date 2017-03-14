@@ -143,7 +143,8 @@
     export default {
         name: 'Home',
         mounted () {
-            this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
+            this.$ga.trackPage('/','ICJIA | Home')
+            //console.log(this.$route.path)
         },
         metaInfo() {
         return {
