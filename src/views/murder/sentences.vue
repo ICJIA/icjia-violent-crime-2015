@@ -119,12 +119,12 @@ import RenderChart from 'components/RenderChart.vue'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'Murder -- Sentences',
+    name: 'MurderSentences',
     methods: {
 
     },
     mounted () {
-
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
     },
     components: {
 

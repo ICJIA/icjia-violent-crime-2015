@@ -64,9 +64,10 @@ import SegmentHeader from 'components/SegmentHeader'
 
 
 export default {
-    name: 'Robbery -- Definition',
+    name: 'RobberyDefinition',
 
     mounted () {
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
       $(document).ready(function() {
 
         // $("#menu-toggle").click(function(e) {

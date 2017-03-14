@@ -169,7 +169,7 @@ import RenderChart from 'components/RenderChart.vue'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'Robbery -- Sentences',
+    name: 'RobberySentences',
     methods: {
 
     },
@@ -180,7 +180,7 @@ export default {
     }
   },
     mounted () {
-
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
     },
     components: {
 

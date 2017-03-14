@@ -39,8 +39,9 @@ import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'Assault -- Conclusion',
+    name: 'AssaultConclusion',
     mounted () {
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
       $(document).ready(function() {
 
       });

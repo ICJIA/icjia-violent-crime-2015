@@ -37,7 +37,7 @@ import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'Robbery -- Conclusion',
+    name: 'RobberyConclusion',
     metaInfo() {
     return {
       title: this.title
@@ -45,6 +45,7 @@ export default {
     }
   },
     mounted () {
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
       $(document).ready(function() {
 
         // $("#menu-toggle").click(function(e) {

@@ -37,8 +37,9 @@ import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'Murder -- Conclusion',
+    name: 'MurderConclusion',
     mounted () {
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
       $(document).ready(function() {
 
         // $("#menu-toggle").click(function(e) {

@@ -172,7 +172,7 @@ import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'Robbery -- Arrestees',
+    name: 'RobberyArrestees',
     methods: {
 
     },
@@ -183,6 +183,7 @@ export default {
     }
   },
     mounted () {
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
       $(document).ready(function() {
         $('input[name=tableToggle').change(function(){
 

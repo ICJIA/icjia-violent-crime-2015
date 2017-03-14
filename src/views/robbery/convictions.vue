@@ -60,11 +60,12 @@ import RenderChart from 'components/RenderChart'
 import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
 export default {
-    name: 'Robbery -- Convictions',
+    name: 'RobberyConvictions',
     methods: {
 
     },
     mounted () {
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
       $(document).ready(function() {
 
       });

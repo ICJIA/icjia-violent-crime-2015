@@ -256,9 +256,10 @@ import SegmentHeader from 'components/SegmentHeader'
 
 
 export default {
-    name: 'Rape -- Rates',
+    name: 'RapeRates',
 
     mounted () {
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
       $(document).ready(function() {
 
 

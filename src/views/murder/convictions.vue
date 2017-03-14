@@ -67,11 +67,12 @@ import SegmentHeader from 'components/SegmentHeader'
 // import TableToggle from '../../components/TableToggle.vue'
 import MyFooter from 'components/Footer'
 export default {
-    name: 'Murder -- Convictions',
+    name: 'MurderConvictions',
     methods: {
 
     },
     mounted () {
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
       $(document).ready(function() {
 
       });

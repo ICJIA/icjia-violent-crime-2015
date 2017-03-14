@@ -60,9 +60,10 @@ import SegmentHeader from 'components/SegmentHeader'
 
 
 export default {
-    name: 'Assault -- Definition',
+    name: 'AssaultDefinition',
 
     mounted () {
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
       $(document).ready(function() {
 
         // $("#menu-toggle").click(function(e) {

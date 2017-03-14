@@ -13,6 +13,10 @@ import bootstrap from 'bootstrap-sass'
 // import './scss/base.scss';
 
 import Vue from 'vue'
+import VueAnalytics from 'vue-analytics'
+Vue.use(VueAnalytics, {
+  id: 'UA-10798495-18' 
+})
 import App from './App'
 
 import VueRouter from 'vue-router'

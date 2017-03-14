@@ -266,9 +266,10 @@ import SegmentHeader from 'components/SegmentHeader'
 
 
 export default {
-    name: 'Robbery -- Rates',
+    name: 'RobberyRates',
 
     mounted () {
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
       $(document).ready(function() {
 
 

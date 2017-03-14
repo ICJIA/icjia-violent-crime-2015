@@ -141,7 +141,16 @@
 <script>
     import MyFooter from '@/components/Footer'
     export default {
-        name: 's01p00',
+        name: 'Home',
+        mounted () {
+            this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
+        },
+        metaInfo() {
+        return {
+          title: this.title
+
+        }
+      },
         components: {
 
 
@@ -149,7 +158,7 @@
         },
         data() {
             return {
-
+              title: 'Home'
             }
         }
     }

@@ -426,9 +426,10 @@ import 'datatables.net-dt/css/jquery.dataTables.css';
 
 
 export default {
-    name: 'Murder -- Rates',
+    name: 'MurderRates',
 
     mounted () {
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
       $(document).ready(function() {
 
 

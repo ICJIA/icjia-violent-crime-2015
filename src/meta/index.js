@@ -13,7 +13,7 @@ module.exports = {
     { property: "og:image", content: "https://violentcrime2015.icjia.cloud/static/facebook/violentCrime2015-small.jpg" },
   ],
   script: [
-    {src: "/static/google/ga.js"}
+  
   ],
   link: [
     {rel: "icon", type: "image/png", sizes: "192x192",  href: '/static/icons/android-icon-192x192.png?v=1440170181'},

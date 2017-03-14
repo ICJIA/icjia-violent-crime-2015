@@ -69,9 +69,10 @@ import 'datatables.net-dt/css/jquery.dataTables.css';
 
 
 export default {
-    name: 'Murder -- Definition',
+    name: 'MurderDefinition',
 
     mounted () {
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
       $(document).ready(function() {
 
         // $("#menu-toggle").click(function(e) {

@@ -121,12 +121,12 @@ import RenderChart from 'components/RenderChart.vue'
 import SegmentHeader from 'components/SegmentHeader'
 
 export default {
-    name: 'Assault -- Sentences',
+    name: 'AssaultSentences',
     methods: {
 
     },
     mounted () {
-
+      this.$ga.trackPage(this.$route.path,'ICJIA | ' + this.title)
     },
     metaInfo() {
     return {
