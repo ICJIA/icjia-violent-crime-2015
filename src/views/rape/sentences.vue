@@ -103,7 +103,7 @@
 
 <div class="footnotes"><hr><ol><li id="fn:1">730 ILCS 5/3-6-3, known as the “Truth-In-Sentencing” Law, establishes sentencing rules in Illinois. It was originally enacted in 1998 and has been updated/added to several times since then. <br>
 It says those persons convicted of criminal sexual assault, aggravated criminal sexual assault, or predatory criminal sexual assault of a child, are only eligible for 4.5 days of good time credit per month served (essentially, they must serve 85% of their sentence), while those convicted of criminal sexual assault with an object are eligible for day-for-day good time credit (must serve 50% of their sentence). <a href="#fnref:1" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:2">This chart depicts years spent incarcerated within a state prison. Any time spent in county jail prior to conviction is not included. <a href="#fnref:2" title="Return to article" class="reversefootnote">↩</a></li></ol></div>
-
+<citation />
                 </div>
 
 </div>
@@ -122,6 +122,7 @@ import Sidebar from 'components/Sidebar'
 import MyFooter from 'components/Footer'
 import RenderChart from 'components/RenderChart.vue'
 import SegmentHeader from 'components/SegmentHeader'
+import Citation from 'components/Citation'
 
 export default {
     name: 'RapeSentences',
@@ -142,7 +143,8 @@ export default {
         Sidebar,
         MyFooter,
         RenderChart,
-        SegmentHeader
+        SegmentHeader,
+        Citation
     },
     data() {
         return {

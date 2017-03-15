@@ -39,6 +39,7 @@
 <strong>Nolle Prosequi</strong>: Latin term which essentially means the prosecutor will no longer pursue the charges; <br>
 <strong>Other</strong>: No Bill, Transferred/No Jurisdiction, Stricken Off with Leave to Reinstate, Death Suggested/Cause Abated, Charge Amended/Reduced, Governor’s Pardon, Merged with Another Offense, Delinquency Petition (Decided not to prosecute), Not Proven/Not Adjudicated Delinquent (Not Guilty) (Juvenile Only), 30 Day Notice of CNT CT Date/Forfeit Pending, Judgment on Forfeiture, Withhold Judgement/710 Probation, Withhold Judgment/1410 Probation, Withhold Judgment/Supervision, Juvenile Continuance Under Supervision, Unfit to Stand Trial, Mistrial, Warrant Issued, Warrant Quashed/Withdrawn, BFW Issued, Revocation/Vacate Probation, Revocation/Vacate Conditional Discharge, Revocation/Vacate 1410 Probation, Modified/Trial Court, Vacated/Trial Court, Probation Terminated, Conditional Discharge Terminated, Paid in Full/Compliance of 705 Ch. 995-6-306-D2, Terminated Unsatisfied, Terminated Satisfied, Remanded/Reviewing Court, Modified/Reviewing Court, Vacated/Reviewing Court <a href="#fnref:1" title="Return to article" class="reversefootnote">↩</a></li></ol></div>
 
+<citation />
                </div>
 
 </div>
@@ -59,6 +60,7 @@ import RenderChart from 'components/RenderChart'
 // import TableToggle from '../../components/TableToggle.vue'
 import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
+import Citation from 'components/Citation'
 export default {
     name: 'RobberyConvictions',
     methods: {
@@ -76,7 +78,8 @@ export default {
         RenderChart,
         Sidebar,
         MyFooter,
-        SegmentHeader
+        SegmentHeader,
+        Citation
 
     },
     metaInfo() {

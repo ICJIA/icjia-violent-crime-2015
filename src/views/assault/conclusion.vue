@@ -23,7 +23,11 @@
 
           </div>
               </div>
+                <citation />
   </div>
+
+
+
   <my-footer />
 </div>
 </div>
@@ -33,7 +37,7 @@
 
 <script>
 
-
+import Citation from 'components/Citation'
 import Sidebar from 'components/Sidebar'
 import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
@@ -50,6 +54,7 @@ export default {
     components: {
 
         Sidebar,
+        Citation,
       MyFooter,
       SegmentHeader
     },

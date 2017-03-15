@@ -35,7 +35,7 @@
                           <p>First and second degree murder data are available via the Illinois Uniform Crime Reporting (I-UCR) program. Here, murder is defined as the willful killing of one human being by another (first degree murder) or the killing of another person through gross negligence (second degree murder). Any death caused by injuries received in a fight, argument, quarrel, battery, or commission of a crime must be reported as a criminal homicide.
                               <br> Source: Illinois State Police Uniform Crime Report</p>
 
-
+<citation />
 
                       </div>
                   </div>
@@ -58,7 +58,7 @@ const utils = require('../../utils')
 
 import Sidebar from 'components/Sidebar'
 import SegmentHeader from 'components/SegmentHeader'
-
+import Citation from 'components/Citation'
 import RenderChart from 'components/RenderChart'
 import RenderMap from 'components/RenderMap'
 import MyFooter from 'components/Footer.vue'
@@ -95,7 +95,8 @@ export default {
         RenderChart,
         RenderMap,
         MyFooter,
-        SegmentHeader
+        SegmentHeader,
+        Citation
 
     },
     metaInfo() {

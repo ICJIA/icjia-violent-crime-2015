@@ -20,6 +20,8 @@
 <p>Data on individual characteristics of victims and offenders are limited, but the cities of Chicago and Rockford, data indicated black males were most often 1) perpetrators of murder and 2) victims of murder. More than 73 percent of all murder arrestees in Illinois were black, more than 94 percent were males, and their median age was 25 years old.</p>
 
 <p>These data also indicate that because the majority of these offenders have previous criminal histories, earlier intervention is needed. Offender risk and needs assessment with resources to address the identified risks and needs could help reduce recidivism among this population and improve public safety.</p>
+
+<citation />
 </div>
   </div>
   <my-footer />
@@ -35,6 +37,7 @@
 import Sidebar from 'components/Sidebar'
 import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
+import Citation from 'components/Citation'
 
 export default {
     name: 'MurderConclusion',
@@ -54,6 +57,7 @@ export default {
 
         Sidebar,
         SegmentHeader,
+        Citation,
       MyFooter
     },
     metaInfo() {

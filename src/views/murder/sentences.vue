@@ -99,7 +99,7 @@
 
 <div class="footnotes"><hr><ol><li id="fn:14">730 ILCS 5/3-6-3, known as the “Truth-In-Sentencing” Law, establishes sentencing rules in Illinois. It was originally enacted in 1998 and has been updated/added to several times since then. <br>
 It says that those persons convicted of first degree murder must serve all of their imposed sentence, while those convicted of second degree murder are eligible for day-for-day good time credit (must serve 50% of their sentence). <a href="#fnref:14" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:15">This chart depicts years spent incarcerated within a state prison. Any time spent in county jail prior to conviction is not included. <a href="#fnref:15" title="Return to article" class="reversefootnote">↩</a></li></ol></div>
-
+<citation />
   </div>
 </div>
 <my-footer />
@@ -117,6 +117,7 @@ import Sidebar from 'components/Sidebar'
 import MyFooter from 'components/Footer'
 import RenderChart from 'components/RenderChart.vue'
 import SegmentHeader from 'components/SegmentHeader'
+import Citation from 'components/Citation'
 
 export default {
     name: 'MurderSentences',
@@ -131,7 +132,8 @@ export default {
         Sidebar,
         MyFooter,
         RenderChart,
-        SegmentHeader
+        SegmentHeader,
+        Citation
     },
     metaInfo() {
     return {

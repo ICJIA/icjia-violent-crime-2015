@@ -27,8 +27,9 @@
 
 <p>Law enforcement agencies are required to report to the Illinois Uniform Crime Reporting (I-UCR) program occurrences of aggravated battery, heinous battery, aggravated battery of a child, aggravated domestic battery, ritual mutilation, aggravated battery of a senior citizen, aggravated assault, attempted first degree murder, and attempted second degree murder in their jurisdictions. This data was collected and examined. <br>
 <em>Source: Illinois State Police Uniform Crime Report</em></p>
-
+<citation />
                       </div>
+
                   </div>
                   <my-footer />
               </div>
@@ -48,7 +49,7 @@
 const utils = require('../../utils')
 
 import Sidebar from 'components/Sidebar'
-
+import Citation from 'components/Citation'
 import RenderChart from 'components/RenderChart'
 import RenderMap from 'components/RenderMap'
 import MyFooter from 'components/Footer.vue'
@@ -87,7 +88,8 @@ export default {
         RenderChart,
         RenderMap,
         MyFooter,
-        SegmentHeader
+        SegmentHeader,
+        Citation
 
     },
     data() {

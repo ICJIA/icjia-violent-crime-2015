@@ -217,7 +217,7 @@
 <em>“SD” = standard deviation</em> <br>
 <em>Source: ICJIA Analysis of Illinois State Police Uniform Crime Report Data</em></p>
 
-
+<citation />
             </div>
 </div>
 <my-footer />
@@ -235,6 +235,7 @@
 <script>
 const utils = require('../../utils')
 
+import Citation from 'components/Citation'
 import Sidebar from 'components/Sidebar'
 import MyFooter from 'components/Footer'
 import RenderChart from 'components/RenderChart'
@@ -298,6 +299,7 @@ export default {
         RenderChart,
         RenderMap,
         MyFooter,
+        Citation,
         SegmentHeader
     },
     data() {

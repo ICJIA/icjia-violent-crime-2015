@@ -24,7 +24,7 @@
 
 <p>Data for this analysis was collected from FBI and Illinois Uniform Crime Reports, Illinois State Police Criminal History Records Information (CHRI) System, and the Illinois Department of Corrections (IDOC). Rape offenses include criminal sexual assault, aggravated criminal sexual assault, predatory criminal sexual assault of a child, and criminal sexual assault with an object.</p>
 
-
+<citation />
 
                       </div>
                   </div>
@@ -46,7 +46,7 @@
 const utils = require('../../utils')
 
 import Sidebar from 'components/Sidebar'
-
+import Citation from 'components/Citation'
 import RenderChart from 'components/RenderChart'
 import RenderMap from 'components/RenderMap'
 import MyFooter from 'components/Footer.vue'
@@ -84,6 +84,7 @@ export default {
         RenderChart,
         RenderMap,
         MyFooter,
+        Citation,
         SegmentHeader
 
     },

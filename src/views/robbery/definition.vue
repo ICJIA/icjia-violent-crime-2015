@@ -31,7 +31,7 @@
 
 <p>Law enforcement agencies are to report to the Illinois Uniform Crime Reporting (I-UCR) program occurrences of robbery, armed robbery, vehicular hijacking, aggravated vehicular hijacking, and aggravated robbery. <br>
 <em>Source: Illinois State Police Uniform Crime Report</em></p>
-
+<citation />
                       </div>
                   </div>
                   <my-footer />
@@ -52,7 +52,7 @@
 const utils = require('../../utils')
 
 import Sidebar from 'components/Sidebar'
-
+import Citation from 'components/Citation'
 import RenderChart from 'components/RenderChart'
 import RenderMap from 'components/RenderMap'
 import MyFooter from 'components/Footer.vue'
@@ -90,7 +90,8 @@ export default {
         RenderChart,
         RenderMap,
         MyFooter,
-        SegmentHeader
+        SegmentHeader,
+        Citation
 
     },
     metaInfo() {

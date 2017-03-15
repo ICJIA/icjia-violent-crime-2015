@@ -101,6 +101,8 @@
 <div class="footnotes"><hr><ol><li id="fn:1">730 ILCS 5/3-6-3, known as the “Truth-In-Sentencing” Law, establishes sentencing rules in Illinois. It was originally enacted in 1998 and has been updated/added to several times since then. <br>
 It says those persons convicted of aggravated battery with a firearm, heinous battery, aggravated battery to a senior citizen, aggravated battery to a child, or aggravated domestic battery are only eligible for 4.5 days of good time credit per month served (essentially, they must serve 85% of their sentence), while those convicted of felony aggravated assault or aggravated battery, are eligible for day-for-day good time credit (must serve 50% of their sentence). <br>
 Note: Some aggravated assaults are misdemeanors, and therefore would not result in a prison sentence. <a href="#fnref:1" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:2">This chart depicts years spent incarcerated within a state prison. Any time spent in county jail prior to conviction is not included. <a href="#fnref:2" title="Return to article" class="reversefootnote">↩</a></li></ol></div>
+<citation />
+
                 </div>
 
 </div>
@@ -114,7 +116,7 @@ Note: Some aggravated assaults are misdemeanors, and therefore would not result 
 
 <script>
 
-
+import Citation from 'components/Citation'
 import Sidebar from 'components/Sidebar'
 import MyFooter from 'components/Footer'
 import RenderChart from 'components/RenderChart.vue'
@@ -139,7 +141,8 @@ export default {
         Sidebar,
         MyFooter,
         RenderChart,
-        SegmentHeader
+        SegmentHeader,
+        Citation
     },
     data() {
         return {

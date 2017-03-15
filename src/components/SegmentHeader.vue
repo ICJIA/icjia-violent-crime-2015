@@ -14,7 +14,7 @@
 
           <span style="float: right">
             <a :href="reportDownload" class="btn btn-primary"
-            style="text-transform: uppercase; font-weight: 700">Download PDF&nbsp;&nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+            style="text-transform: uppercase; font-weight: 700">Download PDF ({{segment}})&nbsp;&nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
             </span>
 
         </div>

@@ -29,6 +29,9 @@
          offenders back into the community.</p>
 
 
+
+
+
 </div>
 
 <div class="container" style="margin-top: 100px; margin-bottom: 50px">
@@ -44,6 +47,12 @@
 </div>
 </div>
 </div>
+
+
+
+
+
+
 </div>
 
 <div class="block-section">
@@ -122,6 +131,18 @@
 </div>
 </div>
 </div>
+
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div id="reportCitation" class="citation-home">
+      Suggested citation: Sheridan, E. & Hanninen, L. (2017). <em>Violent crime in Illinois 2015</em>. Chicago, IL: Illinois Criminal Justice Information Authority.
+    </div>
+  </div>
+</div>
+
+
 </div>
 
 </div>
@@ -140,6 +161,7 @@
 
 <script>
     import MyFooter from '@/components/Footer'
+    import Citation from '@/components/Citation'
     export default {
         name: 'Home',
         mounted () {
@@ -154,7 +176,7 @@
       },
         components: {
 
-
+            Citation,
             MyFooter
         },
         data() {

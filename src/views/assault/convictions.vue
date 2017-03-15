@@ -45,6 +45,7 @@
 
 </div>
 </div>
+<citation />
 </div>
 <my-footer />
 </div>
@@ -55,7 +56,7 @@
 
 <script>
 
-
+import Citation from 'components/Citation'
 import Sidebar from 'components/Sidebar'
 import RenderChart from 'components/RenderChart'
 // import TableToggle from '../../components/TableToggle.vue'
@@ -78,6 +79,7 @@ export default {
         RenderChart,
         Sidebar,
         MyFooter,
+        Citation,
         SegmentHeader
 
     },

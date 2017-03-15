@@ -45,7 +45,7 @@
 <div class="footnotes"><hr><ol><li id="fn:13"><strong>Disposition</strong>: Outcome/Decision/Ruling;  <br>
 <strong>Nolle Prosequi</strong>: Latin term which essentially means the prosecutor will no longer pursue the charges; <br>
 <strong>Other</strong>: No Bill, Death Suggested/Cause Abated, Charge Amended/Reduced, Merged with Another Offense, Forfeit Pending, Unfit to Stand Trial, Mistrial, Warrant Issued, Warrant Quashed/Withdrawn, Modified/Trial Court, Vacated/Trial Court, Probation Terminated, Reversed/Reviewing Court, Remanded/Reviewing Court, Modified/Reviewing Court, Vacated/Reviewing Court <a href="#fnref:13" title="Return to article" class="reversefootnote">↩</a></li></ol></div>
-
+<citation />
 </div>
 
 </div>
@@ -62,6 +62,7 @@
 
 
 import Sidebar from 'components/Sidebar'
+import Citation from 'components/Citation'
 import RenderChart from 'components/RenderChart'
 import SegmentHeader from 'components/SegmentHeader'
 // import TableToggle from '../../components/TableToggle.vue'
@@ -89,7 +90,8 @@ export default {
         RenderChart,
         Sidebar,
         MyFooter,
-        SegmentHeader
+        SegmentHeader,
+        Citation
 
     },
     data() {

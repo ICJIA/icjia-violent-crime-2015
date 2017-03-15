@@ -150,6 +150,7 @@
 
 </div>
 
+<citation />
 <my-footer />
 </div>
 
@@ -166,6 +167,7 @@
 
 
 import Sidebar from 'components/Sidebar'
+import Citation from 'components/Citation'
 import RenderChart from 'components/RenderChart.vue'
 import RenderMap from 'components/RenderMap.vue'
 import MyFooter from 'components/Footer'
@@ -203,6 +205,7 @@ export default {
         Sidebar,
         RenderChart,
         MyFooter,
+        Citation,
         SegmentHeader
 
     },

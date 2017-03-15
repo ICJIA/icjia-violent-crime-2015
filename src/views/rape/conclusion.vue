@@ -24,6 +24,7 @@ While Cook County has experienced the majority of rapes, rape rates are highest 
 Data indicates that because the majority of rape offenders have previous criminal histories, earlier intervention is needed. Offender risk and needs assessments with resources to address the identified risks and needs could help reduce recidivism among this population and improve public safety.
 </p>
 
+<citation />
 
 </div>
   </div>
@@ -40,6 +41,7 @@ Data indicates that because the majority of rape offenders have previous crimina
 import Sidebar from 'components/Sidebar'
 import MyFooter from 'components/Footer'
 import SegmentHeader from 'components/SegmentHeader'
+import Citation from 'components/Citation'
 
 export default {
     name: 'RapeConclusion',
@@ -59,7 +61,8 @@ export default {
 
         Sidebar,
       MyFooter,
-      SegmentHeader
+      SegmentHeader,
+      Citation
     },
     metaInfo() {
     return {

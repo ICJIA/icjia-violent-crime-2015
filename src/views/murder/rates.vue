@@ -394,8 +394,9 @@
  <p><em>Source: ICJIA Analysis of Illinois State Police Uniform Report Data</em></p>
 
  </div>
- </div>
 
+ </div>
+<citation />
 </div>
 </div>
 <my-footer />
@@ -418,6 +419,7 @@ import MyFooter from 'components/Footer'
 import RenderChart from 'components/RenderChart'
 import RenderMap from 'components/RenderMap'
 import SegmentHeader from 'components/SegmentHeader'
+import Citation from 'components/Citation'
 
 // Datatables install with webpack: https://gist.github.com/marcstober/c34bb4bdf7ef622cb24d6675723749bd
 // https://datatables.net/forums/discussion/32542/datatables-and-webpack
@@ -469,7 +471,8 @@ export default {
         RenderChart,
         RenderMap,
         MyFooter,
-        SegmentHeader
+        SegmentHeader,
+        Citation
     },
     metaInfo() {
     return {
