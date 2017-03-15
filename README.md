@@ -1,8 +1,10 @@
 # ICJIA Violent Crime Data Project 2015
 
+Suggested citation:
+
 > Sheridan, E. & Hanninen, L. (2017). _Violent crime in Illinois 2015_. Chicago, IL: Illinois Criminal Justice Information Authority.
 
-## Live demo
+## Live Site
 
 https://violentcrime2015.icjia.cloud
 
