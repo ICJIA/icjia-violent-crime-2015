@@ -1,7 +1,7 @@
 {
-  "name": "vue-vc02",
+  "name": "icjia-violent-crime-2015",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "ICJIA Violent Crime Data Project 2015",
   "author": "Chris Schweda <cschweda@gmail.com>",
   "private": true,
   "scripts": {
